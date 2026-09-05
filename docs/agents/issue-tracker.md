@@ -13,6 +13,18 @@ Issues and specs for this repo live as GitHub issues. Use the `gh` CLI for all o
 
 Infer the repo from `git remote -v`; `gh` does this automatically when run inside a clone.
 
+## Cloud sessions
+
+In a cloud session (Claude Code on the web), `gh` is installed and authenticated through the session proxy, but the proxy serves only a pinned set of GraphQL queries. Everything above that uses GraphQL fails with `HTTP 403: This GraphQL query is not enabled for this session` (and `gh auth status` reports the token as invalid, which is the same restriction): `gh issue view/list/create/comment/edit/close`, `gh pr view/list`. Locally, everything works.
+
+What works in the cloud is the REST API through `gh api`, plus the GitHub MCP tools (`mcp__github__*`) for creating, reading, commenting, assigning and closing issues and pull requests. REST equivalents for the conventions above (replace `<n>` with the issue number, paths are relative to `repos/PatrickNLT/fact-checked-politics`):
+
+- **Read an issue**: `gh api repos/PatrickNLT/fact-checked-politics/issues/<n>` and `.../issues/<n>/comments`.
+- **List issues**: `gh api 'repos/PatrickNLT/fact-checked-politics/issues?state=open&labels=<label>&per_page=100'`.
+- **Comment**: `gh api --method POST .../issues/<n>/comments -f body=@file` (or `-f body="..."`).
+- **Labels / assignee / close**: `gh api --method PATCH .../issues/<n> -f state=closed -f state_reason=completed`, `--method POST .../issues/<n>/labels -f 'labels[]=<label>'`, `--method POST .../issues/<n>/assignees -f 'assignees[]=<login>'`.
+- **Sub-issues and dependencies** (wayfinding): `gh api .../issues/<map>/sub_issues --paginate`, `gh api .../issues/<n>/dependencies/blocked_by`; the `POST` forms in the "Wayfinding operations" section already use `gh api` and work as written.
+
 ## Pull requests as a triage surface
 
 **PRs as a request surface: no.** _(Set to `yes` if this repo treats external PRs as feature requests; `/triage` reads this flag.)_
