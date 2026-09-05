@@ -198,3 +198,20 @@ Method: for each domain, `robots.txt`, `/.well-known/tdmrep.json` (plus the link
 - YouTube ToS: https://www.youtube.com/t/terms ; robots https://www.youtube.com/robots.txt ; Dailymotion ToU: https://legal.dailymotion.com/en/terms-of-use/ ; robots https://www.dailymotion.com/robots.txt
 - Party channels: https://www.youtube.com/@RassemblementNationalOfficiel , https://www.youtube.com/@franceinsoumise , https://www.youtube.com/@parti-renaissance , https://www.youtube.com/@lesrepublicains , https://www.youtube.com/@partisocialiste , https://www.youtube.com/@mouvementplacepublique , https://www.youtube.com/@LesEcologistesFR
 - Legal frame: `docs/research/legal-france.md` §§ 1, 3 (L.216-1, L.122-5, L.122-5-3, L.211-3 8°, R.122-28, CJEU Svensson/BestWater/VG Bild-Kunst).
+
+---
+
+## Addendum: second check of the same day (issue #11, wayfinder session)
+
+A parallel research run on 2026-09-05 reached the same verdicts on every source. It adds the following facts, which the table above does not carry.
+
+- **MEDEF debate, embeddable copy exists.** Besides LCI's YouTube live (`rpURHoN54bQ`, embedding disabled), MEDEF uploaded the full debate to its own channel `@MEDEFtv` as "#LAREF26 | DÉBAT | PRÉSIDENTIELLE 2027" (`z0gJwsrODEw`), and that copy answers oEmbed 200, so it can be embedded. Who owns the recording and under what licence MEDEF uploaded an LCI-broadcast programme is not determinable from public pages (**UNVERIFIED**); until known, cite the MEDEF upload as the replay and avoid mirroring. The `laref.org` CGU is a PDF (v1, July 2026) that could not be text-extracted; `medef.com` returns 403 to non-browsers.
+- **Dailymotion archives, embedding verified by API.** The Dailymotion API reports `allow_embed: true` on current and historical videos of `publicsenat` (14,570 videos, since 2008-05), `LCP` (23,275 videos; a 2018 video still embeddable), `BFMTV` (archive back to 2008-01) and `CNEWS` (171,792 videos, since 2012-10). Public Sénat and LCP pages embed Dailymotion iframes themselves, which makes their Dailymotion copies the most durable and most freely embeddable official replays in the corpus.
+- **Europe 1, per-video embedding.** Of three recent `@Europe1` YouTube videos, two answered oEmbed 200 and one 401: embedding is toggled per video, so the check must be run per Appearance. The `Europe1` Dailymotion account is an unrelated user.
+- **RMC+ replay window, first-party.** The publisher's own app-store text for RMC+ (ex RMC BFM Play) says "vidéos disponibles entre 7 et 30 jours".
+- **Radio France durability, first-party.** "Depuis 2005, vous pouvez écouter à la demande et télécharger gratuitement toutes les émissions … en podcast"; France Inter sitemaps run by month back to the 1990s and a 2001 episode still serves its MP3.
+- **Handles that did not resolve** (guessed, **UNVERIFIED**): the YouTube channels of Attal, Philippe, Retailleau, Glucksmann, Tondelier and Reconquête.
+
+### How to record the check on an imported Appearance
+
+For each Appearance store: `source` (row above), `platform` (`youtube` / `dailymotion` / `own-player` / `tf1plus` / `france.tv` / `rmcplus` / `radiofrance`), `video_id_or_url`, `embed_check` = {method: `oembed` / `dailymotion-api` / `cgu-article`, result, date}, `tdm_check` = {signals read: `cgu §`, `tdmrep`, `robots`, verdict, date}, `replay_expiry` (date shown on the page, or `open-ended`), and `terms_version` (the CGU date quoted above). Re-run the oEmbed or Dailymotion API check before rendering an embed; treat a 401 as "link only".

@@ -31,6 +31,10 @@ The verbatim, timestamped, speaker-attributed text of one Appearance. Produced b
 A timestamped stretch of one Speaker's speech within an Appearance. The unit that everything else (Statement, Technique, Topic) attaches to.
 _Avoid_: quote, passage, clip, utterance
 
+**Validation status** (statut de validation):
+The review state of one Segment's text, or of its speaker attribution, each held separately: `draft` (brouillon), machine-produced and not yet checked by a human; `verified` (vérifié), checked by a human against the Source's replay. A Transcript has no status of its own; its state is derived from its Segments.
+_Avoid_: reviewed, approved, validated (as a status value), confidence
+
 **Statement** (affirmation):
 A checkable factual claim extracted from a Segment. Introduced in the fact-checking layer (v3).
 _Avoid_: claim, fact, assertion
