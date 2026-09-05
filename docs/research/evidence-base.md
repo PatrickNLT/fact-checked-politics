@@ -1,6 +1,8 @@
 # Evidence base for a French 2027 fact-checking and rhetoric-analysis platform
 
-Research memo, 2026-09-05. Scope: what peer-reviewed and shared-task literature actually establishes for each layer of the planned platform (v1 transcripts, v2 themes, v3 claim extraction and rating, v4 fallacy / technique tagging, live layer). Every number below was read at the source (PDF or publisher page) unless marked **UNVERIFIED**. Effect sizes are Cohen's *d* unless stated. "F1" means macro-F1 unless stated.
+Research memo, 2026-09-05.
+Scope: what peer-reviewed and shared-task literature actually establishes for each layer of the planned platform (v1 transcripts, v2 themes, v3 claim extraction and rating, v4 fallacy / technique tagging, live layer).
+Every number below was read at the source (PDF or publisher page) unless marked **UNVERIFIED**. Effect sizes are Cohen's *d* unless stated. "F1" means macro-F1 unless stated.
 
 ## Executive summary (what is proven, promising, unsupported)
 
@@ -40,7 +42,10 @@ Research memo, 2026-09-05. Scope: what peer-reviewed and shared-task literature 
 | Wintersieck, "Debating the truth" | 2017 | American Politics Research 45(2) | Experiment with fact-checks embedded in a debate | Confirming ("true") fact-checks improved evaluation and vote likelihood; "half-true" ratings had no effect | Single study | Ambiguous verdicts do nothing; consider not publishing middle-scale ratings |
 | Lim, "Checking how fact-checkers check" | 2018 | Research & Politics 5(3) | Comparison of PolitiFact and Washington Post Fact Checker ratings | Only 1 in 10 statements checked by both; agreement good on clear truths/falsehoods, "much lower" for Half True / Mostly False | Observational | Your own rating scale will have low reliability in the middle; publish reviewer agreement |
 
-Narrative. The strongest, most replicated finding in this literature is that corrections improve belief accuracy modestly (d about 0.3) and do not backfire; the second strongest is that the improvement decays within weeks and does not translate into changed candidate preference. The French experiment by Barrera et al. is the closest analogue to the planned platform and warns that fact-checking a populist candidate's numbers can make her issue more salient without reducing her support. Format evidence is mixed: the meta-analysis finds truth scales dilute effects, while Amazeen et al. find no partisan backlash from them; the safest reading is that the explanation, not the icon, does the work, and that middle-of-scale verdicts ("cherry-picked", "misstated") are both the least reliable among professional fact-checkers (Lim 2018) and the least effective on audiences (Wintersieck 2017).
+Narrative.
+The strongest, most replicated finding in this literature is that corrections improve belief accuracy modestly (d about 0.3) and do not backfire; the second strongest is that the improvement decays within weeks and does not translate into changed candidate preference.
+The French experiment by Barrera et al. is the closest analogue to the planned platform and warns that fact-checking a populist candidate's numbers can make her issue more salient without reducing her support.
+Format evidence is mixed: the meta-analysis finds truth scales dilute effects, while Amazeen et al. find no partisan backlash from them; the safest reading is that the explanation, not the icon, does the work, and that middle-of-scale verdicts ("cherry-picked", "misstated") are both the least reliable among professional fact-checkers (Lim 2018) and the least effective on audiences (Wintersieck 2017).
 
 ## B. Effects on politicians
 
@@ -52,7 +57,10 @@ Narrative. The strongest, most replicated finding in this literature is that cor
 | Ceron & Carrara, "Fact-checking, reputation, and political falsehoods in Italy and the United States" | 2023 | New Media & Society | Observational analysis of fact-checked statements | Falsehoods rise as elections approach (checks arrive too late), are rarer in detailed and scripted statements, and commoner on issues the politician "owns" | Observational | Speed of checking near election day is what creates cost; scripted debate segments will contain fewer checkable falsehoods |
 | Lim | 2018 | Research & Politics | see A | Fact-checker disagreement in middle categories | | Politicians can and will contest ambiguous ratings |
 
-Narrative. The evidence that fact-checking changes politicians' behaviour rests on one 2015 field experiment with small absolute effects and p-values at the .05-.07 boundary, one replication that found little, and one unpublished Italian RCT that found deterrence accompanied by strategic vagueness. Nothing was found on PolitiFact or Full Fact publishing causal evidence of elite behaviour change; Full Fact's public material describes live fact-checking of PMQs and Question Time but not evaluations of politicians' responses (**UNVERIFIED** absence). The realistic hope (b) in the brief is therefore that a reference platform raises the perceived probability of being checked quickly; the documented risk is that politicians respond by saying less that is checkable.
+Narrative.
+The evidence that fact-checking changes politicians' behaviour rests on one 2015 field experiment with small absolute effects and p-values at the .05-.07 boundary, one replication that found little, and one unpublished Italian RCT that found deterrence accompanied by strategic vagueness.
+Nothing was found on PolitiFact or Full Fact publishing causal evidence of elite behaviour change; Full Fact's public material describes live fact-checking of PMQs and Question Time but not evaluations of politicians' responses (**UNVERIFIED** absence).
+The realistic hope (b) in the brief is therefore that a reference platform raises the perceived probability of being checked quickly; the documented risk is that politicians respond by saying less that is checkable.
 
 ## C. Inoculation / prebunking against manipulation techniques
 
@@ -71,7 +79,11 @@ Narrative. The evidence that fact-checking changes politicians' behaviour rests 
 | Wang, Phillips, Carley, Lin & Pennycook, "Limited effectiveness of psychological inoculation against misinformation in a social media feed" | 2025 | PNAS Nexus 4(6) | 5 preregistered studies, N = 3,881, simulated feed (Yourfeed), emotional-language video | Minimal/null effects on dwell, likes, shares for real tweets; only in the most artificial synthetic condition did sharing fall (*d* = 0.16) | Independent, preregistered | Recognition in a quiz does not equal changed behaviour in a feed |
 | "Deception detection in politics: can voters tell when politicians are lying?" (authors not retrieved) | 2021 | Political Behavior | Experiment: participants watch politicians' speech videos | Success explained by verbal detail and demeanour cues; strong truth bias; female politicians judged more honest | Single study | Unaided citizens are poor lie detectors; there is headroom for training, but no evidence yet that fallacy training closes it |
 
-Narrative. Technique-based inoculation is the best-evidenced educational approach for goal (a) in the brief, and its core finding (people recognise a taught technique better afterwards) is preregistered and replicated across seven experiments and a million-view YouTube campaign. Three things are not established: (1) whether the effect is discernment or generalised scepticism (two research groups reach opposite conclusions from overlapping data); (2) durability beyond about two months without boosters; (3) transfer to real political speech in situ. No study was found that tests whether teaching fallacies improves citizens' judgement of actual debate excerpts, and the one realistic-feed test (Wang et al. 2025) found near-null behavioural effects. The v4 layer should therefore be framed and evaluated as media-literacy content, with the platform itself as the natural test bed (pre/post technique-recognition quizzes on real French debate clips, with true-statement controls to detect the bias shift).
+Narrative.
+Technique-based inoculation is the best-evidenced educational approach for goal (a) in the brief, and its core finding (people recognise a taught technique better afterwards) is preregistered and replicated across seven experiments and a million-view YouTube campaign.
+Three things are not established: (1) whether the effect is discernment or generalised scepticism (two research groups reach opposite conclusions from overlapping data); (2) durability beyond about two months without boosters; (3) transfer to real political speech in situ.
+No study was found that tests whether teaching fallacies improves citizens' judgement of actual debate excerpts, and the one realistic-feed test (Wang et al. 2025) found near-null behavioural effects.
+The v4 layer should therefore be framed and evaluated as media-literacy content, with the platform itself as the natural test bed (pre/post technique-recognition quizzes on real French debate clips, with true-statement controls to detect the bias shift).
 
 ## D. Real-time / live fact-checking of debates
 
@@ -86,7 +98,11 @@ Narrative. Technique-based inoculation is the best-evidenced educational approac
 | Venktesh & Setty, "LiveFC: a system for live fact-checking of audio streams" | 2024 | arXiv 2408.07448 (under review) | System: live ASR, speaker attribution, claim detection, retrieval, verification | No audience or accuracy evaluation in abstract (**UNVERIFIED**) | | Architecture reference only |
 | CBS News QR-code live blog, 2024 VP debate | 2024 | Seattle Times / news | On-screen QR code to a live blog by 20 journalists | No evaluation | | Second-screen delivery is the operational model broadcasters use |
 
-Narrative. The honest summary is that live, on-screen correction has essentially no causal evidence base beyond one 2013 lab experiment, and that experiment found the feature most likely to matter (reaching people predisposed to believe the claim) is exactly where real-time correction underperforms delayed correction. Operationally, Duke's multi-year attempt concluded that automation cannot yet parse the "nuance and context" of political speech and reverted to human selection. Nothing was found on whether viewers trust live corrections more or less than post-hoc ones (**UNVERIFIED** gap). For 2027 the defensible plan is a second-screen live feed curated by humans (as Full Fact does for Question Time), with automated claim matching as an internal aid, and a published post-debate check as the product of record.
+Narrative.
+The honest summary is that live, on-screen correction has essentially no causal evidence base beyond one 2013 lab experiment, and that experiment found the feature most likely to matter (reaching people predisposed to believe the claim) is exactly where real-time correction underperforms delayed correction.
+Operationally, Duke's multi-year attempt concluded that automation cannot yet parse the "nuance and context" of political speech and reverted to human selection.
+Nothing was found on whether viewers trust live corrections more or less than post-hoc ones (**UNVERIFIED** gap).
+For 2027 the defensible plan is a second-screen live feed curated by humans (as Full Fact does for Question Time), with automated claim matching as an internal aid, and a published post-debate check as the product of record.
 
 ## E. Automatic claim detection (check-worthiness)
 
@@ -102,7 +118,12 @@ Narrative. The honest summary is that live, on-screen correction has essentially
 | CheckThat! 2024 Task 1 | 2024 | CLEF (CEUR 3740) | Arabic / Dutch / English; English test = US presidential debate sentences; 37 teams | English F1 0.802 (FactFinders, fine-tuned Llama-2-7B; baseline 0.307), Dutch 0.732 (TurQUaz), Arabic 0.569 (IAI Group); LLM prompting/fine-tuning won English and Dutch | Annual | 2024-era LLMs: F1 ~0.8 on debate sentences |
 | CheckThat! 2025 | 2025 | CLEF (CEUR 4038) | No check-worthiness task (subjectivity, numerical claims, claim normalisation, retrieval) | 9-language subjectivity: Greek and Ukrainian best F1 below 0.65 / 0.51 | | The lab moved on; check-worthiness is considered "solved enough" for English tweets/debates but has no French benchmark |
 
-Narrative. Check-worthiness detection is the most mature component: on the canonical US debate corpus, systems reach F1 0.80-0.90 for the positive class, and since 2024 the winners are fine-tuned or prompted LLMs. Two caveats bound this. First, the label itself is soft: expert-versus-novice agreement on the 2023 test set was kappa 0.49, and the Spanish set annotated by professional fact-checkers was consistently the hardest, so a French set annotated by journalists should be expected to score nearer 0.6-0.7 than 0.9. Second, no French or multilingual check-worthiness benchmark with French exists (the CheckThat! multilingual editions covered Arabic, Bulgarian, Dutch, Spanish, Turkish, German, Italian, Greek, Ukrainian, Romanian, Polish); SemEval-2025 Task 7 on fact-checked claim retrieval is multilingual but its French coverage was not verified (**UNVERIFIED**). For v3, a French fine-tuned model with a journalist-annotated test set (at least 1,000 sentences, two annotators, published kappa) is the minimum credible setup.
+Narrative.
+Check-worthiness detection is the most mature component: on the canonical US debate corpus, systems reach F1 0.80-0.90 for the positive class, and since 2024 the winners are fine-tuned or prompted LLMs.
+Two caveats bound this.
+First, the label itself is soft: expert-versus-novice agreement on the 2023 test set was kappa 0.49, and the Spanish set annotated by professional fact-checkers was consistently the hardest, so a French set annotated by journalists should be expected to score nearer 0.6-0.7 than 0.9.
+Second, no French or multilingual check-worthiness benchmark with French exists (the CheckThat! multilingual editions covered Arabic, Bulgarian, Dutch, Spanish, Turkish, German, Italian, Greek, Ukrainian, Romanian, Polish); SemEval-2025 Task 7 on fact-checked claim retrieval is multilingual but its French coverage was not verified (**UNVERIFIED**).
+For v3, a French fine-tuned model with a journalist-annotated test set (at least 1,000 sentences, two annotators, published kappa) is the minimum credible setup.
 
 ## F. Automatic fact verification
 
@@ -119,7 +140,12 @@ Narrative. Check-worthiness detection is the most mature component: on the canon
 | Walters & Wilder, "Fabrication and errors in the bibliographic citations generated by ChatGPT" | 2023 | Scientific Reports 13 | 636 citations in 84 LLM-written reviews | 55% of GPT-3.5 and 18% of GPT-4 citations fabricated; of real ones, 43% / 24% contain substantive errors | Replicated in many domains | Never let a model cite from memory; every source must be retrieved and stored |
 | Lim | 2018 | Research & Politics | see A | Human fact-checkers disagree in the middle of the scale | | The v3 labels "cherry-picked" and "misstated" are exactly where humans disagree; an automatic system has no ground truth to learn |
 
-Narrative. Verification of real political claims is not a solved problem. The best published open-domain system under honest evidence scoring correctly verifies about a third of AVeriTeC claims (2025) and about two thirds under the more lenient 2024 metric; numerical claims, the bread and butter of French debates (unemployment, deficits, immigration figures), sit at macro-F1 ~0.6 with "conflicting" verdicts the main failure. Known failure modes are consistent across studies: fabricated or misattributed sources when retrieval is absent, weaker performance on true claims than on false ones, worse performance in non-English input, and inability to produce graded verdicts. What does work is decomposition into atomic facts, retrieval from a curated corpus (INSEE, Cour des comptes, Eurostat, legislative texts), and a supported / refuted / insufficient-evidence triage handed to a human. The four-way public scale in the brief (verified / cherry-picked / misstated / false) should be assigned by humans, with the AI output shown as evidence and a proposed label.
+Narrative.
+Verification of real political claims is not a solved problem.
+The best published open-domain system under honest evidence scoring correctly verifies about a third of AVeriTeC claims (2025) and about two thirds under the more lenient 2024 metric; numerical claims, the bread and butter of French debates (unemployment, deficits, immigration figures), sit at macro-F1 ~0.6 with "conflicting" verdicts the main failure.
+Known failure modes are consistent across studies: fabricated or misattributed sources when retrieval is absent, weaker performance on true claims than on false ones, worse performance in non-English input, and inability to produce graded verdicts.
+What does work is decomposition into atomic facts, retrieval from a curated corpus (INSEE, Cour des comptes, Eurostat, legislative texts), and a supported / refuted / insufficient-evidence triage handed to a human.
+The four-way public scale in the brief (verified / cherry-picked / misstated / false) should be assigned by humans, with the AI output shown as evidence and a proposed label.
 
 ## G. Automatic fallacy and propaganda-technique detection
 
@@ -131,7 +157,7 @@ Narrative. Verification of real political claims is not a solved problem. The be
 | SemEval-2020 Task 11 (Da San Martino et al.) | 2020 | SemEval 2020 (arXiv 2009.02696) | PTC; span identification (SI) and technique classification (TC, 14 techniques) | SI best F1 51.55 (Hitachi); TC best F1 62.07 (ApplicaAI); reported average gamma 0.6 | Annual benchmark | Finding the span is harder than naming the technique once given the span |
 | SemEval-2023 Task 3 (Piskorski, Stefanovitch, Da San Martino, Nakov) | 2023 | SemEval 2023 | 23 persuasion techniques, paragraph-level, 9 languages incl. **French**; ~40 annotators; 2,049 documents | Krippendorff's alpha 0.342 before consolidation (0.415 top half, 0.250 bottom half of annotators); French best micro-F1 0.469 / macro-F1 0.322 (team NAP); English best micro-F1 0.376; Italian 0.550; winner KInITVeraAI (XLM-RoBERTa-large, joint multilingual) | Annual | The only French technique benchmark: micro-F1 below 0.5 and macro-F1 ~0.3 |
 | Goffredo, Haddadan, Vorakitphan, Cabrio & Villata, "Fallacious argument classification in political debates" (ElecDeb60to16) | 2022 | IJCAI 2022 | 31 US presidential debates 1960-2016, 3 computational-linguistics annotators; 1,628 fallacies in 6 categories: Appeal to Emotion 1,016 (loaded language 676, flag waving 151, pity 102, fear 87), Appeal to Authority 234, Ad Hominem 188, False Cause 69, Slogans 64, Slippery Slope 57; 14 sub-categories | IAA (3 annotators, 9 sections of 5 debates), Krippendorff's alpha: Ad Hominem 0.53, Appeal to Authority 0.58, Appeal to Emotion 0.46, Slogans 0.60 ("moderate"); 6-class macro-F1: BERT 0.55, RoBERTa 0.53, Longformer + joint loss + gold argument component/relation features 0.84; ablation without argument features 0.61; 14-subclass macro-F1 0.42: Loaded Language 0.83, Slogan 0.68, Flag Waving 0.65, Without Evidence 0.57, Ad Hominem 0.52, Pity 0.51, Popular Opinion 0.50, Fear 0.43, Slippery Slope 0.32, Circumstantial Ad Hominem 0.28, Name-Calling 0.27, False Cause 0.27, False Authority 0.00, Tu Quoque 0.00 | Extended 2023; base of 2025 shared task | Human agreement is moderate; the 0.84 relies on gold argument annotations that will not exist for live French debates |
-| Goffredo, Chaves, Villata & Cabrio, "Argument-based detection and classification of fallacies in political debates" (ElecDeb60to20) | 2023 | EMNLP 2023 | Adds 2020 Trump-Biden debates (232 new fallacies; total fallacy instances ~1,860) | IAA on 50 sentences: observed agreement 0.857, Krippendorff's alpha 0.757 ("substantial"); token-level fallacy detection (BIO merged) macro-F1 0.7394 (MultiFusion BERT with component, relation, PoS features), 0.72 for plain BERT-large token classifier | | Detection (is there a fallacy here?) reaches ~0.74; classification is the weak link |
+| Goffredo, Chaves Espinoza, Cabrio & Villata, "Argument-based detection and classification of fallacies in political debates" (ElecDeb60to20) | 2023 | EMNLP 2023 | Adds 2020 Trump-Biden debates (232 new fallacies; total fallacy instances ~1,860) | IAA on 50 sentences: observed agreement 0.857, Krippendorff's alpha 0.757 ("substantial"); token-level fallacy detection (BIO merged) macro-F1 0.7394 (MultiFusion BERT with component, relation, PoS features), 0.72 for plain BERT-large token classifier | | Detection (is there a fallacy here?) reaches ~0.74; classification is the weak link |
 | MM-ArgFallacy2025 shared task (Mancini et al.; system paper Pittiglio) | 2025 | ArgMining 2025 | MM-USED-fallacy: same 6 classes, text + audio of US debates | Fallacy classification macro-F1 0.4444 text-only, 0.3559 audio-only, 0.4403 multimodal (this system; task-best **UNVERIFIED**) | | Without gold argument structure, 6-class debate fallacy classification is ~0.44 |
 | Dore, Damo, Cabrio & Villata, "Retrieving relations, detecting fallacies: a RAG approach to political debate analysis" | 2026 | arXiv 2608.27471 | ElecDeb60to20; retrieval over 15 GB political corpus guided by support/attack relations; 42 configurations, 14 models | Detection macro-F1 up to 0.864 (ModernBERT, +0.100 over no retrieval); classification up to 0.725 (+0.148); some LLMs lose 0.14-0.33 macro-F1 when given retrieved context | Preprint, not yet peer-reviewed | Current best on the standard debate benchmark; classification still ~0.73 |
 | Jin, Lalwani, Vaidhya, Shen, Ding, Lyu, Sachan, Mihalcea & Scholkopf, "Logical fallacy detection" (LOGIC) | 2022 | Findings of EMNLP 2022 | LOGIC: 2,449 quiz-site examples, 13 classes; LOGICCLIMATE: 1,079 from Climate Feedback | Zero-shot RoBERTa-MNLI / GPT-2: 12-14% micro-F1 (near random); fine-tuned Electra 53.31; structure-aware Electra 58.77; per class: ad populum 79.45, ad hominem 78.65, faulty generalisation 60.24, deductive fallacy 25.81; transfer to real climate texts: 22.7-29.4 F1 | Widely reused | Textbook fallacies are learnable; real-world texts drop to F1 ~0.3 |
@@ -145,11 +171,20 @@ Narrative. Verification of real political claims is not a solved problem. The be
 
 ### G.2 Answers to the specific questions
 
-Is human agreement on fallacy labels in political debate high or low? Moderate at best. Per-type Krippendorff's alpha among three trained linguists on US debates was 0.46 (emotion) to 0.60 (slogans), below the 0.667 conventionally required for reliable coding; the 2023 extension reports 0.757 but on only 50 sentences. Propaganda-technique spans in news start at gamma ~0.3 and reach 0.75 only after negotiated consolidation; the 23-technique multilingual corpus (including French) has alpha 0.34. MAFALDA's user study shows that four humans given the same texts reach F1 0.19 against a curated gold standard and 0.14 against each other at fine granularity. Any automatic system evaluated against a single gold label is therefore being scored against a partially arbitrary reference, and macro-F1 above ~0.75 should be read as fitting one team's annotation conventions, not as recovering an objective property of the speech.
+Is human agreement on fallacy labels in political debate high or low? Moderate at best.
+Per-type Krippendorff's alpha among three trained linguists on US debates was 0.46 (emotion) to 0.60 (slogans), below the 0.667 conventionally required for reliable coding; the 2023 extension reports 0.757 but on only 50 sentences.
+Propaganda-technique spans in news start at gamma ~0.3 and reach 0.75 only after negotiated consolidation; the 23-technique multilingual corpus (including French) has alpha 0.34.
+MAFALDA's user study shows that four humans given the same texts reach F1 0.19 against a curated gold standard and 0.14 against each other at fine granularity.
+Any automatic system evaluated against a single gold label is therefore being scored against a partially arbitrary reference, and macro-F1 above ~0.75 should be read as fitting one team's annotation conventions, not as recovering an objective property of the speech.
 
-Which fallacy classes are detectable and which are not? Detectable (F1 0.65-0.85 in-domain): loaded language, name-calling / ad hominem when insulting words are present, slogans, flag-waving, ad populum with explicit majority markers. Weak (F1 0.4-0.55): appeal to fear / pity, "without evidence" appeals to authority, slippery slope. Not detectable with current methods (F1 0.0-0.3): false authority, tu quoque, false cause, circumstantial ad hominem, deductive / formal fallacies, and every class once texts move from quizzes to real fact-checked content (LOGICCLIMATE, COVID, Climate: F1 0.2-0.3). The pattern is consistent across papers: models detect lexical surface cues, not invalid inference.
+Which fallacy classes are detectable and which are not? Detectable (F1 0.65-0.85 in-domain): loaded language, name-calling / ad hominem when insulting words are present, slogans, flag-waving, ad populum with explicit majority markers.
+Weak (F1 0.4-0.55): appeal to fear / pity, "without evidence" appeals to authority, slippery slope.
+Not detectable with current methods (F1 0.0-0.3): false authority, tu quoque, false cause, circumstantial ad hominem, deductive / formal fallacies, and every class once texts move from quizzes to real fact-checked content (LOGICCLIMATE, COVID, Climate: F1 0.2-0.3).
+The pattern is consistent across papers: models detect lexical surface cues, not invalid inference.
 
-French: no French political-debate fallacy dataset exists. SemEval-2023 French persuasion techniques (news paragraphs) is the only French benchmark, with micro-F1 0.47 and macro-F1 0.32 at the top. Everything above would have to be re-annotated for French debates, and the IAA numbers above are the realistic expectation for that annotation.
+French: no French political-debate fallacy dataset exists.
+SemEval-2023 French persuasion techniques (news paragraphs) is the only French benchmark, with micro-F1 0.47 and macro-F1 0.32 at the top.
+Everything above would have to be re-annotated for French debates, and the IAA numbers above are the realistic expectation for that annotation.
 
 ## H. Speech-to-text and diarization for French debate audio
 
@@ -166,7 +201,11 @@ French: no French political-debate fallacy dataset exists. SemEval-2023 French p
 | REPERE campaign results (as cited by Bredin et al.) | 2013 | | 3 h of French TV | Best systems DER ~11% single-show, ~14% cross-show | Historical | Modern systems roughly halved this |
 | Ryant et al., DIHARD III | 2021 | Interspeech 2021 (arXiv 2012.01477) | 11 domains, hardest public diarization benchmark | Track 2 (from scratch) best systems DER ~17% full / ~20% core (Hitachi-JHU 16.94 / 20.01, 2nd place); baseline 19.37 core | Campaign | Multi-domain "wild" audio is 2x harder than clean TV |
 
-Narrative. For v1 search and navigation, current French ASR is adequate: 4-6% WER on clean speech, likely 8-15% on lively debate segments with overlap (**estimate, UNVERIFIED**; no published Whisper-v3-era WER on ESTER / ETAPE / REPERE debate audio was found). For verbatim quotation, the arithmetic is unforgiving: at 5% WER the probability that a 30-word quotation contains at least one error is 1 - 0.95^30 = 78%; at 2% it is 45%. Diarization confusion of 3.5% on REPERE plus 10% overlapped speech in debates means a non-trivial share of sentences will be attributed to the wrong candidate exactly in the heated exchanges that matter most. Whisper-family hallucinations (~1% of segments, sometimes inventing violent or attributive content) are a reputational hazard for a site that publishes what candidates "said". The workable design is: automatic transcript with word timestamps for search and clip linking; every span that is quoted, rated (v3) or tagged (v4) is played back and corrected by a human before publication; the corrected transcript is diffed against the ASR output to publish a running WER, which also doubles as the platform's own French debate benchmark.
+Narrative.
+For v1 search and navigation, current French ASR is adequate: 4-6% WER on clean speech, likely 8-15% on lively debate segments with overlap (**estimate, UNVERIFIED**; no published Whisper-v3-era WER on ESTER / ETAPE / REPERE debate audio was found).
+For verbatim quotation, the arithmetic is unforgiving: at 5% WER the probability that a 30-word quotation contains at least one error is 1 - 0.95^30 = 78%; at 2% it is 45%.
+Diarization confusion of 3.5% on REPERE plus 10% overlapped speech in debates means a non-trivial share of sentences will be attributed to the wrong candidate exactly in the heated exchanges that matter most.
+Whisper-family hallucinations (~1% of segments, sometimes inventing violent or attributive content) are a reputational hazard for a site that publishes what candidates "said". The workable design is: automatic transcript with word timestamps for search and clip linking; every span that is quoted, rated (v3) or tagged (v4) is played back and corrected by a human before publication; the corrected transcript is diffed against the ASR output to publish a running WER, which also doubles as the platform's own French debate benchmark.
 
 ## Design recommendations grounded in evidence
 
@@ -183,6 +222,84 @@ Narrative. For v1 search and navigation, current French ASR is adequate: 4-6% WE
 11. **Verification pipeline.** Atomic-claim decomposition, retrieval only from a curated French corpus (INSEE, DREES, Cour des comptes, Eurostat, Legifrance, parliamentary reports) with stored snapshots, NLI-style supported / refuted / insufficient triage, explicit numeric handling (unit, period, base of comparison), and a hard rule that no source can be cited unless it was retrieved.
 12. **Transcript integrity.** Word-level timestamps; human correction of every published span; running published WER and DER estimated from the corrected sample; explicit "overlapping speech" markers; never show a candidate's name next to text that has not been attribution-checked.
 13. **French benchmark contribution.** Because no French check-worthiness or debate-fallacy dataset exists, the platform's corrected transcripts and double-annotated labels are themselves a research asset; releasing them (with IAA) would give the project scientific credibility and let others measure what the site's models actually do.
+
+## Layer-by-layer evidence map
+
+| Platform layer | What the evidence supports | Best published numbers | Main documented risk | Human role required |
+|---|---|---|---|---|
+| v1 Transcripts (search, navigation) | Fully feasible for search; usable word timestamps | French clean-speech WER 4-6% (FLEURS: Voxtral Small 4.03, Whisper-large-v3 5.55); French TV diarization DER 7.8% (pyannote 3.1, REPERE) | 10.4% overlapped speech in debates; ~1% hallucinated segments (Whisper); misattribution in heated exchanges | Correct every span that is quoted, rated, or tagged; mark overlap |
+| v2 Theme classification | Not researched here; standard topic classification, no political-science evidence needed | n/a | Silent coverage imbalance across candidates/themes (salience effect, Barrera 2020) | Use it to audit balance and publish the distribution |
+| v3a Claim extraction (check-worthiness) | Mature on English debates; moderate human agreement | F1 0.80-0.90 positive class (CheckThat! 2023-2024); kappa 0.49 | No French benchmark; journalist-annotated sets score lower (Spanish 0.57-0.64) | Annotate a French test set; review the top-ranked claims, not all sentences |
+| v3b Claim verification and rating | Feasible only as retrieval-assisted triage | AVeriTeC 0.63 (2024, lenient) / 0.33 (2025, strict); numerical claims macro-F1 ~0.6; GPT-4 6-level verdicts "extremely low" | Fabricated sources without retrieval (18-55%); "conflicting/cherry-picked" is the weakest class for humans and machines | Humans assign the public label; AI supplies decomposed sub-claims, retrieved evidence, and a proposal |
+| v3c Effect on citizens | Proven: beliefs improve (*d* ~0.3), no backfire; decay in weeks; no vote effect | Walter 2020 *d* = 0.29; Porter & Wood 2021 >2 weeks; Barrera 2020 French null on support | Salience spillover; middle-scale ratings ineffective and unreliable | Write detailed explanations; avoid scale-only verdicts |
+| v3d Effect on politicians | Plausible, thin: one field RCT, one weak replication, one unpublished RCT | Negative ratings 2.8% to 1.3% (Nyhan & Reifler 2015) | Substitution toward unverifiable statements (Mattozzi et al.) | Track unverifiable-statement share as an outcome |
+| v4 Fallacy / technique tagging | Detection ~0.74-0.86 macro-F1 on US debates; coarse classification 0.44-0.73 without gold structure; fine classes collapse | Goffredo 2022/2023; Dore 2026; MM-ArgFallacy 2025 text 0.44; MAFALDA humans 0.19 at fine level | Human agreement alpha 0.46-0.60; inferential fallacies at F1 0-0.3; zero French debate data | Humans confirm every tag; publish per-label agreement; restrict public labels to detectable classes |
+| v4 Educational effect (inoculation) | Technique recognition rises after short explainers; contested whether discernment or scepticism | *d* 0.28-0.68 (RCTs), *h* 0.09 (YouTube); decay ~2 months | Blanket scepticism (response bias); near-null behaviour change in feeds; no transfer test on political speech | Include true/valid examples; run pre/post quizzes with d' |
+| Live layer | No causal audience evidence; automation not ready | Squash 6/20 pop-ups in the ballpark; Garrett & Weeks: immediate +5.2 vs delayed +3.3 points but worse for the predisposed | Silence most of the time; ASR errors on stage; widening of partisan gap | Human-curated second screen; automated matching of previously checked claims only |
+
+## Metric glossary (so the numbers above are comparable)
+
+- **Cohen's *d***: standardised mean difference; 0.2 small, 0.5 medium, 0.8 large. Fact-check belief effects are ~0.3; inoculation recognition effects 0.3-0.7 in the lab.
+- **Cohen's *h***: effect size for a difference between two proportions; the YouTube inoculation field study reports *h* = 0.09, i.e. a few percentage points.
+- **F1 (positive class)**: harmonic mean of precision and recall for the "check-worthy" class; used by CheckThat!. **Macro-F1**: unweighted mean of per-class F1, penalises ignoring rare classes; used by fallacy and numerical-claim tasks. **Micro-F1**: instance-weighted, dominated by frequent classes; used by SemEval-2023 persuasion techniques, which is why French micro 0.47 coexists with macro 0.32.
+- **MAP**: mean average precision of a ranked list; early CheckThat! editions (0.13-0.17) look poor because only a handful of sentences per debate are positive.
+- **AVeriTeC score**: verdict accuracy counted only when the retrieved evidence is judged sufficient (2024: Hungarian METEOR >= 0.25 against gold question-answer pairs; 2025: Ev2R LLM-judged recall). The 2024 and 2025 winners (0.63 vs 0.33) are not comparable because the evidence threshold changed.
+- **Cohen's kappa / Krippendorff's alpha / Mathet's gamma**: chance-corrected agreement. Conventional thresholds: kappa 0.41-0.60 "moderate", 0.61-0.80 "substantial"; alpha >= 0.667 minimum for tentative conclusions, >= 0.80 for reliable coding; gamma is a span-aware unitising-plus-labelling measure and is generally pessimistic.
+- **WER**: (substitutions + deletions + insertions) / reference words. **DER**: (false alarm + missed speech + speaker confusion) / reference speech time; pyannote reports it with no forgiveness collar and overlapped speech included, the strictest convention, so its numbers are not directly comparable with older campaign results that removed overlap.
+
+## Register of UNVERIFIED items and evidence gaps
+
+Items marked UNVERIFIED in the tables, with what would resolve them:
+
+1. Nyhan et al. 2020 exact belief effect sizes (publisher page blocked; SSRN abstract read). Resolve: read the Political Behavior PDF.
+2. Mattozzi, Nocito & Sobbrio numeric effects (SSRN and VoxEU blocked; design confirmed from the AEA registry and the VoxEU summary). Resolve: obtain the working paper PDF.
+3. Authors of the 2025 SDT meta-analysis in Current Opinion in Psychology (abstract read via Semantic Scholar; author list not retrieved).
+4. BJPS conceptual replication of four 2020-election findings (title and venue confirmed; abstract not retrieved).
+5. Full Fact: no published evaluation of live tools or of politician behaviour change was found; absence is not proof of absence.
+6. FActScore and Sourati et al. 2023 numbers not retrieved; Ramponi et al. 2025 model scores not retrieved.
+7. CheckThat! 2022 Dutch best F1; CheckThat! 2021 best scores; MM-ArgFallacy2025 overall winner (only one system paper read).
+8. Pan et al. 2024 and Alhindi et al. 2022 per-dataset numbers rely on column order inferred from the extracted table layout; the values quoted for ElecDeb (GPT-4 42.3, T5-3B 56.4) should be re-checked against the typeset PDF.
+9. FLEURS French WER for Whisper-large-v3 in the NVIDIA report was not extractable; the Mistral report's 5.55 was used instead. Different reports normalise text differently, so cross-report comparisons carry about 1 point of uncertainty.
+10. No published WER for any 2024-2026 model on French debate audio (ESTER / ETAPE / REPERE); the 8-15% figure in section H is an estimate.
+11. FactPopUp / CBS QR-code audience effects: none published, as far as found.
+12. Whether SemEval-2025 Task 7 (multilingual fact-checked claim retrieval) includes French.
+
+Substantive gaps in the literature (not retrieval failures):
+
+- No randomised evaluation of on-screen live corrections in a real televised debate with trust or belief outcomes.
+- No experiment testing whether fallacy or technique training transfers to judgements of real political speech.
+- No French political-debate fallacy corpus; no French check-worthiness corpus.
+- No causal evidence on elite behaviour outside the US (2015) and Italy (working paper).
+- Human agreement on fallacy labels has been measured on small samples (9 debate sections; 50 sentences; 20 MAFALDA texts); a larger reliability study would itself be a contribution.
+
+## A pre-registered evaluation plan the platform could run
+
+The platform will be the largest French-language deployment of these ideas, and several of the gaps above can be closed with modest instrumentation. Each proposed measure follows a design already used in the literature cited.
+
+1. **Reliability audit (v3, v4).** Double-annotate 10% of claims and 100% of technique tags for the first three debates; report Krippendorff's alpha per label, as Goffredo et al. (2022) and Piskorski et al. (2023) do. Decision rule: labels with alpha < 0.5 after guideline revision are not shown to the public.
+2. **Transcript accuracy (v1).** Compute WER and DER on the human-corrected spans against the raw ASR output, per debate and per speaker, and publish them. This also produces the first French debate benchmark for the models in section H.
+3. **Belief effect (v3c).** A survey experiment in the Wood & Porter / Porter & Wood design: French panel, 10-20 checked claims, control vs fact-check exposure, belief accuracy measured immediately and at 2 weeks, plus candidate favourability and issue salience (the Barrera channel). Expected effect *d* ~0.3 on beliefs; power for *d* = 0.2 requires roughly 800 per arm.
+4. **Format test (v3c).** Within the same experiment, randomise presentation: detailed correction only vs correction plus four-way label vs label only. This directly adjudicates the Walter-versus-Amazeen disagreement for a French audience.
+5. **Technique recognition and discrimination (v4).** Pre/post quiz on real French debate clips containing (a) tagged techniques and (b) valid arguments; score with d' and criterion c as in Modirrousta-Galian & Higham (2023), not with mean ratings alone. A follow-up at 4-8 weeks tests decay (Maertens et al. 2021).
+6. **Live delivery (live layer).** During one debate, randomise registered users to immediate second-screen corrections vs a post-debate digest, and measure belief accuracy and trust in the platform the next day (Garrett & Weeks design). This would be the first such field test.
+7. **Elite response (v3d).** Code, for each candidate, the share of statements that are checkable, checked, rated false, and rated unverifiable across the campaign; this replicates the Italian outcome set observationally and lets the platform report whether ambiguity rises as checks accumulate.
+8. **Coverage balance (v2).** Publish weekly the distribution of checked claims by candidate and theme relative to airtime; treat imbalance as a defect to correct, given the salience findings.
+
+## Notes on reading the evidence
+
+- The strongest evidence in this memo is meta-analytic and multi-site: fact-checks correct beliefs modestly and do not backfire. Treat this as settled.
+- The weakest evidence is anything about live delivery and anything about politicians. One field experiment each, with marginal statistics, plus one unpublished replication; treat as hypotheses.
+- Inoculation is in the middle: replicated for recognition, disputed for discrimination, untested for political speech. Treat as promising media-literacy content whose claims should be stated carefully.
+- The NLP results follow a consistent gradient: surface cues are learnable (check-worthiness, loaded language, slogans), inference is not (numerical verification, false cause, formal fallacies), and every method loses 20-40 F1 points when moved from curated benchmarks to fact-checked real-world text or to a new language. French sits on the wrong side of that gradient today; the platform's own annotated data would move it.
+- Numbers reported by vendors (ASR WER, LLM fact-checking accuracy) were consistently better than independent measurements of the same systems (ElevenLabs 3.1 vs 5.07; SAFE "better than humans" meaning crowdworkers). Independent measurement on the platform's own audio and claims is the only number that will hold up in public.
+
+## How this memo was produced
+
+- Primary sources were read directly: 24 PDFs (IJCAI, EMNLP, NAACL, ArgMining, KDD, CLEF/CEUR overviews, FEVER/AVeriTeC overviews, arXiv reports, the Nyhan & Reifler 2015 author PDF, Garrett & Weeks 2013) were downloaded and text-extracted locally; numbers in the tables are copied from their results tables.
+- Publisher pages that block automated access (Springer, SAGE, ScienceDirect, SSRN, CEPR) were covered through the Semantic Scholar API abstract, PubMed/PMC mirrors, the AEA trial registry, or author-hosted copies; where only an abstract was available the row says so or carries UNVERIFIED.
+- Vendor claims (ElevenLabs, Deepgram, Gladia, AssemblyAI) are labelled as such and, where an independent measurement exists (Mistral's Voxtral report), the independent number is given first.
+- Nothing was taken from secondary summaries alone except three items explicitly flagged (Mattozzi et al. effects from the VoxEU summary; REPERE 2013 campaign DER as cited by later work; Whisper 11.0% French from the Whale paper).
+- Search date 2026-09-05; the most recent items are the CheckThat! 2025 overviews (CEUR Vol-4038), the AVeriTeC 2025 overview, the 2025 PNAS Nexus and Current Opinion in Psychology inoculation papers, and the August 2026 arXiv preprint by Dore et al.
 
 ## Sources
 
