@@ -22,6 +22,10 @@ _Avoid_: debate, interview, discourse, event, video (as the umbrella term)
 **Source** (source):
 The broadcaster, publisher or organiser that produced the recording of an Appearance, and the official replay it links to. The site links to or embeds the Source's replay; it never hosts the recording.
 
+**Acquisition basis** (base d'acquisition):
+The legal ground on which the working copy of an Appearance's media was made for transcription: `mining-exception` (exception de fouille), the Source publishes no opposition to text-and-data mining; `tolerated` (toléré), the Source opposes mining and the copy was made on the publication posture, then deleted; `by-ear` (à l'oreille), no automated copy, humans typed the Transcript from the official replay; `licensed` (sous licence), the Source granted one. Recorded on every Appearance.
+_Avoid_: mineable, legal basis (as the field name), TDM status
+
 ### What was said
 
 **Transcript** (transcription):
