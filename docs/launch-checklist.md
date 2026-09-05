@@ -7,6 +7,7 @@ The site is built privately and goes public when Patrick decides (map decision, 
 - [ ] The repository is private until launch day, and flipped to public as the last step (posture Q14; the proxy cannot change repository settings, so this is a manual step in GitHub Settings).
 - [ ] The site builds from `main` on Cloudflare Pages and the production URL is the chosen domain (Name and domain ticket).
 - [ ] Every replay embed has passed its per-Appearance check (oEmbed or Dailymotion API answer, TDM signals read, CGU version, replay expiry date), recorded in the Appearance's metadata (Source terms inventory).
+- [ ] Every Appearance records its Acquisition basis and provenance record (fetch date, method, media hash, deletion date), and no working copy of any media remains on the Mac or anywhere else (ADR 0003).
 
 ## Content
 
@@ -25,6 +26,8 @@ The site is built privately and goes public when Patrick decides (map decision, 
 - [ ] Right-of-reply channel honouring the three-day insertion rule.
 - [ ] Corrections policy and public corrections log; every Transcript version dated.
 - [ ] Method page: how Appearances are selected, how transcription and verification work, what the validation statuses mean, how the freeze works, and the statement that the archive is frozen after the result but stays online and correctable (posture Q4, Q10).
+- [ ] The method page states how media are obtained (official replay downloaded, transcribed locally, deleted, nothing hosted), and that some Sources oppose text-and-data mining and the site does not rely on the exception for them (ADR 0003).
+- [ ] The "Signaler un contenu" page covers a Source's request to stop transcribing its programmes: honoured for future imports, Appearance stays listed with its deep link, notice logged (ADR 0003).
 - [ ] Licence notice: Licence Ouverte 2.0 (or the licence finally chosen) on metadata, timestamps, segmentation, attributions and editorial text; verbatim words remain their speakers' rights, reproduced under the CPI exceptions with attribution, no licence granted (posture Q7).
 - [ ] Short data-protection note (only candidates' public statements are processed; contributors' data; consent-exempt analytics or none).
 
