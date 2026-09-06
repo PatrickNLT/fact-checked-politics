@@ -1,5 +1,9 @@
 # fact-checked-politics
 
+## Project stage
+
+The project is at the **prototype stage** (since 2026-09-06): the transcription pipeline (issue #13) is being built and measured on the seed corpus, no site is published yet. Rules that depend on the stage say so; today that is the deletion rule of ADR 0003, which is suspended for recordings downloaded for the prototype (see its 2026-09-06 amendment). Update this section when the stage changes.
+
 ## Agent skills
 
 ### Issue tracker
