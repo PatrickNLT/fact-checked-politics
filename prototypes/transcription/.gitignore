@@ -1,0 +1,5 @@
+.venv/
+out/*.log
+out/asr-clip-*.json
+__pycache__/
+out/turbo/

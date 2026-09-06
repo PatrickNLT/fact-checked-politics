@@ -1,0 +1,11 @@
+[project]
+name = "fcp-transcription-prototype"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "jiwer>=4.0.0",
+    "mlx-whisper>=0.4.3",
+    "pyannote-audio>=4.0.7",
+    "torch>=2.14.0",
+    "torchaudio>=2.11.0",
+]

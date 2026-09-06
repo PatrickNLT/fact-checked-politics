@@ -1,0 +1,31 @@
+{
+ "appearance": {
+  "catalogue_row": "D1",
+  "title": "Débat MEDEF (REF 2026) des candidats à la présidentielle 2027",
+  "date": "2026-08-27",
+  "source": "LCI (TF1 group)",
+  "official_replay": "https://www.youtube.com/watch?v=rpURHoN54bQ",
+  "participants": [
+   "Gabriel Attal",
+   "Raphaël Glucksmann",
+   "Marine Le Pen",
+   "Jean-Luc Mélenchon",
+   "Édouard Philippe",
+   "Bruno Retailleau",
+   "Marine Tondelier"
+  ],
+  "presenter": "Amélie Carrouër",
+  "acquisition_basis": "tolerated"
+ },
+ "provenance": {
+  "fetch_date": "2026-09-06",
+  "fetch_method": "yt-dlp 2026.08.19, logged out, no account, format 140 (AAC-LC 128 kbit/s m4a), audio only",
+  "media_sha256": "c57f025ec87d456a64365db9b7c715660987df1199d0b89d6ae39c842ca26f9a",
+  "media_bytes": 178787602,
+  "deletion_date": "held, prototype stage (ADR 0003 amendment of 2026-09-06)"
+ },
+ "wav": "/Users/pnollet/fact-checked-politics-media/work/rpURHoN54bQ.16k.wav",
+ "duration_s": 11055.066875,
+ "prepare_wall_s": 10.6,
+ "prepared_at": "2026-09-06T13:49:45+00:00"
+}

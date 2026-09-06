@@ -1,0 +1,172 @@
+{
+ "window": [
+  7600.0,
+  300.0
+ ],
+ "evaluated_at": "2026-09-06T14:26:43+00:00",
+ "wer": {
+  "wer": 0.0,
+  "substitutions": 0,
+  "deletions": 0,
+  "insertions": 0,
+  "ref_words": 1095,
+  "hyp_words": 1095,
+  "reference_is_hand_corrected": false
+ },
+ "hallucination_flags": {
+  "segments_total": 2960,
+  "flagged": 16,
+  "share": 0.0054,
+  "in_sample": [
+   {
+    "start": 7750.86,
+    "end": 7751.86,
+    "text": "Non, je n'ai pas dit que c'était de sa faute",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 7807.68,
+    "end": 7809.26,
+    "text": "des fois où on ne comprend pas ce qu'on est en train de faire.",
+    "reasons": [
+     "words/s>8"
+    ]
+   }
+  ],
+  "all": [
+   {
+    "start": 6.48,
+    "end": 13.66,
+    "text": "Sous-titrage MFP.",
+    "reasons": [
+     "caption boilerplate"
+    ]
+   },
+   {
+    "start": 677.0,
+    "end": 677.92,
+    "text": "et en disant que ça va être dur",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 2018.84,
+    "end": 2020.32,
+    "text": "Vous savez très bien que tout le monde est authentique à cette question.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 2066.04,
+    "end": 2066.76,
+    "text": "Et ils ne disent pas très bien.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 3378.52,
+    "end": 3379.42,
+    "text": "insubmersible et qu'il n'y a pas de risque",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 6189.44,
+    "end": 6190.4,
+    "text": "Ah ben là, je viens de vous le dire.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 7083.74,
+    "end": 7083.86,
+    "text": "la système.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 7750.86,
+    "end": 7751.86,
+    "text": "Non, je n'ai pas dit que c'était de sa faute",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 7807.68,
+    "end": 7809.26,
+    "text": "des fois où on ne comprend pas ce qu'on est en train de faire.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 7927.52,
+    "end": 7928.0,
+    "text": "Qui a créé le fond vert ?",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 7942.14,
+    "end": 7942.66,
+    "text": "Je ne peux pas mentir.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 8603.96,
+    "end": 8604.04,
+    "text": "Marine Le Pen.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 8772.12,
+    "end": 8772.36,
+    "text": "Très bien.",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 10825.5,
+    "end": 10826.34,
+    "text": "Tout ce que je voudrais vous dire,",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 10889.94,
+    "end": 10891.68,
+    "text": "Vous allez me dire, c'est curieux de dire qu'on va devoir réviser un budget",
+    "reasons": [
+     "words/s>8"
+    ]
+   },
+   {
+    "start": 10894.1,
+    "end": 10894.7,
+    "text": "qu'il va bien être bon.",
+    "reasons": [
+     "words/s>8"
+    ]
+   }
+  ]
+ },
+ "timing": {
+  "asr_wall_per_audio_hour_s": 582.3
+ }
+}
