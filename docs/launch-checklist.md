@@ -15,7 +15,7 @@ The site is built privately and goes public when Patrick decides (map decision, 
 - [ ] Every Segment shows its validation status, and draft text is labelled as machine-produced (invariant 6, AI Act art. 50).
 - [ ] Every page carries Source, programme, date, timestamp, speaker and journalist attribution (legal research, risk posture item 5).
 - [ ] Journalists' questions and third-party voices are transcribed verbatim and attributed (posture Q3).
-- [ ] Coverage is balanced across declared candidates: the seed corpus (every multi-candidate debate since 27 August 2026 plus one long interview per declared candidate) is complete, and no candidate is treated differently in display or depth (invariant 1).
+- [ ] Coverage is balanced across Candidates: the seed corpus (every Confrontation since 27 August 2026, an Appearance where two or more Candidates speak in the same exchange, judged with the roles as known on launch day) is complete, the method page publishes per Candidate the number of Confrontations and speaking time and names the Candidates with none, and no Candidate is treated differently in display or depth (invariant 1, ADR 0004).
 - [ ] No media file is hosted or mirrored anywhere in the repository or the build; replays are embedded from the Source's own upload or deep-linked with a timestamp (invariant 4).
 - [ ] Transcripts whose replay has disappeared show "replay no longer available at the Source" with the timestamps kept (posture Q6).
 
