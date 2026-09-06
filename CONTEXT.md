@@ -9,15 +9,20 @@ English terms are canonical in code and docs; the French label shown on the site
 ### People and events
 
 **Speaker** (intervenant):
-Any person who talks in an imported appearance, candidate or not. Only declared candidates get a public profile page in v1.
-_Avoid_: politician, candidate (as the general term), personality
+Any person who talks in an imported appearance, candidate or not. Only Candidates get a public profile page in v1; a Speaker widely tipped to run but not yet a Candidate has no role of their own.
+_Avoid_: politician, candidate (as the general term), personality, putative candidate
 
 **Candidate** (candidat):
-A Speaker who has publicly declared a run for the 2027 presidential election. A role of a Speaker, not a separate entity.
+A Speaker listed as running for the 2027 presidential election, or in a primary for it, by one of the site's reference lists (LCP's candidates page or French Wikipedia's candidatures page; the Conseil constitutionnel's official list replaces both once published). A dated role of a Speaker, not a separate entity: it starts on the listing and ends with a reason (withdrawal, primary lost, absent from the official list); an ended role keeps its history and its profile. Contenders in a primary are Candidates with no distinction.
+_Avoid_: contender, prétendant, declared candidate (as a narrower class), former candidate (as a separate role)
 
 **Appearance** (intervention):
-One debate, interview, speech or other public occasion where one or more Speakers talk, with a source, a date and a medium. The unit of import.
+One debate, interview, speech or other public occasion where one or more Speakers talk, with a source, a date and a medium. The unit of import. The v1 seed corpus is every Confrontation since 27 August 2026 and nothing per person.
 _Avoid_: debate, interview, discourse, event, video (as the umbrella term)
+
+**Confrontation** (confrontation):
+An Appearance in which two or more Candidates speak in the same exchange, judged with the Candidate roles as known today rather than on the day it took place. "Débat" is the display word for three or more Candidates, "face-à-face" for two; neither is a separate concept.
+_Avoid_: multi-candidate debate, duel, encounter, face-à-face (as the umbrella term)
 
 **Source** (source):
 The broadcaster, publisher or organiser that produced the recording of an Appearance, and the official replay it links to. The site links to or embeds the Source's replay; it never hosts the recording.
