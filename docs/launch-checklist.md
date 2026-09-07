@@ -2,7 +2,7 @@
 
 The site is built privately and goes public when Patrick decides (map decision, Transcript publication posture, September 2026). There is no launch criterion; this list is what must be true on the day, and it grows as the platform develops. Each item names the decision or ticket it comes from. Tick items only when they are verified on the live build, not when the code exists.
 
-Before that day the site runs as a **private site behind Cloudflare Zero Trust**, open to Patrick and a small invited group of readers (decided 2026-09-07). Two gates separate the two: the go/no-go on technical viability (issue #29) opens the private site, and this checklist is the tracker face of the second gate, going public (issue #39).
+Before that day the site runs as a **private site behind Cloudflare Zero Trust**, open to Patrick and a small invited group of readers (decided 2026-09-07). Nothing gates the move from one to the other: Patrick decides when to publish, and this list is what he checks before doing so. Issue #39 is its tracker face and groups the launch-readiness tickets.
 
 ## Repository and hosting
 
