@@ -78,6 +78,7 @@ export function appearance(id) {
     return {
       ...p,
       name: registry?.name ?? p.label ?? p.speaker,
+      kind: registry?.kind ?? null,
       party: registry?.party ?? null,
       candidate,
       colour: PALETTE[i % PALETTE.length],
@@ -133,3 +134,19 @@ export const clock = (t) => {
 // Segment whose text is still draft (ADR 0005: words.json is dropped on verification).
 export const shakyWords = (words, id, threshold = 0.5) =>
   new Set((words[id] ?? []).filter((w) => w.p < threshold).map((w) => w.w));
+
+// Sort key for a person: surname first, with a particle kept on the surname, so
+// "Marine Le Pen" files under L and not under P. ADR 0005 stores only a display `name`,
+// so the surname has to be guessed; a real site would store the sort key instead of
+// deriving it. A non-person — a broadcaster's voice-over, an unnamed questioner's label —
+// has no surname and sorts on its whole name.
+const PARTICLES = new Set(["le", "la", "les", "de", "du", "des", "van", "von", "di", "da", "della"]);
+
+export function surnameKey(name, isPerson) {
+  if (!isPerson) return name;
+  const parts = name.trim().split(/\s+/);
+  if (parts.length < 2) return name;
+  let i = parts.findIndex((w, idx) => idx > 0 && idx < parts.length - 1 && PARTICLES.has(w.toLowerCase()));
+  if (i === -1) i = parts.length - 1;
+  return `${parts.slice(i).join(" ")} ${parts.slice(0, i).join(" ")}`.trim();
+}

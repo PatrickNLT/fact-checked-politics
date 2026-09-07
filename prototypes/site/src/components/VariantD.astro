@@ -10,7 +10,7 @@
 // is 2.1 s, sub-pixel). A one-lane-per-Speaker version was tried and rejected: it cost
 // 210 px of height and lost the single left-to-right read of the debate.
 import Player from "./Player.astro";
-import { clock, shakyWords } from "../lib/data.js";
+import { clock, shakyWords, surnameKey } from "../lib/data.js";
 
 const { data } = Astro.props;
 const { meta, segments, words, participants, participantsById, embedded, reviewed } = data;
@@ -24,13 +24,14 @@ for (const s of segments) {
 
 const duration = meta.timeline.duration_s;
 
-// Who is on the page, alphabetically, Candidates in their own section. No speaking time
-// is shown: ADR 0004 as amended withdrew per-Candidate counts, and nothing on this page
+// Who is on the page, by surname, Candidates in their own section. No speaking time is
+// shown: ADR 0004 as amended withdrew per-Candidate counts, and nothing on this page
 // needs them.
-const byName = (a, b) => a.name.localeCompare(b.name, "fr");
+const key = (p) => surnameKey(p.name, p.kind === "person");
+const byLastName = (a, b) => key(a).localeCompare(key(b), "fr");
 const heard = participants.filter((p) => p.segmentCount);
-const candidates = heard.filter((p) => p.candidate).sort(byName);
-const others = heard.filter((p) => !p.candidate).sort(byName);
+const candidates = heard.filter((p) => p.candidate).sort(byLastName);
+const others = heard.filter((p) => !p.candidate).sort(byLastName);
 
 // One band per turn, along a single row. Turn grouping is what makes the bands chunky
 // enough to aim at: 412 instead of C's 1 595.
