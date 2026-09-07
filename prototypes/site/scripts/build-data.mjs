@@ -264,24 +264,31 @@ const cand = (contest, listed_on) => ({
   contest, listed_on, reference: REF_ELECTION, read_on: "2026-09-05", ended_on: null, end_reason: null,
 });
 
+// A person carries `first_name` and `last_name`, never a single `name`: the display name
+// is derived from them and sorting uses `last_name` directly, instead of guessing where a
+// surname starts (Marine Le Pen would file under P). A `narration` Speaker is not a person
+// and carries a plain `name`.
 const SPEAKERS = {
-  "gabriel-attal": { name: "Gabriel Attal", party: "Renaissance", candidacy: cand("election", "2026-05-22") },
-  "raphael-glucksmann": { name: "Raphaël Glucksmann", party: "Place publique", candidacy: cand("primaire socialiste", "2026-08-23") },
-  "marine-le-pen": { name: "Marine Le Pen", party: "Rassemblement national", candidacy: cand("election", "2026-07-07") },
-  "jean-luc-melenchon": { name: "Jean-Luc Mélenchon", party: "La France insoumise", candidacy: cand("election", "2026-05-03") },
-  "edouard-philippe": { name: "Édouard Philippe", party: "Horizons", candidacy: cand("election", "2024-09-03") },
-  "bruno-retailleau": { name: "Bruno Retailleau", party: "Les Républicains", candidacy: cand("election", "2026-04-19") },
-  "marine-tondelier": { name: "Marine Tondelier", party: "Les Écologistes", candidacy: cand("primaire de la gauche unie", "2025-10-22") },
-  "amelie-carrouer": { name: "Amélie Carrouër", party: null },
-  "patrick-martin": { name: "Patrick Martin", party: null },
-  "eric-malenfer": { name: "Éric Malenfer", party: null },
-  "colombe-lecoufle": { name: "Colombe Lecoufle", party: null },
-  "vincent-furlan": { name: "Vincent Furlan", party: null },
+  "gabriel-attal": { first_name: "Gabriel", last_name: "Attal", party: "Renaissance", candidacy: cand("election", "2026-05-22") },
+  "raphael-glucksmann": { first_name: "Raphaël", last_name: "Glucksmann", party: "Place publique", candidacy: cand("primaire socialiste", "2026-08-23") },
+  "marine-le-pen": { first_name: "Marine", last_name: "Le Pen", party: "Rassemblement national", candidacy: cand("election", "2026-07-07") },
+  "jean-luc-melenchon": { first_name: "Jean-Luc", last_name: "Mélenchon", party: "La France insoumise", candidacy: cand("election", "2026-05-03") },
+  "edouard-philippe": { first_name: "Édouard", last_name: "Philippe", party: "Horizons", candidacy: cand("election", "2024-09-03") },
+  "bruno-retailleau": { first_name: "Bruno", last_name: "Retailleau", party: "Les Républicains", candidacy: cand("election", "2026-04-19") },
+  "marine-tondelier": { first_name: "Marine", last_name: "Tondelier", party: "Les Écologistes", candidacy: cand("primaire de la gauche unie", "2025-10-22") },
+  "amelie-carrouer": { first_name: "Amélie", last_name: "Carrouër", party: null },
+  "patrick-martin": { first_name: "Patrick", last_name: "Martin", party: null },
+  "eric-malenfer": { first_name: "Éric", last_name: "Malenfer", party: null },
+  "colombe-lecoufle": { first_name: "Colombe", last_name: "Lecoufle", party: null },
+  "vincent-furlan": { first_name: "Vincent", last_name: "Furlan", party: null },
   "lci-voix-off": { name: "Voix off LCI", party: null, kind: "narration" },
 };
 
 for (const [id, s] of Object.entries(SPEAKERS)) {
-  const file = { schema: "fcp/1", id, name: s.name, kind: s.kind ?? "person", party: s.party };
+  const file = { schema: "fcp/1", id, kind: s.kind ?? "person" };
+  if (s.name) file.name = s.name;
+  else { file.first_name = s.first_name; file.last_name = s.last_name; }
+  file.party = s.party;
   if (s.candidacy) file.candidacy = s.candidacy;
   writeFileSync(join(out, "speakers", `${id}.json`), JSON.stringify(file, null, 1));
 }

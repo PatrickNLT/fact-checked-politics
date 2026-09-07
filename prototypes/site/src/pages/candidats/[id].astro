@@ -5,10 +5,11 @@
 // Candidate "is" on this site is the list of Appearances and what they were recorded
 // saying in them.
 import Site from "../../layouts/Site.astro";
-import { speakers, appearancesOf, clock } from "../../lib/data.js";
+import { speakers, appearancesOf, clock, displayName } from "../../lib/data.js";
 
 const { id } = Astro.params;
 const person = speakers[id];
+const name = displayName(person);
 const appearances = appearancesOf(id);
 
 const contestLabel = (c) =>
@@ -22,9 +23,9 @@ const highlights = appearances.flatMap((a) =>
 ).sort((a, b) => b.end - b.start - (a.end - a.start)).slice(0, 6);
 ---
 
-<Site title={person.name}>
+<Site title={name}>
   <div class="shell">
-    <h1>{person.name}</h1>
+    <h1>{name}</h1>
     <p class="line">
       {person.party} · candidat·e {contestLabel(person.candidacy)}, inscrit·e le
       {" "}{new Date(person.candidacy.listed_on).toLocaleDateString("fr-FR")}

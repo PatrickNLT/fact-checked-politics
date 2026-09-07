@@ -3,9 +3,9 @@
 // The point here is what a *result* is: a Segment, attributed, timestamped, with its
 // review state on its face and a link that lands on the exact spot in the transcript.
 import Site from "../layouts/Site.astro";
-import { candidates } from "../lib/data.js";
+import { candidates, displayName, sortKey } from "../lib/data.js";
 
-const people = candidates().sort((a, b) => a.name.localeCompare(b.name, "fr"));
+const people = candidates().sort((a, b) => sortKey(a).localeCompare(sortKey(b), "fr"));
 ---
 
 <Site title="Recherche">
@@ -20,7 +20,7 @@ const people = candidates().sort((a, b) => a.name.localeCompare(b.name, "fr"));
       <input id="q" type="search" placeholder="retraites, TVA, normes…" autocomplete="off" autofocus />
       <select id="who">
         <option value="">Tout le monde</option>
-        {people.map((p) => <option value={p.name}>{p.name}</option>)}
+        {people.map((p) => <option value={displayName(p)}>{displayName(p)}</option>)}
       </select>
       <label><input type="checkbox" id="only-verified" /> seulement les extraits relus</label>
     </form>

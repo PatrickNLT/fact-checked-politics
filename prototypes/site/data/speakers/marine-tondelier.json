@@ -1,8 +1,9 @@
 {
  "schema": "fcp/1",
  "id": "marine-tondelier",
- "name": "Marine Tondelier",
  "kind": "person",
+ "first_name": "Marine",
+ "last_name": "Tondelier",
  "party": "Les Écologistes",
  "candidacy": {
   "contest": "primaire de la gauche unie",

@@ -10,6 +10,16 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "data");
 
 const readJson = (...p) => JSON.parse(readFileSync(join(root, ...p), "utf8"));
 
+// A person's registry entry carries `first_name` and `last_name`; a `narration` Speaker
+// carries a plain `name`. Both the display name and the sort key are derived from that,
+// so nothing has to guess where a surname starts — "Marine Le Pen" files under L because
+// `last_name` says so, not because a particle list worked it out.
+export const displayName = (s) =>
+  s.name ?? [s.first_name, s.last_name].filter(Boolean).join(" ");
+
+export const sortKey = (s) =>
+  s.last_name ? `${s.last_name} ${s.first_name ?? ""}`.trim() : displayName(s);
+
 export const speakers = Object.fromEntries(
   readdirSync(join(root, "speakers")).map((f) => {
     const s = readJson("speakers", f);
@@ -75,9 +85,12 @@ export function appearance(id) {
     const registry = speakers[p.speaker];
     const candidate = Boolean(registry?.candidacy && !registry.candidacy.ended_on);
     const own = segments.filter((s) => s.speaker === p.speaker);
+    const label = p.label ?? p.speaker;
     return {
       ...p,
-      name: registry?.name ?? p.label ?? p.speaker,
+      name: registry ? displayName(registry) : label,
+      // An Appearance-scoped Speaker has no registry entry, so its label is its sort key.
+      sortName: registry ? sortKey(registry) : label,
       kind: registry?.kind ?? null,
       party: registry?.party ?? null,
       candidate,
@@ -134,19 +147,3 @@ export const clock = (t) => {
 // Segment whose text is still draft (ADR 0005: words.json is dropped on verification).
 export const shakyWords = (words, id, threshold = 0.5) =>
   new Set((words[id] ?? []).filter((w) => w.p < threshold).map((w) => w.w));
-
-// Sort key for a person: surname first, with a particle kept on the surname, so
-// "Marine Le Pen" files under L and not under P. ADR 0005 stores only a display `name`,
-// so the surname has to be guessed; a real site would store the sort key instead of
-// deriving it. A non-person — a broadcaster's voice-over, an unnamed questioner's label —
-// has no surname and sorts on its whole name.
-const PARTICLES = new Set(["le", "la", "les", "de", "du", "des", "van", "von", "di", "da", "della"]);
-
-export function surnameKey(name, isPerson) {
-  if (!isPerson) return name;
-  const parts = name.trim().split(/\s+/);
-  if (parts.length < 2) return name;
-  let i = parts.findIndex((w, idx) => idx > 0 && idx < parts.length - 1 && PARTICLES.has(w.toLowerCase()));
-  if (i === -1) i = parts.length - 1;
-  return `${parts.slice(i).join(" ")} ${parts.slice(0, i).join(" ")}`.trim();
-}

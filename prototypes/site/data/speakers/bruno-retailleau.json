@@ -1,8 +1,9 @@
 {
  "schema": "fcp/1",
  "id": "bruno-retailleau",
- "name": "Bruno Retailleau",
  "kind": "person",
+ "first_name": "Bruno",
+ "last_name": "Retailleau",
  "party": "Les Républicains",
  "candidacy": {
   "contest": "election",

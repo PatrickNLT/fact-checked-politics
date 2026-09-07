@@ -1,8 +1,9 @@
 {
  "schema": "fcp/1",
  "id": "edouard-philippe",
- "name": "Édouard Philippe",
  "kind": "person",
+ "first_name": "Édouard",
+ "last_name": "Philippe",
  "party": "Horizons",
  "candidacy": {
   "contest": "election",

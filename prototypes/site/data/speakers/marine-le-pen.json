@@ -1,8 +1,9 @@
 {
  "schema": "fcp/1",
  "id": "marine-le-pen",
- "name": "Marine Le Pen",
  "kind": "person",
+ "first_name": "Marine",
+ "last_name": "Le Pen",
  "party": "Rassemblement national",
  "candidacy": {
   "contest": "election",

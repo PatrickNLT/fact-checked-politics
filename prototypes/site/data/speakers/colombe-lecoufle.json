@@ -1,7 +1,8 @@
 {
  "schema": "fcp/1",
  "id": "colombe-lecoufle",
- "name": "Colombe Lecoufle",
  "kind": "person",
+ "first_name": "Colombe",
+ "last_name": "Lecoufle",
  "party": null
 }

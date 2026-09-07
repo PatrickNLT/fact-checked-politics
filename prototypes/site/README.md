@@ -90,7 +90,9 @@ The converter is not the importer. Writing the real one is the bridge ticket (#1
   Speaker a colour; whether the site colours voices at all is a spec question.
 - Registry entries for the questioners and the candidacy fields were filled from
   `data/catalogue/seed.md`, read on 2026-09-05.
-- **Sorting by surname is a guess.** ADR 0005 stores only a display `name`, so
-  `surnameKey()` in `src/lib/data.js` derives the surname with a particle list and treats
-  a non-person (a voice-over, an unnamed questioner's label) as having none. A real site
-  should store the sort key instead of deriving it.
+- **The Speaker registry carries `first_name` and `last_name`, not a single `name`**
+  (decided 2026-09-07, on top of ADR 0005). Both the display name and the sort key are
+  derived from them, so nothing guesses where a surname starts: Marine Le Pen files under
+  L because `last_name` says so. A `narration` Speaker is not a person and keeps a plain
+  `name`; an Appearance-scoped Speaker keeps its `label` on the participant entry. This
+  has to be folded into `docs/data-model.md` and ADR 0005 when PR #35 lands.

@@ -1,7 +1,8 @@
 {
  "schema": "fcp/1",
  "id": "amelie-carrouer",
- "name": "Amélie Carrouër",
  "kind": "person",
+ "first_name": "Amélie",
+ "last_name": "Carrouër",
  "party": null
 }

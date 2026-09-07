@@ -1,8 +1,9 @@
 {
  "schema": "fcp/1",
  "id": "gabriel-attal",
- "name": "Gabriel Attal",
  "kind": "person",
+ "first_name": "Gabriel",
+ "last_name": "Attal",
  "party": "Renaissance",
  "candidacy": {
   "contest": "election",

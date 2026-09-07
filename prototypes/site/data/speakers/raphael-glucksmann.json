@@ -1,8 +1,9 @@
 {
  "schema": "fcp/1",
  "id": "raphael-glucksmann",
- "name": "Raphaël Glucksmann",
  "kind": "person",
+ "first_name": "Raphaël",
+ "last_name": "Glucksmann",
  "party": "Place publique",
  "candidacy": {
   "contest": "primaire socialiste",

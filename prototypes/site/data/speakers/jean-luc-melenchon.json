@@ -1,8 +1,9 @@
 {
  "schema": "fcp/1",
  "id": "jean-luc-melenchon",
- "name": "Jean-Luc Mélenchon",
  "kind": "person",
+ "first_name": "Jean-Luc",
+ "last_name": "Mélenchon",
  "party": "La France insoumise",
  "candidacy": {
   "contest": "election",

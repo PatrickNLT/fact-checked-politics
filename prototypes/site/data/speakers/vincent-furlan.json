@@ -1,7 +1,8 @@
 {
  "schema": "fcp/1",
  "id": "vincent-furlan",
- "name": "Vincent Furlan",
  "kind": "person",
+ "first_name": "Vincent",
+ "last_name": "Furlan",
  "party": null
 }

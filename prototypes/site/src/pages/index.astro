@@ -2,10 +2,10 @@
 // PROTOTYPE — the front page, kept deliberately thin: it exists so the three real pages
 // can be reached and judged in context.
 import Site from "../layouts/Site.astro";
-import { appearanceIds, appearance, candidates } from "../lib/data.js";
+import { appearanceIds, appearance, candidates, displayName, sortKey } from "../lib/data.js";
 
 const all = appearanceIds().map(appearance);
-const people = candidates().sort((a, b) => a.name.localeCompare(b.name, "fr"));
+const people = candidates().sort((a, b) => sortKey(a).localeCompare(sortKey(b), "fr"));
 ---
 
 <Site title="Ce qu'ils ont dit">
@@ -45,7 +45,7 @@ const people = candidates().sort((a, b) => a.name.localeCompare(b.name, "fr"));
 
     <h2>Candidat·es</h2>
     <ul class="people">
-      {people.map((p) => <li><a href={`/candidats/${p.id}`}>{p.name}</a> <em>{p.party}</em></li>)}
+      {people.map((p) => <li><a href={`/candidats/${p.id}`}>{displayName(p)}</a> <em>{p.party}</em></li>)}
     </ul>
   </div>
 </Site>
