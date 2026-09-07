@@ -1,0 +1,4266 @@
+{
+ "schema": "fcp-claim-sample/0",
+ "sample_id": "round1",
+ "round": 1,
+ "appearance": "2026-08-27-lci-debat-medef",
+ "drawn_at": "2026-09-07T19:15:35+00:00",
+ "draw": {
+  "method": "uniform without replacement over all Segments",
+  "seed": 20260907,
+  "n": 250,
+  "population": 1607,
+  "before_any_model_ran": true
+ },
+ "items": [
+  {
+   "segment": "s3",
+   "speaker": "SPEAKER_04",
+   "role": "voice-over",
+   "clock": "00:00:06",
+   "text": "Sous",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "SPEAKER_04",
+    "text": "mémoire d'éditorialistes et commentateurs politiques."
+   },
+   "after": {
+    "speaker": "SPEAKER_15",
+    "text": "-titrage MFP."
+   }
+  },
+  {
+   "segment": "s8",
+   "speaker": "SPEAKER_04",
+   "role": "voice-over",
+   "clock": "00:00:59",
+   "text": "et présenté par le patron de l'UNEDES.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "SPEAKER_04",
+    "text": "Patrick Martin, le patron du Medef, ouvre le bal. C'est lui qui va prendre la parole pour donner le ton de ce débat animé par Amélie Carouère sur LCI."
+   },
+   "after": {
+    "speaker": "SPEAKER_15",
+    "text": "Merci"
+   }
+  },
+  {
+   "segment": "s10",
+   "speaker": "SPEAKER_04",
+   "role": "voice-over",
+   "clock": "00:01:02",
+   "text": "le plein.",
+   "words": 2,
+   "overlap": false,
+   "before": {
+    "speaker": "SPEAKER_15",
+    "text": "Merci"
+   },
+   "after": {
+    "speaker": "Patrick Martin",
+    "text": "Merci chers amis."
+   }
+  },
+  {
+   "segment": "s12",
+   "speaker": "Patrick Martin",
+   "role": "organiser",
+   "clock": "00:01:13",
+   "text": "Ce n'est pas moi la personnalité aujourd'hui.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Patrick Martin",
+    "text": "Merci chers amis."
+   },
+   "after": {
+    "speaker": "Patrick Martin",
+    "text": "Je vais remercier très chaleureusement, très sincèrement dans quelques instants nos intervenants, mais comme le temps est compté, je vais m'employer exceptionnellement être court, figure -toi."
+   }
+  },
+  {
+   "segment": "s14",
+   "speaker": "Patrick Martin",
+   "role": "organiser",
+   "clock": "00:01:31",
+   "text": "Il s'agit du premier débat de la présidentielle.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Patrick Martin",
+    "text": "Je vais remercier très chaleureusement, très sincèrement dans quelques instants nos intervenants, mais comme le temps est compté, je vais m'employer exceptionnellement être court, figure -toi."
+   },
+   "after": {
+    "speaker": "Patrick Martin",
+    "text": "Il se tient au MEDEF, ça n'est pas rien."
+   }
+  },
+  {
+   "segment": "s28",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:04:03",
+   "text": "Nous y sommes.",
+   "words": 3,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Voilà, nous y sommes."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "C'est le premier grand débat de l'élection présidentielle."
+   }
+  },
+  {
+   "segment": "s29",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:04:04",
+   "text": "C'est le premier grand débat de l'élection présidentielle.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Nous y sommes."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Ça se passe sur LCI."
+   }
+  },
+  {
+   "segment": "s37",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:04:55",
+   "text": "on va également entendre les voix de 5 entrepreneurs qui ont accepté de se présenter et on les en remercie à l'exercice de poser des questions très directes aux candidats mais avant de vous entendre de les entendre nous allons maintenant vous proposer un moment d'introduction, vous disposez chacun de 2 minutes 2 minutes pour dire quel est le message principal que vous souhaitez aujourd'hui passer au patron qui vous regarde 6000 dans la salle, beaucoup plus vous l'imaginez bien au -delà. Et là encore, je précise en toute transparence que l'ordre de prise de parole a été déterminé par un tirage au sort.",
+   "words": 104,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Vous dire justement que les entrepreneurs, vous avez été entendu lors d'une grande et vaste consultation, 66 000 dirigeants ont été interrogés et à la clé aujourd'hui, on va vous parler de dette, on va vous parler d'emploi, de salaire, de réindustrialisation, on va vous parler de normes."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Alors voilà, Bruno Rotailleau, vous avez la parole."
+   }
+  },
+  {
+   "segment": "s49",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "00:07:36",
+   "text": "Certains même déclarant qu'il faut considérer que ceux qui réussissent sont des inusibles.",
+   "words": 13,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Et puis on a marre aussi de cette espèce de chasse à chaque budget qui est ouverte aux chefs d'entreprise."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Eh bien, nous ne réussirons pas dans une France qui va mal sans les entreprises."
+   }
+  },
+  {
+   "segment": "s54",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:07:59",
+   "text": "Onoré Taillot, je précise qu'il y a un compteur qui s'affiche juste sous nos yeux, vous avez dépassé les deux minutes, c'est donc terminé.",
+   "words": 24,
+   "overlap": true,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Mes convictions ne changeront pas, ni par le passé, ni après l'élection."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Raphaël Glucksmann, vous avez la parole."
+   }
+  },
+  {
+   "segment": "s61",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:09:03",
+   "text": "Eh bien moi je ne veux pas pour mon pays la France d'un destin de parc d'attraction pour tycoon américain, oligarque russe, dignitaire du parti communiste chinois ou émir du Golfe.",
+   "words": 31,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et de l'autre, on enterre le projet de Gigafactory de fosse sur mer qui devait produire 10 millions de panneaux photovoltaïques par an et créer des milliers d'emplois."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et je suis venu vous proposer un nouveau contrat patriotique qui fixe le cadre pour les 5 ans qui viennent."
+   }
+  },
+  {
+   "segment": "s65",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:09:35",
+   "text": "Le deuxième axe, c'est bâtir à nouveau une société de travailleurs et non plus une société de rentiers et d'héritiers.",
+   "words": 20,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Premier axe, la révolution écologique qui sera la grande révolution industrielle du XXIème siècle."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et le troisième axe, c'est embrasser la révolution technologique et redevenir un pays créateur."
+   }
+  },
+  {
+   "segment": "s68",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:09:58",
+   "text": "Mais ce que je vous dis, je vais le faire.",
+   "words": 10,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Alors certes, moi je ne vais pas venir vous voir et vous promettre un choc fiscal de 1000 milliards et par ailleurs amener une broyeuse anorme à l'Arabia Milahi."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Je ne suis pas moi en politique ou candidat pour la quatrième fois à la présidentielle, mais il y a une chose qui est mon combat depuis le début."
+   }
+  },
+  {
+   "segment": "s69",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:10:01",
+   "text": "Je ne suis pas moi en politique ou candidat pour la quatrième fois à la présidentielle, mais il y a une chose qui est mon combat depuis le début.",
+   "words": 29,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Mais ce que je vous dis, je vais le faire."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Assurer la souveraineté de notre pays."
+   }
+  },
+  {
+   "segment": "s73",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:10:20",
+   "text": "de faire",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "battu dans les institutions européennes pour mettre fin à cette religion du libre -échange qui laisse notre appareil"
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "ratiboiser."
+   }
+  },
+  {
+   "segment": "s78",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:10:26",
+   "text": "voilà. Chacun est attentif au temps ici. On le saura tout au long du débat.",
+   "words": 15,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Je suis là pour rappeler les règles à chacun. Je le ferai avec chacun d'entre vous pendant les deux prochaines heures et plus encore."
+   }
+  },
+  {
+   "segment": "s94",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "00:12:33",
+   "text": "Enfin, troisième axe décisif, une grande politique d'infrastructure, parce qu'une économie qui va bien, ce n'est pas simplement des comptes en ordre et des entreprises qui créent de la richesse, c'est une adaptation aux nécessités de l'époque, notamment en la transformation climatique, mais je suis certain que j'aurai l'occasion d'en dire plus, merci.",
+   "words": 53,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Je veux une politique qui au fond dise aux chefs d'entreprise et à l'ensemble des entreprises qui qui créent de la richesse, allez -y."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "C"
+   }
+  },
+  {
+   "segment": "s96",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:12:49",
+   "text": "'est exactement ce que j'allais vous dire, vous aurez tous l'occasion de vous exprimer largement un peu plus tard.",
+   "words": 19,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "C"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Marine Le Pen, c'est à vous."
+   }
+  },
+  {
+   "segment": "s112",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:15:01",
+   "text": "nécessaires précisément pour que l'État remplisse ce rôle.",
+   "words": 8,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "sont"
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Merci Marine Le Pen. Pour"
+   }
+  },
+  {
+   "segment": "s113",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:15:05",
+   "text": "Merci Marine Le Pen. Pour",
+   "words": 5,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "nécessaires précisément pour que l'État remplisse ce rôle."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "ceux qui nous rejoignent, vous êtes sur LCI, c'est le premier débat de la présidentielle, le débat du MEDEF et c'est maintenant Jean -Luc Mélenchon qui a deux minutes pour son introduction."
+   }
+  },
+  {
+   "segment": "s122",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:16:25",
+   "text": "Et je n'hésiterai pas à vous dire que le total du déficit aujourd'hui, c'est le total des cadeaux fiscaux qui ont été faits.",
+   "words": 23,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "et je déplore que nos débats se limitent à discuter tout le temps de savoir de combien on va baisser les cotisations sociales et de combien on va baisser les impôts parce que cette affaire -là, qui est une politique qui a été appliquée depuis au moins 20 ans et peut -être davantage, n'a pas marché."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Par conséquent, pour ma part, j'offre un nouveau cadre d'action."
+   }
+  },
+  {
+   "segment": "s124",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:16:35",
+   "text": "ça commence d'abord par le retour de l'Etat je crois à l'Etat le retour de l'Etat et avec lui la planification écologique pour gagner en visibilité fonder l'économie circulaire et prendre les mesures qui s'imposent à tous pour faire face à la crise climatique qui arrive ensuite il nous faut que l'argent circule et non pas soit retenu dans des bulles c'est la raison pour laquelle il faut réorganiser un crédit facile, fluide.",
+   "words": 73,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Par conséquent, pour ma part, j'offre un nouveau cadre d'action."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Ce crédit facile et fluide, je compte le faire avec un pôle public. Je termine parce que je crois qu'il y a debout. Et là, je saute dos de mes points. Deux minutes, essayez."
+   }
+  },
+  {
+   "segment": "s132",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:17:42",
+   "text": "Moi, je crois qu'il y a eu des réussites ces dernières années.",
+   "words": 12,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Beaucoup de choses ont déjà été dites sur les dernières années, certaines un peu caricaturales, donnant le sentiment que tout aurait été mal fait."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "La baisse du chômage jusqu'en 2024, l'apprentissage jusqu'aux dernières décisions très néfastes qui ont été prises, et le retour de l'attractivité pour les investissements étrangers."
+   }
+  },
+  {
+   "segment": "s133",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:17:45",
+   "text": "La baisse du chômage jusqu'en 2024, l'apprentissage jusqu'aux dernières décisions très néfastes qui ont été prises, et le retour de l'attractivité pour les investissements étrangers.",
+   "words": 25,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Moi, je crois qu'il y a eu des réussites ces dernières années."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Mais la lucidité, c'est aussi de reconnaître qu'il y a eu des échecs et des erreurs économiques."
+   }
+  },
+  {
+   "segment": "s139",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:18:23",
+   "text": "et la troisième c'est l'échec finalement d'un engagement à libérer les énergies, enlever des bâtons dans les roues de ceux qui veulent faire pour en mettre dans les roues de ceux qui passent leur temps à empêcher de faire et malgré tout ça je le dis, moi j'ai confiance pour l'avenir on est là pour parler d'avenir j'ai confiance parce que je crois que c'est possible que la France ait ses plus belles pages devant elle dans les années qui viennent ce qui m'empêche de dormir aujourd'hui c'est trois choses un, le moral de nos entrepreneurs Parce que quand nos entrepreneurs craquent, c'est le pays qui craque.",
+   "words": 107,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "C'est le logement et le bâtiment qui a pâti de mauvaises décisions qui ont été prises ces dernières années."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Et M. Mélenchon, je vous ai écouté."
+   }
+  },
+  {
+   "segment": "s143",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:19:07",
+   "text": "Applaudissements",
+   "words": 1,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "La deuxième chose..."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Merci, mais n'arrête pas le compteur pendant les applaudissements, donc je vais accélérer."
+   }
+  },
+  {
+   "segment": "s145",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:19:14",
+   "text": "La deuxième chose qui m'empêche de dormir, c'est la Chine.",
+   "words": 10,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Merci, mais n'arrête pas le compteur pendant les applaudissements, donc je vais accélérer."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "on parle beaucoup des Etats -Unis aujourd'hui dans les médias et dans la presse il y a une politique chinoise assumée visant à couler notre industrie on peut avoir tous les débats si on n'apporte pas les ressources nécessaires on n'arrivera pas à résister et la troisième chose c'est le défi de l'intelligence artificielle et de l'innovation pendant les deux heures de ce débat les géants du numérique américain auront investi 100 millions de"
+   }
+  },
+  {
+   "segment": "s160",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "00:22:00",
+   "text": "Et je sais à quel point premièrement vous êtes des chefs d'entreprise mais vous êtes aussi des parents, aussi des grands -parents.",
+   "words": 22,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Des décisions courageuses et engageantes et je compte sur vous chère montre de l'entreprise parce que j'ai discuté avec beaucoup d'entre vous depuis mon arrivée ce matin et puis tout au long de l'année."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Vous tenez tous à des enfants et vous avez envie qu'ils aient une planète véritable."
+   }
+  },
+  {
+   "segment": "s161",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "00:22:05",
+   "text": "Vous tenez tous à des enfants et vous avez envie qu'ils aient une planète véritable.",
+   "words": 15,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Et je sais à quel point premièrement vous êtes des chefs d'entreprise mais vous êtes aussi des parents, aussi des grands -parents."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Mais aussi parce que beaucoup de chefs d'entreprise, je le sais, ont bien mieux compris les enjeux environnementaux de ceux"
+   }
+  },
+  {
+   "segment": "s165",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:22:19",
+   "text": "Ça se passe en exclusivité sur LCI.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Les bases de ce premier débat d'élection présidentielle, débat du MEDEF, sont posées."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Et on va commencer par un premier thème, la dette."
+   }
+  },
+  {
+   "segment": "s175",
+   "speaker": "Éric Malenfer",
+   "role": "questioner",
+   "clock": "00:23:00",
+   "text": "Il y a une chose qui ne bouge pas. Emprunter pour payer les frais de fonctionnement courants, ça ne marche pas. Je l'ai fait dans le cadre du PGE. Résultat de la négociation avec les banques, c'est zéro dividende jusqu'à la fin du remboursement complet, plus deux ans, et c'est annulation de tous mes comptes courants jusqu'à ma retraite. Ce n'est pas la même chose pour l'État.",
+   "words": 67,
+   "overlap": false,
+   "before": {
+    "speaker": "Éric Malenfer",
+    "text": "Alors, moi je suis géomètre expert, c'est -à -dire que mon métier, c'est de mesurer tout ce qui bouge et ce qui ne bouge pas."
+   },
+   "after": {
+    "speaker": "Éric Malenfer",
+    "text": "Alors qu'on ne me dise pas, s'il vous plaît, moi j'ai du mal à l'entendre, qu'annuler la dette ça suffit."
+   }
+  },
+  {
+   "segment": "s182",
+   "speaker": "Éric Malenfer",
+   "role": "questioner",
+   "clock": "00:24:06",
+   "text": "57,3% de dépenses publiques, on est le premier d'Europe, et je vous le disais, 4,8% de déficit quand même.",
+   "words": 19,
+   "overlap": false,
+   "before": {
+    "speaker": "Éric Malenfer",
+    "text": "45,3% de prélèvements, on est le deuxième en Europe, et au niveau international c'est quand même assez magnifique, donc on ne peut pas l'augmenter."
+   },
+   "after": {
+    "speaker": "Éric Malenfer",
+    "text": "Et pourtant ça ne s'équilibre pas."
+   }
+  },
+  {
+   "segment": "s188",
+   "speaker": "Éric Malenfer",
+   "role": "questioner",
+   "clock": "00:25:11",
+   "text": "La dernière, celle de 2023, a été suspendue en décembre, ça fait 18 mois après le vote.",
+   "words": 17,
+   "overlap": false,
+   "before": {
+    "speaker": "Éric Malenfer",
+    "text": "Cinq réformes depuis 1993, pour la retraite, toutes dans le conflit, aucune dans le consensus."
+   },
+   "after": {
+    "speaker": "Éric Malenfer",
+    "text": "Deux questions, s'il vous plaît."
+   }
+  },
+  {
+   "segment": "s191",
+   "speaker": "Éric Malenfer",
+   "role": "questioner",
+   "clock": "00:25:28",
+   "text": "Première question, une année.",
+   "words": 4,
+   "overlap": false,
+   "before": {
+    "speaker": "Éric Malenfer",
+    "text": "Est -ce qu'avec courage, si vous êtes à la tête de l'État, vous pouvez me donner une date à partir de laquelle on n'empruntera plus pour le fonctionnement de l'État?"
+   },
+   "after": {
+    "speaker": "Éric Malenfer",
+    "text": "et la deuxième, toujours avec courage, la réforme de..."
+   }
+  },
+  {
+   "segment": "s199",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:26:01",
+   "text": "Je rappelle votre proposition, je vous cite, de foutre au feu 600 millions de dettes françaises. Dans votre programme, ça donne refuser le chantage, annuler la dette publique. Vous savez très bien que nombre des personnes dans cette salle jugent que c'est absolument pas réaliste, que c'est irresponsable. Que répondez -vous à Eric?",
+   "words": 53,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Alors Jean -Luc Mélenchon, on va être clair, vous avez remis comme rarement dans l'atmosphère le mot dette ces derniers jours."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Alors, ce sont deux sortes de questions, j'apprécie la manière avec laquelle vous l'avez posée."
+   }
+  },
+  {
+   "segment": "s207",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:26:54",
+   "text": "Deuxièmement, la quasi -totalité de la dépense de l'Etat est redistribuée sous une forme ou sous une autre.",
+   "words": 18,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Donc il faut cesser de dire que l'Etat jetterait l'argent par les fenêtres."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Investissement, fonctionnement, ceci, cela."
+   }
+  },
+  {
+   "segment": "s210",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:27:07",
+   "text": "La question qui nous est posée, c'est celle de son usage.",
+   "words": 11,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Ce n'est donc pas de l'argent qui disparaît dans le sable."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Vous me demandez comment rétablir les comptes."
+   }
+  },
+  {
+   "segment": "s212",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:27:13",
+   "text": "Je pourrais vous faire une réponse très provocante et instantanée.",
+   "words": 10,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Vous me demandez comment rétablir les comptes."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "si nous supprimons toutes les aides aux entreprises, le déficit de l'Etat disparaît."
+   }
+  },
+  {
+   "segment": "s218",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:28:02",
+   "text": "Deuxième élément, la manière avec laquelle intervient l'État en tant qu'investisseur, et vous -même.",
+   "words": 14,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Nous devons retrouver des marges de manœuvre, nous en sommes conscients, vous et moi. Où allons -nous les retrouver? Premièrement, nous devons retrouver du crédit fluide. Aujourd'hui, le comportement bancaire n'est pas acceptable. Il n'aide pas l'économie, il la surveille. Ce n'est pas la même chose."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Donc ce que je peux faire dans cette situation, après avoir relâché la pression qui existe sur ce plan, sur les aides, plus d'aides sans contrepartie, ça c'est clair, tout le monde comprend, ça sera comme ça avec moi."
+   }
+  },
+  {
+   "segment": "s223",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:28:41",
+   "text": "Je parle de la dette de la France auprès de la Banque Centrale Européenne.",
+   "words": 14,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Donc évitons les caricatures, sinon on ne se comprend pas et on ne sait plus de quoi on parle."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Voilà de quoi je parle."
+   }
+  },
+  {
+   "segment": "s230",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:29:27",
+   "text": "Alors pourquoi a -t -on fait une monnaie unique? Pourquoi avons -nous une banque centrale européenne commune?",
+   "words": 17,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Et nous, on serait les seuls de l'univers à renoncer à cette possibilité."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Nous le pouvons, et je vous prends le pari, si je suis élu, je trouverai des alliés en Europe, notamment dans les pays latins, et sans doute aussi les Allemands, car cette année ils vont passer des 3% de déficit."
+   }
+  },
+  {
+   "segment": "s231",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:29:32",
+   "text": "Nous le pouvons, et je vous prends le pari, si je suis élu, je trouverai des alliés en Europe, notamment dans les pays latins, et sans doute aussi les Allemands, car cette année ils vont passer des 3% de déficit.",
+   "words": 40,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Alors pourquoi a -t -on fait une monnaie unique? Pourquoi avons -nous une banque centrale européenne commune?"
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Donc il y a un débat. Ne le caricaturons pas. Je ne suis pas en train de mettre en cause les créanciers privés, en tout cas à cette étape."
+   }
+  },
+  {
+   "segment": "s234",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "00:29:57",
+   "text": "votre",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Alors Jean -Luc Mélenchon, ayons -le ce débat. Edouard Philippe, je vous ai vu. N'hésitez pas tous à rapprocher"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "micro."
+   }
+  },
+  {
+   "segment": "s242",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:30:16",
+   "text": "Et surtout, qu'avez -vous à proposer? Est -ce qu'il est toujours question d'un référendum, d'une règle d'or?",
+   "words": 17,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Alors vous, que répondez -vous à Jules Mélenchon qui est juste ici?"
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "D'abord, un, que la question de la dette, c'est une question extrêmement sérieuse."
+   }
+  },
+  {
+   "segment": "s246",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "00:30:55",
+   "text": "D'ailleurs, j'observe que ceux qui ont mis en place les mesures très dures en Grèce, c'était des partis très à gauche qui n'ont pas eu le choix. Ce que vous êtes en train de dire, M. Mélenchon, au fond, revient à ça. Vous expliquez qu'on va brûler la dette et vous allez faire en sorte que la France finisse interdite bancaire. Je ne veux pas de ça. Je ne veux pas de ça.",
+   "words": 73,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Je pense que ce que vous venez de dire, M. Mélenchon, c'est extrêmement dangereux. Je pense très sincèrement qu'expliquer à nos partenaires que nous n'allons pas respecter des règles dont nous sommes convenus en commun, que les Grecs ont respecté."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "La France, elle a une parole, elle la tient et elle remet en ordre ses comptes comme tous les autres pays l'ont fait, y compris lorsqu'ils étaient gouvernés à gauche, avec du sérieux, c'est pas un gros mot, et en tenant les engagements qu'on a pris."
+   }
+  },
+  {
+   "segment": "s255",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "00:32:25",
+   "text": "Troisième chose.",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Donc comment?"
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Le"
+   }
+  },
+  {
+   "segment": "s257",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:32:26",
+   "text": "référendum sur les règles d'or, par exemple?",
+   "words": 7,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Le"
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Troisième chose."
+   }
+  },
+  {
+   "segment": "s273",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:33:33",
+   "text": "vont",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Je dis donc que nous devons faire, s'agissant des retraites, ce que tous les autres pays d'Europe, de droite ou de gauche,"
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "accepter de faire, travailler plus longtemps."
+   }
+  },
+  {
+   "segment": "s280",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "00:33:39",
+   "text": "tout le monde est authentique à cette question.",
+   "words": 8,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "savez très bien que"
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Le thème de cette université d'été, c'est le courage."
+   }
+  },
+  {
+   "segment": "s290",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "00:34:19",
+   "text": "de l",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Donc c'est l'âge, la question"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "'âge."
+   }
+  },
+  {
+   "segment": "s305",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:35:17",
+   "text": "curseur du courage.",
+   "words": 3,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Pardon, point retraite quand même. Le mot a été prononcé, il faut qu'on s'y arrête quelques instants. Jusqu'où vous? Vous c'est ce"
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Alors, on va s'y arrêter, mais je voudrais quand même faire remarquer à l'assistance qu'à chaque fois qu'il s'agit de parler de la dette, beaucoup de beaux mondes proposent que ce soit les autres qui fassent un effort."
+   }
+  },
+  {
+   "segment": "s322",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:37:44",
+   "text": "Mais elle ne part pas d'un principe comptable.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Ça ne veut pas dire que je me moque de la comptabilité."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Elle part d'une évidence, c'est que le taux d'emploi en France est trop bas."
+   }
+  },
+  {
+   "segment": "s326",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:38:07",
+   "text": "Alors, la facilité, pardon, M. Philippe, c'est de dire, il n'y a qu'à faire travailler les gens plus longtemps.",
+   "words": 19,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Et nous avons, je crois, près de 7 points d'écart pour le taux d'emploi général. Ça veut dire que le stock, en réalité, de travail n'est pas suffisant."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Sans d'ailleurs admettre qu'en réalité, il est extrêmement difficile de les faire travailler au -delà d'un certain âge, parce que, bien souvent, il faut bien le dire, lorsqu'ils sont licenciés à partir de 55 ou de 60 ans, ils ont le plus grand mal à retrouver un emploi."
+   }
+  },
+  {
+   "segment": "s328",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:38:29",
+   "text": "Et vous le savez, puisque vous avez proposé que les indemnités chômage soient réduites avant 50 ans.",
+   "words": 17,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Sans d'ailleurs admettre qu'en réalité, il est extrêmement difficile de les faire travailler au -delà d'un certain âge, parce que, bien souvent, il faut bien le dire, lorsqu'ils sont licenciés à partir de 55 ou de 60 ans, ils ont le plus grand mal à retrouver un emploi."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Ça veut donc dire qu'après 50 ans, vous savez qu'il est extrêmement difficile de retrouver un emploi."
+   }
+  },
+  {
+   "segment": "s338",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:39:27",
+   "text": "parallèlement et je terminerai parce que je me suis attaché au début si je puis me permettre de l'avis au travail je m'attache également à la fin et nous mettrons en place des incitations pour que ceux qui ont dépassé l'âge de la retraite et ont leur trimestre puissent continuer à travailler s'ils le souhaitent et pour cela par exemple nous proposons de supprimer les cotisations",
+   "words": 66,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Puis progressivement, jusqu'à 24 ans et demi, on arrivera à 42 ans de cotisation et un âge légal de 62 ans."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "retraite et les cotisations chômage Ça incite les entreprises et ça incite les salariés."
+   }
+  },
+  {
+   "segment": "s341",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:39:59",
+   "text": "pas vous être très très...",
+   "words": 5,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Mais pardon, je ne peux"
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Oui, le temps file, mais il a filé aussi beaucoup pour les autres."
+   }
+  },
+  {
+   "segment": "s344",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:40:03",
+   "text": "suis là pour le réguler, sinon on est là jusqu'à minuit.",
+   "words": 11,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Je"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Cette réforme des"
+   }
+  },
+  {
+   "segment": "s346",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "00:40:05",
+   "text": "retraites, elle s'englobe dans un projet économique global dans lequel massivement nous allons soutenir l'apprentissage, massivement nous allons soutenir l'alternance, massivement nous allons réformer les offres de formation pour qu'elles correspondent aux besoins qui sont celles des entreprises.",
+   "words": 38,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Cette réforme des"
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Alors, terminons parce que j'entends déjà ce qu'on va me dire."
+   }
+  },
+  {
+   "segment": "s353",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:40:55",
+   "text": "On a encore pas mal de temps devant nous. On va pouvoir aborder encore pas mal de ces thèmes.",
+   "words": 19,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "C'est un choix de société. Assumons les choix de société. Moi, je les assume."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Moi, Raphaël Glucksmann, j'ai envie de savoir si vous serez le candidat de gauche qui assumera de dire aux Français qu'il faut travailler plus longtemps."
+   }
+  },
+  {
+   "segment": "s357",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:41:19",
+   "text": "Lise, vous allez faire soit comme Madame Mélanie, c'est -à -dire promettre une immigration zéro et ensuite vous rendre compte qu'on a besoin d'immigration dans notre pays, d'immigration de travail, soit couler définitivement l'économie française et aggraver grandement la dette.",
+   "words": 40,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et je pense que c'est vraiment le lieu de produire une telle analyse."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et le deuxième coupable de la dette selon Marine Le Pen, c'est l'Union Européenne."
+   }
+  },
+  {
+   "segment": "s362",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:41:59",
+   "text": "C'est le marché européen.",
+   "words": 4,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Quel est l'avenir des entreprises françaises?"
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et c'est justement le fait d'assumer ce marché unique."
+   }
+  },
+  {
+   "segment": "s364",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:42:03",
+   "text": "C'est ça l'avenir des entreprises européennes.",
+   "words": 6,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et c'est justement le fait d'assumer ce marché unique."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Où est le niveau de protection pour nos entreprises?"
+   }
+  },
+  {
+   "segment": "s374",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:43:25",
+   "text": "sur la question, pourquoi, et je vais répondre d'ailleurs à votre question directement, vous demandez quand est -ce qu'on remettra le calendrier de la réforme qui a été abrogée ou repoussée.",
+   "words": 31,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et donc, sur la question,"
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Eh bien moi, nous, nous l'abrogerons, cette réforme, parce que nous pensons qu'elle est injuste."
+   }
+  },
+  {
+   "segment": "s381",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:44:05",
+   "text": "Et j'en profite, puisque je suis au MEDEF.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Mais il faudra la fonder sur la pénibilité."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Il y a eu un conclave."
+   }
+  },
+  {
+   "segment": "s387",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:44:33",
+   "text": "Et une réforme de gauche, c'est celle qui permet à ceux qui ont trimé dur et qui arrivent à la retraite avec une espérance de vie en bonne santé beaucoup plus faible que ceux qui ont eu une carrière plus facile, eh bien de partir plus tôt.",
+   "words": 47,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Je pense que vous avez fait une erreur parce qu'en fait, une réforme juste, c'est une réforme qui considère que nous ne sommes pas égaux face au travail, que nous ne sommes pas égaux face à la vie, et que donc nous ne pouvons pas être égaux face à la retraite."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et donc on ne peut pas donner une réponse universelle à cette question de où est -ce que vous mettez le curseur, où est -ce que vous mettez l'âge."
+   }
+  },
+  {
+   "segment": "s388",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:44:48",
+   "text": "Et donc on ne peut pas donner une réponse universelle à cette question de où est -ce que vous mettez le curseur, où est -ce que vous mettez l'âge.",
+   "words": 29,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et une réforme de gauche, c'est celle qui permet à ceux qui ont trimé dur et qui arrivent à la retraite avec une espérance de vie en bonne santé beaucoup plus faible que ceux qui ont eu une carrière plus facile, eh bien de partir plus tôt."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Maintenant, je veux continuer sur la dette."
+   }
+  },
+  {
+   "segment": "s394",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "00:45:00",
+   "text": "Oui, j'ai assisté à un meeting d'Edouard Philippe, puis à un meeting de Marine Le Pen, je peux donc avoir mon propre meeting.",
+   "words": 23,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "va bientôt falloir s'arrêter quand même."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Si chacun vous fait un métier,"
+   }
+  },
+  {
+   "segment": "s409",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "00:45:53",
+   "text": "Il faut protéger nos",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Il faut faire en sorte qu'on produise dans notre pays."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "producteurs et il faut arrêter de les exposer à une concurrence déloyale."
+   }
+  },
+  {
+   "segment": "s422",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:48:05",
+   "text": "Et donc il faut assumer que la majorité de nos économies doivent être faites sur la dépense sociale.",
+   "words": 18,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Il faut avoir la clarté de le dire, puisque c'est une réalité."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Il y a plein de mesures qui sont proposées, évidemment des mesures d'économie de rationalisation sur l'assurance maladie, sur les arrêts maladie, sur l'assurance chômage, mais je pense qu'on n'en est plus à des mesures de soins palliatifs. Je pense qu'il faut assumer de changer assez profondément notre système social, on n'en est plus à des ajustements de paramètres."
+   }
+  },
+  {
+   "segment": "s426",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:48:39",
+   "text": "Donc évidemment, à l'issue de la période de suspension, si les Français me font confiance, elle reprendra son calendrier qui était prévu.",
+   "words": 22,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "J'étais contre la suspension de la réforme de 2023."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Mais enfin, il va falloir qu'on assume de changer de système de retraite."
+   }
+  },
+  {
+   "segment": "s439",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:49:56",
+   "text": "On a une opportunité avec l'intelligence artificielle.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Ensuite il y a évidemment les dépenses de l'Etat sur lesquelles on doit continuer à faire des économies."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Vous êtes toutes et tous chef d'entreprise. Tous les jours, vous vous interrogez dans votre entreprise sur comment on fait mieux avec moins. C'est basique. On doit avoir la même réflexion pour les administrations publiques grâce à cette révolution"
+   }
+  },
+  {
+   "segment": "s446",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:50:46",
+   "text": "Personne n'y croit. S'il suffisait d'annuler la dette, d'abord pourquoi ça n'a pas été fait avant?",
+   "words": 16,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Donc c'est possible d'y arriver. Et moi je le dis, les discours fatalistes qui expliquent que ce n'est pas possible, on n'y arrivera pas, il n'y a qu'à annuler la dette."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Ensuite, si vous considérez M. Mélenchon qu'il suffit d'annuler la dette, pourquoi vous proposez en même temps d'augmenter les impôts?"
+   }
+  },
+  {
+   "segment": "s450",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:51:01",
+   "text": "Et Mme Le Pen, et je terminerai par là, Mme Carouet, vous entendent là aussi faire la leçon.",
+   "words": 18,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Et troisièmement, plus personne n'aurait confiance en nous."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "ces dernières années, toutes les réformes qui ont été proposées pour faire des économies, notamment dans la sphère sociale, vous avez voté contre."
+   }
+  },
+  {
+   "segment": "s453",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:51:17",
+   "text": "Vous avez voté contre la réforme de l'assurance -chômage, contre la réforme des retraites.",
+   "words": 14,
+   "overlap": true,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Vous avez voté contre les conditions face au RSA."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Vous êtes dans une AG de copropriétaires, vous êtes celle qui vient aux AG, qui vote contre toutes les provisions, toutes les économies, mais qui se plaint que l'ascenseur soit en panne le lendemain."
+   }
+  },
+  {
+   "segment": "s454",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:51:20",
+   "text": "Vous êtes dans une AG de copropriétaires, vous êtes celle qui vient aux AG, qui vote contre toutes les provisions, toutes les économies, mais qui se plaint que l'ascenseur soit en panne le lendemain.",
+   "words": 34,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Vous avez voté contre la réforme de l'assurance -chômage, contre la réforme des retraites."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Ça suffit maintenant."
+   }
+  },
+  {
+   "segment": "s455",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:51:33",
+   "text": "Ça suffit maintenant.",
+   "words": 3,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Vous êtes dans une AG de copropriétaires, vous êtes celle qui vient aux AG, qui vote contre toutes les provisions, toutes les économies, mais qui se plaint que l'ascenseur soit en panne le lendemain."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Mais parce que"
+   }
+  },
+  {
+   "segment": "s460",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "00:52:06",
+   "text": "Il ne vous aura pas échappé que je ne suis pas M. Barnier, et que je serais bien resté à la place de M. Barnier à l'époque pour ne pas",
+   "words": 30,
+   "overlap": true,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "impôts."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "augmenter les impôts."
+   }
+  },
+  {
+   "segment": "s476",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "00:54:07",
+   "text": "Donc oui, les gens ne sont plus malades.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Parce que les postures pénibles, qui comme leur nom l'indique sont pénibles, ne sont plus un critère de pénibilité grâce à Emmanuel Macron."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Ils ne sont plus malades aussi parce qu'ils ont moins accès aux soins, parce qu'on met longtemps à trouver un médecin, parce que des maternités fermes, par exemple, il y a plein de départements où il n'y a plus de maternité."
+   }
+  },
+  {
+   "segment": "s478",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "00:54:18",
+   "text": "Et moi, quand je rencontre les pompiers avec qui je ferai une conférence de presse demain, ils me disent on n'a jamais fait autant d'accouchements parce que ce système français il est en train de s'effondrer qu'il y a des gens qui le tiennent à bout de bras.",
+   "words": 48,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Ils ne sont plus malades aussi parce qu'ils ont moins accès aux soins, parce qu'on met longtemps à trouver un médecin, parce que des maternités fermes, par exemple, il y a plein de départements où il n'y a plus de maternité."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Quand je vois qu'on a supprimé 16% des inspecteurs du travail récemment et que du coup il y a plus d'accidents du travail aussi, quand je vois qu'en France on meurt deux fois plus au travail que dans toute l'Europe, deux fois plus, je ne pense pas que dans les pays d'Europe autres que la France on travaille deux fois moins, et bien on meurt deux fois moins dans ces pays là donc oui les dépenses sociales c'est important et puis"
+   }
+  },
+  {
+   "segment": "s483",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "00:55:37",
+   "text": "Dans",
+   "words": 1,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "J'ai à ma gauche quelqu'un qui a supprimé des commandes de Canadair pour faire des économies. J'ai à ma droite quelqu'un qui a supprimé, qui a annulé une base dans les Landes à Mont -de -Marsan qui aurait permis d'arriver plus vite pour les bombardiers, pour les Canadair qui ont été annulés."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "évidemment sur l'écologie, puisqu'il n'y a pas de crise climatique On est libre de ne pas voir les limites planétaires. Donc premièrement, on ne combat pas la crise climatique. Deuxièmement, on ne prend pas les mesures d'adaptation. Le fond vert qui devait servir aux collectivités à isoler le bâti scolaire, les écoles de nos enfants, qui devait servir à prévenir les risques de nodation, il a été divisé par quatre en deux ans. C'est vrai ou c'est pas vrai? C'est vrai. On l'a dit à chaque fois. Gouvernement Attal, gouvernement Barnier, gouvernement Bayrou, gouvernement Lecornu, tous vous l'avez baissé."
+   }
+  },
+  {
+   "segment": "s488",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "00:57:01",
+   "text": "je",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "charme,"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "le"
+   }
+  },
+  {
+   "segment": "s506",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "00:58:59",
+   "text": "Aujourd'hui, on n'a jamais autant dépensé et on n'a jamais eu autant de fragilité à l'hôpital, la justice, l'école. Donc on voit bien que ce n'est pas une affaire de moyens. Il faut changer de système. Ce n'est pas seulement des réformettes, des rustines.",
+   "words": 44,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Pas de problème, les dépenses publiques ça va nous assurer de bons services publics."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Et la vérité, c'est de dire que la dette et la retraite, vous avez eu raison, monsieur, de lier les deux. Parce qu'on n'arrivera pas à traiter le problème de la dette sans avoir et mettre plus de travail dans l'économie."
+   }
+  },
+  {
+   "segment": "s516",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:01:16",
+   "text": "Et dans cette réforme que je dévoilerai dans quelques jours, je proposerai une disposition qui avait été à l'époque décidée par François Fillon dans le Code du Travail, qui n'a jamais été activée. C'est de lier par une équation proportionnelle, lier l'âge de la retraite et l'espérance de vie à la retraite.",
+   "words": 52,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "évidemment, mais la capitalisation c'est pas pour aujourd'hui, c'est pour dans 15 ans c'est pour dans 20 ans c'est pour la future génération, pour qu'ils aient des bonnes retraites mais moi j'assume pour qu'il y ait plus de travail qu'il y ait une réforme du régime par répartition j'assumerai un âge légal parce que quand on ne l'assume pas, on crée une machine à faire, à fabriquer des retraités pauvres ou alors, il faut mettre sur la table le taux des cotes Mais ceux qui diront qu'il n'y a pas d'âge légal de départ, en réalité, ils tricheront. Parce qu'ils oublieront de dire que ceux qui ne partiront pas à cet âge, ils partiront avant. Ils seront libres. Mais ils seront libres d'avoir des toutes petites retraites. Et en plus, on n'augmentera pas le taux d'emploi chez les seniors. Et ça, c'est fondamental."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "On ne va pas se faire un psychodrame tous les 10 ans. Ce sera une réforme équilibrée et ce sera une réforme des retraites qui sauvera le régime, qui fera de bonnes retraites et qui mettra plus de travail dans l'économie."
+   }
+  },
+  {
+   "segment": "s527",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:03:04",
+   "text": "Vous êtes à la tête d'une entreprise qui a mis au point un procédé qui est très novateur de production de ciment bas carbone.",
+   "words": 24,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Et bonjour à vous Julie Neuville et merci d'avoir accepté de vous plier à cet exercice."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Vous préparez le déploiement de 10 usines en Europe mais c'est pas aussi simple que vous l'espériez n'est -ce pas?"
+   }
+  },
+  {
+   "segment": "s530",
+   "speaker": "SPEAKER_10",
+   "role": "questioner",
+   "clock": "01:03:57",
+   "text": "Donc aujourd'hui, quand on veut implanter des usines, c'est compliqué, c'est long, c'est fastidieux, il y a plein d'étages, c'est extrêmement complexe.",
+   "words": 22,
+   "overlap": false,
+   "before": {
+    "speaker": "SPEAKER_10",
+    "text": "allez -y tout à fait, alors bonjour à toutes et tous effectivement on produit un ciment qui est un ciment d'avenir bas carbone, circulaire et tout ça, ça existe déjà en France avec une technologie brevetée française sur le chemin il y a beaucoup de difficultés et 84% des chefs d'entreprise qui ont répondu au sondage, place en priorité la réindustrialisation sur le devant de la scène."
+   },
+   "after": {
+    "speaker": "SPEAKER_10",
+    "text": "pour exemple nous sommes en capacité de construire notre usine en 12 mois pour autant le délai d'autorisation pour obtenir tout ce qui va bien avant de mettre le premier coup de pioche est 2 à 3 fois supérieur que dans les autres pays européens quelle démarche quel projet quelle réforme concrète Pouvez -vous proposer, pour nous permettre sous des délais raisonnables, de construire des usines, des usines vertes qui nous permettront de réindustrialiser nos territoires?"
+   }
+  },
+  {
+   "segment": "s537",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "01:05:37",
+   "text": "Je vais d'abord répondre à votre question qui est une question précise qui touche en fait à l'implantation foncière.",
+   "words": 19,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Oui, effectivement, on a fait une commission d'enquête sur les freins à la réindustrialisation parce que c'est un élément absolument essentiel de notre projet."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "C'est un sujet majeur parce qu'il y a 90% des intercommunalités là en France qui n'ont plus de foncier disponible dans les 4 ans pour l'industrie."
+   }
+  },
+  {
+   "segment": "s541",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "01:06:20",
+   "text": "Et donc les normes seront considérablement réduites et donc les délais seront considérablement réduits. Nous ferons un effort particulier évidemment sur les 150 000 hectares des friches qui sont déjà artificialisés et qui donc permettront encore d'accélérer.",
+   "words": 37,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "C'est -à -dire que les projets d'intérêt nationaux majeurs, je viens vous dire aujourd'hui que toute implantation industrielle sera considérée par nous comme un projet d'intérêt national majeur."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Mais permettez -moi de vous dire que la réindustrialisation, elle passera aussi par d'autres leviers essentiels. D'abord, un choc de compétitivité. Le choc de compétitivité, il va être fiscal. C'est -à -dire qu'il faut supprimer les impôts de production."
+   }
+  },
+  {
+   "segment": "s548",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "01:08:21",
+   "text": "Avant ça, sinon",
+   "words": 3,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Et ça, cette suppression -là, nous la ferons par un train d'ordonnances dès notre arrivée au pouvoir."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "vous n'aurez plus de temps pour les"
+   }
+  },
+  {
+   "segment": "s551",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "01:08:23",
+   "text": "Oui, mais...",
+   "words": 2,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "autres thèmes."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Et je pense que vous avez envie de vous y arrêter."
+   }
+  },
+  {
+   "segment": "s553",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "01:08:26",
+   "text": "Voilà les éléments précis pour, je crois, enclencher cette réindustrialisation pour laquelle nous nous battons, nous, depuis des années.",
+   "words": 19,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Et je pense que vous avez envie de vous y arrêter."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Jean -Luc Mélenchon, et donc je précise que vous avez du retard, Jean -Luc Mélenchon."
+   }
+  },
+  {
+   "segment": "s556",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:08:42",
+   "text": "etc.",
+   "words": 1,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Moi, j'ai vu passer que vous souhaitiez sur ce point parler avec les patrons, notamment pour parler commandes publiques, etc."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Non mais là vous allez me laisser choisir mon thème si vous voulez bien parce que tout à l'heure c'était la dette."
+   }
+  },
+  {
+   "segment": "s570",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:10:32",
+   "text": "Vous avez transféré les recettes de cotisations de la sécurité sociale sur le budget de l'État.",
+   "words": 16,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Écoutez -moi, je sais ce que vous avez fait, c'est malin, c'est habile, vous là."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Vous avez fait une TVA sociale, parce que vous faites payer ces cotisations avec la TVA."
+   }
+  },
+  {
+   "segment": "s586",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:11:44",
+   "text": "Ce n'est pas du temps perdu, ce temps que vous voulez capter en travail salarié.",
+   "words": 15,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "C'est du temps familial, c'est du temps associatif."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "il manquera à la société, à la vie de famille, à la vie civique."
+   }
+  },
+  {
+   "segment": "s587",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:11:48",
+   "text": "il manquera à la société, à la vie de famille, à la vie civique.",
+   "words": 14,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Ce n'est pas du temps perdu, ce temps que vous voulez capter en travail salarié."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Voilà des exemples qui devraient appeler à une certaine forme de modération."
+   }
+  },
+  {
+   "segment": "s592",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:12:15",
+   "text": "en fonction du temps qui reste. Personne ne le sait.",
+   "words": 10,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Ça m'étonne que j'aie à vous apprendre ça. Mais si, c'est vous qui venez de dire ça."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Non mais c'est un élément qui compte."
+   }
+  },
+  {
+   "segment": "s593",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:12:18",
+   "text": "Non mais c'est un élément qui compte.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "en fonction du temps qui reste. Personne ne le sait."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Oui, bah je sais pas qui"
+   }
+  },
+  {
+   "segment": "s594",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:12:21",
+   "text": "Oui, bah je sais pas qui",
+   "words": 6,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Non mais c'est un élément qui compte."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "c"
+   }
+  },
+  {
+   "segment": "s598",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:12:22",
+   "text": "vous",
+   "words": 1,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "mais c'est"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "pourri."
+   }
+  },
+  {
+   "segment": "s602",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:12:23",
+   "text": "Il faut",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "'est pareil."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "partir d'une réalité. Cette réalité, elle est humaine."
+   }
+  },
+  {
+   "segment": "s606",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:12:37",
+   "text": "Et mon but est d'arriver le plus vite possible, retourner à 60 ans.",
+   "words": 13,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Donc pour ma part, premièrement, nous abrogerons la retraite et nous reviendrons dans un premier temps à 62 ans."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Si vous ne comprenez pas que le vrai problème de notre société, c'est le choc des cycles de la vie et qu'on ne peut pas exiger d'une femme, d'un homme qui soit à la fois au travail et à la maison à s'occuper de ses gosses et de ses anciens."
+   }
+  },
+  {
+   "segment": "s612",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:14:03",
+   "text": "Un dernier mot. Au moins Patrick Martin, il a le courage de ses idées. Quand il explique qu'on va remplacer les cotisations sociales parce qu'il sait que c'est par de la TVA, il dit on va augmenter la TVA et on va la porter à deux points au -dessus du taux normal. Et vous, avec quoi vous payez tout ça? Parce que depuis tout à l'heure, vous n'arrêtez pas de dire ce qu'il ne faut plus prendre. Mais vous ne dites pas de quelle manière vous comptez compenser ce que vous allez",
+   "words": 92,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "50%! Je m'engage à créer une filière qui, du CAP à la licence professionnelle que j'ai créée, pourra accéder par ce biais à une mobilisation sur du travail qualifié de plus en plus qualifié."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "faire."
+   }
+  },
+  {
+   "segment": "s615",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:14:31",
+   "text": "Le social est une valeur.",
+   "words": 5,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Vous avez rattrapé votre retard."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "C'est par le social qu'on développe un peuple."
+   }
+  },
+  {
+   "segment": "s623",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:14:50",
+   "text": "Oui, oui, je sais, vous avez visité à peu près tout le monde, mais vos notes, qu'avez -vous à répondre?",
+   "words": 20,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Et je vous ai vu, parce que je vous vois directement à ma gauche."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Voilà. Je parle après une éruption vocale sur ma gauche, un déluge qui vient du ciel, c'est un débat présidentiel, François Hollande n'est pas là, et pourtant il pleut."
+   }
+  },
+  {
+   "segment": "s644",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:15:50",
+   "text": "messieurs, en attendant,",
+   "words": 3,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Messieurs,"
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "vous regarderez la vare."
+   }
+  },
+  {
+   "segment": "s646",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:15:52",
+   "text": "En attendant, Julie Neuville attend effectivement une réponse.",
+   "words": 8,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "vous regarderez la vare."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Juste, les questions de souveraineté que vous posez, elles se jouent à deux étages, me semble -t -il, en France et en Europe. Et elles sont importantes aux deux étages."
+   }
+  },
+  {
+   "segment": "s657",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "01:17:43",
+   "text": "Moi je considère que nous devrons proposer un moratoire normatif à partir du moment où l'essentiel et le premier budget auront été adoptés. Les avocats seront malheureux, pardon à ceux qui sont dans la salle, mais on a besoin de stabilité dans tous les domaines, fiscal, social, environnemental, si on veut pouvoir avancer.",
+   "words": 53,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Nous devons donc régler, me semble -t -il, quatre sujets. La dette, la souveraineté, sans régler la dette, ça n'existe pas. Nous devons offrir au maximum, et c'est difficile dans un pays comme la France qui produit de la norme comme d'autres produisent des discours, de la stabilité, de la visibilité, une règle même imparfaite, dès lors qu'elle est stable et toujours préférable à une évolution normative qui part dans tous les sens."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Troisième chose, la formation. Le déterminant, probablement un des déterminants essentiels de notre compétitivité, c'est la formation, l'éducation, l'apprentissage. On est revenu sur une réforme de l'apprentissage qui produisait des effets, je le déplore. C'est le sujet fondamental, me semble -t -il, de la compétitivité."
+   }
+  },
+  {
+   "segment": "s658",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "01:18:00",
+   "text": "Troisième chose, la formation. Le déterminant, probablement un des déterminants essentiels de notre compétitivité, c'est la formation, l'éducation, l'apprentissage. On est revenu sur une réforme de l'apprentissage qui produisait des effets, je le déplore. C'est le sujet fondamental, me semble -t -il, de la compétitivité.",
+   "words": 45,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Moi je considère que nous devrons proposer un moratoire normatif à partir du moment où l'essentiel et le premier budget auront été adoptés. Les avocats seront malheureux, pardon à ceux qui sont dans la salle, mais on a besoin de stabilité dans tous les domaines, fiscal, social, environnemental, si on veut pouvoir avancer."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Et enfin, les infrastructures, on en parle trop peu. Notre pays doit s'adapter à une transformation de notre environnement, de son environnement. Ça passe par des investissements massifs. Et ces investissements sont une condition de notre compétitivité. Tout ça, ça se joue en France. Tout ça, ça dépend de nous."
+   }
+  },
+  {
+   "segment": "s660",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "01:18:35",
+   "text": "Et puis il y a des choses qui dépendent de l'Europe, où nous devons peser en Europe. J'en cite trois. D'abord la logique de puissance. Je suis désolé, consterné, navré que l'Europe ait renoncé aussi vite à parler le langage de la puissance et à assumer le fait qu'elle est une puissance face à d'autres ensembles continentaux.",
+   "words": 57,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Et enfin, les infrastructures, on en parle trop peu. Notre pays doit s'adapter à une transformation de notre environnement, de son environnement. Ça passe par des investissements massifs. Et ces investissements sont une condition de notre compétitivité. Tout ça, ça se joue en France. Tout ça, ça dépend de nous."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Nous devons, je le crois, si nous voulons jouer de notre puissance, finir le marché commun."
+   }
+  },
+  {
+   "segment": "s689",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:21:07",
+   "text": "-y.",
+   "words": 1,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Allez"
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Parce que quand je vous écoute, je me dis vraiment quel dommage qu'il n'ait pas eu le gouvernement."
+   }
+  },
+  {
+   "segment": "s691",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:21:13",
+   "text": "Parce que moi, quand je me battais au Parlement européen pour justement affronter tous ces sujets de souveraineté, je n'avais pas le soutien du gouvernement français.",
+   "words": 26,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Parce que quand je vous écoute, je me dis vraiment quel dommage qu'il n'ait pas eu le gouvernement."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Ni sur les questions de défense, ni sur les questions de défense commerciales, et surtout pas sur la question chinoise."
+   }
+  },
+  {
+   "segment": "s696",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:21:48",
+   "text": "Partout, on ne parle que de la Chine.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Moi, je n'ai jamais rencontré, ou très peu, d'entrepreneurs français dans l'industrie qui m'expliquent que le principal danger, c'est la concurrence allemande ou la concurrence néerlandaise."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Parce qu'aujourd'hui, il y a une méthode chinoise qui consiste à produire, grâce à des subventions, en choisissant les filières et en exportant des produits qui peuvent être fabriqués par des esclaves, qui peuvent être fabriquées et vendues ensuite à perte, avec un seul but, éradiquer filière par filière nos productions stratégiques."
+   }
+  },
+  {
+   "segment": "s699",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:22:18",
+   "text": "Fini les accords au rabais. Désormais, la France qui est le socle de l'Union Européenne en matière de sécurité.",
+   "words": 19,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et donc maintenant l'enjeu, je pense que pour le prochain président de la République, ce sera d'aller à Bruxelles et de taper du poing sur la table."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Tous les pays européens ont besoin de nous."
+   }
+  },
+  {
+   "segment": "s702",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:22:39",
+   "text": "Parce qu'il y en a marre. Je vais vous dire, il y en a marre.",
+   "words": 15,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et bien la condition pour avancer sur la sécurité collective, ce sera une réorientation des politiques industrielles et commerciales de l'Union européenne."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et pourquoi ça va fonctionner maintenant?"
+   }
+  },
+  {
+   "segment": "s704",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:22:44",
+   "text": "Parce que les Allemands, allez soyons directs, les Allemands qui pendant des décennies ont cru qu'ils pouvaient fabriquer des biens à haute valeur rajoutée et les envoyer en Chine et en échange être abreuvés de biens à faible valeur ajoutée.",
+   "words": 40,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et pourquoi ça va fonctionner maintenant?"
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et bien se rendre compte aujourd'hui que le Mittelstand allemand est en train de se faire attaquer, cibler et menacer par la production chinoise."
+   }
+  },
+  {
+   "segment": "s712",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:23:36",
+   "text": "On met en place des normes à l'entrée sur notre marché.",
+   "words": 11,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Ensuite, on met en place des normes. Je sais que vous détestez les normes, mais il y a des normes que vous devez aimer."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "C'est les mesures miroirs."
+   }
+  },
+  {
+   "segment": "s713",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:23:40",
+   "text": "C'est les mesures miroirs.",
+   "words": 4,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "On met en place des normes à l'entrée sur notre marché."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "En gros, on ne peut pas imposer à nos producteurs une concurrence étrangère de producteurs qui ne respectent pas les normes que nous imposons aux nôtres."
+   }
+  },
+  {
+   "segment": "s718",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:24:05",
+   "text": "Aujourd'hui, on fait du saupoudrage. Il va falloir qu'on choisisse des filières, qu'on contrôle de A à Z, qui sont les filières stratégiques pour la souveraineté de notre pays. Et il va falloir qu'on mise sur l'innovation.",
+   "words": 37,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et derrière, on n'arrivera pas à réindustrialiser si on ne fait pas des choix."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Aujourd'hui, l'Europe est en train de devenir l'Empire Ottoman du XXIe siècle."
+   }
+  },
+  {
+   "segment": "s724",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:24:38",
+   "text": "C'est la même chose qui menace l'Europe et la France.",
+   "words": 10,
+   "overlap": true,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "C'est la même chose, oui, mais c'est l'avenir de l'Europe dont je parle."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "si nous ne mettons pas en place une véritable stratégie collective et ça ne marchera qu'à l'échelle européenne et le président français devra le porter sur l'intelligence artificielle."
+   }
+  },
+  {
+   "segment": "s727",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:25:06",
+   "text": "et les Etats",
+   "words": 3,
+   "overlap": true,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Il nous faut un projet Manhattan sur l'IA et à cette condition, on pourra réindustrialiser sans faire le concours de l'abaissement des normes parce que nous ne battrons jamais la Chine"
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "-Unis sur cet abaissement."
+   }
+  },
+  {
+   "segment": "s735",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "01:26:26",
+   "text": "Ce que je propose très concrètement, c'est que ce qui a été fait pour Notre -Dame, qui a permis d'aller très très vite pour reconstruire Notre -Dame, j'ai entendu le président de la République dire qu'il faut le faire dans 150 autres endroits en France.",
+   "words": 45,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "et je me rends compte même que maintenant même parler de simplification ça n'est de toute façon plus pris crédiblement par les chefs d'entreprise et les acteurs économiques parce qu'ils ont eu l'habitude qu'il y ait des lois de simplification qui soient annoncées et qu'en général ça soit encore plus compliqué après la loi de simplification qu'avant. C'est une réalité et de ce point de vue là oui c'est un échec des dernières années, il faut avoir la lucidité de le dire. Donc pour moi le problème c'est la méthode. Il faut qu'on change la méthode pour simplifier."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "En fait, moi je pense qu'il faut le faire sur toute la France et avoir peut -être 150 endroits où on a des règles plus strictes, parce qu'il faut particulièrement protéger la biodiversité, etc."
+   }
+  },
+  {
+   "segment": "s749",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "01:28:24",
+   "text": "Quand j'étais Premier ministre, j'ai pris une mesure qui était attendue notamment par les agriculteurs pour simplifier drastiquement les règles pour entretenir et curer les cours d'eau.",
+   "words": 27,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Sur la question de la simplification, une fois qu'on a simplifié nos règles, le problème auquel vous êtes confrontés, c'est aussi parfois à ceux qui appliquent la règle et parfois à des administrations qui refusent d'appliquer la règle telle qu'elle a été fixée."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "il l'attendait depuis très longtemps, j'ai dit on passe de 9 mois d'attente pour une autorisation à une simple déclaration j'ai vu ensuite des agriculteurs me dire qu'ils avaient face à eux des gens de l'administration qui leur disaient en fait oui il y a la règle mais nous on défend l'esprit de la règle et bien ça c'est pas possible on a eu un débat avec monsieur Mélenchon sur les réseaux sociaux cet été parce que j'ai fait une proposition, ou plutôt j'ai pris un engagement si les français me font confiance, j'assumerai de faire comme ça se fait aux Etats -Unis et dans d'autres pays un spoil -système à la française pour mettre à la tête des administrations publiques des personnes qui ont le mandat politique d'appliquer le programme politique sur la base duquel le président de la république a été élu pour changer aussi la culture administrative et j'assumerai de le faire dernier point parce que quand on parle de simplification ça vaut pour des règles d'urbanisme et des règles environnementales qui parfois vous empêche d'accomplir vos projets ça vaut en réalité pour beaucoup de nos réglementations J'ai fait une proposition au mois de mai dernier, au moment où on a eu ce débat sur le travail du 1er mai."
+   }
+  },
+  {
+   "segment": "s750",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "01:28:33",
+   "text": "il l'attendait depuis très longtemps, j'ai dit on passe de 9 mois d'attente pour une autorisation à une simple déclaration j'ai vu ensuite des agriculteurs me dire qu'ils avaient face à eux des gens de l'administration qui leur disaient en fait oui il y a la règle mais nous on défend l'esprit de la règle et bien ça c'est pas possible on a eu un débat avec monsieur Mélenchon sur les réseaux sociaux cet été parce que j'ai fait une proposition, ou plutôt j'ai pris un engagement si les français me font confiance, j'assumerai de faire comme ça se fait aux Etats -Unis et dans d'autres pays un spoil -système à la française pour mettre à la tête des administrations publiques des personnes qui ont le mandat politique d'appliquer le programme politique sur la base duquel le président de la république a été élu pour changer aussi la culture administrative et j'assumerai de le faire dernier point parce que quand on parle de simplification ça vaut pour des règles d'urbanisme et des règles environnementales qui parfois vous empêche d'accomplir vos projets ça vaut en réalité pour beaucoup de nos réglementations J'ai fait une proposition au mois de mai dernier, au moment où on a eu ce débat sur le travail du 1er mai.",
+   "words": 213,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Quand j'étais Premier ministre, j'ai pris une mesure qui était attendue notamment par les agriculteurs pour simplifier drastiquement les règles pour entretenir et curer les cours d'eau."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Il vous reste peu de temps, Gabriel Attal."
+   }
+  },
+  {
+   "segment": "s757",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:30:58",
+   "text": "Et que quoi qu'il arrive dans les mois qui viennent, du coup, dans 18 mois, la France aura atteint son plus bas niveau d'emploi industriel de l'histoire.",
+   "words": 27,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Non mais déjà, je trouve très ironique ce parallèle avec Notre -Dame en disant on va tout faire comme Notre -Dame. Notre -Dame avait brûlé et j'ai l'impression que votre politique c'est d'attendre que ça brûle et puis d'après de reconstruire nous on veut éviter que ça brûle et je vais une fois que j'ai dit ça une fois que j'ai dit ça, répondre à la question parce que je trouve qu'on nous parlait de souveraineté et d'industrie de réindustrialisation et qu'on n'en a pas beaucoup parlé. Alors peut -être que si vous voulez pas en parler c'est du fait de votre bilan en la matière parce qu'on arrive là à la veille d'une élection présidentielle que tous les spécialistes du sujet nous disent que que quelle que soit la personne élue et quel que soit ce qu'elle entreprend, ça met 18 mois à porter ses fruits."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "C'est ça le bilan du macronisme."
+   }
+  },
+  {
+   "segment": "s762",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:31:58",
+   "text": "Dans les propositions que je voulais faire, je voulais commencer par dire qu'on parle souvent de la guerre qui entre en cours et de notre arsenal de guerre.",
+   "words": 28,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "écologique et il faut quand même pouvoir se dire qu'on doit défendre l'industrie française l'aider à se transformer et quand on voit des projets comme le vote qui sont bénéfiques bons pour le climat, bons pour l'emploi bons pour le pouvoir d'achat on ne comprend pas que vous ne soyez pas plus aidés donc on débat souvent du niveau des ados de l'entreprise Moi, je souhaite qu'on puisse débattre de où on met cet argent, selon quels critères, et évidemment que le critère écologique doit être un critère de répartition."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Il y a une loi de programmation militaire où on a dit qu'il faut plus d'argent pour la défense, il faut acheter des bombes et des munitions."
+   }
+  },
+  {
+   "segment": "s763",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:32:06",
+   "text": "Il y a une loi de programmation militaire où on a dit qu'il faut plus d'argent pour la défense, il faut acheter des bombes et des munitions.",
+   "words": 27,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Dans les propositions que je voulais faire, je voulais commencer par dire qu'on parle souvent de la guerre qui entre en cours et de notre arsenal de guerre."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Ok, on l'a voté."
+   }
+  },
+  {
+   "segment": "s764",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:32:12",
+   "text": "Ok, on l'a voté.",
+   "words": 4,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Il y a une loi de programmation militaire où on a dit qu'il faut plus d'argent pour la défense, il faut acheter des bombes et des munitions."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Mais dans notre arsenal de guerre, on ne peut pas avoir que des bombes et une munition."
+   }
+  },
+  {
+   "segment": "s769",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:32:34",
+   "text": "Parce que si ArcelorMittal ferme, alors on ne sera plus dépendant pour se fournir en acier que de la Chine et des Etats -Unis.",
+   "words": 24,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "C'est pour ça que je me bats énormément aux côtés des salariés d'ArcelorMittal."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Et quand ils décideront de ne plus nous en donner, on aura quand même l'air bien malin."
+   }
+  },
+  {
+   "segment": "s776",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:33:14",
+   "text": "Oui, la commande publique est importante, 2 000 milliards d'euros au niveau européen, 14% du PIB européen, et donc elle doit être mobilisée.",
+   "words": 23,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Premièrement, ça explique un peu le protectionnisme européen."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Donc je le dis, il faut des quotas de matériaux bas carbone dans la commande publique."
+   }
+  },
+  {
+   "segment": "s785",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:34:46",
+   "text": "Vous verrez que la Chine et les Etats -Unis, qui sont recordement",
+   "words": 12,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Et comment on fait pour avoir plus de recherche -développement dans le privé?"
+   },
+   "after": {
+    "speaker": "Colombe Lecoufle",
+    "text": "dans la matière,"
+   }
+  },
+  {
+   "segment": "s793",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:35:12",
+   "text": "J'ai simplement dit que désormais ces énergies renouvelables qui coûtent très cher, qui sont très subventionnées, sont parvenues à la maturité et donc on arrête de les subventionner.",
+   "words": 28,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Marine Tondelier, il faut être précis, je n'ai jamais proposé le moratoire sur les énergies renouvelables."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Votre écologie en réalité c'est une décroissance. Vous avez terriblement affaibli toute la filière nucléaire."
+   }
+  },
+  {
+   "segment": "s811",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:37:15",
+   "text": "Je ne parlerai plus de simplification.",
+   "words": 6,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "et derrière chaque règlement, derrière chaque norme, il y a un soupçon qui pèse sur le chef d'entreprise."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "On doit assumer la déréglementation."
+   }
+  },
+  {
+   "segment": "s820",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:37:52",
+   "text": "Deuxième chose, je proposerai d'interdire dans une loi organique toute surtransposition.",
+   "words": 11,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Moi, je propose en matière non pas de simplification, de déréglementation, de faire en sorte dès l'arrivée à l'Elysée, quelques semaines après, sur ordonnance de supprimer une centaine de normes les plus stupides comme les seuils, etc., comme le ZAN, etc."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Il y en a marre que la France en rajoute par rapport à l'Europe, ce qui est vrai à à Munich et à Milan, devra l'être aussi à Nantes, à Rennes ou à Marseille."
+   }
+  },
+  {
+   "segment": "s822",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:38:07",
+   "text": "Et enfin, j'assume de modifier, de réviser la Constitution pour abroger le principe de précaution, qui était sans doute une bonne intuition, mais qui dans la jurisprudence est désormais un principe de blocage et un principe d'inaction.",
+   "words": 37,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Il y en a marre que la France en rajoute par rapport à l'Europe, ce qui est vrai à à Munich et à Milan, devra l'être aussi à Nantes, à Rennes ou à Marseille."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Tant qu'on n'aura pas pris ces décisions -là, la France restera handicapée par une réglementation qui est en train de tuer notre industrie, qui l'a d'ailleurs beaucoup affaibli, et ce sera mon projet, celui que je porterai."
+   }
+  },
+  {
+   "segment": "s828",
+   "speaker": "Vincent Furlan",
+   "role": "questioner",
+   "clock": "01:39:08",
+   "text": "Aujourd'hui c'est un cabinet de recrutement qui compte une vingtaine de collaborateurs et clairement étant une société de service, ma question va porter sur le coût du travail parce que c'est la principale charge que j'ai aujourd'hui dans ma société.",
+   "words": 40,
+   "overlap": false,
+   "before": {
+    "speaker": "Vincent Furlan",
+    "text": "Bonjour à tous, je suis Vincent Furlan, je suis membre du COMEX 40 et j'ai créé ma société après avoir passé quelques années à l'étranger il y a 10 ans."
+   },
+   "after": {
+    "speaker": "Vincent Furlan",
+    "text": "qui était."
+   }
+  },
+  {
+   "segment": "s841",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "01:40:25",
+   "text": "Je ne vais pas m'allonger sur ce sujet -là, puisque je pense que l'important, c'est de répondre aux questions qui sont posées par les chefs d'entreprise.",
+   "words": 26,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "J'ai dit en introduction, dès l'introduction de ce débat, que j'entendais qu'il y avait des échecs, qu'il y avait aussi des réussites."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "D'abord, ce qu'il aurait fallu faire, c'est ne pas augmenter le coût du travail depuis 2024."
+   }
+  },
+  {
+   "segment": "s852",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "01:41:39",
+   "text": "Et moi, là où je veux avoir une action résolue, c'est aussi, et peut -être d'abord, je vais être franc avec vous, sur les charges salariales, pour aller droit au brut, pour que les Français qui travaillent voient leur rémunération augmenter parce que leur salaire net augmente, parce qu'on réduit leurs charges.",
+   "words": 52,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "C'est la classe moyenne qui bosse et qui a le sentiment qu'on lui demande toujours plus d'efforts, alors que si tout le monde faisait un effort, elle s'en sortirait mieux, et qui voit effectivement son net s'écarter du brut année après année."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Ça passera par des économies sur la sphère sociale, on en a parlé tout à l'heure, on a donné un certain nombre de pistes, et par une réflexion sur le mode de financement de notre protection sociale."
+   }
+  },
+  {
+   "segment": "s870",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:43:09",
+   "text": "Ah",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "arriver à savoir où on en est."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "ben là, je viens de vous le dire."
+   }
+  },
+  {
+   "segment": "s872",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:43:10",
+   "text": "Ça",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "ben là, je viens de vous le dire."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "a l'air"
+   }
+  },
+  {
+   "segment": "s873",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:43:10",
+   "text": "a l'air",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Ça"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "écouté du travail."
+   }
+  },
+  {
+   "segment": "s875",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:43:11",
+   "text": "Je ne voudrais",
+   "words": 3,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "écouté du travail."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "pas que madame croit que je ne voulais pas répondre à sa question."
+   }
+  },
+  {
+   "segment": "s889",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:44:49",
+   "text": "Maintenant, de quoi",
+   "words": 3,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Et pour terminer sur la question européenne, je vous dis les choses comme elles sont. Tout ce qui viendra de l'Europe en contradiction avec les intérêts des Français, tels qu'ils sont décrits par leur vote et les programmes, nous désobéirons."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "voulez -vous parler?"
+   }
+  },
+  {
+   "segment": "s890",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:44:49",
+   "text": "voulez -vous parler?",
+   "words": 3,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Maintenant, de quoi"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Les"
+   }
+  },
+  {
+   "segment": "s899",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:46:02",
+   "text": "Il faut augmenter le SWIC. Si vous n'augmentez pas les salaires, vous ne rigolerez pas longtemps parce que vous aurez la récession. Et dans ce pays, les salaires et la consommation populaire, la consommation populaire, c'est 55% du PIB. Alors vous rirez jaune si vous ne partagez pas davantage.",
+   "words": 49,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Pardon, les salaires, très très bien, il faut les augmenter. Il faut augmenter le SWIC."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Et là, c'est pas vrai que la petite entreprise et la grande entreprise, c'est la même chose."
+   }
+  },
+  {
+   "segment": "s905",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:46:51",
+   "text": "Quant à l'eau, alors là, cher ami, vous auriez dû y réfléchir.",
+   "words": 12,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Et nous aurons une falaise en 2040 quand les actuelles centrales seront arrivées à terme."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "les bassines qui ont été faites, il n'y a plus d'eau dedans."
+   }
+  },
+  {
+   "segment": "s907",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:46:57",
+   "text": "Pour une raison, c'est qu'il fait trop chaud.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "les bassines qui ont été faites, il n'y a plus d'eau dedans."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Et de même, le nucléaire, ne le refroidissez pas avec de l'eau chaude."
+   }
+  },
+  {
+   "segment": "s908",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:46:59",
+   "text": "Et de même, le nucléaire, ne le refroidissez pas avec de l'eau chaude.",
+   "words": 13,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Pour une raison, c'est qu'il fait trop chaud."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Tout ça, ce sont des délires."
+   }
+  },
+  {
+   "segment": "s911",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "01:47:12",
+   "text": "Jean -Luc Mélenchon, je m",
+   "words": 5,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Il faut partir des choses sérieuses, de la technique sérieuse, avec des objectifs sérieux de développement industriel du pays et pas des..."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "'avance même physiquement pour reprendre le contrôle de la situation."
+   }
+  },
+  {
+   "segment": "s925",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "01:49:48",
+   "text": "La promesse démocratique, c'est quand même le fait que les classes moyennes populaires, grâce à l'économie de marché, grâce au gain de productivité, vont réussir à avoir un pouvoir d'achat.",
+   "words": 30,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "C'est un problème économique énorme, mais plus que ça, c'est un problème démocratique énorme. Parce que, mesdames et messieurs, il n'y a pas d'exemple de démocratie qui résiste à l'affaiblissement durable des classes moyennes populaires."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Et les grands accidents démocratiques que nous avons connus dans l'histoire de l'Europe ont toujours eu lieu lorsque la classe moyenne populaire voyait son pouvoir d'achat et ses perspectives économiques dégringoler."
+   }
+  },
+  {
+   "segment": "s928",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "01:50:18",
+   "text": "Alors qu'est -ce qu'on fait? Évidemment, on doit essayer de rapprocher le brut du net. Évidemment, on doit essayer de faire en sorte que dans le coût du travail, il y ait le plus de choses possibles, si j'ose dire, qui viennent aux salariés.",
+   "words": 44,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Donc derrière la question du coût du travail, derrière la question de la rémunération, il n'y a pas simplement une question économique, je voulais insister sur ce point."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Mais on sait tous aussi, on ne va pas se raconter de caramel, on sait tous aussi que la différence entre le brut et le net, c'est le coût de la protection sociale, c'est -à -dire de la rémunération demain, c'est -à -dire la rémunération quand il y a un accident de la vie."
+   }
+  },
+  {
+   "segment": "s934",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "01:51:12",
+   "text": "On élargit la base.",
+   "words": 4,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Comment on fait?"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "On"
+   }
+  },
+  {
+   "segment": "s948",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "01:52:33",
+   "text": "Je suis dans mon rôle.",
+   "words": 5,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Il faut qu'on fasse un tout petit peu attention sur les temps de parole."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "C'est parfois un peu ingrat, mais je suis là pour ça aussi."
+   }
+  },
+  {
+   "segment": "s970",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "01:54:36",
+   "text": "Un pacte social qui peut s'inspirer d'autres pays.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et donc ce qu'il nous faut, c'est un nouveau pacte social."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Par exemple en Allemagne, les travailleurs ont une voix beaucoup plus forte dans l'entreprise."
+   }
+  },
+  {
+   "segment": "s977",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:55:17",
+   "text": "Vous cachez une réalité.",
+   "words": 4,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Je voudrais simplement dire à Jean -Luc Mélenchon qu'il est vraiment le candidat du Yaka Faucon sur la capitalisation."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Dans la fonction publique, il y a un étage de capitalisation, individuel et collectif."
+   }
+  },
+  {
+   "segment": "s988",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:56:32",
+   "text": "Donc, dès la première heure, j'allège les charges de travail.",
+   "words": 10,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Cotisation familiale, c'est de la solidarité, ce n'est pas de l'assurantiel."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Mais ensuite, puisque je vous ai dit que je voulais plus de travail dans l'économie française, je crée un seuil à partir de la 36e heure, 100 623 heures animalisées."
+   }
+  },
+  {
+   "segment": "s990",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:56:47",
+   "text": "À partir de ce seuil -là, il n'y a zéro cotisation, ni salariale, ni patronale.",
+   "words": 15,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Mais ensuite, puisque je vous ai dit que je voulais plus de travail dans l'économie française, je crée un seuil à partir de la 36e heure, 100 623 heures animalisées."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "0, c'est 35% de coût du travail en moins, et c'est pour les salariés qui accepteront de faire une demi -heure de travail par jour, 0 cotisation, c'est pour un salaire médian, 3500 euros net, quasiment deux mois de plus sur la fiche de salaire, et c'est donc l'identité salaire brut égale salaire net."
+   }
+  },
+  {
+   "segment": "s1001",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:58:07",
+   "text": "Sauf l'assurance chômage.",
+   "words": 3,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Assurance chômage, de quoi parlez -vous précisément?"
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "L'assurance chômage est sur une base assurancielle."
+   }
+  },
+  {
+   "segment": "s1005",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:58:19",
+   "text": "dernière, mais parce que",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Déjà parce que je ne suis pas toujours obligée de parler en"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "je suis"
+   }
+  },
+  {
+   "segment": "s1009",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "01:58:52",
+   "text": "Et c'est ça qui se passe dans certains départements en France aujourd'hui.",
+   "words": 12,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Parce que certains de vos amis, à la tête de certains départements, ont engagé une chasse aux bénéficiaires du RSA dont certains doivent justifier pourquoi ils ont gagné 30 euros au Kéno et si ces 30 euros ont vraiment été gagnés au Kéno et que voyez -vous, quand on vous radie du RSA, vous n'avez plus de filet de sécurité."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Tout comme M. Philippe qui a expliqué que maintenant l'assurance chômage, ce serait 12 mois, c'est encore pire que vous, ce que vous avez fait, ça veut dire quoi?"
+   }
+  },
+  {
+   "segment": "s1016",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:59:45",
+   "text": "Vous avez",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Pour ce qui est..."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "dit qu'on ne coupait pas,"
+   }
+  },
+  {
+   "segment": "s1018",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:59:48",
+   "text": "sinon je",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "dit qu'on ne coupait pas,"
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "vous réponds sur les bassines et sur le nucléaire, ça va être très"
+   }
+  },
+  {
+   "segment": "s1020",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "01:59:50",
+   "text": "long.",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "vous réponds sur les bassines et sur le nucléaire, ça va être très"
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Donc, je"
+   }
+  },
+  {
+   "segment": "s1032",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:00:30",
+   "text": "Chaque jour un peu plus nombreux, et chaque jour un peu plus pauvres, ça c'est le bilan du macronisme.",
+   "words": 19,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Donc c'est quand même des revenus prochains pour les personnes. Moi, je rappelle quand même qu'il y a 11 millions de pauvres dans ce pays."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Je rappelle qu'il y a parmi les travailleurs, 1,5 millions de travailleurs pauvres. 1,5 millions, c'est 6 à 7% de toute la population active."
+   }
+  },
+  {
+   "segment": "s1039",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:01:29",
+   "text": "Parce qu'aussi, la valeur est mal répartie.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Alors moi, je le dis, les écologistes promettront et porteront et mettront en place un SMIC à 2000 euros brut. Et je sais que beaucoup de chefs d'entreprise ici aimeraient bien le faire, mais ils n'en arrivent pas. Pourquoi?"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Et"
+   }
+  },
+  {
+   "segment": "s1056",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:02:17",
+   "text": "Marine Le Pen.",
+   "words": 3,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Ça, je vous le confirme, mais tout de même."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Moi, d'abord, je reste un peu admirative des gens qui ont participé à la majorité depuis 10 ans, et qui aujourd'hui ont plein, plein, plein d'idées qu'ils n'ont jamais, jamais, jamais mis en œuvre."
+   }
+  },
+  {
+   "segment": "s1066",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:02:39",
+   "text": "dans l'occasion et le faire du",
+   "words": 6,
+   "overlap": true,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "'est sûr que c'est plus facile"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "commentaire en permanence vous"
+   }
+  },
+  {
+   "segment": "s1070",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:03:14",
+   "text": "le savez, vous, entrepreneurs.",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Le sérieux, vous l'avez, et vous"
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Oui, les salaires sont trop bas, vous le savez, vous aimeriez tous, en effet, pouvoir les augmenter."
+   }
+  },
+  {
+   "segment": "s1072",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:03:22",
+   "text": "Oui, le coût du travail est lourd.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Oui, les salaires sont trop bas, vous le savez, vous aimeriez tous, en effet, pouvoir les augmenter."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Oui, un certain nombre de mesures sur le long terme peuvent faire baisser le coût du travail."
+   }
+  },
+  {
+   "segment": "s1080",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:05:52",
+   "text": "Moi, je suis opposée à la TVA sociale, parce que la TVA sociale, en réalité, si elle peut être potentiellement neutre pour les salariés, elle ne l'est pas du tout pour les retraités, qui vont voir leur pouvoir d'achat baisser considérablement, elle ne l'est pas du tout pour les chômeurs qui vont voir baisser leur pouvoir d'achat considérablement ni même pour les jeunes qui ne sont pas en situation d'emploi et qui ne pourraient pas faire face à une augmentation de la TVA que vous souhaitez.",
+   "words": 86,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Donc voilà, la réalité, elle est là, on peut agir sur les dépenses contraintes, on peut agir sur la TVA, sur les produits de première nécessité."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "On passe au thème suivant, vous vous êtes tous exprimés sur ce julet."
+   }
+  },
+  {
+   "segment": "s1092",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:08:54",
+   "text": "C",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Lecouf alors je vous ai entendu, Marie -Tourdelier vous disiez je termine toujours, je suis toujours à la fin vous allez commencer, parce que quand même, on le sait, vous le savez très certainement, souvent quand on parle de normes il y a beaucoup d'entrepreneurs qui nous disent l'écologie c'est beaucoup de normes et puis si vous arrivez au pouvoir, il y en aura certainement encore plus alors qu'est -ce que vous..."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "'est assez impressionnant ce que vous venez de faire parce que madame nous dit moi je suis embêtée par les bulletins de paye et par toutes les règles qu'on me met en général elle n'a absolument pas parlé de normes environnementales et vous, vous me regardez moi en disant que c'est de ma faute alors qu'elle n'a parlé d'autres"
+   }
+  },
+  {
+   "segment": "s1098",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:09:12",
+   "text": "pour les fiches de paye Mais la question",
+   "words": 8,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "'était votre faute"
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "ne portait absolument pas sur les normes environnementales Vous savez très bien que je parlais"
+   }
+  },
+  {
+   "segment": "s1110",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:09:37",
+   "text": "qu'on parle des normes environnementales?",
+   "words": 5,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Vous voulez"
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Mais vous répondez à la question que vous voulez."
+   }
+  },
+  {
+   "segment": "s1116",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:10:30",
+   "text": "L'Etat a ces informations qu'il se débrouille pour arrêter de nous les demander en papier, en numérique, en trois exemplaires, en copie carbone.",
+   "words": 23,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Pourquoi on passe notre temps à recopier notre adresse postale, et à mettre tel numéro, tel truc..."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Il les a, il les prend, il les recopie, et il arrête de nous embêter."
+   }
+  },
+  {
+   "segment": "s1122",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:11:21",
+   "text": "Donc ce n'est pas un gouvernement qu'on a, c'est Cofidis. Cofidis, sauf que Cofidis au moins est obligé d'afficher le taux, et nous on paye les intérêts, et on ne sait pas pour combien de temps, et on sait qu'on les paye tous alors qu'on n'est pas responsable.",
+   "words": 48,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Ensuite, sur l'histoire des normes environnementales, enfin on va être clair, en fait notre état il est en situation de surendettement, notre nation en surendettement écologique, c'est -à -dire qu'on vit à crédit sur la planète, sur toutes les limites planétaires et que ça surendette aussi les ménages et l'état et les collectivités et les entreprises, parce que l'absence d'écologie, le fait d'avoir supprimé le leasing social, le fait d'avoir supprimé aussi le ma prime rénov'd'avoir déshabillé un peu ce processus, ça fait qu'à la fin, on est tous dépendants du prix de l'énergie, du prix de l'électricité, du gaz, du pétrole, et que ça nous surendette."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "J'entends que l'écologie est parfois vue comme une contrainte, moi je vous ai expliqué à l'introduction, c'était la condition de notre liberté, et qu'on peut décider de ne pas voir le fait que comme dans toute politique publique, comme dans le droit du travail, comme dans toute politique"
+   }
+  },
+  {
+   "segment": "s1123",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:11:33",
+   "text": "J'entends que l'écologie est parfois vue comme une contrainte, moi je vous ai expliqué à l'introduction, c'était la condition de notre liberté, et qu'on peut décider de ne pas voir le fait que comme dans toute politique publique, comme dans le droit du travail, comme dans toute politique",
+   "words": 48,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Donc ce n'est pas un gouvernement qu'on a, c'est Cofidis. Cofidis, sauf que Cofidis au moins est obligé d'afficher le taux, et nous on paye les intérêts, et on ne sait pas pour combien de temps, et on sait qu'on les paye tous alors qu'on n'est pas responsable."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "publique,"
+   }
+  },
+  {
+   "segment": "s1125",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:11:44",
+   "text": "il faut des limites.",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "publique,"
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Si on ne"
+   }
+  },
+  {
+   "segment": "s1128",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:11:47",
+   "text": "dans le mur et on",
+   "words": 5,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "réagit pas, on ira"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "en paiera tous les conséquences."
+   }
+  },
+  {
+   "segment": "s1137",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:12:07",
+   "text": "le",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Qui a créé"
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "fond vert?"
+   }
+  },
+  {
+   "segment": "s1138",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:12:08",
+   "text": "fond vert?",
+   "words": 2,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "le"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Madame Borne."
+   }
+  },
+  {
+   "segment": "s1141",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:12:09",
+   "text": "'étais à Bercy, c'est moi qui ai porté la création du fonds vert.",
+   "words": 13,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "J"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Et"
+   }
+  },
+  {
+   "segment": "s1152",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:12:22",
+   "text": "Je",
+   "words": 1,
+   "overlap": true,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "leasing social."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "ne peux pas"
+   }
+  },
+  {
+   "segment": "s1163",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:12:32",
+   "text": "vous défendez des outils et des",
+   "words": 6,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "d'expliquer que"
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "dispositifs alors que vous avez voté contre."
+   }
+  },
+  {
+   "segment": "s1181",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:12:56",
+   "text": "C'est son groupe parlementaire qui l'a fait.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "par quatre et mis zéro euro sur le leasing social."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Marine Tondelier, Gabriel Attal vous répond."
+   }
+  },
+  {
+   "segment": "s1184",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:13:02",
+   "text": "Attendez que j'ai répondu pour me répondre. J'ai attendu que vous ayez parlé.",
+   "words": 13,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Zéro euro."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Ensuite, on voit bien qu'il y a aujourd'hui deux lignes, et on l'a vu notamment dans un dernier texte qui vient d'être examiné à l'Assemblée nationale pour nos agriculteurs, avec des mesures extrêmement pragmatiques."
+   }
+  },
+  {
+   "segment": "s1187",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:13:28",
+   "text": "pour permettre à nos éleveurs d'étendre un bâtiment d'élevage parce qu'ils ont envie d'avoir plus de bêtes et de développer leur exploitation, pour permettre à un agriculteur de construire un bâtiment agricole pour ranger ses outils parce qu'il se les fait voler la nuit, des mesures de simplification.",
+   "words": 48,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Je mets de côté la question des phytosanitaires qui est très inflammable. Des questions très pragmatiques pour permettre à nos agriculteurs de stocker de l'eau, tout simplement quand il pleut pour faire face à la sécheresse."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Les amis de M. Mélenchon, de Mme Tondelier, de M. Glucksmann ont voté contre ces mesures pragmatiques pour permettre à nos agriculteurs de pouvoir cultiver notre terre et nourrir les Français."
+   }
+  },
+  {
+   "segment": "s1193",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:14:15",
+   "text": "entre nous.",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "'est ça la vraie différence"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Je ne vous ai pas interrompu."
+   }
+  },
+  {
+   "segment": "s1201",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:14:48",
+   "text": "ces questions de simplification.",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "sur"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "c'est un secteur dont j'ai parlé dans mon introduction et qui est pour moi probablement le secteur économique qui a été le plus malmené ces dernières années c'est le logement moi je suis, je le dis ici, inquiet de la situation du logement en France et du bâtiment en France et on dit souvent que quand le bâtiment va, tout va la réalité c'est qu'il y a eu une ligne que je ne partageais pas pour le coup, considérons à dire que le logement, l'immobilier, la pierre c'est pas productif bah si c'est productif en fait c'est productif parce que c'est des centaines de milliers d'emplois parce que c'est des recettes fiscales et parce que c'est ce qui permet aussi à des Français de se projeter dans l'avenir."
+   }
+  },
+  {
+   "segment": "s1202",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:14:51",
+   "text": "c'est un secteur dont j'ai parlé dans mon introduction et qui est pour moi probablement le secteur économique qui a été le plus malmené ces dernières années c'est le logement moi je suis, je le dis ici, inquiet de la situation du logement en France et du bâtiment en France et on dit souvent que quand le bâtiment va, tout va la réalité c'est qu'il y a eu une ligne que je ne partageais pas pour le coup, considérons à dire que le logement, l'immobilier, la pierre c'est pas productif bah si c'est productif en fait c'est productif parce que c'est des centaines de milliers d'emplois parce que c'est des recettes fiscales et parce que c'est ce qui permet aussi à des Français de se projeter dans l'avenir.",
+   "words": 128,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "ces questions de simplification."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "J'étais il y a encore quelques jours dans un département du sud de la France."
+   }
+  },
+  {
+   "segment": "s1211",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:15:57",
+   "text": "Simplifier drastiquement toutes les règles pour la construction.",
+   "words": 8,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Alors, il faudra un vrai statut du bailleur privé, pas un faux statut du bailleur privé comme celui qui a été malheureusement mis dans le dernier budget."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Encourager les maires à autoriser la construction en leur donnant la main sur l'attribution des logements sociaux pour les primo -accessions."
+   }
+  },
+  {
+   "segment": "s1213",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:16:08",
+   "text": "Et permettre aux Français qui sont dans le logement social depuis des années d'acheter leur logement social pour devenir propriétaire.",
+   "words": 20,
+   "overlap": true,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Encourager les maires à autoriser la construction en leur donnant la main sur l'attribution des logements sociaux pour les primo -accessions."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Merci Gabriel Attal. Je voudrais juste faire un petit point sur les UE."
+   }
+  },
+  {
+   "segment": "s1221",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "02:16:56",
+   "text": "Là je viens de vous entendre comme opposant sur le logement, on croit rêver, vous êtes dans le gouvernement depuis le début de la Macronie et vous pareil, et vous venez de nous dire ce qu'il faut dire, c'est quand même incroyable.",
+   "words": 42,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Moi j'essaye de suivre le cours rationnel d'une discussion et franchement, il faut ramer pour arriver à..."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Alors j'ai compris votre dénominateur commun, vous ne voulez rien payer mais vous voyez qu'il se passe plein de choses."
+   }
+  },
+  {
+   "segment": "s1232",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "02:19:10",
+   "text": "C'est la catastrophe totale, c'est l'humiliation, c'est il n'y a pas de dignité personnelle à vivre comme ça. Il faut reprendre tout ça d'un bout à l'autre.",
+   "words": 27,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Il faut acheter du nouveau logement, mais il faut aussi réparer tout l'ancien. Les gens s'est grelottés l'hiver, maintenant en plus ils sont au four pendant l'été."
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "et notamment la question de faire cesser l'architecture irresponsable qui a mis du verre partout, qui fait que toutes les constructions qu'on a faites doivent être toutes reprises."
+   }
+  },
+  {
+   "segment": "s1239",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "02:20:40",
+   "text": "et j'assume de modifier la constitution pour supprimer le principe de précaution.",
+   "words": 12,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Sur les normes, je me suis déjà exprimé tout à l'heure. Je le répète. La première chose, c'est en arrivant avec des ordonnances la suppression d'une centaine de normes les plus stupides, pas de surtransposition européenne."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Je veux qu'on soit dans une société qui entreprenne, qui prenne des initiatives, une société de l'audace."
+   }
+  },
+  {
+   "segment": "s1251",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:22:56",
+   "text": "Peut -être que juste, ce serait bien quand même de répondre aux questions que les gens nous posent. Ça part",
+   "words": 20,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Marine Le Pen."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "quand même un tout petit peu dans tous les sens. Je sais qu'il y en a certains qui pensent qu'ils ne vont pas être candidats très longtemps, mais de là à développer tout leur programme et il faudrait essayer de répondre effectivement aux questions qui se posent."
+   }
+  },
+  {
+   "segment": "s1254",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:23:19",
+   "text": "Elle est insupportable, tout le monde est d'accord, la simplification est nécessaire, mais...",
+   "words": 13,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Je suppose que la question, évidemment, que vous posez est plus large en réalité. Vous avez donné un exemple, c'est la bureaucratisation."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Marine Le Pen."
+   }
+  },
+  {
+   "segment": "s1260",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:23:54",
+   "text": "On en reparlera. Donc",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "avez bien dit ou écrit plutôt qu'une simplification massive posait un problème parce qu'il y avait beaucoup de gens dont le travail était de gérer la complexité et qu'ils allaient se faire entendre je suis c'est un petit peu ce que vous avez dit tout à l'heure d'ailleurs D'ailleurs, il me semble que vous l'avez écrit."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "ça, c'est"
+   }
+  },
+  {
+   "segment": "s1264",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:24:02",
+   "text": "Mais CSRD, ZAN, DPE, RE 2020, ça c'est vous sûr, hein?",
+   "words": 11,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Alors moi, je veux bien entendre tout ce que j'ai entendu, là."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Ça c'est vous sûr, RE 2020."
+   }
+  },
+  {
+   "segment": "s1292",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:26:12",
+   "text": "Très bien.",
+   "words": 2,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Donc, fiscalité dans les dernières parties."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Alors, on va garder un peu de temps pour parler de ça parce que c'est un sujet important."
+   }
+  },
+  {
+   "segment": "s1305",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "02:26:50",
+   "text": "Parce que souvent j'entends des gens qui disent que les normes, c'est des petits hommes gris dans des bureaux d'administration qui veulent exister et qui produisent des normes. Et parfois, ça ressemble un peu à ça.",
+   "words": 36,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Pas d'ailleurs simplement de mon expérience de Premier ministre ou de parlementaire, mais de mon expérience dans la vie professionnelle ou dans mes responsabilités locales, sur les normes."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Mais souvent, quand il y a une norme, avant qu'il y ait une norme, il y a une demande."
+   }
+  },
+  {
+   "segment": "s1307",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "02:27:10",
+   "text": "Demande. Un accident, un scandale, l'expression d'une nouvelle priorité, une demande d'un groupe organisé, qu'il soit social, professionnel, qui dit attention sur ce sujet, on a besoin d'une norme pour éviter la concurrence déloyale entre des personnes qui n'ont pas nécessairement le même statut.",
+   "words": 44,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Mais souvent, quand il y a une norme, avant qu'il y ait une norme, il y a une demande."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Ça existe, Mme Le Pen. Et j'ai dit qu'en effet, lorsque vous partez sur un texte relativement simple à l'Assemblée nationale, qui vise par exemple à faciliter la construction, vous pouvez très bien, dans le cours du débat parlementaire, je ne mets en cause personne en disant ça, mais c'est la réalité."
+   }
+  },
+  {
+   "segment": "s1309",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "02:27:52",
+   "text": "Dans le cours du débat parlementaire, vous pouvez très rapidement avoir des intérêts professionnels, qui expriment une demande visant à mieux normer tel sujet, ce qui additionné petit bout par petit bout par petit bout devient un texte qui renforce la complexité et qui désincite à la construction.",
+   "words": 48,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Ça existe, Mme Le Pen. Et j'ai dit qu'en effet, lorsque vous partez sur un texte relativement simple à l'Assemblée nationale, qui vise par exemple à faciliter la construction, vous pouvez très bien, dans le cours du débat parlementaire, je ne mets en cause personne en disant ça, mais c'est la réalité."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "C'est ça que j'ai écrit, Madame Le Pen. Et ça, ça correspond à la réalité malheureuse, mais à la réalité. Vous avez posé, Madame, la question de la fiche de paye. Une des raisons pour lesquelles la fiche de paye est complexe, c'est que le système que nous avons mis en place est complexe."
+   }
+  },
+  {
+   "segment": "s1310",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "02:28:12",
+   "text": "C'est ça que j'ai écrit, Madame Le Pen. Et ça, ça correspond à la réalité malheureuse, mais à la réalité. Vous avez posé, Madame, la question de la fiche de paye. Une des raisons pour lesquelles la fiche de paye est complexe, c'est que le système que nous avons mis en place est complexe.",
+   "words": 54,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Dans le cours du débat parlementaire, vous pouvez très rapidement avoir des intérêts professionnels, qui expriment une demande visant à mieux normer tel sujet, ce qui additionné petit bout par petit bout par petit bout devient un texte qui renforce la complexité et qui désincite à la construction."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Tout à l'heure, quelqu'un a dit «mais l'État n'a qu'à nous demander une seule fois». C'est vrai. Mais il y a beaucoup d'organismes qui demandent ces informations qui ne sont pas à l'État. L'URSSAF, ce n'est pas à l'État. La CAF, ce n'est pas à l'État."
+   }
+  },
+  {
+   "segment": "s1313",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "02:28:53",
+   "text": "Elles sont évidemment, par leur complexité, par la rapidité de leur évolution et souvent par l'absence de leur clarté, un énorme problème. Je considère donc que pour avancer, je suis assez d'accord avec l'ordonnance de suppression. Il faudra en faire.",
+   "words": 40,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Et vous voyez, c'est connecté. Mais pas toujours. Et parfois, on n'a pas le droit de connecter parce qu'il y a des normes. Et parfois, ce n'est pas connecté. Juste un mot sur les normes."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "Je suis absolument convaincu qu'il faut s'interdire de surtransposer. C'est tout à fait exact, c'est vrai en matière agricole, c'est vrai dans les autres matières."
+   }
+  },
+  {
+   "segment": "s1316",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:29:31",
+   "text": "Raphaël Glucksmann.",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Et j'ai chargé, je le dis, Madame Morancet, qui est la présidente du conseil régional des Pays de la Loire, de faire une tournée en ce moment pour rencontrer les chefs d'entreprise, rencontrer l'ensemble des acteurs économiques, pour déterminer les textes sur lesquels nous interviendrons dès le début du café."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Alors, la norme, c'est comme le cholestérol, il y a de la bonne norme, il y a de la mauvaise norme."
+   }
+  },
+  {
+   "segment": "s1320",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "02:29:54",
+   "text": "Et quand il n'y a pas d'utilité à cette norme, évidemment que nous on est prêts, on n'est pas des fanatiques de la norme.",
+   "words": 24,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Oui, ce qu'il faut faire, c'est se demander à chaque fois à quoi elle sert."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et on n'est surtout pas des fanatiques d'un système où il y a 17 interlocuteurs simplement pour un projet et où l'information ne circule pas. Et donc oui, il faut un guichet unique et il faut la circulation de l'information qu'on ne demande pas 27 fois la même chose à notre interlocuteur."
+   }
+  },
+  {
+   "segment": "s1325",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "02:30:55",
+   "text": "Ce à quoi on a assisté au mois de juin, c'est à nos enfants qui cuisent dans leur salle de classe parce qu'il n'y a pas eu la rénovation thermique des bâtiments, parce qu'il n'y a pas eu la rénovation thermique des écoles.",
+   "words": 43,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Ce à quoi on a assisté, c'est à des pompiers qui sont intoxiqués par les fumées parce qu'ils manquent de cagoule à 80 euros."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "et ce à quoi on a assisté cet été, ce printemps, c'est à la réédition d'une crise énergétique qui avait déjà eu lieu en 2021 -2022."
+   }
+  },
+  {
+   "segment": "s1329",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "02:31:26",
+   "text": "Et quand nous nous demandons des investissements dans l'électrification, des investissements dans un leasing social qui soit largement plus développé que ce que vous avez commencé à faire avant de revenir dessus, et bien, fin de non recevoir.",
+   "words": 38,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "70 milliards de subventions aux énergies fossiles."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Donc on dépense 70 milliards d'euros dans le renforcement de notre addiction aux fossiles, mais on n'est pas capable de mettre 8 milliards d'euros pour que les classes populaires et les classes moyennes ne dépendent plus des guerres de Poutine, de Trump, de Netanyahou, quand elles vont faire leur plein pour aller travailler."
+   }
+  },
+  {
+   "segment": "s1336",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "02:32:21",
+   "text": "Et ces crises, qu'elles soient énergétiques ou que ce soit la canicule, la sécheresse, les incendies, ces crises vont se multiplier.",
+   "words": 21,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Ce qui nous coûte extrêmement cher, c'est à chaque crise, l'impréparation."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "La seule manière d'être économe aujourd'hui, c'est d'investir dans la transition écologique massivement."
+   }
+  },
+  {
+   "segment": "s1345",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:33:23",
+   "text": "Merci de vous être relevé, puisque en effet vous êtes le suivant à prendre la parole, Joris Brajon. Merci beaucoup d'être avec nous.",
+   "words": 23,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Ce que dit la consultation du MEDEF auprès, je le rappelle, de 66 000 dirigeants, c'est que 83% d'entre eux jugent prioritaire de réduire la fiscalité et les charges des entreprises."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Ça marche plutôt bien pour vous, votre entreprise, une phase forte de croissance, doublement des effectifs, mais la fiscalité, c'est ce que vous nous avez raconté, est potentiellement un frein."
+   }
+  },
+  {
+   "segment": "s1362",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:35:53",
+   "text": "Le débat est passionnant, c'est pour ça qu'on s'est laissé le temps, je vous le promets.",
+   "words": 16,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Je vais résumer la situation assez simplement."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "par contre là on va devoir effectivement faire un tout petit peu attention pour que certains ne loupent pas leur train et qu'on rentre chez nous Edouard Philippe je"
+   }
+  },
+  {
+   "segment": "s1363",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:35:56",
+   "text": "par contre là on va devoir effectivement faire un tout petit peu attention pour que certains ne loupent pas leur train et qu'on rentre chez nous Edouard Philippe je",
+   "words": 29,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Le débat est passionnant, c'est pour ça qu'on s'est laissé le temps, je vous le promets."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "vais essayer d'être rapide je propose d'abord de supprimer 50 milliards d'impôts de production et de le financer par la suppression de 50 milliards d'aides aux entreprises pourquoi je choisis de supprimer?"
+   }
+  },
+  {
+   "segment": "s1369",
+   "speaker": "Édouard Philippe",
+   "role": "candidate",
+   "clock": "02:36:55",
+   "text": "C'est le premier point. Le deuxième point, en matière de fiscalité, je propose de ne pas toucher un cheveu au pacte d'Utreil. Pas un. Pour une raison simple, les entreprises familiales ont un rôle particulier dans le capitalisme, monsieur Mélenchon, français, et ce rôle est trop restreint.",
+   "words": 47,
+   "overlap": false,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "Donc moins 50 milliards d'impôts de production, mais moins 50 milliards d'aides aux entreprises, parce qu'il sait bien faire des promesses qu'on ne sait pas financer, ça au moins c'est simple."
+   },
+   "after": {
+    "speaker": "Édouard Philippe",
+    "text": "il est plus fort en Allemagne, il est plus fort en Italie du Nord il faut donc préserver la transmission du capital familial et pour cela je dis, cessons de faire peser sur les détenteurs"
+   }
+  },
+  {
+   "segment": "s1373",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:37:47",
+   "text": "Edouard Philippe",
+   "words": 2,
+   "overlap": true,
+   "before": {
+    "speaker": "Édouard Philippe",
+    "text": "familial attendez je termine, j'en ai très rapide ensuite je propose la fin de la surtaxe pour les grandes entreprises parce que cet impôt provisoire doit cesser et une fois qu'on a fait ça on reste dans la politique de l'offre que j'ai indiqué j'en termine monsieur pour vous dire que l'activité logistique est souvent dénigrée elle est essentielle et que si par extraordinaire vous travaillez sur des importations n'oubliez pas de passer par le port du Havre merci beaucoup"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Jean -Luc Mélenchon allez -y, je vous laisse la parole vous avez été cité"
+   }
+  },
+  {
+   "segment": "s1383",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "02:39:11",
+   "text": "vous",
+   "words": 1,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "continuez,"
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "avez encore une minute, profitez -en, allez -y."
+   }
+  },
+  {
+   "segment": "s1394",
+   "speaker": "Jean-Luc Mélenchon",
+   "role": "candidate",
+   "clock": "02:39:52",
+   "text": "Pourtant, il a les aides des entreprises. Total, zéro!",
+   "words": 9,
+   "overlap": false,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Combien paye d'impôts, Monsieur Mittal? Zéro!"
+   },
+   "after": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "Donc nous avons besoin que ceux qui peuvent payent et je vous garantis que s'ils payent et qu'on fait déborder le vase, je vous le rendrai. De même pour la santé, si nous avons des politiques de prévention qui font baisser les dépenses de santé, je suis d'accord pour baisser les cotisations."
+   }
+  },
+  {
+   "segment": "s1400",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:40:29",
+   "text": "beaucoup de temps, Bruno Retailleau.",
+   "words": 5,
+   "overlap": true,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Vous avez"
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "La France est ce beau pays où l'État se sert avant que l'entreprise n'ait gagné le moindre euro."
+   }
+  },
+  {
+   "segment": "s1406",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "02:40:52",
+   "text": "On a d'abord parlé des charges sociales.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Trois propositions que je mets sur la table."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Je veux réduire de 40 milliards dès les premiers mois et ce sera un engagement de les geler sur 5 ans pour assurer une stabilité. La stabilité de l'environnement fiscal et réglementaire c'est fondamental."
+   }
+  },
+  {
+   "segment": "s1411",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:41:57",
+   "text": "Et l'air autour de moi.",
+   "words": 5,
+   "overlap": true,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Je me méfie, moi, des aides. Le fameux rapport du Sénat qui a été tout à l'heure pointé d'un sénateur communiste, les 210 milliards d'aides aux entreprises, mais c'est du flanc."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Non,"
+   }
+  },
+  {
+   "segment": "s1415",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "02:42:06",
+   "text": "On mélange des serviettes et des torchons.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "C'est Fabien Guay, vous le connaissez."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Est -ce que les 80 milliards d'allègements de charges sont une aide aux entreprises?"
+   }
+  },
+  {
+   "segment": "s1417",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "02:42:13",
+   "text": "Est -ce que la TVA sur les médicaments, la TVA sur les produits de première nécessité, est -ce que ce sont là aussi des aides aux entreprises?",
+   "words": 27,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Est -ce que les 80 milliards d'allègements de charges sont une aide aux entreprises?"
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Donc je me méfie d'une opération qui consisterait à dire, je donne d'un côté, je reprends de l'autre."
+   }
+  },
+  {
+   "segment": "s1422",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:43:15",
+   "text": "Oui, bon, j'ai déjà évoqué nos propositions sur la fiscalité, mais baisser la C3S, la CVAE et la CFE, ce n'est pas suffisant, il faut les supprimer.",
+   "words": 27,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Allez -y, Marine Le Pen."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Parce qu'en réalité, il faut un réalignement compétitif pour les entreprises françaises."
+   }
+  },
+  {
+   "segment": "s1423",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:43:25",
+   "text": "Parce qu'en réalité, il faut un réalignement compétitif pour les entreprises françaises.",
+   "words": 12,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Oui, bon, j'ai déjà évoqué nos propositions sur la fiscalité, mais baisser la C3S, la CVAE et la CFE, ce n'est pas suffisant, il faut les supprimer."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Donc il faut purement et simplement supprimer ces trois impôts."
+   }
+  },
+  {
+   "segment": "s1428",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:44:15",
+   "text": "Au moins, les choses sont extrêmement claires.",
+   "words": 7,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Donc bien sûr, il faut conserver le pacte du treil, il faut le conditionner quand même à rester tout de même 10 ans à produire sur le territoire national, parce que s'il s'agit de bénéficier de l'avantage fiscal et en réalité et au bout de deux ans, soit revendre l'entreprise, soit délocaliser, à ce moment -là, on perd l'avantage fiscal."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "L'impôt paperasse, ça va quand même être important parce que la simplification a une conséquence, c'est que ça fait baisser ce qu'on appelle l'impôt paperasse, qui n'est pas négligeable, notamment pour les petites entreprises, mais aussi pour les grosses."
+   }
+  },
+  {
+   "segment": "s1429",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:44:18",
+   "text": "L'impôt paperasse, ça va quand même être important parce que la simplification a une conséquence, c'est que ça fait baisser ce qu'on appelle l'impôt paperasse, qui n'est pas négligeable, notamment pour les petites entreprises, mais aussi pour les grosses.",
+   "words": 39,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Au moins, les choses sont extrêmement claires."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Il faut supprimer, nous on le fera tout de suite,"
+   }
+  },
+  {
+   "segment": "s1434",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "02:45:01",
+   "text": "et puis pardon mais puisqu'on parle de on a parlé tout à l'heure de productivité on a parlé de machine outil, on a parlé de robotisation on a parlé de numérisation je pense que c'est extrêmement important d'accompagner les entreprises vers cela parce qu'on a un vrai déficit aussi sur ce sujet par rapport à d'autres pays, notamment européens et nous mettrons en place un suramortissement pour l'ensemble de ces trois domaines que je pense que c'est ce qui peut permettre d'accélérer en réalité la numérisation et la robotisation des entreprises qui en ont besoin.",
+   "words": 95,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Soit on les annule purement et strictement pour 58 d'entre eux, soit on les annule avec report pour 70 restants."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Raphaël Glucksmann."
+   }
+  },
+  {
+   "segment": "s1438",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "02:45:48",
+   "text": "Parce que moi aussi, je suis attaché au fait qu'il y ait des entreprises familiales, qu'il y ait un capitalisme familial qui, lui, ne délocalisera pas la production.",
+   "words": 28,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Mais est -ce que vous savez quelle est la fiscalité en Allemagne sur la transmission des entreprises familiales?"
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Eh bien, le modèle allemand taxe beaucoup plus au -dessus de 50 millions d'euros les entreprises qui sont transmises que la France et que même ce que nous proposons nous comme réforme du pacte d'Utreil."
+   }
+  },
+  {
+   "segment": "s1445",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "02:47:15",
+   "text": "Oui, il y a un problème quand on devient une société qui fait peser la fiscalité davantage sur le travail que sur l'héritage ou sur la rente.",
+   "words": 27,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Et donc ma mesure, puisque vous l'avez attaquée selon votre opinion, Elle ne touche pas 99% des héritages qui ne sont absolument pas impactés. Elle touche les méga -héritages. Et oui, il y a un problème quand on taxe plus le travail que l'héritage."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Ça crée une société qui est socialement injuste, mais qui en plus est économiquement non dynamique."
+   }
+  },
+  {
+   "segment": "s1449",
+   "speaker": "Raphaël Glucksmann",
+   "role": "candidate",
+   "clock": "02:47:41",
+   "text": "Parce que là, je vous écoute. Et en fait, vous avez dit quelque chose, M. Retailleau, au début.",
+   "words": 18,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Mais pour pouvoir baisser la fiscalité sur les salaires, eh bien, on a besoin de dire où on trouve l'argent."
+   },
+   "after": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Vous avez dit la gauche qui va créer de la dette."
+   }
+  },
+  {
+   "segment": "s1458",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:48:44",
+   "text": "Je tiens à préciser que vous avez un peu de retard. Donc si vous souhaitez réagir, vous pouvez le faire.",
+   "words": 20,
+   "overlap": false,
+   "before": {
+    "speaker": "Raphaël Glucksmann",
+    "text": "Si on casse le modèle social, on casse la démocratie."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Non, simplement, ce que je souhaite, c'est que pour expliciter ce que je veux, moi, bien faire sur le plan fiscal."
+   }
+  },
+  {
+   "segment": "s1463",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "02:49:35",
+   "text": "Donc ce que je fais, je pars de 110 milliards de cet écart, je soustrais les vrais 40 milliards d'aides, ça nous donne 70 milliards.",
+   "words": 25,
+   "overlap": false,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "Ce que moi je propose, c'est que j'ai fait ligne par ligne quelles étaient les vraies aides aux entreprises. J'en trouve pas 210 milliards, j'en trouve 40 milliards. Il y a par exemple le crédit impôt recherche. Est -ce qu'ici quelqu'un veut toucher au crédit impôt recherche? Non, je pense qu'on a besoin de compétitivité et donc d'innovation."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "Et moi je pense que si je veux stabiliser la dette en 5 ans, je ne peux pas restituer 70 milliards."
+   }
+  },
+  {
+   "segment": "s1481",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:52:03",
+   "text": "Moi d'abord, quand je vous écoute, j'ai l'impression que la France, ça serait un pays où des gens viendraient se réfugier pour payer moins d'impôts qu'ailleurs.",
+   "words": 26,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "nous on veut pas le supprimer évidemment mais oui on va le changer on va le changer parce qu'aujourd'hui il est détourné si on prend toutes les exonérations enfin les avantages fiscaux du pacte dutreuil les deux tiers de ces sommes elles vont à 1% des bénéficiaires c'est à dire que si vous êtes 4000 et bien deux tiers des avantages du pacte dutreuil vont juste au premier rang c'est quand même un sujet donc nous on veut que le pacte dutreuil revienne à son état d'esprit de départ, favoriser la transmission familiale, mais pas servir d'optimisation fiscale."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "La France, c'est un paradis fiscal pour personne."
+   }
+  },
+  {
+   "segment": "s1490",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:52:36",
+   "text": "où ils le paient.",
+   "words": 4,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "dans d'autres pays"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Ils"
+   }
+  },
+  {
+   "segment": "s1494",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:52:38",
+   "text": "aller jusqu'au bout? Je ne vous ai pas interrompu.",
+   "words": 9,
+   "overlap": true,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Est -ce que je peux"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Deuxième chose, moi je le dis, je suis fier qu'on ait baissé le taux d'impôt sur les sociétés de 33 à 25."
+   }
+  },
+  {
+   "segment": "s1496",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:52:45",
+   "text": "Qu'on ait fait la flat tax, qu'on ait supprimé l'ISF.",
+   "words": 10,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Deuxième chose, moi je le dis, je suis fier qu'on ait baissé le taux d'impôt sur les sociétés de 33 à 25."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "J'aurais jamais cette politique honteuse."
+   }
+  },
+  {
+   "segment": "s1501",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:52:59",
+   "text": "Vous savez quoi?",
+   "words": 3,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "quand on a passé le taux d'impôt sur les sociétés de 33 à 25."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "On a collecté plus d'impôts sur les sociétés avec un taux à 25 qu'à l'époque où le taux était à 33."
+   }
+  },
+  {
+   "segment": "s1502",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:53:00",
+   "text": "On a collecté plus d'impôts sur les sociétés avec un taux à 25 qu'à l'époque où le taux était à 33.",
+   "words": 21,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Vous savez quoi?"
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Parce que oui, c'est de la logique de base."
+   }
+  },
+  {
+   "segment": "s1504",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:53:09",
+   "text": "Quand vous baissez la fiscalité, l'activité économique se développe et donc vous avez davantage.",
+   "words": 14,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Parce que oui, c'est de la logique de base."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Je vais juste au bout du sujet."
+   }
+  },
+  {
+   "segment": "s1506",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:53:16",
+   "text": "Aujourd'hui, c'est terrible pour les milieux économiques parce que depuis la dissolution, à cause de l'instabilité politique, tous les ans, c'est l'épée de Damoclès au moment du budget et une entreprise, elle ne se pilote pas au rythme des amendements parlementaires, tous plus délirants les uns que les autres.",
+   "words": 49,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Je vais juste au bout du sujet."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "Et donc il faut en sortir."
+   }
+  },
+  {
+   "segment": "s1508",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:53:33",
+   "text": "Moi c'est aussi pour ça que je suis retourné à l'Assemblée.",
+   "words": 11,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Et donc il faut en sortir."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "J'aurais pu faire le choix au moment de la dissolution de ne pas retourner à l'Assemblée comme député pour me protéger et pas aller dans ce chaudron qui quand même abîme."
+   }
+  },
+  {
+   "segment": "s1509",
+   "speaker": "Gabriel Attal",
+   "role": "candidate",
+   "clock": "02:53:35",
+   "text": "J'aurais pu faire le choix au moment de la dissolution de ne pas retourner à l'Assemblée comme député pour me protéger et pas aller dans ce chaudron qui quand même abîme.",
+   "words": 31,
+   "overlap": false,
+   "before": {
+    "speaker": "Gabriel Attal",
+    "text": "Moi c'est aussi pour ça que je suis retourné à l'Assemblée."
+   },
+   "after": {
+    "speaker": "Gabriel Attal",
+    "text": "J'y suis allé pour me battre."
+   }
+  },
+  {
+   "segment": "s1521",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "02:54:40",
+   "text": "Une minute.",
+   "words": 2,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Vous avez chacun une minute."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Une minute."
+   }
+  },
+  {
+   "segment": "s1538",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:56:25",
+   "text": "avec vous, première chose.",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Déjà nous on discutera"
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Et on augmentera le SMIC, comme je vous l'ai dit, à 2000 euros brut."
+   }
+  },
+  {
+   "segment": "s1543",
+   "speaker": "Marine Tondelier",
+   "role": "candidate",
+   "clock": "02:57:11",
+   "text": "Ça veut dire aussi recentrer le crédit impôt recherche vers les PME et les ETI.",
+   "words": 15,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Tondelier",
+    "text": "Ça veut dire un guichet unique pour accompagner les PME et les ETI à la transition."
+   },
+   "after": {
+    "speaker": "Marine Tondelier",
+    "text": "Ce sera la présidence, vous l'avez compris, des petites et moyennes entreprises."
+   }
+  },
+  {
+   "segment": "s1564",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "03:00:05",
+   "text": "Merci. Marine Le Pen.",
+   "words": 4,
+   "overlap": true,
+   "before": {
+    "speaker": "Jean-Luc Mélenchon",
+    "text": "enfin, dans le moment où nous sommes tiens, il me reste 11 secondes dans le moment où nous sommes je veux vous redire que si nous nous donnons des objectifs nous avons le moyen de développer notre pays il y a l'IA française elle est possible, pourquoi vous avez laissé un néerlandais s'y installer nous avons l'ordinateur quantique possible nous avons l'avion spatial c'est donner des objectifs précis qui nous tirera d'affaires et vous ne pourrez pas le faire sans une classe ouvrière correctement rémunérée et vivant dans la dignité dans son logement et dans son travail."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Je ne répondrai pas non plus à votre question parce qu'il est impossible d'y répondre."
+   }
+  },
+  {
+   "segment": "s1565",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "03:00:07",
+   "text": "Je ne répondrai pas non plus à votre question parce qu'il est impossible d'y répondre.",
+   "words": 15,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Merci. Marine Le Pen."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Il n'y a pas une mesure, évidemment."
+   }
+  },
+  {
+   "segment": "s1567",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "03:00:13",
+   "text": "Il y en a énormément.",
+   "words": 5,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Il n'y a pas une mesure, évidemment."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Et je l'ai expliqué, il y a en même temps un plan de relance massif de l'économie et en même temps un plan d'économie massif sur la dépense publique."
+   }
+  },
+  {
+   "segment": "s1573",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "03:00:31",
+   "text": "On a fait un contre -budget.",
+   "words": 6,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "On va le refaire là."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "Nous avons été les seuls..."
+   }
+  },
+  {
+   "segment": "s1578",
+   "speaker": "Marine Le Pen",
+   "role": "candidate",
+   "clock": "03:00:40",
+   "text": "Je n'ai pas vu les autres formations politiques faire de contre -budget au moment du budget.",
+   "words": 16,
+   "overlap": false,
+   "before": {
+    "speaker": "Marine Le Pen",
+    "text": "Ça permet de savoir exactement ce qu'il en est."
+   },
+   "after": {
+    "speaker": "Marine Le Pen",
+    "text": "C'est dommage."
+   }
+  },
+  {
+   "segment": "s1592",
+   "speaker": "Bruno Retailleau",
+   "role": "candidate",
+   "clock": "03:02:36",
+   "text": "Ce qu'il faut bien comprendre, c'est que ce ne sont pas quelques réformes, quelques rustides dont la France a besoin. C'est un changement de système. Une fois à l'Elysée, je prendrai trois décisions. La première, je mettrai fin au système qui surtaxe le travail et qui encourage malheureusement la Sistana.",
+   "words": 50,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Bruno Retailleau."
+   },
+   "after": {
+    "speaker": "Bruno Retailleau",
+    "text": "J'ai dit comment je le ferais avec le seuil zéro cotisation. La deuxième, un double choc fiscal et réglementaire."
+   }
+  },
+  {
+   "segment": "s1600",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "03:03:51",
+   "text": "C'était donc le premier débat de cette élection présidentielle avec le MEDEF sur LCI.",
+   "words": 14,
+   "overlap": true,
+   "before": {
+    "speaker": "Bruno Retailleau",
+    "text": "décennies."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Merci à ceux qui nous ont regardés, merci aux entrepreneurs, merci à tous."
+   }
+  },
+  {
+   "segment": "s1602",
+   "speaker": "Amélie Carrouër",
+   "role": "presenter",
+   "clock": "03:04:00",
+   "text": "Alors, je vous donne rendez -vous pour les rendez -vous d'information de TF1, notamment le 20h de TF1, Darius Rochebain sur LCI.",
+   "words": 22,
+   "overlap": false,
+   "before": {
+    "speaker": "Amélie Carrouër",
+    "text": "Merci à ceux qui nous ont regardés, merci aux entrepreneurs, merci à tous."
+   },
+   "after": {
+    "speaker": "Amélie Carrouër",
+    "text": "Et voilà, belle soirée à tous."
+   }
+  }
+ ]
+}
