@@ -9,12 +9,16 @@ English terms are canonical in code and docs; the French label shown on the site
 ### People and events
 
 **Speaker** (intervenant):
-Any person who talks in an imported appearance, candidate or not. Only Candidates get a public profile page in v1; a Speaker widely tipped to run but not yet a Candidate has no role of their own.
-_Avoid_: politician, candidate (as the general term), personality, putative candidate
+Any voice that talks in an imported Appearance: a person, candidate or not, or a broadcaster's voice-over. A person the Transcript never names is still a Speaker, scoped to that Appearance until identified. Only Candidates get a public profile page in v1; a Speaker widely tipped to run but not yet a Candidate has no role of their own.
+_Avoid_: politician, candidate (as the general term), personality, putative candidate, cluster (the machine label a Speaker is mapped from)
 
 **Candidate** (candidat):
 A Speaker listed as running for the 2027 presidential election, or in a primary for it, by one of the site's reference lists (LCP's candidates page or French Wikipedia's candidatures page; the Conseil constitutionnel's official list replaces both once published). A dated role of a Speaker, not a separate entity: it starts on the listing and ends with a reason (withdrawal, primary lost, absent from the official list); an ended role keeps its history and its profile. Contenders in a primary are Candidates with no distinction.
 _Avoid_: contender, prétendant, declared candidate (as a narrower class), former candidate (as a separate role)
+
+**Role** (rôle):
+What a Speaker does in one Appearance: `journalist` (journaliste), presenter or interviewer; `host` (organisateur), the organiser's representative; `questioner` (questionneur), a member of the public or an invited guest asking questions; `narration` (voix off), the broadcaster's voice-over; `other` (autre). `candidate` is not written: it follows from the Speaker's Candidate role as known today.
+_Avoid_: function, participant type, moderator (as a role value)
 
 **Appearance** (intervention):
 One debate, interview, speech or other public occasion where one or more Speakers talk, with a source, a date and a medium. The unit of import. The v1 seed corpus is every Confrontation since 27 August 2026 and nothing per person.
@@ -37,8 +41,16 @@ _Avoid_: mineable, legal basis (as the field name), TDM status
 The verbatim, timestamped, speaker-attributed text of one Appearance. Produced by automatic speech recognition and corrected by the community through versioned edits.
 
 **Segment** (extrait):
-A timestamped stretch of one Speaker's speech within an Appearance. The unit that everything else (Statement, Technique, Topic) attaches to.
-_Avoid_: quote, passage, clip, utterance
+A timestamped stretch of exactly one Speaker's speech within an Appearance, with an identifier that never changes once given. The unit that everything else (Statement, Technique, Topic) attaches to.
+_Avoid_: quote, passage, clip, utterance, turn (a diarization output, not a Segment)
+
+**Overlap** (chevauchement):
+Two Speakers talking at once. Held as two Segments whose time ranges overlap, each flagged; a Segment never has two Speakers.
+_Avoid_: cross-talk (as the data term), interruption
+
+**Timeline** (référentiel temporel):
+The recording of an Appearance on which its Segment times are counted: the copy that was transcribed. Every replay copy the site embeds or links carries an offset to it, so a Segment's time can differ from the replay player's clock.
+_Avoid_: reference audio, master, offset (as the name of the timeline itself)
 
 **Validation status** (statut de validation):
 The review state of one Segment's text, or of its speaker attribution, each held separately: `draft` (brouillon), machine-produced and not yet checked by a human; `verified` (vérifié), checked by a human against the Source's replay. A Transcript has no status of its own; its state is derived from its Segments.
