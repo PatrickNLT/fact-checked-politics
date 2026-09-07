@@ -7,9 +7,11 @@ correction? Prototype code, outputs and the corrected sample live on branch
 are relative to that directory). The validated decisions are below and feed tickets #14 and #15.
 
 Status on 2026-09-07: speech recognition and diarization both ran on the whole debate, and the
-five-minute sample's **text was hand-corrected** (WER measured). The speaker reference was not
-corrected: fixing an RTTM with sub-second fragments in cross-talk proved unreasonable to ask, so
-DER stays unmeasured and a segment-level attribution check is offered instead (see "What is left").
+five-minute sample's **text was hand-corrected** (WER measured) and its **speaker attribution
+hand-judged per Segment** (attribution error measured). DER in the strict sense stays unmeasured:
+fixing an RTTM with sub-second fragments in cross-talk proved unreasonable to ask, and the
+per-Segment check measures what the site needs anyway. The speaker-to-person mapping was read
+from the text and confirmed for the candidates, presenter and organiser.
 
 ## Setup
 
@@ -176,18 +178,27 @@ gaps that a voice-activity detector marks as non-speech would remove the one fou
 pyannote 3.1 found **17 clusters** in 1 023 turns with no speaker-count hint. Speech time per
 cluster, with the identity read off the transcript (first words, content):
 
-| Cluster | Speech | Words | Who (from the text) |
+| Cluster | Speech | Words | Who (from the text; cue in `speakers-map.json`) |
 |---|---|---|---|
-| SPEAKER_09, 14, 12, 16, 07, 06, 02 | 20.5 to 23.0 min each | 3 700 to 5 000 each | the seven candidates (Tondelier is 14; the others are a five-minute mapping job) |
+| SPEAKER_02 | 20.5 min | 3 724 | Bruno Retailleau (pension age, Fillon) |
+| SPEAKER_06 | 20.8 min | 3 850 | Raphaël Glucksmann ("au Parlement européen, je me suis battu") |
+| SPEAKER_07 | 21.7 min | 4 601 | Édouard Philippe (the book retort to Le Pen) |
+| SPEAKER_12 | 22.3 min | 3 843 | Marine Le Pen (feminine forms, VAT on energy to 5.5) |
+| SPEAKER_09 | 23.0 min | 4 565 | Jean-Luc Mélenchon ("la planification écologique") |
+| SPEAKER_16 | 22.0 min | 4 804 | Gabriel Attal ("quand j'étais Premier ministre", Philippe being 07) |
+| SPEAKER_14 | 22.5 min | 4 978 | Marine Tondelier ("conseillère régionale des Hauts-de-France") |
 | SPEAKER_13 | 14.6 min | 2 950 | Amélie Carrouër, presenter |
 | SPEAKER_01 | 2.6 min | 402 | Patrick Martin, MEDEF president, opening |
-| SPEAKER_03, 11, 00, 10, 05 | 0.9 to 2.5 min each | 160 to 470 | the five business owners' questions |
+| SPEAKER_03, 10, 05, 00, 11 | 0.9 to 2.5 min each | 160 to 470 | the five business owners, in order of appearance (Malenfer, ?, Furlan, Lecoufle, ?) |
 | SPEAKER_04 | 0.6 min | 75 | LCI voice-over of the opening |
 | SPEAKER_15, 08 | under 0.5 min | 11, 36 | jingle noise, the hallucinated caption credit |
 
 Seven near-equal candidate shares is what a moderated debate should produce, and no cluster
 splits or merges a person as far as reading shows: 14 real speakers, 3 noise clusters. The
-`speakers` mapping in the output is exactly this table, to be filled once per Appearance.
+mapping was read off the text in a few minutes (self-references, party lines, being addressed by
+name) and is recorded in `speakers-map.json`, which the merge folds into the output's `speakers`
+block; Patrick confirmed the seven candidates, the presenter and the organiser on 2026-09-07. The speaking order of the opening
+statements (02, 06, 07, 12, 09, 16, 14) is the drawn order, useful as a cross-check.
 
 ### Attribution in cross-talk: the real diarization defect
 
@@ -200,25 +211,38 @@ arise in the **merge of words onto turns**, in two ways:
   presenter, who said all of it).
 - **Nested turns**: when a short interjection sits inside a longer turn, both turns cover the
   words and the merge has to choose. pyannote had "Non, aucune récrimination. L'occasion pour
-  vous de répondre…" as a 4-second presenter turn inside a 17-second Tondelier turn; the merge
-  gave the words to Tondelier. A "prefer the shorter covering turn" rule would fix this case and
-  should be tested against the attribution check before being adopted.
+  vous de répondre…" as a 4-second presenter turn inside a 17-second Tondelier turn; the first
+  merge gave the words to Tondelier.
 
-In calm passages neither matters. In the sample window's cross-talk the exchange comes out as
-alternating short Segments, most flagged `[chevauchement]`, with about one boundary in three
-carrying the wrong first or last words. This is the misattribution in heated exchanges that the
+**Measured on the sample, per Segment.** Correcting an RTTM (39 turns in the window, many under a
+second in the cross-talk) was judged unreasonable by the corrector, rightly: it is a
+research-benchmark format, not a correction workflow, so DER in the strict sense is not measured.
+What the site needs is the per-Segment answer "is this speaker right?": the `sample` step writes
+`out/sample/attribution-check.txt`, one emitted Segment per line, and Patrick judged all 33 on
+2026-09-07:
+
+| | First merge (ties to the first turn) |
+|---|---|
+| Segments judged | 33, of which 4 marked as genuinely both speakers |
+| Segments with the wrong speaker | 6 (**18 percent**) |
+| Words with the wrong speaker | 41 of 1 113 (**3.7 percent**) |
+
+All six errors are in the cross-talk; five of them are presenter interjections handed to
+Tondelier (the nested-turn case), one is the reverse. Re-scoring the same judgements at word level
+against four candidate merge rules: ties to the first turn 4.4 percent of words wrong, always the
+shortest covering turn 2.3, **most overlap with ties to the shorter turn 1.9**, shortest turn under
+8 s 2.3. The third rule is now the merge's rule (it fixes "Non, aucune récrimination"); the
+caveat is that it was chosen on the same five minutes it was scored on, so the 1.9 is optimistic
+until a second window is judged. What remains after it is pure boundary slop ("Non," staying with
+the previous speaker, "Mais vous répondez à la question que vous voulez" still on Tondelier).
+
+In calm passages none of this matters. In cross-talk the exchange comes out as alternating short
+Segments, most flagged `[chevauchement]`. This is the misattribution in heated exchanges that the
 evidence file predicted, and it is where the `speaker` Validation status earns its place: the
-overlap flags point a corrector at exactly these Segments (888 words in the whole debate). No
-speaker-count hint (`--speakers 14`) was tried; it would not change either mechanism.
-
-**DER is not measured.** Correcting the RTTM (39 turns in the window, many under a second in the
-cross-talk) was judged unreasonable by the corrector, rightly: it is a research-benchmark format,
-not a correction workflow. What the site needs is the per-Segment answer "is this speaker
-right?", so the `sample` step now writes `out/sample/attribution-check.txt`, one emitted Segment
-per line (33 in the window), where the corrector marks each as right, wrong (with the right
-label) or genuinely both; `evaluate` turns it into a Segment- and word-level attribution error
-rate. The diarization hypothesis marks 4.5 percent of the window's speech time as overlapped, in
-line with the 6 to 10 percent published for French TV debates.
+overlap flags point a corrector at exactly these Segments (888 words in the whole debate, 2.5
+percent). No speaker-count hint (`--speakers 14`) was tried; it would not change either mechanism.
+The diarization hypothesis marks 4.5 percent of the window's speech time as overlapped, in line
+with the 6 to 10 percent published for French TV debates.
 
 ### Excerpt of the sample window, as emitted
 
@@ -267,7 +291,9 @@ checked against the audio: the hand-corrected RTTM settles it.)
   cross-talk, and the word probabilities and overlap flags point at most of it.
 - **Not good enough to publish uncorrected**, as expected from ADR 0002 and the evidence file, for
   two reasons: silent 30-second drops in ASR (repaired by the gap step, which is mandatory) and
-  boundary misattribution in cross-talk (2.5 percent of words flagged, to be human-verified).
+  misattribution in cross-talk (3.7 percent of the sample's words on the wrong speaker with the
+  first merge rule, about 2 with the current one, all inside the 2.5 percent of words flagged as
+  overlap, to be human-verified).
 - **Runtime is a non-issue** for the bridge: 14 minutes per audio hour on the M5, in the
   background, both models open weights and free.
 - **Model choice**: Whisper large-v3 on MLX and pyannote 3.1 are enough for v1. Voxtral, WhisperX
@@ -277,10 +303,7 @@ checked against the audio: the hand-corrected RTTM settles it.)
 
 ## What is left
 
-1. Attribution check: in `out/sample/attribution-check.txt`, replace the leading `?` of each of
-   the 33 lines with `ok`, the right speaker label, or `both`; then `uv run pipeline.py evaluate
-   --ref-corrected` reports the Segment- and word-level attribution error rate, the number that
-   replaces DER above.
-2. Fill the `speakers` mapping for D1 (the table above) and hand the shape to #14, the runtime to
-   #15. The 5-minute corrected sample is the first verified span of the corpus and the baseline for
-   the running WER the site is meant to publish.
+1. Hand the shape to #14 and the runtime to #15. The 5-minute corrected sample (text and
+   per-Segment speaker judgements) is the first verified span of the corpus and the baseline for
+   the running WER the site is meant to publish; a second judged window, ideally a calmer one,
+   would firm up the attribution figure.
