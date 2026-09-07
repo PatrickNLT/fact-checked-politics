@@ -1,0 +1,182 @@
+---
+// PROTOTYPE — Variante B, « Studio ».
+// The replay first. Two columns: a large sticky player on the left, the transcript on the
+// right as one row per Segment, following playback and scrolling itself. Every Segment
+// carries its own two statuses and its own permalink, so this is the correction view as
+// much as the reading view.
+import Player from "./Player.astro";
+import { clock, shakyWords } from "../lib/data.js";
+
+const { data } = Astro.props;
+const { meta, segments, words, participants, participantsById, embedded, reviewed } = data;
+const speaking = [...participants].sort((a, b) => b.speakingSeconds - a.speakingSeconds);
+---
+
+<div class="shell wide layout">
+  <aside>
+    <Player replay={embedded} timeline={meta.timeline} />
+
+    <h1>{meta.title}</h1>
+    <p class="meta">
+      {meta.programme} — {new Date(meta.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+      <br />Source&nbsp;: {data.source?.name} · organisé par MEDEF · {meta.venue}
+    </p>
+
+    <p class="review">
+      <span class="mark draft">{reviewed.total - reviewed.text} extraits non relus</span>
+      <span class="mark verified">{reviewed.text} relus</span>
+    </p>
+
+    <h2>À l'antenne</h2>
+    <ul class="cast">
+      {
+        speaking.filter((p) => p.segmentCount).map((p) => (
+          <li>
+            <span class="chip" style={`background:${p.colour}`} />
+            {p.candidate ? <a href={`/candidats/${p.speaker}`}>{p.name}</a> : <span>{p.name}</span>}
+            <em>{Math.round(p.speakingSeconds / 60)} min</em>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="legal">
+      L'enregistrement n'est pas hébergé ici&nbsp;: le lecteur ci-dessus est la copie
+      officielle publiée par {embedded?.uploader}.
+      <a href={meta.timeline.url} rel="noopener" target="_blank">Voir chez {meta.timeline.uploader}</a>
+    </p>
+  </aside>
+
+  <main>
+    <div class="toolbar">
+      <label><input type="checkbox" id="follow" checked /> suivre la lecture</label>
+      <label><input type="checkbox" id="only-draft" /> n'afficher que les extraits à relire</label>
+    </div>
+
+    <ol class="rows">
+      {
+        segments.map((s) => {
+          const p = participantsById[s.speaker];
+          const shaky = s.textStatus === "draft" ? shakyWords(words, s.id) : new Set();
+          return (
+            <li
+              class="row"
+              id={s.id}
+              data-t={s.start}
+              data-draft={s.textStatus === "draft" || s.speakerStatus === "draft"}
+            >
+              <button class="t" data-t={s.start}>{clock(s.start)}</button>
+              <div class="body">
+                <p class="who">
+                  <b style={`color:${p.colour}`}>{p.name}</b>
+                  {s.overlap && <span class="over">voix simultanées</span>}
+                  <span class={`mark ${s.speakerStatus}`}>locuteur {s.speakerStatus === "draft" ? "brouillon" : "vérifié"}</span>
+                  <span class={`mark ${s.textStatus}`}>texte {s.textStatus === "draft" ? "brouillon" : "vérifié"}</span>
+                  <a class="anchor" href={`#${s.id}`} title="Lien permanent vers cet extrait">#{s.id}</a>
+                </p>
+                <p class="said">
+                  {s.text.split(" ").map((w) => (shaky.has(w) ? <span class="shaky">{w}</span> : w)).reduce((a, b) => [a, " ", b])}
+                </p>
+                <a class="fix" href="#">Corriger cet extrait</a>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </main>
+</div>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(20rem, 26rem) 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding-block: 1.5rem 6rem;
+  }
+  @media (max-width: 60rem) { .layout { grid-template-columns: 1fr; } }
+
+  aside { position: sticky; top: 1rem; }
+  aside h1 { font-size: 1.25rem; margin: 1rem 0 0.3rem; }
+  .meta { color: var(--ink-soft); font-size: 0.85rem; margin-top: 0; }
+  .review { display: flex; gap: 0.4rem; }
+  aside h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin-bottom: 0.4rem; }
+  .cast { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; }
+  .cast li { display: flex; align-items: center; gap: 0.5rem; padding: 0.2rem 0; }
+  .cast em { margin-left: auto; color: var(--ink-soft); font-style: normal; font-size: 0.8rem; }
+  .chip { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .legal { font-size: 0.78rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 0.7rem; }
+
+  .toolbar {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 5;
+  }
+  .rows { list-style: none; margin: 1rem 0 0; padding: 0; }
+  .row {
+    display: grid;
+    grid-template-columns: 4.2rem 1fr;
+    gap: 0.7rem;
+    padding: 0.65rem 0.8rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-top: 0;
+    scroll-margin-top: 4rem;
+  }
+  .row:first-child { border-top: 1px solid var(--line); border-radius: 6px 6px 0 0; }
+  .row:last-child { border-radius: 0 0 6px 6px; }
+  .row.playing { background: #eff6ff; box-shadow: inset 3px 0 0 var(--accent); }
+  .row:target { background: #fffbe6; }
+  .t {
+    all: unset;
+    cursor: pointer;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+    color: var(--accent);
+    align-self: start;
+    padding-top: 0.15rem;
+  }
+  .who { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.2rem; font-size: 0.85rem; }
+  .over { font-size: 0.72rem; color: #8250df; background: #f5f0ff; padding: 0.2rem 0.4rem; border-radius: 3px; }
+  .anchor { margin-left: auto; color: var(--ink-soft); text-decoration: none; font-size: 0.75rem; opacity: 0; }
+  .row:hover .anchor { opacity: 1; }
+  .said { margin: 0; }
+  .fix { font-size: 0.75rem; opacity: 0; }
+  .row:hover .fix { opacity: 1; }
+  .hidden { display: none; }
+</style>
+
+<script>
+  document.querySelectorAll("[data-t].t").forEach((el) =>
+    el.addEventListener("click", () => window.fcpSeek?.(Number(el.dataset.t))),
+  );
+
+  const rows = [...document.querySelectorAll(".row")];
+  const follow = document.getElementById("follow");
+  let current = null;
+  document.addEventListener("fcp:time", (e) => {
+    let hit = null;
+    for (const el of rows) {
+      if (Number(el.dataset.t) <= e.detail) hit = el;
+      else break;
+    }
+    if (hit === current) return;
+    current?.classList.remove("playing");
+    hit?.classList.add("playing");
+    current = hit;
+    if (hit && follow.checked) hit.scrollIntoView({ block: "center", behavior: "smooth" });
+  });
+
+  document.getElementById("only-draft").addEventListener("change", (e) => {
+    rows.forEach((r) => r.classList.toggle("hidden", e.target.checked && r.dataset.draft !== "true"));
+  });
+</script>

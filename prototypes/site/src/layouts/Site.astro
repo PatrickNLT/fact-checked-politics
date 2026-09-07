@@ -1,0 +1,97 @@
+---
+// PROTOTYPE — throwaway. The shell every page sits in: header, footer, base tokens.
+// Deliberately plain, so the three transcript variants are judged on their own structure.
+const { title, wide = false } = Astro.props;
+const SITE = "Ce qu'ils ont dit";
+const head = title === SITE ? SITE : `${title} — ${SITE}`;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{head}</title>
+    <style is:global>
+      :root {
+        --ink: #111418;
+        --ink-soft: #57606a;
+        --line: #d8dee4;
+        --paper: #ffffff;
+        --ground: #f6f7f9;
+        --accent: #1f6feb;
+        --draft: #9a6700;
+        --draft-bg: #fff8e6;
+        --verified: #1a7f37;
+        --verified-bg: #eaf6ec;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--ground);
+        color: var(--ink);
+        font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      a { color: var(--accent); }
+      h1, h2, h3 { line-height: 1.25; }
+      .shell { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
+      .shell.wide { max-width: 82rem; }
+      header.site {
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+        position: relative;
+        z-index: 20;
+      }
+      header.site .shell {
+        display: flex;
+        align-items: baseline;
+        gap: 1.5rem;
+        padding-block: 0.85rem;
+      }
+      header.site strong { font-size: 1.05rem; letter-spacing: -0.01em; }
+      header.site nav { display: flex; gap: 1.1rem; font-size: 0.9rem; }
+      header.site nav a { color: var(--ink-soft); text-decoration: none; }
+      header.site nav a:hover { color: var(--accent); }
+      footer.site {
+        margin-top: 4rem;
+        border-top: 1px solid var(--line);
+        background: var(--paper);
+        color: var(--ink-soft);
+        font-size: 0.82rem;
+      }
+      footer.site .shell { padding-block: 1.5rem; }
+      /* Status marks. Machine-produced text is labelled until a human has reviewed it. */
+      .mark {
+        font: 600 0.68rem/1 -apple-system, "Segoe UI", Roboto, sans-serif;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        padding: 0.22rem 0.4rem;
+        border-radius: 3px;
+        white-space: nowrap;
+      }
+      .mark.draft { color: var(--draft); background: var(--draft-bg); border: 1px solid #f0dfae; }
+      .mark.verified { color: var(--verified); background: var(--verified-bg); border: 1px solid #bfe0c6; }
+      .shaky { border-bottom: 2px dotted var(--draft); }
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <div class={wide ? "shell wide" : "shell"}>
+        <strong><a href="/" style="color:inherit;text-decoration:none">Ce qu'ils ont dit</a></strong>
+        <nav>
+          <a href="/">Interventions</a>
+          <a href="/recherche">Recherche</a>
+        </nav>
+      </div>
+    </header>
+    <slot />
+    <footer class="site">
+      <div class={wide ? "shell wide" : "shell"}>
+        Maquette jetable (ticket&nbsp;#17 de la carte&nbsp;#5). Les transcriptions affichées
+        sortent de la reconnaissance automatique et ne sont pas relues&nbsp;: elles ne sont
+        pas publiables en l'état. Les enregistrements ne sont jamais hébergés ici&nbsp;; le
+        replay officiel de la Source est intégré ou lié.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+ "schema": "fcp/1",
+ "id": "lci",
+ "name": "LCI",
+ "group": "TF1",
+ "kind": "tv",
+ "default_acquisition_basis": "tolerated",
+ "tdm_opposition": {
+  "status": "express",
+  "where": "CGU TF1 Info art. 9; CG TF1+ I.10; tdmrep.json",
+  "checked_on": "2026-09-05"
+ },
+ "embed_policy": {
+  "own_player": "personal sites only",
+  "platform_copies": "YouTube, embeddable per video"
+ },
+ "replay_durability": "TF1+ days to weeks; YouTube open-ended",
+ "notice": null
+}

@@ -1,0 +1,114 @@
+---
+// PROTOTYPE — the Candidate profile. One shape only: the design question the ticket
+// raises is the transcript page, and the profile is here so navigation can be judged
+// around it. Nothing editorial: no biography, no photo, no summary of positions. What a
+// Candidate "is" on this site is the list of Appearances and what they were recorded
+// saying in them.
+import Site from "../../layouts/Site.astro";
+import { speakers, appearancesOf, clock, displayName } from "../../lib/data.js";
+
+const { id } = Astro.params;
+const person = speakers[id];
+const name = displayName(person);
+const appearances = appearancesOf(id);
+
+const contestLabel = (c) =>
+  c.contest === "election" ? "à l'élection présidentielle" : `à la ${c.contest}`;
+
+// Their Segments, longest first: a rough "what they actually said" sample.
+const highlights = appearances.flatMap((a) =>
+  a.segments
+    .filter((s) => s.speaker === id)
+    .map((s) => ({ ...s, appearance: a.meta })),
+).sort((a, b) => b.end - b.start - (a.end - a.start)).slice(0, 6);
+---
+
+<Site title={name}>
+  <div class="shell">
+    <h1>{name}</h1>
+    <p class="line">
+      {person.party} · candidat·e {contestLabel(person.candidacy)}, inscrit·e le
+      {" "}{new Date(person.candidacy.listed_on).toLocaleDateString("fr-FR")}
+      {" "}selon <a href={person.candidacy.reference.url} rel="noopener" target="_blank">
+        {person.candidacy.reference.list === "wikipedia-fr" ? "Wikipédia" : "LCP"}
+      </a> (liste relue le {new Date(person.candidacy.read_on).toLocaleDateString("fr-FR")}).
+    </p>
+    <p class="rule">
+      Cette page n'existe que parce qu'une liste de référence nomme cette personne. Elle ne
+      dit rien d'elle&nbsp;: elle liste ses interventions transcrites et ce qui y a été dit,
+      mot pour mot.
+    </p>
+
+    <h2>Interventions transcrites ({appearances.length})</h2>
+    <ul class="apps">
+      {
+        appearances.map((a) => {
+          const mine = a.segments.filter((s) => s.speaker === id);
+          return (
+            <li>
+              <a href={`/appearances/${a.meta.id}`}>{a.meta.title}</a>
+              <p>
+                {new Date(a.meta.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+                · {a.source?.name} · {mine.length} extraits
+                · <span class="mark draft">non relu</span>
+              </p>
+            </li>
+          );
+        })
+      }
+    </ul>
+
+    <h2>Extraits</h2>
+    <p class="hint">
+      Les plus longues prises de parole, dans l'ordre de durée. Rien n'est sélectionné à la
+      main&nbsp;; il n'y a ni résumé ni citation choisie.
+    </p>
+    <ul class="quotes">
+      {
+        highlights.map((s) => (
+          <li>
+            <blockquote>{s.text}</blockquote>
+            <p>
+              <a href={`/appearances/${s.appearance.id}#${s.id}`}>
+                {s.appearance.title} — {clock(s.start)}
+              </a>
+              · <span class={`mark ${s.textStatus}`}>texte {s.textStatus === "draft" ? "brouillon" : "vérifié"}</span>
+              <span class={`mark ${s.speakerStatus}`}>locuteur {s.speakerStatus === "draft" ? "brouillon" : "vérifié"}</span>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Site>
+
+<style>
+  .shell { padding-block: 2rem 5rem; max-width: 48rem; }
+  h1 { margin-bottom: 0.2rem; }
+  .line { color: var(--ink-soft); margin-top: 0; font-size: 0.92rem; }
+  .rule {
+    border-left: 3px solid var(--line);
+    padding-left: 0.9rem;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); margin-top: 2.5rem; }
+  .hint { font-size: 0.85rem; color: var(--ink-soft); }
+  .apps { list-style: none; padding: 0; }
+  .apps li { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 0.6rem; }
+  .apps p { margin: 0.2rem 0 0; font-size: 0.82rem; color: var(--ink-soft); display: flex; gap: 0.4rem; align-items: center; }
+  .quotes { list-style: none; padding: 0; }
+  .quotes li { margin-bottom: 1.4rem; }
+  blockquote {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--draft);
+    border-radius: 0 6px 6px 0;
+    padding: 0.8rem 1rem;
+  }
+  .quotes p { margin: 0.35rem 0 0; font-size: 0.8rem; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+</style>

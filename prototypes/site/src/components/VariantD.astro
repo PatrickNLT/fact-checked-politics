@@ -1,0 +1,417 @@
+---
+// PROTOTYPE — Variante D, « Studio + repérage ». The composite Patrick asked for after
+// seeing A, B and C:
+//   - B's layout: medium player top left, metadata and cast under it, transcript right.
+//   - A's turn grouping: consecutive Segments of one Speaker fused, so the column reads
+//     instead of being shredded into ~7-second rows.
+//   - C's coloured ribbon, one row as it was, naming the Speaker in a popover on hover.
+// The name cannot ride inside the bands: even after grouping 1 595 Segments into 412 turns,
+// only the single longest turn of the debate is wide enough to hold one (the median turn
+// is 2.1 s, sub-pixel). A one-lane-per-Speaker version was tried and rejected: it cost
+// 210 px of height and lost the single left-to-right read of the debate.
+import Player from "./Player.astro";
+import { clock, shakyWords } from "../lib/data.js";
+
+const { data } = Astro.props;
+const { meta, segments, words, participants, participantsById, embedded, reviewed } = data;
+
+const turns = [];
+for (const s of segments) {
+  const last = turns.at(-1);
+  if (last && last.speaker === s.speaker) last.segments.push(s);
+  else turns.push({ speaker: s.speaker, segments: [s] });
+}
+
+const duration = meta.timeline.duration_s;
+
+// Who is on the page, by surname, Candidates in their own section. No speaking time is
+// shown: ADR 0004 as amended withdrew per-Candidate counts, and nothing on this page
+// needs them.
+const byLastName = (a, b) => a.sortName.localeCompare(b.sortName, "fr");
+const heard = participants.filter((p) => p.segmentCount);
+const candidates = heard.filter((p) => p.candidate).sort(byLastName);
+const others = heard.filter((p) => !p.candidate).sort(byLastName);
+
+// One band per turn, along a single row. Turn grouping is what makes the bands chunky
+// enough to aim at: 412 instead of C's 1 595.
+const bands = turns.map((t) => {
+  const start = t.segments[0].start;
+  const end = t.segments.at(-1).end;
+  return {
+    id: t.segments[0].id,
+    speaker: t.speaker,
+    name: participantsById[t.speaker].name,
+    colour: participantsById[t.speaker].colour,
+    left: (start / duration) * 100,
+    width: Math.max(0.08, ((end - start) / duration) * 100),
+    start,
+  };
+});
+---
+
+<div class="shell wide">
+  <div class="ribbon-wrap">
+    <p class="ribbon-title">
+      Qui parle, du début à la fin. Cliquez n'importe où pour vous y rendre.
+    </p>
+    <div class="ribbon" data-duration={duration}>
+      {
+        bands.map((b) => (
+          <button
+            class="band"
+            data-t={b.start}
+            data-name={b.name}
+            data-speaker={b.speaker}
+            title={`${b.name} — ${clock(b.start)}`}
+            style={`left:${b.left}%;width:${b.width}%;background:${b.colour}`}
+          />
+        ))
+      }
+      <span class="cursor" hidden />
+      <span class="floating-name" hidden />
+    </div>
+    <div class="ticks">
+      {[0, 0.25, 0.5, 0.75, 1].map((f) => <span>{clock(duration * f)}</span>)}
+    </div>
+  </div>
+
+  <div class="layout">
+    <aside>
+      <Player replay={embedded} timeline={meta.timeline} />
+
+      <h1>{meta.title}</h1>
+      <p class="meta">
+        {meta.programme} — {new Date(meta.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+        <br />Source&nbsp;: {data.source?.name} · organisé par MEDEF · {meta.venue}
+      </p>
+
+      <p class="review">
+        <span class="mark draft">{reviewed.total - reviewed.text} extraits non relus</span>
+        <span class="mark verified">{reviewed.text} relus</span>
+      </p>
+
+      <h2>Candidat·es ({candidates.length})</h2>
+      <ul class="cast">
+        {
+          candidates.map((p) => (
+            <li>
+              <span class="chip" style={`background:${p.colour}`} />
+              <a href={`/candidats/${p.speaker}`}>{p.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <h2>Autres intervenant·es ({others.length})</h2>
+      <ul class="cast">
+        {
+          others.map((p) => (
+            <li>
+              <span class="chip" style={`background:${p.colour}`} />
+              <span title={p.name}>{p.name}</span>
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="legal">
+        Rien n'est hébergé ici&nbsp;: le lecteur est la copie officielle de {embedded?.uploader}.
+        <a href={meta.timeline.url} rel="noopener" target="_blank">Voir chez {meta.timeline.uploader}</a>
+      </p>
+    </aside>
+
+    <main>
+      <div class="toolbar">
+        <label><input type="checkbox" id="follow" checked /> suivre la lecture</label>
+        <label><input type="checkbox" id="only-draft" /> n'afficher que les prises de parole à relire</label>
+      </div>
+
+      <div class="turns">
+      {
+        turns.map((turn) => {
+          const p = participantsById[turn.speaker];
+          const first = turn.segments[0];
+          const last = turn.segments.at(-1);
+          const textVerified = turn.segments.every((s) => s.textStatus === "verified");
+          const speakerVerified = turn.segments.every((s) => s.speakerStatus === "verified");
+          const overlap = turn.segments.some((s) => s.overlap);
+          return (
+            <section
+              class="turn"
+              id={first.id}
+              data-t={first.start}
+              data-end={last.end}
+              data-speaker={turn.speaker}
+              data-draft={!textVerified || !speakerVerified}
+            >
+              <p class="who">
+                <button class="t" data-t={first.start}>{clock(first.start)}</button>
+                <b style={`color:${p.colour}`}>{p.name}</b>
+                {p.candidate && <span class="role">candidat·e</span>}
+                {p.role === "journalist" && <span class="role">journaliste</span>}
+                {p.role === "questioner" && <span class="role">question de la salle</span>}
+                {overlap && <span class="over">voix simultanées</span>}
+                {!speakerVerified && <span class="mark draft">locuteur à vérifier</span>}
+                {textVerified && <span class="mark verified">texte vérifié</span>}
+                <a class="anchor" href={`#${first.id}`} title="Lien permanent">#{first.id}</a>
+              </p>
+              <p class={textVerified ? "said" : "said is-draft"}>
+                {turn.segments.map((s) => {
+                  const shaky = s.textStatus === "draft" ? shakyWords(words, s.id) : new Set();
+                  return (
+                    <span class="seg" id={s.id} data-t={s.start} title={`${s.id} · ${clock(s.start)}`}>
+                      {s.text.split(" ").map((w) => (shaky.has(w) ? <span class="shaky">{w}</span> : w)).reduce((a, b) => [a, " ", b])}
+                      {" "}
+                    </span>
+                  );
+                })}
+              </p>
+              <a class="fix" href="#">Corriger cette prise de parole</a>
+            </section>
+          );
+        })
+      }
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Only the transcript scrolls: the page itself is a fixed shell, so the ribbon, the
+     player and the metadata stay put while the text moves under them. -->
+<style is:global>
+  html, body { height: 100%; overflow: hidden; }
+  body { display: flex; flex-direction: column; }
+  body > header.site { flex: none; }
+  body > .offset-warning { flex: none; }
+  /* The footer's notice moves into the aside in this variant; a fixed shell has no room
+     for a page-bottom footer. */
+  body > footer.site { display: none; }
+  body > .shell.wide { flex: 1; min-height: 0; }
+</style>
+
+<style>
+  .shell {
+    padding-block: 1rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  /* --- C's ribbon, one row, with the name riding over it ------------------- */
+  .ribbon-wrap { flex: none; margin-bottom: 1.2rem; }
+  .ribbon-title { font-size: 0.8rem; color: var(--ink-soft); margin: 0 0 1.5rem; }
+  .ribbon {
+    position: relative;
+    height: 34px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    overflow: visible;
+  }
+  .band {
+    all: unset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .band:first-of-type { border-radius: 4px 0 0 4px; }
+  .band:hover { opacity: 1; box-shadow: 0 0 0 2px #111418; z-index: 3; }
+  .ribbon .cursor {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    width: 2px;
+    background: #111418;
+    pointer-events: none;
+    z-index: 2;
+  }
+  /* The popover: the only place a name fits, since the median turn is sub-pixel wide. */
+  .ribbon .floating-name {
+    position: absolute;
+    bottom: 100%;
+    transform: translate(-50%, -7px);
+    background: #111418;
+    color: #fff;
+    font: 600 0.74rem/1 -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 0.32rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 4;
+  }
+  .ribbon .floating-name::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    border: 4px solid transparent;
+    border-top-color: #111418;
+  }
+  .ticks {
+    display: flex;
+    justify-content: space-between;
+    font: 0.72rem/1 ui-monospace, monospace;
+    color: var(--ink-soft);
+    margin-top: 0.3rem;
+  }
+
+  /* --- B's layout --------------------------------------------------------- */
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(19rem, 24rem) 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    flex: 1;
+    min-height: 0;
+  }
+  @media (max-width: 62rem) { .layout { grid-template-columns: 1fr; } }
+
+  /* The aside holds still. It fits from roughly 950 px of window height down; below that
+     it scrolls itself rather than clipping the cast list. (The red offset banner above is
+     prototype-only and costs ~70 px of that.) */
+  aside { min-height: 0; overflow-y: auto; }
+  /* A medium player, not a full-width one: it has to leave room for the cast list. */
+  aside :global(.player) { max-width: 20rem; }
+  aside h1 { font-size: 1.05rem; margin: 0.7rem 0 0.2rem; }
+  .meta { color: var(--ink-soft); font-size: 0.82rem; margin: 0 0 0.5rem; }
+  .review { display: flex; gap: 0.4rem; margin: 0; font-size: 0.95em; }
+  aside h2 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin: 0.7rem 0 0.3rem; }
+  /* Two columns so both sections fit without the aside needing to scroll. */
+  .cast {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.82rem;
+    columns: 2;
+    column-gap: 0.9rem;
+  }
+  .cast li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.09rem 0;
+    break-inside: avoid;
+  }
+  .cast li > a, .cast li > span:not(.chip) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .chip { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .legal { font-size: 0.74rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 0.5rem; margin: 0.6rem 0 0; }
+
+  main { display: flex; flex-direction: column; min-height: 0; }
+  .toolbar {
+    flex: none;
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+  /* The one scrolling area on the page. */
+  .turns {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 0.6rem;
+    padding-bottom: 4rem;
+  }
+
+  /* --- A's turns ---------------------------------------------------------- */
+  .turn {
+    padding: 0.5rem 0.9rem 0.6rem;
+    border-left: 3px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 1.1rem;
+    scroll-margin-top: 1rem;
+  }
+  .turn.playing { background: #eff6ff; border-left-color: var(--accent); }
+  .turn:target { background: #fffbe6; border-left-color: var(--draft); }
+  .turn.hidden { display: none; }
+  .who { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.45rem; margin: 0 0 0.25rem; font-size: 0.86rem; }
+  .who b { font-size: 1rem; }
+  .role { color: var(--ink-soft); font-size: 0.78rem; }
+  .over { font-size: 0.72rem; color: #8250df; background: #f5f0ff; padding: 0.2rem 0.4rem; border-radius: 3px; }
+  .t {
+    all: unset;
+    cursor: pointer;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.8rem;
+    color: var(--accent);
+  }
+  .anchor { margin-left: auto; color: var(--ink-soft); text-decoration: none; font-size: 0.75rem; opacity: 0; }
+  .turn:hover .anchor { opacity: 1; }
+  .said {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.72;
+    font-family: Georgia, "Iowan Old Style", serif;
+  }
+  .said.is-draft { color: #2c3238; }
+  .seg { cursor: pointer; border-radius: 2px; }
+  .seg:hover { background: #eef4ff; }
+  .seg.playing { background: #dbeafe; }
+  .fix { font-size: 0.75rem; opacity: 0; }
+  .turn:hover .fix { opacity: 1; }
+</style>
+
+<script>
+  const ribbon = document.querySelector(".ribbon");
+  const duration = Number(ribbon.dataset.duration);
+  const cursor = ribbon.querySelector(".cursor");
+  const floatName = ribbon.querySelector(".floating-name");
+  const turns = [...document.querySelectorAll(".turn")];
+  const follow = document.getElementById("follow");
+
+  document.querySelectorAll("[data-t]").forEach((el) =>
+    el.addEventListener("click", () => window.fcpSeek?.(Number(el.dataset.t))),
+  );
+
+  const fmt = (t) => {
+    const s = Math.floor(t);
+    return `${Math.floor(s / 3600)}:${String(Math.floor((s % 3600) / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+  };
+
+  // Hovering a band pops the Speaker's name above the ribbon.
+  ribbon.addEventListener("mousemove", (e) => {
+    const band = e.target.closest(".band");
+    if (!band) { floatName.hidden = true; return; }
+    const box = ribbon.getBoundingClientRect();
+    floatName.hidden = false;
+    floatName.textContent = `${band.dataset.name} — ${fmt(Number(band.dataset.t))}`;
+    floatName.style.left = `${((e.clientX - box.left) / box.width) * 100}%`;
+  });
+  ribbon.addEventListener("mouseleave", () => { floatName.hidden = true; });
+
+  let current = null;
+  document.addEventListener("fcp:time", (e) => {
+    const t = e.detail;
+    const pct = Math.min(100, Math.max(0, (t / duration) * 100));
+    cursor.hidden = false;
+    cursor.style.left = `${pct}%`;
+    let hit = null;
+    for (const el of turns) {
+      if (Number(el.dataset.t) <= t) hit = el;
+      else break;
+    }
+    if (hit === current) return;
+    current?.classList.remove("playing");
+    hit?.classList.add("playing");
+    current = hit;
+    if (hit && follow.checked) hit.scrollIntoView({ block: "center", behavior: "smooth" });
+  });
+
+  document.getElementById("only-draft").addEventListener("change", (e) => {
+    turns.forEach((t) => t.classList.toggle("hidden", e.target.checked && t.dataset.draft !== "true"));
+  });
+</script>

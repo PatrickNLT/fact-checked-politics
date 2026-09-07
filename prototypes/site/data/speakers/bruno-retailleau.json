@@ -1,0 +1,19 @@
+{
+ "schema": "fcp/1",
+ "id": "bruno-retailleau",
+ "kind": "person",
+ "first_name": "Bruno",
+ "last_name": "Retailleau",
+ "party": "Les Républicains",
+ "candidacy": {
+  "contest": "election",
+  "listed_on": "2026-04-19",
+  "reference": {
+   "list": "wikipedia-fr",
+   "url": "https://fr.wikipedia.org/wiki/Candidatures_à_l'élection_présidentielle_française_de_2027"
+  },
+  "read_on": "2026-09-05",
+  "ended_on": null,
+  "end_reason": null
+ }
+}

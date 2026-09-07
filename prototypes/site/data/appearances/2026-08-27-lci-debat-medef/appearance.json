@@ -1,0 +1,252 @@
+{
+ "schema": "fcp/1",
+ "id": "2026-08-27-lci-debat-medef",
+ "catalogue_row": "D1",
+ "title": "Débat MEDEF (REF 2026) des candidats à la présidentielle 2027",
+ "date": "2026-08-27",
+ "start_time": "16:45",
+ "language": "fr",
+ "source": "lci",
+ "medium": "tv",
+ "programme": "Le grand débat du Medef sur LCI",
+ "organiser": "medef",
+ "venue": "Court Philippe-Chatrier, Roland-Garros, Paris",
+ "participants": [
+  {
+   "speaker": "gabriel-attal"
+  },
+  {
+   "speaker": "raphael-glucksmann"
+  },
+  {
+   "speaker": "marine-le-pen"
+  },
+  {
+   "speaker": "jean-luc-melenchon"
+  },
+  {
+   "speaker": "edouard-philippe"
+  },
+  {
+   "speaker": "bruno-retailleau"
+  },
+  {
+   "speaker": "marine-tondelier"
+  },
+  {
+   "speaker": "amelie-carrouer",
+   "role": "journalist"
+  },
+  {
+   "speaker": "patrick-martin",
+   "role": "host"
+  },
+  {
+   "speaker": "eric-malenfer",
+   "role": "questioner"
+  },
+  {
+   "speaker": "colombe-lecoufle",
+   "role": "questioner"
+  },
+  {
+   "speaker": "vincent-furlan",
+   "role": "questioner"
+  },
+  {
+   "speaker": "questioner-2",
+   "role": "questioner",
+   "label": "Chef d'entreprise (01:03)"
+  },
+  {
+   "speaker": "questioner-3",
+   "role": "questioner",
+   "label": "Chef d'entreprise (02:33)"
+  },
+  {
+   "speaker": "lci-voix-off",
+   "role": "narration"
+  }
+ ],
+ "timeline": {
+  "platform": "youtube",
+  "video_id": "rpURHoN54bQ",
+  "url": "https://www.youtube.com/watch?v=rpURHoN54bQ",
+  "uploader": "LCI",
+  "duration_s": 11055
+ },
+ "replays": [
+  {
+   "platform": "youtube",
+   "video_id": "z0gJwsrODEw",
+   "url": "https://www.youtube.com/watch?v=z0gJwsrODEw",
+   "uploader": "MEDEF",
+   "carrier": "medef",
+   "offset_s": null,
+   "embeddable": true,
+   "embedded": true,
+   "embed_check": {
+    "method": "playableInEmbed",
+    "result": true,
+    "checked_on": "2026-09-05"
+   },
+   "tdm_signals": "none published by MEDEF; YouTube ToS",
+   "cgu_version": null,
+   "expiry": null
+  },
+  {
+   "platform": "youtube",
+   "video_id": "rpURHoN54bQ",
+   "url": "https://www.youtube.com/watch?v=rpURHoN54bQ",
+   "uploader": "LCI",
+   "carrier": "lci",
+   "offset_s": 0,
+   "embeddable": false,
+   "embedded": false,
+   "embed_check": {
+    "method": "playableInEmbed",
+    "result": false,
+    "checked_on": "2026-09-05"
+   },
+   "tdm_signals": "TF1 CGU art. 9, tdmrep",
+   "cgu_version": "TF1 Info CGU 2025-10-27",
+   "expiry": null
+  },
+  {
+   "platform": "tf1plus",
+   "video_id": null,
+   "url": null,
+   "uploader": "TF1",
+   "carrier": "tf1",
+   "offset_s": null,
+   "embeddable": false,
+   "embedded": false,
+   "account_wall": true,
+   "expiry": "days to weeks"
+  }
+ ],
+ "acquisition": {
+  "basis": "tolerated",
+  "fetch_date": "2026-09-06",
+  "method": "download",
+  "tool": "yt-dlp 2026.08.19, logged out, format 140 audio only",
+  "media_sha256": "c57f025ec87d456a64365db9b7c715660987df1199d0b89d6ae39c842ca26f9a",
+  "media_bytes": 178787602,
+  "deletion_date": "held, prototype stage (ADR 0003 amendment of 2026-09-06)"
+ },
+ "pipeline": {
+  "asr": {
+   "model": "mlx-community/whisper-large-v3-mlx",
+   "library": "mlx-whisper 0.4.3",
+   "run_at": "2026-09-06T14:22:09+00:00"
+  },
+  "diarization": {
+   "model": "pyannote/speaker-diarization-3.1",
+   "library": "pyannote.audio 4.0.7",
+   "run_at": "2026-09-07T06:13:48+00:00",
+   "speaker_count_hint": null
+  },
+  "merge": {
+   "rule": "most-overlap-ties-shorter/1",
+   "run_at": "2026-09-07T10:26:28+00:00"
+  },
+  "gaps_repaired": 12,
+  "segments_removed": {
+   "noise": 11,
+   "hallucination": 0
+  }
+ },
+ "clusters": {
+  "SPEAKER_16": {
+   "speaker": "gabriel-attal",
+   "confirmed": true,
+   "cue": "quand j'étais Premier ministre, j'ai pris une mesure"
+  },
+  "SPEAKER_06": {
+   "speaker": "raphael-glucksmann",
+   "confirmed": true,
+   "cue": "au Parlement européen, je me suis battu ; Gigafactory de Fos-sur-Mer (00:08:07)"
+  },
+  "SPEAKER_12": {
+   "speaker": "marine-le-pen",
+   "confirmed": true,
+   "cue": "baisser la TVA de 20 à 5,5 sur l'énergie (02:05:08)"
+  },
+  "SPEAKER_09": {
+   "speaker": "jean-luc-melenchon",
+   "confirmed": true,
+   "cue": "l'économie monde va prendre de rudes chocs ; la planification écologique (00:15:16)"
+  },
+  "SPEAKER_07": {
+   "speaker": "edouard-philippe",
+   "confirmed": true,
+   "cue": "je suis content de savoir ce que j'écris (02:23:33)"
+  },
+  "SPEAKER_02": {
+   "speaker": "bruno-retailleau",
+   "confirmed": true,
+   "cue": "quatre cotisants pour un retraité ; j'assumerai un âge légal (01:00:00)"
+  },
+  "SPEAKER_14": {
+   "speaker": "marine-tondelier",
+   "confirmed": true,
+   "cue": "conseillère régionale des Hauts-de-France; addressed as Tondelier at 02:08:37"
+  },
+  "SPEAKER_13": {
+   "speaker": "amelie-carrouer",
+   "confirmed": true,
+   "cue": "moderates throughout, 14.6 min"
+  },
+  "SPEAKER_01": {
+   "speaker": "patrick-martin",
+   "confirmed": true,
+   "cue": "MEDEF president, opening address at 00:01:11"
+  },
+  "SPEAKER_03": {
+   "speaker": "eric-malenfer",
+   "confirmed": false,
+   "cue": "thanked by name at 00:25:41 after the pensions question"
+  },
+  "SPEAKER_05": {
+   "speaker": "vincent-furlan",
+   "confirmed": false,
+   "cue": "introduces himself, membre du COMEX 40, at 01:38:59"
+  },
+  "SPEAKER_00": {
+   "speaker": "colombe-lecoufle",
+   "confirmed": false,
+   "cue": "orchid grower, payslips question at 02:07:07"
+  },
+  "SPEAKER_10": {
+   "speaker": "questioner-2",
+   "confirmed": false,
+   "cue": "question at 01:03:18"
+  },
+  "SPEAKER_11": {
+   "speaker": "questioner-3",
+   "confirmed": false,
+   "cue": "question at 02:33:43"
+  },
+  "SPEAKER_04": {
+   "speaker": "lci-voix-off",
+   "confirmed": false,
+   "cue": "LCI opening narration, 00:00:00"
+  },
+  "SPEAKER_15": {
+   "speaker": null,
+   "confirmed": true,
+   "cue": "jingle, hallucinated caption credit at 00:00:08"
+  },
+  "SPEAKER_08": {
+   "speaker": null,
+   "confirmed": true,
+   "cue": "jingle fragments at 00:00:03"
+  }
+ },
+ "segments": {
+  "next_id": 1607,
+  "retired": {
+   "s1093": "s1092"
+  }
+ }
+}

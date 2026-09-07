@@ -1,0 +1,128 @@
+---
+// PROTOTYPE — search over every Segment. Client-side, over /search-index.json.
+// The point here is what a *result* is: a Segment, attributed, timestamped, with its
+// review state on its face and a link that lands on the exact spot in the transcript.
+import Site from "../layouts/Site.astro";
+import { candidates, displayName, sortKey } from "../lib/data.js";
+
+const people = candidates().sort((a, b) => sortKey(a).localeCompare(sortKey(b), "fr"));
+---
+
+<Site title="Recherche">
+  <div class="shell">
+    <h1>Chercher dans les transcriptions</h1>
+    <p class="hint">
+      La recherche porte sur le texte mot pour mot des interventions. Elle ne cherche pas
+      des « positions » ni des résumés&nbsp;: seulement ce qui a été dit.
+    </p>
+
+    <form id="f" onsubmit="return false">
+      <input id="q" type="search" placeholder="retraites, TVA, normes…" autocomplete="off" autofocus />
+      <select id="who">
+        <option value="">Tout le monde</option>
+        {people.map((p) => <option value={displayName(p)}>{displayName(p)}</option>)}
+      </select>
+      <label><input type="checkbox" id="only-verified" /> seulement les extraits relus</label>
+    </form>
+
+    <p id="count" class="count">Chargement de l'index…</p>
+    <ol id="out" class="results"></ol>
+  </div>
+</Site>
+
+<style>
+  .shell { padding-block: 2rem 5rem; max-width: 52rem; }
+  .hint { color: var(--ink-soft); font-size: 0.92rem; }
+  form { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin-block: 1.2rem; }
+  #q {
+    flex: 1 1 20rem;
+    font: inherit;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--paper);
+  }
+  select { font: inherit; padding: 0.55rem; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); }
+  form label { font-size: 0.85rem; color: var(--ink-soft); }
+  .count { font-size: 0.85rem; color: var(--ink-soft); }
+  .results { list-style: none; padding: 0; margin: 0; }
+  .results li {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.6rem;
+  }
+  .results .who { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; font-size: 0.83rem; margin-bottom: 0.3rem; }
+  .results .who b { font-size: 0.92rem; }
+  .results .said { margin: 0; }
+  .results mark { background: #fff3bf; padding: 0 0.1em; }
+  .results .where { margin: 0.4rem 0 0; font-size: 0.78rem; color: var(--ink-soft); }
+</style>
+
+<script>
+  const q = document.getElementById("q");
+  const who = document.getElementById("who");
+  const onlyVerified = document.getElementById("only-verified");
+  const out = document.getElementById("out");
+  const count = document.getElementById("count");
+
+  const clock = (t) => {
+    const s = Math.floor(t);
+    return `${Math.floor(s / 3600)}:${String(Math.floor((s % 3600) / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+  };
+  const fold = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const esc = (s) => s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+
+  let rows = [];
+  fetch("/search-index.json")
+    .then((r) => r.json())
+    .then((data) => {
+      rows = data.map((r) => ({ ...r, f: fold(r.t) }));
+      count.textContent = `${rows.length} extraits indexés. Tapez pour chercher.`;
+    });
+
+  const render = () => {
+    const needle = fold(q.value.trim());
+    if (!needle) {
+      out.innerHTML = "";
+      count.textContent = `${rows.length} extraits indexés. Tapez pour chercher.`;
+      return;
+    }
+    let hits = rows.filter((r) => r.f.includes(needle));
+    if (who.value) hits = hits.filter((r) => r.s === who.value);
+    if (onlyVerified.checked) hits = hits.filter((r) => r.tv);
+
+    count.textContent =
+      hits.length === 0
+        ? "Aucun extrait. La recherche est littérale : essayez un autre mot."
+        : `${hits.length} extrait${hits.length > 1 ? "s" : ""}`;
+
+    out.innerHTML = hits
+      .slice(0, 60)
+      .map((r) => {
+        const i = r.f.indexOf(needle);
+        const text = esc(r.t);
+        const marked =
+          esc(r.t.slice(0, i)) +
+          "<mark>" + esc(r.t.slice(i, i + needle.length)) + "</mark>" +
+          esc(r.t.slice(i + needle.length));
+        return `<li>
+          <p class="who">
+            <span style="width:10px;height:10px;border-radius:2px;background:${r.col};display:inline-block"></span>
+            <b>${esc(r.s)}</b>
+            ${r.c ? '<span style="color:#57606a">candidat·e</span>' : ""}
+            <span class="mark ${r.tv ? "verified" : "draft"}">texte ${r.tv ? "vérifié" : "brouillon"}</span>
+            <span class="mark ${r.sv ? "verified" : "draft"}">locuteur ${r.sv ? "vérifié" : "brouillon"}</span>
+          </p>
+          <p class="said">${i >= 0 ? marked : text}</p>
+          <p class="where"><a href="/appearances/${r.a}#${r.i}">${esc(r.at)}</a> — ${clock(r.st)}</p>
+        </li>`;
+      })
+      .join("");
+  };
+
+  q.addEventListener("input", render);
+  who.addEventListener("change", render);
+  onlyVerified.addEventListener("change", render);
+</script>

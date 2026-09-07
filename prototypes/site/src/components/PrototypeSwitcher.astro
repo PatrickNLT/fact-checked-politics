@@ -1,0 +1,97 @@
+---
+// PROTOTYPE — throwaway. Floating bar to flip between the transcript variants.
+// Deliberately ugly so nobody mistakes it for part of the design being judged.
+const { variants, current } = Astro.props;
+const isProd = import.meta.env.PROD;
+---
+
+{
+  !isProd && (
+    <>
+      <div class="proto-bar" data-variants={JSON.stringify(variants.map((v) => v.key))}>
+        <button data-step="-1" aria-label="Variante précédente">←</button>
+        <span class="proto-label">
+          <b>{current.key}</b> {current.name}
+        </span>
+        <button data-step="1" aria-label="Variante suivante">→</button>
+        <span class="proto-sep" />
+        <label class="proto-offset">
+          décalage replay
+          <input type="number" id="proto-offset" step="1" value="0" />s
+        </label>
+      </div>
+
+      <style>
+        .proto-bar {
+          position: fixed;
+          bottom: 1rem;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 999;
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          padding: 0.45rem 0.7rem;
+          background: #111418;
+          color: #fff;
+          border-radius: 999px;
+          box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+          font: 500 0.8rem/1 -apple-system, "Segoe UI", Roboto, sans-serif;
+        }
+        .proto-bar button {
+          all: unset;
+          cursor: pointer;
+          width: 1.6rem;
+          height: 1.6rem;
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+          background: #2b3138;
+        }
+        .proto-bar button:hover { background: #3d444d; }
+        .proto-label { min-width: 12rem; text-align: center; }
+        .proto-label b { color: #7ee2a8; margin-right: 0.35rem; }
+        .proto-sep { width: 1px; height: 1.2rem; background: #3d444d; }
+        .proto-offset { display: flex; align-items: center; gap: 0.35rem; color: #c9d1d9; }
+        .proto-offset input {
+          width: 4rem;
+          background: #2b3138;
+          border: 1px solid #3d444d;
+          color: #fff;
+          border-radius: 4px;
+          padding: 0.15rem 0.3rem;
+          font: inherit;
+        }
+      </style>
+
+      <script>
+        const bar = document.querySelector(".proto-bar");
+        const keys = JSON.parse(bar.dataset.variants);
+        const go = (step) => {
+          const url = new URL(location.href);
+          const i = keys.indexOf(url.searchParams.get("variant") ?? keys[0]);
+          url.searchParams.set("variant", keys[(i + step + keys.length) % keys.length]);
+          location.href = url.toString();
+        };
+        bar.querySelectorAll("button").forEach((b) =>
+          b.addEventListener("click", () => go(Number(b.dataset.step))),
+        );
+        addEventListener("keydown", (e) => {
+          const t = e.target;
+          if (t instanceof HTMLElement && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+          if (e.key === "ArrowLeft") go(-1);
+          if (e.key === "ArrowRight") go(1);
+        });
+
+        // The Timeline is LCI's copy, the embedded replay is MEDEF's, and its offset_s has
+        // never been measured (ADR 0005 leaves it null). This box stands in for that
+        // measurement so seeking can be judged at all — see the banner on the page.
+        const offset = document.getElementById("proto-offset");
+        const stored = sessionStorage.getItem("proto-offset");
+        if (stored) offset.value = stored;
+        window.__protoOffset = () => Number(offset.value) || 0;
+        offset.addEventListener("change", () => sessionStorage.setItem("proto-offset", offset.value));
+      </script>
+    </>
+  )
+}

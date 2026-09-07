@@ -1,0 +1,83 @@
+---
+// PROTOTYPE — throwaway. The Source's own platform copy, embedded. The site never hosts
+// or re-streams the recording (ADR 0002); when no copy is embeddable this renders the
+// "replay no longer available" notice instead.
+//
+// Exposes window.fcpSeek(t) where t is a time on the Appearance's Timeline. The replay's
+// own clock is t + offset_s; offset_s is null for this Appearance, so the prototype bar's
+// "décalage replay" box stands in for the measurement.
+const { replay, timeline } = Astro.props;
+---
+
+{
+  replay ? (
+    <div class="player">
+      <iframe
+        id="fcp-player"
+        src={`https://www.youtube-nocookie.com/embed/${replay.video_id}?enablejsapi=1&rel=0`}
+        title="Replay officiel"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+      />
+    </div>
+  ) : (
+    <p class="gone">
+      Le replay n'est plus disponible chez la Source. La transcription reste consultable et
+      corrigeable&nbsp;; les horodatages renvoient à la version d'origine.
+    </p>
+  )
+}
+
+<style>
+  .player {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .gone {
+    padding: 1rem;
+    border: 1px dashed var(--line);
+    border-radius: 6px;
+    color: var(--ink-soft);
+    background: var(--paper);
+  }
+</style>
+
+<script define:vars={{ videoId: replay?.video_id ?? null, timelineUrl: timeline?.url ?? null }}>
+  // Minimal YouTube iframe-API wiring. If the API never loads (blocked, offline), seeking
+  // falls back to opening the Timeline copy at the timestamp in a new tab.
+  let player = null;
+  if (videoId) {
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.append(tag);
+    window.onYouTubeIframeAPIReady = () => {
+      player = new window.YT.Player("fcp-player", {
+        events: { onStateChange: (e) => document.dispatchEvent(new CustomEvent("fcp:state", { detail: e.data })) },
+      });
+      setInterval(() => {
+        if (!player?.getCurrentTime) return;
+        const offset = window.__protoOffset?.() ?? 0;
+        document.dispatchEvent(
+          new CustomEvent("fcp:time", { detail: player.getCurrentTime() - offset }),
+        );
+      }, 500);
+    };
+  }
+
+  window.fcpSeek = (t) => {
+    const offset = window.__protoOffset?.() ?? 0;
+    const at = Math.max(0, Math.round(t + offset));
+    if (player?.seekTo) {
+      player.seekTo(at, true);
+      player.playVideo?.();
+      document.getElementById("fcp-player")?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    } else if (timelineUrl) {
+      window.open(`${timelineUrl}&t=${Math.round(t)}s`, "_blank", "noopener");
+    }
+  };
+</script>

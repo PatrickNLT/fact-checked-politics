@@ -1,0 +1,15 @@
+{
+  "name": "fcp-site-prototype",
+  "private": true,
+  "type": "module",
+  "description": "PROTOTYPE (map ticket #17) - throwaway Astro skeleton. Not production code.",
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "@astrojs/node": "^9.5.5",
+    "astro": "^5.14.1"
+  }
+}

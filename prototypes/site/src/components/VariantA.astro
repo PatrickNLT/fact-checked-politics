@@ -1,0 +1,174 @@
+---
+// PROTOTYPE — Variante A, « Lecture ».
+// Reading first. One narrow column of continuous prose, consecutive Segments of the same
+// Speaker fused into a turn, the replay reduced to a slim sticky strip. The page is meant
+// to be read end to end like an article; the video is available but never in the way.
+import Player from "./Player.astro";
+import { clock, shakyWords } from "../lib/data.js";
+
+const { data } = Astro.props;
+const { meta, segments, words, participantsById, embedded } = data;
+
+// Turns: consecutive Segments of one Speaker.
+const turns = [];
+for (const s of segments) {
+  const last = turns.at(-1);
+  if (last && last.speaker === s.speaker) last.segments.push(s);
+  else turns.push({ speaker: s.speaker, segments: [s] });
+}
+---
+
+<div class="shell">
+  <div class="strip">
+    <details>
+      <summary>
+        <span class="dot" /> Replay officiel — {embedded?.uploader}
+        <em>({meta.programme}, {meta.date})</em>
+      </summary>
+      <Player replay={embedded} timeline={meta.timeline} />
+    </details>
+  </div>
+
+  <article>
+    <h1>{meta.title}</h1>
+    <p class="chapo">
+      {meta.programme}, {new Date(meta.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })},
+      {" "}{meta.venue}. Débat organisé par le {participantsById[meta.organiser]?.name ?? "MEDEF"},
+      animé par {participantsById["amelie-carrouer"]?.name}.
+    </p>
+
+    <p class="warn">
+      Transcription automatique, <strong>non relue</strong>. Chaque prise de parole porte
+      l'état de sa relecture&nbsp;; tant qu'elle est marquée « brouillon », le texte est
+      celui de la machine et peut être faux.
+      <a href="#">Proposer une correction</a>
+    </p>
+
+    {
+      turns.map((turn) => {
+        const p = participantsById[turn.speaker];
+        const first = turn.segments[0];
+        const textVerified = turn.segments.every((s) => s.textStatus === "verified");
+        const speakerVerified = turn.segments.every((s) => s.speakerStatus === "verified");
+        return (
+          <section class="turn" id={first.id}>
+            <p class="who">
+              <button class="seek" data-t={first.start}>{clock(first.start)}</button>
+              <b style={`color:${p.colour}`}>{p.name}</b>
+              {p.candidate && <span class="role">candidat·e</span>}
+              {p.role === "journalist" && <span class="role">journaliste</span>}
+              {p.role === "questioner" && <span class="role">question de la salle</span>}
+              {!speakerVerified && <span class="mark draft" title="Attribution non vérifiée">locuteur à vérifier</span>}
+            </p>
+            <p class={textVerified ? "said" : "said is-draft"}>
+              {turn.segments.map((s) => {
+                const shaky = s.textStatus === "draft" ? shakyWords(words, s.id) : new Set();
+                return (
+                  <span class="seg" id={s.id} data-t={s.start} title={`${s.id} · ${clock(s.start)}`}>
+                    {s.text.split(" ").map((w) => (shaky.has(w) ? <span class="shaky">{w}</span> : w)).reduce((a, b) => [a, " ", b])}
+                    {" "}
+                  </span>
+                );
+              })}
+            </p>
+          </section>
+        );
+      })
+    }
+  </article>
+</div>
+
+<style>
+  .shell { padding-bottom: 6rem; }
+  .strip {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--ground);
+    padding-block: 0.5rem;
+    margin: 0 -1.25rem;
+    padding-inline: 1.25rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .strip details { max-width: 42rem; margin: 0 auto; }
+  .strip summary {
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    list-style: none;
+  }
+  .strip summary::-webkit-details-marker { display: none; }
+  .strip summary em { color: #8b949e; font-style: normal; }
+  .strip .dot { width: 8px; height: 8px; border-radius: 50%; background: #cf222e; }
+  .strip details[open] summary { margin-bottom: 0.6rem; }
+
+  article { max-width: 42rem; margin: 0 auto; padding-top: 2rem; }
+  h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+  .chapo { color: var(--ink-soft); margin-top: 0; }
+  .warn {
+    background: var(--draft-bg);
+    border: 1px solid #f0dfae;
+    border-radius: 6px;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.88rem;
+    color: #6b4e00;
+  }
+  .warn a { margin-left: 0.4rem; }
+
+  .turn { margin-block: 1.9rem; scroll-margin-top: 4rem; }
+  .who {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin: 0 0 0.25rem;
+    font-size: 0.9rem;
+  }
+  .who b { font-size: 1rem; }
+  .role { color: var(--ink-soft); font-size: 0.78rem; }
+  .seek {
+    all: unset;
+    cursor: pointer;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-soft);
+    font-size: 0.8rem;
+    border-bottom: 1px dotted var(--line);
+  }
+  .seek:hover { color: var(--accent); border-color: var(--accent); }
+
+  .said {
+    margin: 0;
+    font-size: 1.09rem;
+    line-height: 1.75;
+    font-family: Georgia, "Iowan Old Style", serif;
+  }
+  .said.is-draft { color: #2c3238; }
+  /* A draft turn is greyed at the left edge rather than boxed: readable, but never
+     mistakable for reviewed text. */
+  .said.is-draft { border-left: 2px solid #e6d9ae; padding-left: 0.9rem; margin-left: -0.9rem; }
+  .seg { cursor: pointer; border-radius: 2px; }
+  .seg:hover { background: #eef4ff; }
+  .seg.playing { background: #dbeafe; }
+</style>
+
+<script>
+  document.querySelectorAll("[data-t]").forEach((el) =>
+    el.addEventListener("click", () => window.fcpSeek?.(Number(el.dataset.t))),
+  );
+  const segs = [...document.querySelectorAll(".seg")];
+  let current = null;
+  document.addEventListener("fcp:time", (e) => {
+    const t = e.detail;
+    let hit = null;
+    for (const el of segs) {
+      if (Number(el.dataset.t) <= t) hit = el;
+      else break;
+    }
+    if (hit === current) return;
+    current?.classList.remove("playing");
+    hit?.classList.add("playing");
+    current = hit;
+  });
+</script>

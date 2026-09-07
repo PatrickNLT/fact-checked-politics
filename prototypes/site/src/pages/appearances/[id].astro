@@ -1,0 +1,77 @@
+---
+// PROTOTYPE — the Appearance page. D is the composite Patrick chose; A, B and C are the
+// three originals it was assembled from. Switch with ?variant=D|A|B|C or the floating
+// bar. Only the rendering changes: the data read above the switch is the same ADR 0005
+// files in all four.
+import Site from "../../layouts/Site.astro";
+import VariantA from "../../components/VariantA.astro";
+import VariantB from "../../components/VariantB.astro";
+import VariantC from "../../components/VariantC.astro";
+import VariantD from "../../components/VariantD.astro";
+import PrototypeSwitcher from "../../components/PrototypeSwitcher.astro";
+import { appearance } from "../../lib/data.js";
+
+const { id } = Astro.params;
+const data = appearance(id);
+
+// A retired Segment id keeps working: s1093 was merged into s1092, so the old permalink
+// has to land on the surviving Segment (ADR 0005, segments.retired).
+const retired = data.meta.segments.retired ?? {};
+
+// D first: it is the composite Patrick asked for after seeing A, B and C, so it is what
+// the page shows by default. A, B and C stay reachable for comparison.
+const VARIANTS = [
+  { key: "D", name: "Studio + repérage", component: VariantD },
+  { key: "A", name: "Lecture", component: VariantA },
+  { key: "B", name: "Studio", component: VariantB },
+  { key: "C", name: "Repérage", component: VariantC },
+];
+const wanted = Astro.url.searchParams.get("variant");
+const current = VARIANTS.find((v) => v.key === wanted) ?? VARIANTS[0];
+const Variant = current.component;
+---
+
+<Site title={data.meta.title} wide={current.key !== "A"}>
+  {
+    data.embedded && data.embedded.offset_s === null && (
+      <div class="offset-warning">
+        <div class={current.key === "A" ? "shell" : "shell wide"}>
+          <strong>Le décalage de ce replay n'a jamais été mesuré.</strong> Les horodatages
+          sont ceux de la copie transcrite ({data.meta.timeline.uploader}, {Math.round(data.meta.timeline.duration_s / 60)}
+          &nbsp;min)&nbsp;; le lecteur affiche celle de {data.embedded.uploader}, plus longue.
+          Le champ <code>offset_s</code> vaut <code>null</code>, donc les sauts dans la vidéo
+          tombent à côté. Utilisez la case « décalage replay » de la barre du bas pour voir
+          ce que donnerait la mesure.
+        </div>
+      </div>
+    )
+  }
+
+  <Variant data={data} />
+  <PrototypeSwitcher variants={VARIANTS} current={current} />
+</Site>
+
+<style>
+  .offset-warning {
+    background: #fff1f0;
+    border-bottom: 1px solid #ffccc7;
+    color: #7a1f1a;
+    font-size: 0.85rem;
+    padding-block: 0.6rem;
+  }
+  .offset-warning code { background: #ffe3e0; padding: 0 0.2rem; border-radius: 3px; }
+</style>
+
+<script define:vars={{ retired }}>
+  // Retired-id redirect, done client-side because the fragment never reaches the server.
+  const hop = () => {
+    const id = location.hash.slice(1);
+    if (retired[id]) {
+      location.replace(`${location.pathname}${location.search}#${retired[id]}`);
+      return;
+    }
+    document.getElementById(id)?.scrollIntoView({ block: "center" });
+  };
+  if (location.hash) hop();
+  addEventListener("hashchange", hop);
+</script>

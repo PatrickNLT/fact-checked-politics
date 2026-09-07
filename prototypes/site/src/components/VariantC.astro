@@ -1,0 +1,194 @@
+---
+// PROTOTYPE — Variante C, « Repérage ».
+// Finding first. A speaking-time ribbon across the top shows who holds the floor over the
+// three hours and is itself the navigation; a rail of participants filters the transcript
+// down to one voice; the text is a dense list, closer to a log than to an article. The
+// replay is a small picture-in-picture that follows you down the page.
+import Player from "./Player.astro";
+import { clock } from "../lib/data.js";
+
+const { data } = Astro.props;
+const { meta, segments, participants, participantsById, embedded } = data;
+
+const duration = meta.timeline.duration_s;
+const ribbon = segments.map((s) => ({
+  left: (s.start / duration) * 100,
+  width: Math.max(0.06, ((s.end - s.start) / duration) * 100),
+  colour: participantsById[s.speaker].colour,
+  speaker: s.speaker,
+  id: s.id,
+  t: s.start,
+}));
+const cast = participants.filter((p) => p.segmentCount).sort((a, b) => b.speakingSeconds - a.speakingSeconds);
+---
+
+<div class="shell wide">
+  <h1>{meta.title}</h1>
+  <p class="meta">
+    {meta.programme} · {new Date(meta.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+    · {Math.round(duration / 60)} min · {segments.length} extraits ·
+    <span class="mark draft">transcription non relue</span>
+  </p>
+
+  <div class="ribbon" data-duration={duration} title="Qui parle, du début à la fin. Cliquez pour vous y rendre.">
+    {ribbon.map((b) => (
+      <span
+        class="band"
+        data-speaker={b.speaker}
+        data-id={b.id}
+        data-t={b.t}
+        style={`left:${b.left}%;width:${b.width}%;background:${b.colour}`}
+      />
+    ))}
+    <span class="cursor" hidden />
+  </div>
+  <div class="ticks">
+    {[0, 0.25, 0.5, 0.75, 1].map((f) => <span>{clock(duration * f)}</span>)}
+  </div>
+
+  <div class="layout">
+    <nav class="rail">
+      <button class="who all is-on" data-speaker="">
+        <span>Tout le monde</span><em>{segments.length}</em>
+      </button>
+      {
+        cast.map((p) => (
+          <button class="who" data-speaker={p.speaker}>
+            <span class="chip" style={`background:${p.colour}`} />
+            <span>{p.name}</span>
+            <em>{Math.round(p.speakingSeconds / 60)} min</em>
+          </button>
+        ))
+      }
+      <p class="note">
+        Le temps de parole sert ici à naviguer dans une intervention. Le site ne publie
+        aucun décompte par candidat·e (ADR 0004 amendé).
+      </p>
+      <div class="pip"><Player replay={embedded} timeline={meta.timeline} /></div>
+    </nav>
+
+    <ol class="log">
+      {
+        segments.map((s) => {
+          const p = participantsById[s.speaker];
+          return (
+            <li class="line" id={s.id} data-speaker={s.speaker} data-t={s.start}>
+              <button class="t" data-t={s.start}>{clock(s.start)}</button>
+              <b class="nm" style={`color:${p.colour}`}>{p.name}</b>
+              <span class="tx">
+                {s.text}
+                {s.textStatus === "draft" && <span class="flag" title="Texte produit par la machine, non relu">•</span>}
+                {s.speakerStatus === "draft" && <span class="flag q" title="Attribution non vérifiée">?</span>}
+              </span>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </div>
+</div>
+
+<style>
+  .shell { padding-block: 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .meta { color: var(--ink-soft); font-size: 0.87rem; margin-top: 0; display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+
+  .ribbon {
+    position: relative;
+    height: 42px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .band { position: absolute; top: 0; bottom: 0; opacity: 0.85; }
+  .band.dim { opacity: 0.1; }
+  .ribbon .cursor { position: absolute; top: 0; bottom: 0; width: 2px; background: #111; }
+  .ticks {
+    display: flex;
+    justify-content: space-between;
+    font: 0.72rem/1 ui-monospace, monospace;
+    color: var(--ink-soft);
+    margin: 0.3rem 0 1.2rem;
+  }
+
+  .layout { display: grid; grid-template-columns: 15rem 1fr; gap: 1.5rem; align-items: start; }
+  @media (max-width: 60rem) { .layout { grid-template-columns: 1fr; } }
+
+  .rail { position: sticky; top: 1rem; }
+  .who {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.88rem;
+  }
+  .who:hover { background: #eef2f6; }
+  .who.is-on { background: var(--ink); color: #fff; }
+  .who.is-on em { color: #b8c0c8; }
+  .who em { margin-left: auto; font-style: normal; font-size: 0.76rem; color: var(--ink-soft); }
+  .who.all { border-bottom: 1px solid var(--line); border-radius: 4px 4px 0 0; margin-bottom: 0.3rem; }
+  .chip { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .note { font-size: 0.74rem; color: var(--ink-soft); margin: 1rem 0 0.8rem; }
+  .pip { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+
+  .log { list-style: none; margin: 0; padding: 0; font-size: 0.92rem; }
+  .line {
+    display: grid;
+    grid-template-columns: 3.8rem 8.5rem 1fr;
+    gap: 0.6rem;
+    padding: 0.3rem 0.5rem;
+    border-bottom: 1px solid #eceff2;
+    scroll-margin-top: 5rem;
+  }
+  .line:nth-child(odd) { background: var(--paper); }
+  .line.playing { background: #eff6ff; }
+  .line:target { background: #fffbe6; }
+  .line.hidden { display: none; }
+  .t { all: unset; cursor: pointer; color: var(--accent); font: 0.8rem/1.6 ui-monospace, monospace; }
+  .nm { font-size: 0.82rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tx { color: #22282e; }
+  .flag { color: var(--draft); font-weight: 700; margin-left: 0.3rem; cursor: help; }
+  .flag.q { color: #cf222e; }
+</style>
+
+<script>
+  const lines = [...document.querySelectorAll(".line")];
+  const bands = [...document.querySelectorAll(".band")];
+
+  document.querySelectorAll("[data-t]").forEach((el) =>
+    el.addEventListener("click", () => window.fcpSeek?.(Number(el.dataset.t))),
+  );
+
+  document.querySelectorAll(".who").forEach((b) =>
+    b.addEventListener("click", () => {
+      const want = b.dataset.speaker;
+      document.querySelectorAll(".who").forEach((o) => o.classList.toggle("is-on", o === b));
+      lines.forEach((l) => l.classList.toggle("hidden", Boolean(want) && l.dataset.speaker !== want));
+      bands.forEach((s) => s.classList.toggle("dim", Boolean(want) && s.dataset.speaker !== want));
+    }),
+  );
+
+  const cursor = document.querySelector(".cursor");
+  const ribbon = document.querySelector(".ribbon");
+  let current = null;
+  document.addEventListener("fcp:time", (e) => {
+    const t = e.detail;
+    cursor.hidden = false;
+    cursor.style.left = `${(t / Number(ribbon.dataset.duration || 11055)) * 100}%`;
+    let hit = null;
+    for (const el of lines) {
+      if (Number(el.dataset.t) <= t) hit = el;
+      else break;
+    }
+    if (hit === current) return;
+    current?.classList.remove("playing");
+    hit?.classList.add("playing");
+    current = hit;
+  });
+</script>
