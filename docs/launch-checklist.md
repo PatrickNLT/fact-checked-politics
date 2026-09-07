@@ -2,8 +2,11 @@
 
 The site is built privately and goes public when Patrick decides (map decision, Transcript publication posture, September 2026). There is no launch criterion; this list is what must be true on the day, and it grows as the platform develops. Each item names the decision or ticket it comes from. Tick items only when they are verified on the live build, not when the code exists.
 
+Before that day the site runs as a **private site behind Cloudflare Zero Trust**, open to Patrick and a small invited group of readers (decided 2026-09-07). Nothing gates the move from one to the other: Patrick decides when to publish, and this list is what he checks before doing so. Going public is out of scope for the current wayfinding map, whose destination is the private site running; when publication is decided it is charted as its own effort, and this list is where it starts.
+
 ## Repository and hosting
 
+- [ ] The Cloudflare Zero Trust access policy that fronts the private site is removed, and the site answers without a login.
 - [ ] The repository is private until launch day, and flipped to public as the last step (posture Q14; the proxy cannot change repository settings, so this is a manual step in GitHub Settings).
 - [ ] The site builds from `main` on Cloudflare Pages and the production URL is the chosen domain (Name and domain ticket).
 - [ ] Every replay embed has passed its per-Appearance check (oEmbed or Dailymotion API answer, TDM signals read, CGU version, replay expiry date), recorded in the Appearance's metadata (Source terms inventory).

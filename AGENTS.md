@@ -4,6 +4,8 @@
 
 The project is at the **prototype stage** (since 2026-09-06): the transcription pipeline (issue #13) is being built and measured on the seed corpus, no site is published yet. Rules that depend on the stage say so; today that is the deletion rule of ADR 0003, which is suspended for recordings downloaded for the prototype (see its 2026-09-06 amendment). Update this section when the stage changes.
 
+Running the site privately behind Cloudflare Zero Trust does **not** end the prototype stage (decided 2026-09-07): the ADR 0003 suspension holds until the site goes public, which is Patrick's call against `docs/launch-checklist.md`.
+
 ## Agent skills
 
 ### Issue tracker
