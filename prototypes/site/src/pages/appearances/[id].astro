@@ -1,11 +1,13 @@
 ---
-// PROTOTYPE — the Appearance page, in three structurally different variants.
-// Switch with ?variant=A|B|C or the floating bar. Only the rendering changes: the data
-// read above the switch is the same ADR 0005 files in all three.
+// PROTOTYPE — the Appearance page. D is the composite Patrick chose; A, B and C are the
+// three originals it was assembled from. Switch with ?variant=D|A|B|C or the floating
+// bar. Only the rendering changes: the data read above the switch is the same ADR 0005
+// files in all four.
 import Site from "../../layouts/Site.astro";
 import VariantA from "../../components/VariantA.astro";
 import VariantB from "../../components/VariantB.astro";
 import VariantC from "../../components/VariantC.astro";
+import VariantD from "../../components/VariantD.astro";
 import PrototypeSwitcher from "../../components/PrototypeSwitcher.astro";
 import { appearance } from "../../lib/data.js";
 
@@ -16,7 +18,10 @@ const data = appearance(id);
 // has to land on the surviving Segment (ADR 0005, segments.retired).
 const retired = data.meta.segments.retired ?? {};
 
+// D first: it is the composite Patrick asked for after seeing A, B and C, so it is what
+// the page shows by default. A, B and C stay reachable for comparison.
 const VARIANTS = [
+  { key: "D", name: "Studio + repérage", component: VariantD },
   { key: "A", name: "Lecture", component: VariantA },
   { key: "B", name: "Studio", component: VariantB },
   { key: "C", name: "Repérage", component: VariantC },
