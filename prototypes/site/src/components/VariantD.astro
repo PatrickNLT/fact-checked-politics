@@ -23,7 +23,14 @@ for (const s of segments) {
 }
 
 const duration = meta.timeline.duration_s;
-const cast = [...participants].filter((p) => p.segmentCount).sort((a, b) => b.speakingSeconds - a.speakingSeconds);
+
+// Who is on the page, alphabetically, Candidates in their own section. No speaking time
+// is shown: ADR 0004 as amended withdrew per-Candidate counts, and nothing on this page
+// needs them.
+const byName = (a, b) => a.name.localeCompare(b.name, "fr");
+const heard = participants.filter((p) => p.segmentCount);
+const candidates = heard.filter((p) => p.candidate).sort(byName);
+const others = heard.filter((p) => !p.candidate).sort(byName);
 
 // One band per turn, along a single row. Turn grouping is what makes the bands chunky
 // enough to aim at: 412 instead of C's 1 595.
@@ -83,14 +90,25 @@ const bands = turns.map((t) => {
         <span class="mark verified">{reviewed.text} relus</span>
       </p>
 
-      <h2>À l'antenne ({cast.length})</h2>
+      <h2>Candidat·es ({candidates.length})</h2>
       <ul class="cast">
         {
-          cast.map((p) => (
+          candidates.map((p) => (
             <li>
               <span class="chip" style={`background:${p.colour}`} />
-              {p.candidate ? <a href={`/candidats/${p.speaker}`}>{p.name}</a> : <span>{p.name}</span>}
-              <em>{Math.round(p.speakingSeconds / 60)} min</em>
+              <a href={`/candidats/${p.speaker}`}>{p.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <h2>Autres intervenant·es ({others.length})</h2>
+      <ul class="cast">
+        {
+          others.map((p) => (
+            <li>
+              <span class="chip" style={`background:${p.colour}`} />
+              <span title={p.name}>{p.name}</span>
             </li>
           ))
         }
@@ -173,14 +191,14 @@ const bands = turns.map((t) => {
 
 <style>
   .shell {
-    padding-block: 1.2rem 0.9rem;
+    padding-block: 1rem 0.7rem;
     display: flex;
     flex-direction: column;
     min-height: 0;
   }
 
   /* --- C's ribbon, one row, with the name riding over it ------------------- */
-  .ribbon-wrap { flex: none; margin-bottom: 1.5rem; }
+  .ribbon-wrap { flex: none; margin-bottom: 1.2rem; }
   .ribbon-title { font-size: 0.8rem; color: var(--ink-soft); margin: 0 0 1.5rem; }
   .ribbon {
     position: relative;
@@ -257,11 +275,11 @@ const bands = turns.map((t) => {
   aside { min-height: 0; overflow-y: auto; }
   /* A medium player, not a full-width one: it has to leave room for the cast list. */
   aside :global(.player) { max-width: 20rem; }
-  aside h1 { font-size: 1.1rem; margin: 0.8rem 0 0.25rem; }
-  .meta { color: var(--ink-soft); font-size: 0.82rem; margin: 0 0 0.6rem; }
-  .review { display: flex; gap: 0.4rem; margin: 0; }
-  aside h2 { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin: 0.9rem 0 0.35rem; }
-  /* Two columns so the fifteen participants fit without the aside needing to scroll. */
+  aside h1 { font-size: 1.05rem; margin: 0.7rem 0 0.2rem; }
+  .meta { color: var(--ink-soft); font-size: 0.82rem; margin: 0 0 0.5rem; }
+  .review { display: flex; gap: 0.4rem; margin: 0; font-size: 0.95em; }
+  aside h2 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin: 0.7rem 0 0.3rem; }
+  /* Two columns so both sections fit without the aside needing to scroll. */
   .cast {
     list-style: none;
     padding: 0;
@@ -274,7 +292,7 @@ const bands = turns.map((t) => {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.12rem 0;
+    padding: 0.09rem 0;
     break-inside: avoid;
   }
   .cast li > a, .cast li > span:not(.chip) {
@@ -282,7 +300,7 @@ const bands = turns.map((t) => {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .cast em { margin-left: auto; color: var(--ink-soft); font-style: normal; font-size: 0.72rem; flex: none; }
+
   .chip { width: 10px; height: 10px; border-radius: 2px; flex: none; }
   .legal { font-size: 0.74rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 0.5rem; margin: 0.6rem 0 0; }
 
