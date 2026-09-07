@@ -3,7 +3,7 @@
   7600.0,
   300.0
  ],
- "evaluated_at": "2026-09-06T14:26:43+00:00",
+ "evaluated_at": "2026-09-07T06:15:10+00:00",
  "wer": {
   "wer": 0.0,
   "substitutions": 0,
@@ -12,6 +12,18 @@
   "ref_words": 1095,
   "hyp_words": 1095,
   "reference_is_hand_corrected": false
+ },
+ "der": {
+  "der": 0.0,
+  "false_alarm": 0.0,
+  "missed": 0.0,
+  "confusion": 0.0,
+  "ref_speech_s": 310.8,
+  "reference_is_hand_corrected": false
+ },
+ "overlap": {
+  "ref_overlap_s": 13.9,
+  "ref_overlap_share": 0.0446
  },
  "hallucination_flags": {
   "segments_total": 2960,
@@ -167,6 +179,7 @@
   ]
  },
  "timing": {
-  "asr_wall_per_audio_hour_s": 582.3
+  "asr_wall_per_audio_hour_s": 582.3,
+  "diarization_wall_per_audio_hour_s": 222.7
  }
 }

@@ -5,10 +5,9 @@ produced on Patrick's Apple Silicon Mac, and is the quality good enough to seed 
 correction? Prototype code: `prototypes/transcription/` (throwaway; the validated decisions are
 below and feed tickets #14 and #15).
 
-Status on 2026-09-06: speech recognition ran on the whole debate. **Diarization has not run**
-(the pyannote models are gated behind a Hugging Face login that does not exist on the Mac yet), and
-the **hand-corrected reference is not written yet**, so the error rates below are proxies, marked
-as such. Both are one command away once the two human steps are done (see "What is left").
+Status on 2026-09-07: speech recognition and diarization both ran on the whole debate. The
+**hand-corrected reference is not written yet**, so the error rates below are proxies, marked as
+such; the measurement is one command away once the sample is corrected (see "What is left").
 
 ## Setup
 
@@ -19,9 +18,20 @@ as such. Both are one command away once the two human steps are done (see "What 
 | Media | `~/fact-checked-politics-media/rpURHoN54bQ.m4a`, AAC-LC 128 kbit/s 44.1 kHz stereo, 178 787 602 bytes, sha256 `c57f025e…a26f9a` (verified again before the run) |
 | Acquisition | yt-dlp 2026.08.19, logged out, no account, LCI's own YouTube upload, about one minute, no platform friction (issue #28) |
 | Speech recognition | Whisper large-v3 on MLX (`mlx-community/whisper-large-v3-mlx`, mlx-whisper 0.4.3), French forced, word timestamps, `condition_on_previous_text=False`, short French initial prompt |
-| Diarization | pyannote `speaker-diarization-3.1` through pyannote.audio 4.0.7 on MPS, not yet run (gated model) |
-| Environment | `uv` project, Python 3.12, ffmpeg 9 for the 16 kHz mono conversion; models cached under `~/.cache/huggingface` (3 GB for large-v3, 1.6 GB for turbo) |
+| Diarization | pyannote `speaker-diarization-3.1` (segmentation-3.0 + wespeaker embeddings + agglomerative clustering, the published 3.1 config) through pyannote.audio 4.0.7 on MPS, no speaker-count hint |
+| Environment | `uv` project, Python 3.13, ffmpeg 9 for the 16 kHz mono conversion; models cached under `~/.cache/huggingface` (3 GB for large-v3, 1.6 GB for turbo, 30 MB for pyannote) |
 | Deletion | Not deleted: ADR 0003 amendment of 2026-09-06 holds prototype-stage recordings; provenance says "held, prototype stage" |
+
+Platform friction met, all worked around in `pipeline.py` and none needing a paid service:
+
+- The pyannote models are **gated**: a free Hugging Face account, the terms accepted on two model
+  pages, and `hf auth login` on the Mac. One-time.
+- pyannote.audio 4 fills the 3.1 config's missing PLDA with its own default, hosted in a third
+  gated repository (`speaker-diarization-community-1`); 3.1 never uses a PLDA, so the pipeline is
+  built by hand from the published 3.1 config with the PLDA loader bypassed. Pinning
+  pyannote.audio 3.x instead is not possible with torch 2.14.
+- pyannote 4 decodes audio through torchcodec, which does not load against Homebrew's ffmpeg 9;
+  the waveform is read with the standard library and handed over in memory (documented option).
 
 ## Wall-clock
 
@@ -32,17 +42,20 @@ as such. Both are one command away once the two human steps are done (see "What 
 | Whisper large-v3 model download, first time only | 1 min 34 s | |
 | Whisper large-v3, word timestamps, whole debate | 29.8 min | **9.7 min** (about 6x real time) |
 | Gap repair (12 gaps re-transcribed) | 22 s | 7 s |
+| pyannote 3.1 diarization, whole debate, MPS | 11.4 min | **3.7 min** |
+| Merge, sample, evaluation | seconds | |
+| **Whole pipeline** | **42 min** | **13.6 min** |
 | Whisper large-v3-turbo on 5 min (cross-check only) | 12 s | 3.0 min |
-| pyannote 3.1 diarization | not run | model card order of magnitude: a few minutes per hour on GPU |
 
-The M5 was otherwise idle, on mains power, with the display on. The ASR run was launched in the
-background and finished without intervention. Bridge ticket #15 can plan on **under 15 minutes
-per audio hour for ASR plus diarization**, so a three-hour debate lands in under an hour.
+The M5 was otherwise idle, on mains power, with the display on. Both long steps ran in the
+background and finished without intervention. Bridge ticket #15 can plan on **about 14 minutes
+per audio hour**, so a three-hour debate lands in under an hour; the two long steps are
+independent and could overlap.
 
 ## Output shape (input to ticket #14)
 
-`out/transcript.json` (3.3 MB for three hours, 35 468 words) and `out/transcript.txt`, a readable
-rendering of the same. Top level:
+`out/transcript.json` (3.4 MB for three hours, 35 468 words, 1 470 Segments) and
+`out/transcript.txt`, a readable rendering of the same. Top level:
 
 ```json
 {
@@ -54,13 +67,15 @@ rendering of the same. Top level:
                 "media_sha256": "c57f…a26f9a", "media_bytes": 178787602,
                 "deletion_date": "held, prototype stage (ADR 0003 amendment of 2026-09-06)"},
  "pipeline": {"asr": {"model": "mlx-community/whisper-large-v3-mlx", "wall_s": 1788.2, "run_at": "…"},
-              "diarization": null, "merge_run_at": "…"},
- "speakers": {"SPEAKER_00": {"participant": null}},
+              "diarization": {"model": "pyannote/speaker-diarization-3.1", "wall_s": 683.8, "run_at": "…",
+                              "num_speakers_hint": null},
+              "merge_run_at": "…"},
+ "speakers": {"SPEAKER_00": {"participant": null}, "…": {}},
  "segments": [
-  {"id": 920, "speaker": "SPEAKER_03", "start": 7652.5, "end": 7734.44,
-   "text": "puissions les expliquer détailler toutes les lignes …",
-   "words": [{"w": "puissions", "s": 7652.5, "e": 7653.0, "p": 0.93}, …],
-   "overlap_words": 0,
+  {"id": 1001, "speaker": "SPEAKER_14", "start": 7734.98, "end": 7750.92,
+   "text": "impressionnant ce que vous venez de faire parce que madame nous dit …",
+   "words": [{"w": "impressionnant", "s": 7734.98, "e": 7737.72, "p": 0.998}, …],
+   "overlap_words": 5,
    "validation": {"text": "draft", "speaker": "draft"}}
  ]
 }
@@ -69,21 +84,21 @@ rendering of the same. Top level:
 What the real run taught about the shape:
 
 - **Segments are made by the merge, not by Whisper.** Whisper's own segments are caption lines
-  (median 2.3 s, 9 words). The merge regroups words on speaker change, sentence end or a pause over
-  1.5 s. Without diarization the only cut is sentence end, and turns run together: the segment
-  above is 82 s long and contains a business owner's question, the presenter's hand-over and the
-  start of Marine Tondelier's answer. **Speaker change is the primary segment boundary**; the data
-  model should assume that, and the Segment id cannot be Whisper's.
+  (median 2.3 s, 9 words). The merge assigns each word the diarization speaker covering it (nearest
+  turn within 1 s when none does), then cuts on speaker change, sentence end or a pause over 1.5 s.
+  **Speaker change is the primary segment boundary**: without diarization the same window came out
+  as one 82-second Segment holding four turns. The Segment id cannot be Whisper's.
 - **Word timestamps are cheap and usable.** Every word carries start, end and a probability.
   Probability is a useful correction hint: 541 words of 35 468 (1.5 percent) are under 0.5, and
   spot checks find them on proper nouns ("Carouèr", "Tourdelier", "Lecouf" for Lecoufle) and
   numbers. The data model should keep word times and the probability at least until a Segment is
   `verified`.
-- **Speaker labels are cluster ids** (`SPEAKER_03`), and the mapping to a Participant is a human
-  step recorded once per Appearance in `speakers`. Non-candidate speakers (presenter, the five
-  business owners, Patrick Martin) need Speaker entries too: they are a third of the sample's words.
-- **Overlap is a per-word flag** rolled up as `overlap_words` per Segment; it comes from
-  diarization only, so it is 0 in this run.
+- **Speaker labels are cluster ids** (`SPEAKER_14`), and the mapping to a Participant is a human
+  step recorded once per Appearance in `speakers`. On this debate the mapping is a five-minute job
+  (see the cluster table below). Non-candidate speakers (presenter, MEDEF president, five business
+  owners) need Speaker entries too: they are a third of the sample's words.
+- **Overlap is a per-word flag** rolled up as `overlap_words` per Segment: 888 words of 35 468
+  (2.5 percent) sit under two diarization turns at once, concentrated in the exchanges.
 - **Two Validation statuses per Segment**, `text` and `speaker`, both `draft` at emit time, as
   decided in #10.
 - Segment times are offsets into the official replay's audio track; the download is the replay
@@ -119,7 +134,7 @@ Systematic errors seen while reading the whole transcript:
 - **Punctuation and casing** are Whisper's own and vary between passages (some minutes come out
   all lower-case, comma-less). Fine for search, not for quotation without correction.
 
-### Dropped speech: the real defect
+### Dropped speech: the real ASR defect
 
 Whisper skipped **two whole 30-second windows** of ordinary speech (at 00:25:04 and 02:22:54), with
 no sign in its confidence scores: a question by a business owner and Édouard Philippe's reply to
@@ -142,57 +157,100 @@ audio, the classic Whisper caption-credit artefact. Zero in the main pass, with
 on this audio, on a read-through rather than a full audit; a boilerplate blacklist and skipping
 gaps that a voice-activity detector marks as non-speech would remove the one found.
 
-### Diarization and overlap: not measured
+### Diarization: clusters map cleanly to people
 
-`out/sample/reference-speakers.rttm` is written by the `sample` step once diarization exists, and
-`evaluate` computes DER (no collar, overlap scored, same convention as the pyannote model card) and
-the reference's overlapped-speech share. Expected from the evidence file: DER about 8 percent on
-French TV, 10 percent of debate speech overlapped. The sample window was chosen to contain overlap
-(the Tondelier / Carrouër cross-talk at 02:08:54 to 02:09:40), where the turbo model already
-diverges from large-v3.
+pyannote 3.1 found **17 clusters** in 1 023 turns with no speaker-count hint. Speech time per
+cluster, with the identity read off the transcript (first words, content):
 
-### Excerpt of the sample window, as emitted (no speaker labels yet)
+| Cluster | Speech | Words | Who (from the text) |
+|---|---|---|---|
+| SPEAKER_09, 14, 12, 16, 07, 06, 02 | 20.5 to 23.0 min each | 3 700 to 5 000 each | the seven candidates (Tondelier is 14; the others are a five-minute mapping job) |
+| SPEAKER_13 | 14.6 min | 2 950 | Amélie Carrouër, presenter |
+| SPEAKER_01 | 2.6 min | 402 | Patrick Martin, MEDEF president, opening |
+| SPEAKER_03, 11, 00, 10, 05 | 0.9 to 2.5 min each | 160 to 470 | the five business owners' questions |
+| SPEAKER_04 | 0.6 min | 75 | LCI voice-over of the opening |
+| SPEAKER_15, 08 | under 0.5 min | 11, 36 | jingle noise, the hallucinated caption credit |
+
+Seven near-equal candidate shares is what a moderated debate should produce, and no cluster
+splits or merges a person as far as reading shows: 14 real speakers, 3 noise clusters. The
+`speakers` mapping in the output is exactly this table, to be filled once per Appearance.
+
+### Attribution in cross-talk: the real diarization defect
+
+Diarization is right about who speaks when; the errors are at the **turn boundaries**, where
+Whisper's word timestamps drift by a word or two and the word lands in the neighbour's turn.
+In calm passages this is invisible. In the sample window's cross-talk it is not: the exchange
+below is emitted as alternating one-line Segments, most flagged `[chevauchement]`, and about one
+boundary in three carries the wrong first or last words ("dit que c'était de sa faute" is
+attributed to the presenter, who did say it, but the preceding "Non, je n'ai pas" went to
+Tondelier). This is the misattribution in heated exchanges that the evidence file predicted, and
+it is where the `speaker` Validation status earns its place: the overlap flags point a corrector
+at exactly these Segments (888 words in the whole debate). No hint (`--speakers 14`) was tried;
+it would not change boundary slop.
+
+The DER measurement waits on the hand-corrected `out/sample/reference-speakers.rttm` (the
+hypothesis is pre-filled, one turn per line, times relative to the clip). The hypothesis marks
+4.5 percent of the window's speech time as overlapped, in line with the 6 to 10 percent published
+for French TV debates.
+
+### Excerpt of the sample window, as emitted
 
 ```
-[02:08:54.440] ?: C'est assez impressionnant ce que vous venez de faire parce que madame nous dit
-moi je suis embêtée par les bulletins de paye et par toutes les règles qu'on me met en général elle
-n'a absolument pas parlé de normes environnementales et vous, vous me regardez moi en disant que
-c'est de ma faute alors qu'elle n'a parlé d'autres normes environnementales Non, je n'ai pas dit
-que c'était de sa faute que c'était votre faute pour les fiches de paye Mais la question ne portait
-absolument pas sur les normes environnementales Vous savez très bien que je parlais des normes en
-général et que c'est vrai que beaucoup d'entrepreneurs nous ont dit Non, vous vous êtes retournée
-à moi en tant qu'écologiste en disant c'est vous. Et je précise par ailleurs que je n'ai jamais été
-au gouvernement et que mon parti n'y a pas été très longtemps.
-[02:09:28.100] ?: Donc si vous avez des récriminations à apporter...
-[02:09:31.040] ?: Non, aucune récrimination. L'occasion pour vous de répondre à ce que disent
-beaucoup d'entrepreneurs, c'est que les normes, souvent écologiques, sont un peu...
-[02:09:37.180] ?: Vous voulez qu'on parle des normes environnementales?
-[02:09:38.720] ?: Mais vous répondez à la question que vous voulez.
+[02:08:37.120] SPEAKER_13: Lecouf alors je vous ai entendu, Marie -Tourdelier vous disiez je termine
+toujours, je suis toujours à la fin vous allez commencer, parce que quand même, on le sait, vous le
+savez très certainement, souvent quand on parle de normes il y a beaucoup d'entrepreneurs qui nous
+disent l'écologie c'est beaucoup de normes et puis si vous arrivez au pouvoir il y en aura
+certainement encore plus alors qu'est-ce que vous...
+[02:08:54.440] SPEAKER_13 [chevauchement]: C'est assez
+[02:08:54.980] SPEAKER_14 [chevauchement]: impressionnant ce que vous venez de faire parce que madame
+nous dit moi je suis embêtée par les bulletins de paye et par toutes les règles qu'on me met en
+général elle n'a absolument pas parlé de normes environnementales et vous, vous me regardez moi en
+disant que c'est de ma faute alors qu'elle n'a parlé d'autres normes environnementales Non, je n'ai pas
+[02:09:10.920] SPEAKER_13 [chevauchement]: dit que c'était de sa faute que c'était votre faute pour
+les fiches de paye Mais la question
+[02:09:14.340] SPEAKER_14 [chevauchement]: ne portait absolument pas sur les normes environnementales
+Vous savez très bien que je parlais
+[02:09:16.860] SPEAKER_13 [chevauchement]: des normes en général et que c'est vrai que beaucoup
+d'entrepreneurs nous ont dit Non, vous vous êtes
+[02:09:20.300] SPEAKER_14 [chevauchement]: retournée à moi en tant qu'écologiste en disant c'est vous.
+Et je précise par ailleurs que je n'ai jamais été au gouvernement et que mon parti n'y a pas été
+très longtemps.
+[02:09:28.100] SPEAKER_14: Donc si vous avez des récriminations à apporter...
+[02:09:31.040] SPEAKER_14 [chevauchement]: Non, aucune récrimination. L'occasion pour vous de répondre
+à ce que disent beaucoup d'entrepreneurs, c'est que les
+[02:09:35.760] SPEAKER_13 [chevauchement]: normes, souvent
+[02:09:36.200] SPEAKER_14 [chevauchement]: écologiques,
+[02:09:36.780] SPEAKER_13 [chevauchement]: sont un
+[02:09:37.080] SPEAKER_14 [chevauchement]: peu...
+[02:09:37.180] SPEAKER_14 [chevauchement]: Vous voulez qu'on parle des normes environnementales?
+[02:09:38.720] SPEAKER_14: Mais vous répondez à la question que vous voulez.
 ```
 
-The first Segment alone holds four turns (Tondelier, Carrouër, Tondelier, Carrouër) because no
-sentence ends between them and there is no speaker signal yet: exactly what diarization must cut.
+SPEAKER_13 is the presenter, SPEAKER_14 Marine Tondelier. "Non, aucune récrimination. L'occasion
+pour vous de répondre…" reads as the presenter's and is attributed to 14; the "Non, je n'ai pas /
+dit que" split and the interleaved "normes, souvent / écologiques, / sont un / peu..." show the
+boundary slop. The text of the same passage is essentially right. (Read from the text, not
+checked against the audio: the hand-corrected RTTM settles it.)
 
-## Verdict so far
+## Verdict
 
-- **Good enough to seed correction: yes for the text, on the evidence read so far.** Calm passages
-  read as a clean draft; a corrector's work is names, numbers, punctuation and the cross-talk, and
-  the word probabilities point at most of it.
-- **Not good enough to publish uncorrected**, as expected from ADR 0002 and the evidence file, and
-  for one reason not in the literature review: silent 30-second drops. The gap repair is
-  mandatory.
-- **Attribution is entirely on diarization.** Without it the emitted Segments cannot be shown next
-  to a name at all; the data model must not assume Whisper's segments carry a speaker.
-- **Runtime is a non-issue** for the bridge: 10 minutes per audio hour for ASR on the M5, in the
-  background.
+- **Good enough to seed correction: yes.** Calm passages read as a clean draft with the right
+  speaker; a corrector's work is names, numbers, punctuation and the cross-talk, and the word
+  probabilities and overlap flags point at most of it.
+- **Not good enough to publish uncorrected**, as expected from ADR 0002 and the evidence file, for
+  two reasons: silent 30-second drops in ASR (repaired by the gap step, which is mandatory) and
+  boundary misattribution in cross-talk (2.5 percent of words flagged, to be human-verified).
+- **Runtime is a non-issue** for the bridge: 14 minutes per audio hour on the M5, in the
+  background, both models open weights and free.
+- **Model choice**: Whisper large-v3 on MLX and pyannote 3.1 are enough for v1. Voxtral, WhisperX
+  alignment and Parakeet were not run; the case for them would be boundary accuracy and the
+  30-second drops, both of which a gap step and diarization-driven segmentation address more
+  cheaply. Worth revisiting once the hand-corrected WER exists.
 
-## What is left (human steps, then one command each)
+## What is left (human steps, then one command)
 
-1. Log in to Hugging Face on the Mac (`uvx --from huggingface_hub hf auth login`, free account),
-   after accepting the terms of `pyannote/speaker-diarization-3.1` and `pyannote/segmentation-3.0`.
-   Then `uv run pipeline.py diarize --speakers 13` (seven candidates, presenter, five questioners;
-   or without the hint to see what the clustering finds), `merge`, `sample --window 7600 300`.
-2. Hand-correct `out/sample/reference-text.txt` and `out/sample/reference-speakers.rttm` against
+1. Hand-correct `out/sample/reference-text.txt` and `out/sample/reference-speakers.rttm` against
    the clip, then `uv run pipeline.py evaluate --ref-corrected` and replace the proxies above with
    WER, DER and overlap share.
-3. Report back to #13; hand the shape to #14 and the runtime to #15.
+2. Fill the `speakers` mapping for D1 (the table above) and hand the shape to #14, the runtime to
+   #15.

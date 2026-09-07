@@ -210,7 +210,19 @@ def cmd_diarize(a):
         sys.exit("diarize: no Hugging Face token (env HF_TOKEN or `hf auth login`); "
                  "accept the terms of pyannote/speaker-diarization-3.1 and pyannote/segmentation-3.0 first")
     t0 = time.time()
-    pipe = Pipeline.from_pretrained(a.model, token=token)
+    if a.model == "pyannote/speaker-diarization-3.1":
+        # pyannote.audio 4 fills the 3.1 config's missing `plda` with its own default, hosted in
+        # the gated community-1 repository; 3.1 clusters agglomeratively and never uses a PLDA,
+        # so build the pipeline by hand from the published 3.1 config with the PLDA loader off.
+        import pyannote.audio.pipelines.speaker_diarization as sd
+        from huggingface_hub import hf_hub_download
+        import yaml
+        cfg = yaml.safe_load(open(hf_hub_download(a.model, "config.yaml", token=token)))
+        sd.get_plda = lambda plda, **kw: None
+        pipe = sd.SpeakerDiarization(**cfg["pipeline"]["params"], plda=None, token=token, legacy=True)
+        pipe.instantiate(cfg["params"])
+    else:
+        pipe = Pipeline.from_pretrained(a.model, token=token)
     device = "mps" if torch.backends.mps.is_available() and not a.cpu else "cpu"
     pipe.to(torch.device(device))
     load_s = time.time() - t0
@@ -218,7 +230,16 @@ def cmd_diarize(a):
     kw = {}
     if a.speakers:
         kw["num_speakers"] = a.speakers
-    out = pipe(prep["wav"], **kw)
+    # torchcodec (pyannote 4's decoder) does not load against Homebrew's ffmpeg 9 on this Mac;
+    # hand pyannote the waveform in memory instead (documented alternative).
+    import wave
+    import numpy as np
+    with wave.open(prep["wav"], "rb") as wf:
+        assert wf.getnchannels() == 1 and wf.getsampwidth() == 2
+        sr = wf.getframerate()
+        pcm = np.frombuffer(wf.readframes(wf.getnframes()), dtype=np.int16)
+    waveform = torch.from_numpy(pcm.astype(np.float32) / 32768.0)[None, :]
+    out = pipe({"waveform": waveform, "sample_rate": sr}, **kw)
     ann = out.speaker_diarization if hasattr(out, "speaker_diarization") else out  # pyannote 4 vs 3 API
     wall = time.time() - t0
     turns = [{"start": round(t.start, 3), "end": round(t.end, 3), "speaker": spk}
@@ -255,12 +276,25 @@ def cmd_merge(a):
                 hits[t["speaker"]] = hits.get(t["speaker"], 0) + ov
         return hits
 
-    # 1. label every word with the speaker owning most of its span; note overlap.
+    def nearest_turn(s, e, within=1.0):
+        """Speaker of the closest turn when no turn covers the word (short gaps between turns)."""
+        best, dist = None, within
+        for t in turns:
+            d = max(t["start"] - e, s - t["end"], 0)
+            if d < dist:
+                best, dist = t["speaker"], d
+        return best
+
+    # 1. label every word with the speaker owning most of its span; note overlap. A word that no
+    #    turn covers (diarization gaps of a few hundred ms are common) takes the nearest turn's
+    #    speaker within 1 s, else the previous word's.
     words = []
     for seg in asr["segments"]:
         for w in seg["words"]:
             hits = speakers_at(w["s"], w["e"]) if turns else {}
             spk = max(hits, key=hits.get) if hits else None
+            if spk is None and turns:
+                spk = nearest_turn(w["s"], w["e"]) or (words[-1]["speaker"] if words else None)
             words.append({**w, "speaker": spk, "overlap": len(hits) > 1, "seg": seg["id"]})
 
     # 2. group consecutive words into Segments: a new one on speaker change, on an ASR segment
