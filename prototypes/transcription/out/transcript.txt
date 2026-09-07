@@ -19,8 +19,8 @@
 [00:02:16.900] SPEAKER_01: Voilà donc, ce qui nous intéresse c'est de savoir ce que les candidats, des candidats nous proposeront pour soutenir, pour développer, pour accélérer la croissance, une croissance bien sûr responsable, j'ai rappelé hier que nous y étions tenus de par notre raison d'être, agir ensemble pour une croissance responsable, mais une croissance quand même, et pour bien prendre en compte la brutalité d'une compétition internationale, commerciale, technologique, financière, qui les uns et les autres nous donne encore plus la pêche.
 [00:02:51.820] SPEAKER_01: Je finis simplement, j'y ai fait allusion et c'est d'évidence en commençant mon propos, par remercier très respectueusement les participants à cette réunion, vous dire combien nous vous respectons.
 [00:03:07.080] SPEAKER_01: Moi je suis très attaché évidemment en particulier à la démocratie sociale mais je ne perds jamais de vue que c'est la démocratie politique et c'est très bien ainsi qui prime dans notre république à laquelle nous sommes également très attachés.
-[00:03:21.360] SPEAKER_01 [chevauchement]: donc je vous souhaite je me permets de dire, je nous souhaite et je n'ai aucun doute à cet égard une excellente séquence et je termine, même si c'est évident en vous invitant les uns les autres à bien évidemment respecter chacun des intervenants et à manifester vos réactions d'une manière courtoise, parce que nous sommes des gens respectueux, des gens courtois des gens qui veulent construire Merci
-[00:03:48.680] SPEAKER_08: Merci beaucoup, monsieur le Président.
+[00:03:21.360] SPEAKER_01: donc je vous souhaite je me permets de dire, je nous souhaite et je n'ai aucun doute à cet égard une excellente séquence et je termine, même si c'est évident en vous invitant les uns les autres à bien évidemment respecter chacun des intervenants et à manifester vos réactions d'une manière courtoise, parce que nous sommes des gens respectueux, des gens courtois des gens qui veulent construire
+[00:03:48.120] SPEAKER_08 [chevauchement]: Merci Merci beaucoup, monsieur le Président.
 [00:03:51.220] SPEAKER_08: Merci, Patrick Martin.
 [00:03:52.620] SPEAKER_08: Et merci aux femmes et aux hommes entrepreneurs qui vont poser les questions en votre nom.
 [00:03:57.980] SPEAKER_08: Amélie Carouère, c'est à vous.
@@ -69,8 +69,10 @@
 [00:09:58.360] SPEAKER_06: Mais ce que je vous dis, je vais le faire.
 [00:10:01.140] SPEAKER_06: Je ne suis pas moi en politique ou candidat pour la quatrième fois à la présidentielle, mais il y a une chose qui est mon combat depuis le début.
 [00:10:10.620] SPEAKER_06 [chevauchement]: Assurer la souveraineté de notre pays.
-[00:10:13.600] SPEAKER_06 [chevauchement]: Je me suis battu dans les institutions européennes pour mettre fin à cette religion du libre -échange qui laisse notre appareil de
-[00:10:20.760] SPEAKER_13 [chevauchement]: faire ratiboiser.
+[00:10:13.600] SPEAKER_13 [chevauchement]: Je me suis
+[00:10:14.300] SPEAKER_06 [chevauchement]: battu dans les institutions européennes pour mettre fin à cette religion du libre -échange qui laisse notre appareil
+[00:10:20.700] SPEAKER_13 [chevauchement]: de faire
+[00:10:21.920] SPEAKER_06 [chevauchement]: ratiboiser.
 [00:10:23.600] SPEAKER_13 [chevauchement]: Et
 [00:10:23.820] SPEAKER_06 [chevauchement]: ce que je vous dis, je le ferai.
 [00:10:26.200] SPEAKER_06 [chevauchement]: Et
@@ -91,8 +93,8 @@
 [00:12:18.580] SPEAKER_07: Je propose aussi qu'on sécurise cette catégorie d'entreprises absolument essentielles qui sont les entreprises familiales en arrêtant de remettre en cause à intervalles réguliers le pacte d'Utreil.
 [00:12:26.980] SPEAKER_07: Je veux une politique qui au fond dise aux chefs d'entreprise et à l'ensemble des entreprises qui qui créent de la richesse, allez -y.
 [00:12:33.820] SPEAKER_07 [chevauchement]: Enfin, troisième axe décisif, une grande politique d'infrastructure, parce qu'une économie qui va bien, ce n'est pas simplement des comptes en ordre et des entreprises qui créent de la richesse, c'est une adaptation aux nécessités de l'époque, notamment en la transformation climatique, mais je suis certain que j'aurai l'occasion d'en dire plus, merci.
-[00:12:49.740] SPEAKER_07 [chevauchement]: C'est
-[00:12:49.940] SPEAKER_13 [chevauchement]: exactement ce que j'allais vous dire, vous aurez tous l'occasion de vous exprimer largement un peu plus tard.
+[00:12:49.740] SPEAKER_07 [chevauchement]: C
+[00:12:49.840] SPEAKER_13 [chevauchement]: 'est exactement ce que j'allais vous dire, vous aurez tous l'occasion de vous exprimer largement un peu plus tard.
 [00:12:53.520] SPEAKER_13: Marine Le Pen, c'est à vous.
 [00:12:57.580] SPEAKER_12: Mesdames et messieurs, bonjour. Je crois qu'il y a un consensus consensus général sur la gravité de la situation, tous les indicateurs économiques ayant viré définitivement au rouge.
 [00:13:07.720] SPEAKER_12: On n'est pas là non plus, je crois, pour faire un débat sur comment reproduire les erreurs d'hier en les appelant par un autre nom.
@@ -106,7 +108,9 @@
 [00:14:25.640] SPEAKER_12: La nation, ce sont les hommes et les femmes qui créent la richesse et qui doivent pouvoir donner le meilleur d'eux -mêmes.
 [00:14:32.200] SPEAKER_12: Ça passe par l'éducation, ça passe par une réforme de la formation, ça passe par la juste valorisation du travail.
 [00:14:39.380] SPEAKER_12: Et l'État, lui, il a un rôle qui est quand même essentiel, qui est de créer les conditions d'un environnement économique maximal.
-[00:14:49.400] SPEAKER_12 [chevauchement]: C'est -à -dire mettre en place les conditions pour que vous autres entrepreneurs puissiez créer de la richesse. On aura l'occasion de discuter durant le débat de toutes les conditions qui sont nécessaires précisément pour que l'État remplisse ce rôle.
+[00:14:49.400] SPEAKER_12 [chevauchement]: C'est -à -dire mettre en place les conditions pour que vous autres entrepreneurs puissiez créer de la richesse. On aura l'occasion de discuter durant le débat de toutes les conditions qui
+[00:15:01.540] SPEAKER_13 [chevauchement]: sont
+[00:15:01.680] SPEAKER_12 [chevauchement]: nécessaires précisément pour que l'État remplisse ce rôle.
 [00:15:05.080] SPEAKER_12 [chevauchement]: Merci Marine Le Pen. Pour
 [00:15:06.780] SPEAKER_13: ceux qui nous rejoignent, vous êtes sur LCI, c'est le premier débat de la présidentielle, le débat du MEDEF et c'est maintenant Jean -Luc Mélenchon qui a deux minutes pour son introduction.
 [00:15:14.260] SPEAKER_13: production?
@@ -140,7 +144,9 @@
 [00:19:07.440] SPEAKER_16: Applaudissements
 [00:19:10.960] SPEAKER_16: Merci, mais n'arrête pas le compteur pendant les applaudissements, donc je vais accélérer.
 [00:19:14.760] SPEAKER_16: La deuxième chose qui m'empêche de dormir, c'est la Chine.
-[00:19:18.200] SPEAKER_16 [chevauchement]: on parle beaucoup des Etats -Unis aujourd'hui dans les médias et dans la presse il y a une politique chinoise assumée visant à couler notre industrie on peut avoir tous les débats si on n'apporte pas les ressources nécessaires on n'arrivera pas à résister et la troisième chose c'est le défi de l'intelligence artificielle et de l'innovation pendant les deux heures de ce débat les géants du numérique américain auront investi 100 millions de dollars de la recherche en IA on doit être au rendez -vous c
+[00:19:18.200] SPEAKER_16 [chevauchement]: on parle beaucoup des Etats -Unis aujourd'hui dans les médias et dans la presse il y a une politique chinoise assumée visant à couler notre industrie on peut avoir tous les débats si on n'apporte pas les ressources nécessaires on n'arrivera pas à résister et la troisième chose c'est le défi de l'intelligence artificielle et de l'innovation pendant les deux heures de ce débat les géants du numérique américain auront investi 100 millions de
+[00:19:43.420] SPEAKER_13 [chevauchement]: dollars de la recherche en IA
+[00:19:44.960] SPEAKER_16 [chevauchement]: on doit être au rendez -vous c
 [00:19:46.400] SPEAKER_13: 'est à Marine Tondelier Vous en prie, vous avez deux minutes.
 [00:19:53.100] SPEAKER_14: Eh bien, merci beaucoup de votre invitation et de votre accueil.
 [00:19:56.260] SPEAKER_14: Et monsieur le président du MEDEF, nous avons un point commun.
@@ -154,8 +160,8 @@
 [00:21:50.800] SPEAKER_14: Des décisions courageuses et engageantes et je compte sur vous chère montre de l'entreprise parce que j'ai discuté avec beaucoup d'entre vous depuis mon arrivée ce matin et puis tout au long de l'année.
 [00:22:00.140] SPEAKER_14: Et je sais à quel point premièrement vous êtes des chefs d'entreprise mais vous êtes aussi des parents, aussi des grands -parents.
 [00:22:05.040] SPEAKER_14: Vous tenez tous à des enfants et vous avez envie qu'ils aient une planète véritable.
-[00:22:07.300] SPEAKER_14 [chevauchement]: Mais aussi parce que beaucoup de chefs d'entreprise, je le sais, ont bien mieux compris les enjeux environnementaux
-[00:22:13.640] SPEAKER_13 [chevauchement]: de ceux qui nous gouvernent.
+[00:22:07.300] SPEAKER_14 [chevauchement]: Mais aussi parce que beaucoup de chefs d'entreprise, je le sais, ont bien mieux compris les enjeux environnementaux de ceux
+[00:22:14.140] SPEAKER_13 [chevauchement]: qui nous gouvernent.
 [00:22:15.240] SPEAKER_13: Les bases de ce premier débat d'élection présidentielle, débat du MEDEF, sont posées.
 [00:22:19.420] SPEAKER_13: Ça se passe en exclusivité sur LCI.
 [00:22:22.300] SPEAKER_13: Et on va commencer par un premier thème, la dette.
@@ -225,9 +231,12 @@
 [00:29:27.100] SPEAKER_09: Alors pourquoi a -t -on fait une monnaie unique? Pourquoi avons -nous une banque centrale européenne commune?
 [00:29:32.080] SPEAKER_09 [chevauchement]: Nous le pouvons, et je vous prends le pari, si je suis élu, je trouverai des alliés en Europe, notamment dans les pays latins, et sans doute aussi les Allemands, car cette année ils vont passer des 3% de déficit.
 [00:29:43.620] SPEAKER_09: Donc il y a un débat. Ne le caricaturons pas. Je ne suis pas en train de mettre en cause les créanciers privés, en tout cas à cette étape.
-[00:29:51.280] SPEAKER_13 [chevauchement]: Alors Jean -Luc Mélenchon, ayons -le ce débat. Edouard Philippe, je vous ai vu. N'hésitez pas tous à rapprocher votre micro.
-[00:29:57.580] SPEAKER_13 [chevauchement]: Non mais c'était pour vérifier
-[00:29:58.020] SPEAKER_09 [chevauchement]: si vous suivez.
+[00:29:51.280] SPEAKER_13 [chevauchement]: Alors Jean -Luc Mélenchon, ayons -le ce débat. Edouard Philippe, je vous ai vu. N'hésitez pas tous à rapprocher
+[00:29:57.360] SPEAKER_09 [chevauchement]: votre
+[00:29:57.580] SPEAKER_13: micro.
+[00:29:57.580] SPEAKER_09 [chevauchement]: Non
+[00:29:57.600] SPEAKER_13: mais c
+[00:29:57.600] SPEAKER_09 [chevauchement]: 'était pour vérifier si vous suivez.
 [00:29:59.020] SPEAKER_13 [chevauchement]: Je vous fais le petit point technique. Vous rapprochez bien vos micros pour qu'on vous entende bien. Voilà, ça c'est dit, ça c'est fait.
 [00:30:04.200] SPEAKER_13: Edouard Philippe, je vous voyais réagir et je me tourne vers vous parce que vous savez très bien que les derniers quinquennats du macronisme ont été souvent jugés, sont toujours jugés très responsables de la dégradation de la situation.
 [00:30:13.420] SPEAKER_13: Alors vous, que répondez -vous à Jules Mélenchon qui est juste ici?
@@ -249,8 +258,11 @@
 [00:32:26.020] SPEAKER_13 [chevauchement]: référendum sur les règles d'or, par exemple?
 [00:32:27.620] SPEAKER_07 [chevauchement]: Troisième chose.
 [00:32:28.480] SPEAKER_07: L'endroit où nous dépensons beaucoup plus, non pas que les Chinois, non pas que des pays qui sont difficilement comparables par leur histoire, par leur identité, comme disait Mme Le Pen tout à l'heure, par rapport à nos voisins, l'endroit où nous consacrons beaucoup plus de richesses que nos voisins, c'est la dépense sociale.
-[00:32:47.500] SPEAKER_07 [chevauchement]: Nous avons une dépense sociale bien plus élevée, bien plus élevée, bien plus élevée.
-[00:32:53.900] SPEAKER_07 [chevauchement]: Vous n'entendez pas au micro, mais mon voisin de gauche m'interrompt.
+[00:32:47.500] SPEAKER_07 [chevauchement]: Nous avons une dépense sociale bien plus élevée, bien plus élevée, bien
+[00:32:52.260] SPEAKER_13 [chevauchement]: plus élevée.
+[00:32:53.900] SPEAKER_07 [chevauchement]: Vous n'entendez pas au micro, mais mon voisin
+[00:32:57.400] SPEAKER_13 [chevauchement]: de gauche m
+[00:32:58.120] SPEAKER_07 [chevauchement]: 'interrompt.
 [00:33:02.320] SPEAKER_13 [chevauchement]: Il est
 [00:33:03.520] SPEAKER_07 [chevauchement]: doublement mon voisin de gauche, du reste.
 [00:33:08.080] SPEAKER_13: Allez -y.
@@ -258,20 +270,26 @@
 [00:33:10.460] SPEAKER_07 [chevauchement]: dans la maîtrise de la dépense sociale que nous devons faire des progrès, et notamment sur la question des retraites.
 [00:33:16.460] SPEAKER_07: Et je ne dis pas qu'il faut tailler dans les retraites.
 [00:33:19.980] SPEAKER_07: J'observe qu'en France, nous dépensons 3 points de PIB de plus que ce que les Allemands consacrent à leurs retraites.
-[00:33:26.320] SPEAKER_07 [chevauchement]: Je dis donc que nous devons faire, s'agissant des retraites, ce que tous les autres pays d'Europe, de droite ou de gauche, vont accepter de faire, travailler plus longtemps.
+[00:33:26.320] SPEAKER_07: Je dis donc que nous devons faire, s'agissant des retraites, ce que tous les autres pays d'Europe, de droite ou de gauche,
+[00:33:33.280] SPEAKER_13 [chevauchement]: vont
+[00:33:33.400] SPEAKER_07 [chevauchement]: accepter de faire, travailler plus longtemps.
 [00:33:36.320] SPEAKER_13 [chevauchement]: D'accord, quel âge?
 [00:33:37.080] SPEAKER_13 [chevauchement]: Attendez, attendez,
 [00:33:37.720] SPEAKER_07 [chevauchement]: attendez.
-[00:33:38.840] SPEAKER_07 [chevauchement]: Vous savez
-[00:33:39.080] SPEAKER_13 [chevauchement]: très bien que
+[00:33:38.840] SPEAKER_07 [chevauchement]: Vous
+[00:33:39.000] SPEAKER_13 [chevauchement]: savez très bien que
 [00:33:39.500] SPEAKER_07 [chevauchement]: tout le monde est authentique à cette question.
 [00:33:41.260] SPEAKER_07: Le thème de cette université d'été, c'est le courage.
 [00:33:45.500] SPEAKER_07 [chevauchement]: Tous les pays d'Europe, tous, ont eu le courage de dire, compte tenu de nos démographies et compte tenu de notre envie de préserver le modèle social et le pouvoir d'achat des actifs, nous allons devoir travailler plus longtemps.
 [00:33:58.340] SPEAKER_07 [chevauchement]: Le courage en France, et ceux qui rassent gratis ne diront pas ça, mais tous les autres doivent accepter de dire que oui, nous allons devoir travailler un peu plus si nous voulons préserver notre modèle social et notre richesse un peu plus
 [00:34:11.380] SPEAKER_13 [chevauchement]: tout le monde, un
-[00:34:13.000] SPEAKER_07 [chevauchement]: peu plus tout le monde, mais pas dans les mêmes conditions.
+[00:34:13.000] SPEAKER_07 [chevauchement]: peu plus
+[00:34:13.380] SPEAKER_13 [chevauchement]: tout le monde, mais
+[00:34:13.920] SPEAKER_07 [chevauchement]: pas dans les mêmes conditions.
 [00:34:14.980] SPEAKER_13 [chevauchement]: Jusqu'où poussez -vous le curseur du courage?
-[00:34:17.480] SPEAKER_13 [chevauchement]: Donc c'est l'âge, la question de l'âge.
+[00:34:17.480] SPEAKER_13 [chevauchement]: Donc c'est l'âge, la question
+[00:34:19.060] SPEAKER_07 [chevauchement]: de l
+[00:34:19.340] SPEAKER_13 [chevauchement]: 'âge.
 [00:34:19.560] SPEAKER_13 [chevauchement]: Ceux qui nous regardent disent «Ok, très bien, quel âge?
 [00:34:21.660] SPEAKER_07 [chevauchement]: » Non, non, pardon madame.
 [00:34:22.960] SPEAKER_07: Ils disent «Non, non, ça n'est pas populaire de dire ça.» Et ils ne disent pas très bien.
@@ -279,7 +297,10 @@
 [00:34:27.940] SPEAKER_07: Mais je dis que nous allons devoir travailler plus longtemps.
 [00:34:31.300] SPEAKER_07: Plus, plus pour ceux qui le peuvent.
 [00:34:33.720] SPEAKER_07: Et nous devons prendre en compte la réalité des métiers, parce qu'ils ne sont pas tous les mêmes, parce qu'on n'a pas tous le même rapport au travail et qu'il est normal, si on ne fait pas de déni démographique, de ne pas faire de déni de réalité.
-[00:34:44.880] SPEAKER_07 [chevauchement]: Donc nous allons travailler plus longtemps et j'ai proposé, c'est vrai, quelque chose qui s'apparente à une règle d'or qui permettrait, compte tenu du désordre que nous avons observé à l'Assemblée nationale, de poser une règle contraignant le Parlement à respecter cet équilibre des finances publiques.
+[00:34:44.880] SPEAKER_16 [chevauchement]: Donc nous
+[00:34:45.600] SPEAKER_07 [chevauchement]: allons travailler plus longtemps et j'ai proposé, c'est vrai, quelque chose qui s'apparente à une règle d'or qui permettrait, compte tenu du désordre que nous avons observé à l'Assemblée nationale,
+[00:34:56.180] SPEAKER_13 [chevauchement]: de
+[00:34:56.460] SPEAKER_07 [chevauchement]: poser une règle contraignant le Parlement à respecter cet équilibre des finances publiques.
 [00:35:02.920] SPEAKER_13 [chevauchement]: Et moi aussi, je pose les règles. Tenez, Marine Le Pen, vous qui avez dit, c'était il y a une semaine, je crois, il est grand temps de nettoyer les écuries d'Augias en parlant de la dette.
 [00:35:13.160] SPEAKER_13 [chevauchement]: Pardon, point retraite quand même. Le mot a été prononcé, il faut qu'on s'y arrête quelques instants. Jusqu'où vous? Vous c'est ce
 [00:35:17.800] SPEAKER_12 [chevauchement]: curseur du courage.
@@ -317,10 +338,11 @@
 [00:39:16.560] SPEAKER_12: Puis progressivement, jusqu'à 24 ans et demi, on arrivera à 42 ans de cotisation et un âge légal de 62 ans.
 [00:39:27.480] SPEAKER_12: parallèlement et je terminerai parce que je me suis attaché au début si je puis me permettre de l'avis au travail je m'attache également à la fin et nous mettrons en place des incitations pour que ceux qui ont dépassé l'âge de la retraite et ont leur trimestre puissent continuer à travailler s'ils le souhaitent et pour cela par exemple nous proposons de supprimer les cotisations
 [00:39:53.220] SPEAKER_12: retraite et les cotisations chômage Ça incite les entreprises et ça incite les salariés.
-[00:39:58.860] SPEAKER_12 [chevauchement]: Mais pardon, je ne peux pas vous être très très...
+[00:39:58.860] SPEAKER_12 [chevauchement]: Mais pardon, je ne peux
+[00:39:59.660] SPEAKER_13 [chevauchement]: pas vous être très très...
 [00:40:00.380] SPEAKER_12 [chevauchement]: Oui, le temps file, mais il a filé aussi beaucoup pour les autres.
-[00:40:03.020] SPEAKER_12 [chevauchement]: Je suis
-[00:40:03.640] SPEAKER_13 [chevauchement]: là pour le réguler, sinon on est là jusqu'à minuit.
+[00:40:03.020] SPEAKER_12 [chevauchement]: Je
+[00:40:03.460] SPEAKER_13 [chevauchement]: suis là pour le réguler, sinon on est là jusqu'à minuit.
 [00:40:04.900] SPEAKER_13 [chevauchement]: Cette réforme des
 [00:40:05.520] SPEAKER_12 [chevauchement]: retraites, elle s'englobe dans un projet économique global dans lequel massivement nous allons soutenir l'apprentissage, massivement nous allons soutenir l'alternance, massivement nous allons réformer les offres de formation pour qu'elles correspondent aux besoins qui sont celles des entreprises.
 [00:40:25.740] SPEAKER_12: Alors, terminons parce que j'entends déjà ce qu'on va me dire.
@@ -366,11 +388,14 @@
 [00:44:33.600] SPEAKER_06: Et une réforme de gauche, c'est celle qui permet à ceux qui ont trimé dur et qui arrivent à la retraite avec une espérance de vie en bonne santé beaucoup plus faible que ceux qui ont eu une carrière plus facile, eh bien de partir plus tôt.
 [00:44:48.980] SPEAKER_06: Et donc on ne peut pas donner une réponse universelle à cette question de où est -ce que vous mettez le curseur, où est -ce que vous mettez l'âge.
 [00:44:55.400] SPEAKER_06: Maintenant, je veux continuer sur la dette.
-[00:44:58.260] SPEAKER_06 [chevauchement]: Oui, mais il va
-[00:44:58.780] SPEAKER_13 [chevauchement]: bientôt falloir s'arrêter quand même.
+[00:44:58.260] SPEAKER_06 [chevauchement]: Oui,
+[00:44:58.520] SPEAKER_13 [chevauchement]: mais
+[00:44:58.640] SPEAKER_06: il
+[00:44:58.640] SPEAKER_13 [chevauchement]: va bientôt falloir s'arrêter quand même.
 [00:45:00.360] SPEAKER_06 [chevauchement]: Oui, j'ai assisté à un meeting d'Edouard Philippe, puis à un meeting de Marine Le Pen, je peux donc avoir mon propre meeting.
-[00:45:05.660] SPEAKER_06 [chevauchement]: Si
-[00:45:05.960] SPEAKER_13 [chevauchement]: chacun vous fait un métier, personne ne va s'en sortir de ce trabant pour aucun d'entre vous.
+[00:45:05.660] SPEAKER_13 [chevauchement]: Si chacun vous fait un métier,
+[00:45:07.080] SPEAKER_06 [chevauchement]: personne ne
+[00:45:07.920] SPEAKER_13 [chevauchement]: va s'en sortir de ce trabant pour aucun d'entre vous.
 [00:45:10.080] SPEAKER_06 [chevauchement]: Laissez -moi finir sur la dette. Il faut s'attaquer à la dette.
 [00:45:12.760] SPEAKER_06: Oui, il va falloir faire des économies.
 [00:45:14.800] SPEAKER_06: Oui, il y a une taxation sur les plus hauts patrimoines qui est nécessaire.
@@ -413,7 +438,9 @@
 [00:49:50.640] SPEAKER_16: Ça c'est pour les dépenses sociales.
 [00:49:52.080] SPEAKER_16: Ensuite il y a évidemment les dépenses de l'Etat sur lesquelles on doit continuer à faire des économies.
 [00:49:56.940] SPEAKER_16: On a une opportunité avec l'intelligence artificielle.
-[00:50:00.140] SPEAKER_16 [chevauchement]: Vous êtes toutes et tous chef d'entreprise. Tous les jours, vous vous interrogez dans votre entreprise sur comment on fait mieux avec moins. C'est basique. On doit avoir la même réflexion pour les administrations publiques grâce à cette révolution et l'intelligence artificielle.
+[00:50:00.140] SPEAKER_16 [chevauchement]: Vous êtes toutes et tous chef d'entreprise. Tous les jours, vous vous interrogez dans votre entreprise sur comment on fait mieux avec moins. C'est basique. On doit avoir la même réflexion pour les administrations publiques grâce à cette révolution
+[00:50:15.440] SPEAKER_13 [chevauchement]: et
+[00:50:15.500] SPEAKER_16 [chevauchement]: l'intelligence artificielle.
 [00:50:16.260] SPEAKER_16: Non, là j'ai eu moins de temps que les autres, Madame Carwer, je serais juste terminé, j'ai eu moins de temps que ceux qui se sont exprimés auparavant.
 [00:50:22.140] SPEAKER_16: Troisième chose, les collectivités locales, il faut assumer de rationaliser aussi, et de faire une nouvelle organisation territoriale, avec moins de collectivités territoriales, qui par ailleurs seront plus clairement identifiées par les entreprises et par les Français, pour les politiques qu'elles mèneront.
 [00:50:39.160] SPEAKER_16: Donc c'est possible d'y arriver. Et moi je le dis, les discours fatalistes qui expliquent que ce n'est pas possible, on n'y arrivera pas, il n'y a qu'à annuler la dette.
@@ -429,9 +456,9 @@
 [00:51:33.460] SPEAKER_16: Ça suffit maintenant.
 [00:51:34.540] SPEAKER_16 [chevauchement]: Mais parce que
 [00:51:35.120] SPEAKER_12 [chevauchement]: vos propositions sont injustes, monsieur l'ancien Premier ministre, dont il est effectivement utile de rappeler que sous Macron, 1 000 milliards d'euros de dettes supplémentaires, le PLF 2026, 43 milliards de prélèvements supplémentaires de prévus, le gouvernement Barnier, 30 milliards dont 20 milliards d'augmentation des impôts sur les entreprises.
-[00:52:01.020] SPEAKER_12 [chevauchement]: Bon, par conséquent, vous avez été ceux qui avaient aggravé considérablement les impôts.
-[00:52:06.380] SPEAKER_12 [chevauchement]: Il ne vous aura pas échappé
-[00:52:08.040] SPEAKER_16 [chevauchement]: que je ne suis pas M. Barnier, et que je serais bien resté à la place de M. Barnier à l'époque pour ne pas
+[00:52:01.020] SPEAKER_12 [chevauchement]: Bon, par conséquent, vous avez été ceux qui avaient aggravé considérablement les
+[00:52:06.120] SPEAKER_16 [chevauchement]: impôts.
+[00:52:06.380] SPEAKER_16 [chevauchement]: Il ne vous aura pas échappé que je ne suis pas M. Barnier, et que je serais bien resté à la place de M. Barnier à l'époque pour ne pas
 [00:52:12.540] SPEAKER_12 [chevauchement]: augmenter les impôts.
 [00:52:13.360] SPEAKER_12: Je ne vous ai pas beaucoup vu vous opposer tout de même.
 [00:52:16.980] SPEAKER_12 [chevauchement]: C'est nous qui nous sommes opposés et qui avons protégé précisément les entreprises de cette augmentation.
@@ -450,19 +477,25 @@
 [00:54:07.820] SPEAKER_14: Donc oui, les gens ne sont plus malades.
 [00:54:09.380] SPEAKER_14: Ils ne sont plus malades aussi parce qu'ils ont moins accès aux soins, parce qu'on met longtemps à trouver un médecin, parce que des maternités fermes, par exemple, il y a plein de départements où il n'y a plus de maternité.
 [00:54:18.060] SPEAKER_14: Et moi, quand je rencontre les pompiers avec qui je ferai une conférence de presse demain, ils me disent on n'a jamais fait autant d'accouchements parce que ce système français il est en train de s'effondrer qu'il y a des gens qui le tiennent à bout de bras.
-[00:54:27.860] SPEAKER_14 [chevauchement]: Quand je vois qu'on a supprimé 16% des inspecteurs du travail récemment et que du coup il y a plus d'accidents du travail aussi, quand je vois qu'en France on meurt deux fois plus au travail que dans toute l'Europe, deux fois plus, je ne pense pas que dans les pays d'Europe autres que la France on travaille deux fois moins, et bien on meurt deux fois moins dans ces pays là donc oui les dépenses sociales c'est important et puis on va quand même se parler et puis on va quand même se parler alors moi sur la retraite j'abroge la réforme, je sais pourquoi et je peux vous dire qu'il n'y a jamais eu beaucoup de suspense sur la question nous étions dans la rue pour la combattre elle est passée de manière illégitime et quand ça passe de manière illégitime ça ne fonctionne pas, c'est ce qu'on voit aujourd'hui mais je voulais vous dire aussi que quand on essaye de faire des économies en n'ayant pas compris pris l'écologie, on fait pire que mieux.
+[00:54:27.860] SPEAKER_14 [chevauchement]: Quand je vois qu'on a supprimé 16% des inspecteurs du travail récemment et que du coup il y a plus d'accidents du travail aussi, quand je vois qu'en France on meurt deux fois plus au travail que dans toute l'Europe, deux fois plus, je ne pense pas que dans les pays d'Europe autres que la France on travaille deux fois moins, et bien on meurt deux fois moins dans ces pays là donc oui les dépenses sociales c'est important et puis
+[00:54:53.560] SPEAKER_13 [chevauchement]: on va quand même se parler et
+[00:54:54.900] SPEAKER_14 [chevauchement]: puis on va quand même se parler alors moi sur la retraite j'abroge la réforme, je sais pourquoi et je peux vous dire qu'il n'y a jamais eu beaucoup de suspense sur la question nous étions dans la rue pour la combattre elle est passée de manière illégitime et quand ça passe de manière illégitime ça ne fonctionne pas, c'est ce qu'on voit aujourd'hui mais je voulais vous dire aussi que quand on essaye de faire des économies en n'ayant pas compris pris l'écologie, on fait pire que mieux.
 [00:55:19.160] SPEAKER_14: J'ai à ma gauche quelqu'un qui a supprimé des commandes de Canadair pour faire des économies. J'ai à ma droite quelqu'un qui a supprimé, qui a annulé une base dans les Landes à Mont -de -Marsan qui aurait permis d'arriver plus vite pour les bombardiers, pour les Canadair qui ont été annulés.
 [00:55:37.400] SPEAKER_14: Dans
 [00:55:39.480] SPEAKER_14: évidemment sur l'écologie, puisqu'il n'y a pas de crise climatique On est libre de ne pas voir les limites planétaires. Donc premièrement, on ne combat pas la crise climatique. Deuxièmement, on ne prend pas les mesures d'adaptation. Le fond vert qui devait servir aux collectivités à isoler le bâti scolaire, les écoles de nos enfants, qui devait servir à prévenir les risques de nodation, il a été divisé par quatre en deux ans. C'est vrai ou c'est pas vrai? C'est vrai. On l'a dit à chaque fois. Gouvernement Attal, gouvernement Barnier, gouvernement Bayrou, gouvernement Lecornu, tous vous l'avez baissé.
 [00:56:11.920] SPEAKER_14: et résultat on en est là et on n'est pas prêt et alors le meilleur puisque nous sommes à bord du Titanic insubmersible et qu'il n'y a pas de risque et qu'il n'y a pas de crise écologique on lésine sur les moyens de secours, je l'ai dit pour les Canadaires je l'ai dit pour la base dans les Landes, mais qu'est -ce que ça veut dire?
-[00:56:28.040] SPEAKER_14 [chevauchement]: ça veut dire qu'on se sent tellement intouchable tellement en sécurité qu'on peut lésiner sur les moyens de secours, qu'on peut faire des économies de bout de chandelle et ne pas assez pour voir en moyen les pompiers mais les gens qui prennent ces décisions -là comme sur le Titanic où il y avait deux fois moins de place sur les canaux de sauvetage qu'à bord du bateau c'est des gens qui savent qu'ils auront toujours leur place sur les canaux de sauvetage c'est ça la réalité et donc moi ce que je dis, c'est qu'il va falloir prendre des mesures justes parce qu'aujourd'hui quand certains veulent faire de l'écologie je parle pour deux donc j'ai plus de temps je parle pour les générations futures ça a beaucoup de charme, je
+[00:56:28.040] SPEAKER_14 [chevauchement]: ça veut dire qu'on se sent tellement intouchable tellement en sécurité qu'on peut lésiner sur les moyens de secours, qu'on peut faire des économies de bout de chandelle et ne pas assez pour voir en moyen les pompiers mais les gens qui prennent ces décisions -là comme sur le Titanic où il y avait deux fois moins de place sur les canaux de sauvetage qu'à bord du bateau c'est des gens qui savent qu'ils auront toujours leur place sur les canaux de sauvetage c'est ça la réalité et donc moi ce que je dis, c'est qu'il va falloir prendre des mesures justes parce qu'aujourd'hui quand certains veulent faire de l'écologie je parle pour deux donc j'ai plus de temps je parle pour les générations futures ça a beaucoup de
+[00:57:01.560] SPEAKER_13 [chevauchement]: charme,
+[00:57:01.920] SPEAKER_14 [chevauchement]: je
 [00:57:02.240] SPEAKER_13: le
 [00:57:02.360] SPEAKER_14 [chevauchement]: reconnais
 [00:57:02.880] SPEAKER_13 [chevauchement]: mais
 [00:57:03.400] SPEAKER_14: je ne crois pas que c'est une question ce que je vous dis juste c'est que l'écologie telle qu'elle a tenté d'être faite à un moment de ce mandat, elle a été très mal faite, parce qu'elle n'a pas pris en compte le fait qu'une mesure ne peut pas être juste si elle ne prend pas en compte le fait que les personnes n'ont pas les mêmes revenus, pas les mêmes responsabilités dans le problème, et pas les mêmes alternatives.
 [00:57:28.120] SPEAKER_14: Donc si vous faites les mêmes mesures pour des gens qui ont des voitures ou pas de voitures, pour des gens qui sont principaux responsables de cette crise, ou pour des gens qui ont un mode de vie tout à fait sobre, et pour des gens qui ont les moyens de trouver d'autres solutions ou pas, alors c'est très injuste et ça ne marchera pas.
 [00:57:42.800] SPEAKER_14: Donc je dis justice sociale, justice fiscale, et oui ça coûtera un peu d'argent, mais je rappelle pour terminer que l'inaction climatique, et les assureurs dans cette salle le savent, coûte cinq fois plus cher que l'action.
-[00:57:53.260] SPEAKER_14 [chevauchement]: Donc faire des économies sur l'écologie, c'est une mauvaise décision environnementale,
+[00:57:53.260] SPEAKER_14 [chevauchement]: Donc faire des économies sur l'écologie,
+[00:57:55.160] SPEAKER_13 [chevauchement]: c'est une mauvaise décision
+[00:57:56.120] SPEAKER_14 [chevauchement]: environnementale,
 [00:57:57.180] SPEAKER_13: mais c'est une mauvaise décision économique.
 [00:57:58.500] SPEAKER_13: Bruno Retailleau, je peux vous dire que les compteurs avancent très vite sous mes yeux, j'en suis la garante.
 [00:58:03.100] SPEAKER_13: Bruno Retailleau, allez -y.
@@ -485,7 +518,9 @@
 [01:01:37.600] SPEAKER_02: On ne va pas se faire un psychodrame tous les 10 ans. Ce sera une réforme équilibrée et ce sera une réforme des retraites qui sauvera le régime, qui fera de bonnes retraites et qui mettra plus de travail dans l'économie.
 [01:01:48.420] SPEAKER_02: Je termine évidemment sur la dette et le déficit. La dépense sociale, première dépense. Évidemment la retraite, l'assurance, évidemment là encore la santé. Mais il y a aussi l'Etat. Il faudra assumer de diminuer le nombre de fonctionnaires.
 [01:02:07.440] SPEAKER_02: Il y a bien sûr l'intelligence artificielle, mais je pense qu'on peut diminuer autour de 250 à 300 000 fonctionnaires. On a moins de productivité par rapport à tous les autres pays européens. Il ne faudra pas donner le statut à tous les agents publics. Le statut, ce sera pour le régalien. Le contrat, ce sera pour les autres, pour avoir des gestions de carrière beaucoup plus souples.
-[01:02:29.680] SPEAKER_02 [chevauchement]: Il faudra évidemment supprimer aussi ces jasants, ces opérateurs et celles qu'on conservera. Tous les trois ans, ils devront justifier leur raison d'être. C'est comme ça qu'on perviendra en cinq ans à rétablir l'équilibre et à faire en sorte qu'on stabilise la dette. Plus de travail, moins de dépenses publiques.
+[01:02:29.680] SPEAKER_02 [chevauchement]: Il faudra évidemment supprimer aussi ces jasants, ces opérateurs et celles qu'on conservera. Tous les trois ans, ils devront justifier leur raison d'être. C'est comme
+[01:02:41.680] SPEAKER_13 [chevauchement]: ça qu'on
+[01:02:42.160] SPEAKER_02 [chevauchement]: perviendra en cinq ans à rétablir l'équilibre et à faire en sorte qu'on stabilise la dette. Plus de travail, moins de dépenses publiques.
 [01:02:51.280] SPEAKER_02 [chevauchement]: Alors
 [01:02:51.780] SPEAKER_13: je sais que vous aimeriez tous réagir plus ou moins mais il faut qu'on avance parce qu'il y a des entrepreneurs ici qui ont des questions bien précises.
 [01:02:57.180] SPEAKER_13: On doit ouvrir maintenant le dossier très attendu également de la réindustrialisation.
@@ -557,10 +592,15 @@
 [01:12:12.480] SPEAKER_09: Ça m'étonne que j'aie à vous apprendre ça. Mais si, c'est vous qui venez de dire ça.
 [01:12:15.380] SPEAKER_09: en fonction du temps qui reste. Personne ne le sait.
 [01:12:18.880] SPEAKER_09: Non mais c'est un élément qui compte.
-[01:12:21.000] SPEAKER_09 [chevauchement]: Oui, bah je sais pas qui c'est, mais c'est vous pourri.
-[01:12:23.100] SPEAKER_09 [chevauchement]: C'est pareil.
-[01:12:23.940] SPEAKER_09 [chevauchement]: Il
-[01:12:24.060] SPEAKER_13 [chevauchement]: faut
+[01:12:21.000] SPEAKER_09 [chevauchement]: Oui, bah je sais pas qui
+[01:12:22.140] SPEAKER_13 [chevauchement]: c
+[01:12:22.380] SPEAKER_09: 'est,
+[01:12:22.380] SPEAKER_13 [chevauchement]: mais c'est
+[01:12:22.700] SPEAKER_09: vous
+[01:12:22.700] SPEAKER_13 [chevauchement]: pourri.
+[01:12:23.100] SPEAKER_13 [chevauchement]: C
+[01:12:23.480] SPEAKER_09 [chevauchement]: 'est pareil.
+[01:12:23.940] SPEAKER_13 [chevauchement]: Il faut
 [01:12:24.920] SPEAKER_09: partir d'une réalité. Cette réalité, elle est humaine.
 [01:12:28.460] SPEAKER_09: Nous parlons d'êtres humains.
 [01:12:30.720] SPEAKER_09: Donc pour ma part, premièrement, nous abrogerons la retraite et nous reviendrons dans un premier temps à 62 ans.
@@ -570,12 +610,14 @@
 [01:13:01.680] SPEAKER_09: et en plus, je vais vous dire, si on n'admet pas l'idée que le pays va se réindustrialiser en se donnant des objectifs, vous ne ferez qu'une chose, les gens que vous voulez faire partir plus tard à la retraite, premièrement tomberont malades davantage et donc augmenteront les budgets de santé et deuxièmement ne trouveront pas de boulot, donc vous coulerez le système d'aménisation du chômage.
 [01:13:25.520] SPEAKER_09: Ce n'est pas la bonne voie, ce n'est pas comme ça qu'il faut faire. Il faut repartir dans l'autre sens, plus d'activité et vous verrez qu'on trouvera les bras. Je termine sur les jeunes. La jeunesse de notre pays, peu de gens ont l'air de le savoir, 50% d'une classe d'âge passe dans l'enseignement technologique, dans l'enseignement professionnel et dans l'apprentissage.
 [01:13:47.580] SPEAKER_09: 50%! Je m'engage à créer une filière qui, du CAP à la licence professionnelle que j'ai créée, pourra accéder par ce biais à une mobilisation sur du travail qualifié de plus en plus qualifié.
-[01:14:03.760] SPEAKER_09 [chevauchement]: Un dernier mot. Au moins Patrick Martin, il a le courage de ses idées. Quand il explique qu'on va remplacer les cotisations sociales parce qu'il sait que c'est par de la TVA, il dit on va augmenter la TVA et on va la porter à deux points au -dessus du taux normal. Et vous, avec quoi vous payez tout ça? Parce que depuis tout à l'heure, vous n'arrêtez pas de dire ce qu'il ne faut plus prendre. Mais vous ne dites pas de quelle manière vous comptez compenser ce que vous allez faire.
-[01:14:28.780] SPEAKER_09 [chevauchement]: Vous avez
-[01:14:28.940] SPEAKER_13 [chevauchement]: rattrapé votre retard.
+[01:14:03.760] SPEAKER_09 [chevauchement]: Un dernier mot. Au moins Patrick Martin, il a le courage de ses idées. Quand il explique qu'on va remplacer les cotisations sociales parce qu'il sait que c'est par de la TVA, il dit on va augmenter la TVA et on va la porter à deux points au -dessus du taux normal. Et vous, avec quoi vous payez tout ça? Parce que depuis tout à l'heure, vous n'arrêtez pas de dire ce qu'il ne faut plus prendre. Mais vous ne dites pas de quelle manière vous comptez compenser ce que vous allez
+[01:14:28.740] SPEAKER_13 [chevauchement]: faire.
+[01:14:28.780] SPEAKER_13 [chevauchement]: Vous avez rattrapé votre retard.
 [01:14:31.560] SPEAKER_09: Le social est une valeur.
 [01:14:33.860] SPEAKER_09: C'est par le social qu'on développe un peuple.
-[01:14:36.480] SPEAKER_09 [chevauchement]: Pas par l'inverse des privations et des punitions.
+[01:14:36.480] SPEAKER_09 [chevauchement]: Pas par l'inverse des privations et
+[01:14:38.380] SPEAKER_13 [chevauchement]: des
+[01:14:38.580] SPEAKER_09 [chevauchement]: punitions.
 [01:14:39.380] SPEAKER_13: Eh bien, pour reprendre votre expression, je reprends la main, vous avez rattrapé votre retard, puisque vous avez été notamment pointé du doigt.
 [01:14:45.920] SPEAKER_13: Edouard Philippe, on l'a compris.
 [01:14:47.020] SPEAKER_13: Et je vous ai vu, parce que je vous vois directement à ma gauche.
@@ -590,7 +632,9 @@
 [01:15:30.720] SPEAKER_09: Et moi non plus.
 [01:15:32.080] SPEAKER_09: Arrêtez de caricaturer tout le monde.
 [01:15:34.100] SPEAKER_07: Répondez à ce qu'on vous dit.
-[01:15:35.000] SPEAKER_07 [chevauchement]: Monsieur Mélenchon, je vous propose qu'on reste calme.
+[01:15:35.000] SPEAKER_07 [chevauchement]: Monsieur Mélenchon, je vous propose qu
+[01:15:36.440] SPEAKER_09 [chevauchement]: 'on reste
+[01:15:36.680] SPEAKER_07 [chevauchement]: calme.
 [01:15:38.280] SPEAKER_07: Si, si, je vous assure.
 [01:15:39.400] SPEAKER_07: Ça fait du bien à tout le monde.
 [01:15:40.640] SPEAKER_07: Et je constate que vous avez dit «Je ne suis pas d'accord avec des faits que madame a décrits».
@@ -675,11 +719,14 @@
 [01:24:05.880] SPEAKER_06: Aujourd'hui, on fait du saupoudrage. Il va falloir qu'on choisisse des filières, qu'on contrôle de A à Z, qui sont les filières stratégiques pour la souveraineté de notre pays. Et il va falloir qu'on mise sur l'innovation.
 [01:24:20.660] SPEAKER_06: Aujourd'hui, l'Europe est en train de devenir l'Empire Ottoman du XXIe siècle.
 [01:24:26.300] SPEAKER_06: L'Empire Ottoman a raté l'invention de l'imprimerie par Gutenberg.
-[01:24:30.340] SPEAKER_06 [chevauchement]: Et derrière, ça a été un lent déclin et l'Empire Ottoman s'est fait dépecer par les puissances mondiales.
+[01:24:30.340] SPEAKER_06 [chevauchement]: Et derrière, ça a été un lent déclin et l'Empire Ottoman s'est fait dépecer par les puissances
+[01:24:35.400] SPEAKER_13 [chevauchement]: mondiales.
 [01:24:36.260] SPEAKER_06: C'est la même chose, oui, mais c'est l'avenir de l'Europe dont je parle.
 [01:24:38.380] SPEAKER_06 [chevauchement]: C'est la même chose qui menace l'Europe et la France.
 [01:24:45.660] SPEAKER_06: si nous ne mettons pas en place une véritable stratégie collective et ça ne marchera qu'à l'échelle européenne et le président français devra le porter sur l'intelligence artificielle.
-[01:24:55.620] SPEAKER_06 [chevauchement]: Il nous faut un projet Manhattan sur l'IA et à cette condition, on pourra réindustrialiser sans faire le concours de l'abaissement des normes parce que nous ne battrons jamais la Chine et les Etats -Unis sur cet abaissement.
+[01:24:55.620] SPEAKER_06 [chevauchement]: Il nous faut un projet Manhattan sur l'IA et à cette condition, on pourra réindustrialiser sans faire le concours de l'abaissement des normes parce que nous ne battrons jamais la Chine
+[01:25:06.440] SPEAKER_13 [chevauchement]: et les Etats
+[01:25:06.780] SPEAKER_06 [chevauchement]: -Unis sur cet abaissement.
 [01:25:08.340] SPEAKER_13: Je rappelle que oui, j'ai bien les temps, j'ai des compteurs énormes, on me tient au courant régulièrement de chacune de vos prises de parole, Le décompte est très clair, tout ça est très transparent.
 [01:25:17.960] SPEAKER_13: Gabriel Attal, allez -y.
 [01:25:20.400] SPEAKER_16: D'abord, puisqu'on parle de simplification et qu'il y a un déluge au -dessus de nous, si ça pouvait convaincre M. Mélenchon, M. Glucksmann et Mme Tondelier de laisser les agriculteurs stocker de l'eau quand il y a d'importantes précipitations pour faire face aux périodes de sécheresse, ça c'est une mesure de simplification.
@@ -692,9 +739,10 @@
 [01:27:02.680] SPEAKER_16: On lui demande des années d'études 4 saisons parce qu'il y a un buisson sur le terrain là où il veut construire l'extension de son usine.
 [01:27:09.460] SPEAKER_16: Eh bien, je fixerai une règle. Quand vous avez une friche industrielle qui est la propriété d'un industriel, vous êtes exempté d'études, de formalités de cet ordre quand vous avez des projets d'extension ou des projets sur votre terrain.
 [01:27:23.360] SPEAKER_16: Ensuite, le problème que vous avez dans ces projets bien souvent et qui font qu'il y a beaucoup d'investisseurs étrangers qui préfèrent investir en Allemagne où c'est beaucoup plus rapide pour développer des usines et sortir des projets qu'en France, c'est les recours.
-[01:27:35.480] SPEAKER_16 [chevauchement]: Il y a parfois des recours qui sont justifiés. Mais enfin, il y a quand même des professionnels du recours en France qui passent leur vie à faire des recours pour bloquer tous les projets qui sont portés.
-[01:27:46.660] SPEAKER_16 [chevauchement]: Et moi je dis,
-[01:27:47.240] SPEAKER_14 [chevauchement]: il faudra
+[01:27:35.480] SPEAKER_16 [chevauchement]: Il y a parfois des recours qui sont justifiés. Mais enfin, il y a quand même des professionnels du recours en France qui passent leur vie à faire des recours pour
+[01:27:43.800] SPEAKER_14 [chevauchement]: bloquer
+[01:27:44.320] SPEAKER_16 [chevauchement]: tous les projets qui sont portés.
+[01:27:46.660] SPEAKER_14 [chevauchement]: Et moi je dis, il faudra
 [01:27:48.280] SPEAKER_16 [chevauchement]: modifier la constitution pour fixer un seuil d'écrètement, de l'empilement des recours, pour fixer une règle claire.
 [01:27:55.780] SPEAKER_16: Si vous avez un recours sur un projet, c'est un seul recours sur la globalité du projet et pas plein de recours sur des petits bouts du projet pour empêcher le projet d'aboutir.
 [01:28:04.660] SPEAKER_16: 18 mois maximum, après il n'y a plus de recours et le chef d'entreprise a une réponse extrêmement claire sur son projet.
@@ -702,7 +750,8 @@
 [01:28:24.120] SPEAKER_16: Quand j'étais Premier ministre, j'ai pris une mesure qui était attendue notamment par les agriculteurs pour simplifier drastiquement les règles pour entretenir et curer les cours d'eau.
 [01:28:33.160] SPEAKER_16: il l'attendait depuis très longtemps, j'ai dit on passe de 9 mois d'attente pour une autorisation à une simple déclaration j'ai vu ensuite des agriculteurs me dire qu'ils avaient face à eux des gens de l'administration qui leur disaient en fait oui il y a la règle mais nous on défend l'esprit de la règle et bien ça c'est pas possible on a eu un débat avec monsieur Mélenchon sur les réseaux sociaux cet été parce que j'ai fait une proposition, ou plutôt j'ai pris un engagement si les français me font confiance, j'assumerai de faire comme ça se fait aux Etats -Unis et dans d'autres pays un spoil -système à la française pour mettre à la tête des administrations publiques des personnes qui ont le mandat politique d'appliquer le programme politique sur la base duquel le président de la république a été élu pour changer aussi la culture administrative et j'assumerai de le faire dernier point parce que quand on parle de simplification ça vaut pour des règles d'urbanisme et des règles environnementales qui parfois vous empêche d'accomplir vos projets ça vaut en réalité pour beaucoup de nos réglementations J'ai fait une proposition au mois de mai dernier, au moment où on a eu ce débat sur le travail du 1er mai.
 [01:29:33.320] SPEAKER_13 [chevauchement]: Il vous reste peu de temps, Gabriel Attal.
-[01:29:34.860] SPEAKER_16 [chevauchement]: Je termine. J'ai dit que, plutôt que de parler à nouveau de simplification du Code du travail, la faisons tout simplement un annul et remplace.
+[01:29:34.860] SPEAKER_13 [chevauchement]: Je
+[01:29:34.980] SPEAKER_16 [chevauchement]: termine. J'ai dit que, plutôt que de parler à nouveau de simplification du Code du travail, la faisons tout simplement un annul et remplace.
 [01:29:42.900] SPEAKER_16 [chevauchement]: On met les partenaires sociaux et des parlementaires autour de la table pendant quelques mois, on écrit non pas un Code du travail avec des milliers de pages, mais une constitution du travail de 50 pages avec les grands principes, et le reste c'est géré dans les branches et dans les entreprises. Ça n'est plus, ça ne doit plus être à l'Assemblée Nationale pendant des mois de savoir si on autorise des salariés volontaires dans des boulangeries et des fleuristes de travailler le 1er mai ou non. Il faut faire confiance au terrain, au dialogue social, à l'entreprise et simplifier massivement toutes nos règles.
 [01:30:13.160] SPEAKER_13 [chevauchement]: Marine Tondelier, je vous ai entendu réagir, allez -y.
 [01:30:16.940] SPEAKER_14: Non mais déjà, je trouve très ironique ce parallèle avec Notre -Dame en disant on va tout faire comme Notre -Dame. Notre -Dame avait brûlé et j'ai l'impression que votre politique c'est d'attendre que ça brûle et puis d'après de reconstruire nous on veut éviter que ça brûle et je vais une fois que j'ai dit ça une fois que j'ai dit ça, répondre à la question parce que je trouve qu'on nous parlait de souveraineté et d'industrie de réindustrialisation et qu'on n'en a pas beaucoup parlé. Alors peut -être que si vous voulez pas en parler c'est du fait de votre bilan en la matière parce qu'on arrive là à la veille d'une élection présidentielle que tous les spécialistes du sujet nous disent que que quelle que soit la personne élue et quel que soit ce qu'elle entreprend, ça met 18 mois à porter ses fruits.
@@ -734,8 +783,11 @@
 [01:34:25.760] SPEAKER_14: Et dernier point, la recherche -développement, parce qu'on n'en a pas parlé ici, et on sait que c'est un vrai critère de compétitivité et qu'on est en retard.
 [01:34:32.080] SPEAKER_14: Les entreprises françaises, c'est en recherche -développement seulement 1,4% du PIB, là où en Allemagne c'est 2% et aux Etats -Unis c'est 2,8%.
 [01:34:40.840] SPEAKER_14: Et comment on fait pour avoir plus de recherche -développement dans le privé?
-[01:34:46.080] SPEAKER_14 [chevauchement]: Vous verrez que la Chine et les Etats -Unis, qui sont recordement dans la matière, C'est aussi parce qu'ils ont un système public de recherche et développement extrêmement solide et qu'en France, il a été méthodiquement attaqué, méthodiquement dédié.
-[01:34:57.660] SPEAKER_14 [chevauchement]: Donc je veux une recherche et développement publique forte pour une
+[01:34:46.080] SPEAKER_14 [chevauchement]: Vous verrez que la Chine et les Etats -Unis, qui sont recordement
+[01:34:48.380] SPEAKER_00 [chevauchement]: dans la matière,
+[01:34:48.840] SPEAKER_14 [chevauchement]: C'est aussi parce qu'ils ont un système public de recherche et développement extrêmement solide et qu'en France, il a été méthodiquement attaqué, méthodiquement dédié.
+[01:34:57.660] SPEAKER_13 [chevauchement]: Donc je
+[01:34:58.180] SPEAKER_14 [chevauchement]: veux une recherche et développement publique forte pour une
 [01:35:00.900] SPEAKER_13 [chevauchement]: recherche et développement privée forte qui est compétitive.
 [01:35:03.740] SPEAKER_13: Vous l'avez évoqué et il ne s'est pas encore exprimé. Bruno Rotailleau, allez -y.
 [01:35:07.340] SPEAKER_02: Marine Tondelier, il faut être précis, je n'ai jamais proposé le moratoire sur les énergies renouvelables.
@@ -748,7 +800,9 @@
 [01:35:31.720] SPEAKER_02 [chevauchement]: laissez -moi parler, je ne vous ai pas interrompu,
 [01:35:34.120] SPEAKER_14 [chevauchement]: si l
 [01:35:34.500] SPEAKER_02 [chevauchement]: 'électricité, parce que la compétitivité, c'est d'abord une compétitivité énergétique, il n'y aura pas de développement de l'IA en France si on n'a pas une électricité qui en plus a 95% des carbonnés, qu'elle soit aussi peu chère.
-[01:35:48.960] SPEAKER_02 [chevauchement]: Voilà la décroissance et l'appauvrissement pour le pays et vous ne pouvez pas parler ni de souveraineté parce que la souveraineté énergétique c'est d'abord l'uniclère avec un complément bien sûr énergie renouvelable.
+[01:35:48.960] SPEAKER_02 [chevauchement]: Voilà la décroissance et l'appauvrissement
+[01:35:51.800] SPEAKER_14 [chevauchement]: pour
+[01:35:52.100] SPEAKER_02 [chevauchement]: le pays et vous ne pouvez pas parler ni de souveraineté parce que la souveraineté énergétique c'est d'abord l'uniclère avec un complément bien sûr énergie renouvelable.
 [01:36:00.760] SPEAKER_02: Eh bien, je supprimerai d'ailleurs la PPO3 parce que sinon, ce sera 10 à 15% de plus sur l'énergie. Mon projet, moi, c'est de la faire passer de 10% de moins l'énergie électrique pour donner de la compétitivité. Et idem pour les agriculteurs, évidemment, je suis bien placé pour le savoir, j'ai accompagné, moi, 25 réserves de substitution pour l'agriculture.
 [01:36:22.380] SPEAKER_02: Et croyez -moi en Vendée, si cet été on n'avait pas eu ça, ce serait une catastrophe sociale et humaine. Voilà ce que je voulais dire. Simplement un mot aussi sur le en même temps. Le double quinquennat d'Ebel Macron est un échec. Il est jugé comme tel par les Français. Moi j'en ai marre du en même temps. On ne peut pas dire on veut des infrastructures et avoir annulé le projet de Notre -Dame -des -Landes.
 [01:36:45.020] SPEAKER_02: On ne peut pas dire je veux de la simplification alors que le groupe parlementaire au Parlement européen a voté massivement contre l'omnibus qui proposait sur des circulaires dits directives CS3D, CSRD, justement de simplifier.
@@ -807,17 +861,18 @@
 [01:42:42.960] SPEAKER_16: Donc je trouve qu'on ne parle pas suffisamment d'innovation, d'intelligence artificielle dans ce débat, parce que la robotisation, l'IA, l'innovation et leur diffusion dans l'économie, c'est aussi à terme ce qui va permettre une vraie progression des salaires pour notre économie et pour les Français.
 [01:42:57.540] SPEAKER_13 [chevauchement]: Jean -Luc Mélenchon sur les salaires.
 [01:43:01.400] SPEAKER_09: Oui, on passe d'un sujet à l'autre.
-[01:43:04.220] SPEAKER_09 [chevauchement]: Ah oui, c
-[01:43:04.740] SPEAKER_13 [chevauchement]: 'était quand même le...
-[01:43:05.500] SPEAKER_13 [chevauchement]: D'accord,
-[01:43:05.760] SPEAKER_09 [chevauchement]: oui, ok.
+[01:43:04.220] SPEAKER_09 [chevauchement]: Ah
+[01:43:04.500] SPEAKER_13 [chevauchement]: oui, c'était quand même le...
+[01:43:05.500] SPEAKER_09 [chevauchement]: D'accord, oui, ok.
 [01:43:06.380] SPEAKER_09 [chevauchement]: C'était
 [01:43:06.660] SPEAKER_13 [chevauchement]: quand même quatre hommes de départ.
 [01:43:07.740] SPEAKER_13 [chevauchement]: Il faut quand même
 [01:43:07.840] SPEAKER_09 [chevauchement]: arriver à savoir où on en est.
 [01:43:09.440] SPEAKER_09 [chevauchement]: Ah
 [01:43:09.720] SPEAKER_13: ben là, je viens de vous le dire.
-[01:43:10.500] SPEAKER_13 [chevauchement]: Ça a l'air écouté du travail.
+[01:43:10.500] SPEAKER_13 [chevauchement]: Ça
+[01:43:10.640] SPEAKER_09 [chevauchement]: a l'air
+[01:43:10.920] SPEAKER_13 [chevauchement]: écouté du travail.
 [01:43:11.500] SPEAKER_13 [chevauchement]: Je ne voudrais
 [01:43:11.720] SPEAKER_09 [chevauchement]: pas que madame croit que je ne voulais pas répondre à sa question.
 [01:43:14.820] SPEAKER_09: Je répondais qu'à la première partie, je ne suis pas d'accord avec vous, si vous voulez bien accepter cette idée.
@@ -827,13 +882,15 @@
 [01:43:34.900] SPEAKER_09: Vous savez, comme moi, que vous ne pourrez pas affecter les sommes qui sont investies en Europe, autrement que dans le cadre de la concurrence libre et non faussée, c'est -à -dire d'un marché ouvert sur le monde.
 [01:43:45.800] SPEAKER_09: Par conséquent, vous ne pouvez pas à la fois prôner à la terre entière la concurrence libre et non faussée et le libre -échangisme, et de dire, ah ben non, pas sur ce sujet.
 [01:43:55.320] SPEAKER_09: Nous devons donc modifier le traité qui fait l'Union Européenne parce que sinon nous allons mourir politiquement, socialement et industriellement parce que nous ne sommes pas en état de résister.
-[01:44:09.300] SPEAKER_09 [chevauchement]: J'aurais une question sur
-[01:44:10.120] SPEAKER_13 [chevauchement]: les salaires et le coût du travail parce que sinon on n'aura pas la réponse pour Vincent Furlan.
+[01:44:09.300] SPEAKER_09 [chevauchement]: J
+[01:44:09.480] SPEAKER_13 [chevauchement]: 'aurais une question sur les salaires et le coût du travail parce que sinon on n'aura pas la réponse pour Vincent Furlan.
 [01:44:14.640] SPEAKER_09 [chevauchement]: Oui, mais je voudrais quand même, à l'instant on vient de dire on est content de l'investissement étranger, vous êtes content de la part de spéculation qu'il y a dans cet investissement sur l'immobilier?
 [01:44:24.120] SPEAKER_09: Vous êtes content de la vente à la découpe de l'industrie française de ce qui en reste? Eh bien pas moi. Par conséquent, je mettrai en place une vigilance extrêmement aiguë sur ces investissements.
 [01:44:34.640] SPEAKER_09: Et pour terminer sur la question européenne, je vous dis les choses comme elles sont. Tout ce qui viendra de l'Europe en contradiction avec les intérêts des Français, tels qu'ils sont décrits par leur vote et les programmes, nous désobéirons.
-[01:44:49.140] SPEAKER_09 [chevauchement]: Maintenant, de quoi voulez -vous parler?
-[01:44:50.680] SPEAKER_09 [chevauchement]: Les salaires,
+[01:44:49.140] SPEAKER_09 [chevauchement]: Maintenant, de quoi
+[01:44:49.780] SPEAKER_13 [chevauchement]: voulez -vous parler?
+[01:44:50.680] SPEAKER_13 [chevauchement]: Les
+[01:44:50.760] SPEAKER_09: salaires,
 [01:44:50.760] SPEAKER_13 [chevauchement]: le coût du travail et les salaires.
 [01:44:52.420] SPEAKER_09 [chevauchement]: Parfaitement. Alors là, c'est l'assemblée des magiciens. Vous ne voulez plus rien payer et vous renvoyez tout, mais à qui? Qui va payer tout ce que vous venez de dire?
 [01:45:01.120] SPEAKER_09: Vous voulez la retraite par capitalisation? Il faut des hauts revenus pour se payer la capitalisation. Pour avoir le même retour sur une retraite qu'on a aujourd'hui par la répartition, il faudrait cotiser deux fois plus que c'est le cas actuellement.
@@ -854,7 +911,9 @@
 [01:47:05.000] SPEAKER_09: Il faut partir des choses sérieuses, de la technique sérieuse, avec des objectifs sérieux de développement industriel du pays et pas des...
 [01:47:12.660] SPEAKER_09 [chevauchement]: Jean -Luc Mélenchon, je m
 [01:47:14.920] SPEAKER_13: 'avance même physiquement pour reprendre le contrôle de la situation.
-[01:47:19.500] SPEAKER_09 [chevauchement]: Vous ne l'avez jamais perdu, c'est vrai.
+[01:47:19.500] SPEAKER_09 [chevauchement]: Vous ne l
+[01:47:20.060] SPEAKER_13 [chevauchement]: 'avez
+[01:47:20.160] SPEAKER_09 [chevauchement]: jamais perdu, c'est vrai.
 [01:47:21.300] SPEAKER_13 [chevauchement]: Oui, certes, c'est vrai.
 [01:47:22.720] SPEAKER_13: Jusqu'à maintenant, ça ne se passe plutôt pas si mal.
 [01:47:25.060] SPEAKER_13: Edouard Philippe, allez -y.
@@ -876,9 +935,11 @@
 [01:51:12.740] SPEAKER_07: On élargit la base.
 [01:51:14.500] SPEAKER_13: On
 [01:51:14.840] SPEAKER_07: commence par diminuer la dépense, en tout cas par contenir la dépense. Parce que je me méfie des solutions. D'ailleurs, monsieur le président Martin, vous en avez formulé des solutions. Je les entends. J'ai même vu que François Hollande, qui avait dit beaucoup de mal de la TVA sociale, venait maintenant sur ce sujet. Je n'ai pas d'obsession, mais ça m'a frappé quand même.
-[01:51:40.320] SPEAKER_07 [chevauchement]: je voudrais simplement dire quelque chose imaginez qu'on va régler cette question par un c'est parce que vous avez voulu faire, par un bon taux c'est à dire en disant on va réorienter une fiscalité avant de dire que l'essentiel c'est de contenir cette dépense ça me paraît dangereux mais sur le fond, élargir la base faire en sorte que toute la population contribue au financement de la protection sociale et pas seulement ceux qui travaillent me paraît indispensable si on veut ramener le brut du net.
-[01:52:10.280] SPEAKER_07 [chevauchement]: Et derrière cette idée -là, il
-[01:52:11.860] SPEAKER_13 [chevauchement]: y
+[01:51:40.320] SPEAKER_07 [chevauchement]: je voudrais simplement dire quelque chose imaginez qu'on va régler cette question par un c'est parce que vous avez voulu faire, par un bon taux c'est à dire en disant on va réorienter une fiscalité avant de dire que l'essentiel c'est de contenir cette dépense ça me paraît dangereux mais
+[01:51:58.000] SPEAKER_13 [chevauchement]: sur
+[01:51:58.400] SPEAKER_07 [chevauchement]: le fond, élargir la base faire en sorte que toute la population contribue au financement de la protection sociale et pas seulement ceux qui travaillent me paraît indispensable si on veut ramener le brut du net.
+[01:52:10.280] SPEAKER_07 [chevauchement]: Et derrière cette idée -là,
+[01:52:11.740] SPEAKER_13 [chevauchement]: il y
 [01:52:12.400] SPEAKER_07: a des choses qui ne sont pas populaires.
 [01:52:14.360] SPEAKER_13 [chevauchement]: Mais si on veut que le
 [01:52:15.560] SPEAKER_07 [chevauchement]: pouvoir d'achat des actifs demeure, si on veut vérifier que les actifs, en travaillant, continuent à évoluer dans le bon sens, alors nous devons passer à ce nouveau mode de financement.
@@ -931,14 +992,20 @@
 [01:56:53.640] SPEAKER_02: 0, c'est 35% de coût du travail en moins, et c'est pour les salariés qui accepteront de faire une demi -heure de travail par jour, 0 cotisation, c'est pour un salaire médian, 3500 euros net, quasiment deux mois de plus sur la fiche de salaire, et c'est donc l'identité salaire brut égale salaire net.
 [01:57:16.820] SPEAKER_02: de cette façon -là, vous réconciliez les intérêts de l'entreprise, vous diminuez le coût du travail et en même temps, vous donnez plus de pouvoir d'achat grâce au travail aux salariés, il n'y a que comme cela qu'on pourra gagner dans la compétition mondiale et qu'on relancera l'activité, par contre je tape la cistana et j'assume de plafonner à 70% le total des prestations des aides sociales social, servi aux Français.
 [01:57:47.620] SPEAKER_02: Demain, je ne veux pas qu'il y ait si peu de différences entre ceux qui se lèvent tôt et qui vont travailler et ceux qui se lèvent plus tard et qui ne travaillent pas.
-[01:57:58.280] SPEAKER_02 [chevauchement]: Aidez quand il y a un pépin, un accident de parcours.
-[01:58:01.560] SPEAKER_02 [chevauchement]: Oui, mais il faut décourager la système.
+[01:57:58.280] SPEAKER_02 [chevauchement]: Aidez quand il y a un
+[01:57:59.500] SPEAKER_13 [chevauchement]: pépin, un accident de
+[01:58:01.020] SPEAKER_02 [chevauchement]: parcours.
+[01:58:01.560] SPEAKER_02 [chevauchement]: Oui, mais il faut
+[01:58:03.240] SPEAKER_13 [chevauchement]: décourager la
+[01:58:03.860] SPEAKER_02: système.
 [01:58:04.660] SPEAKER_13 [chevauchement]: Assurance chômage, de quoi parlez -vous précisément?
 [01:58:07.920] SPEAKER_02: Sauf l'assurance chômage.
 [01:58:08.940] SPEAKER_02: L'assurance chômage est sur une base assurancielle.
 [01:58:12.420] SPEAKER_13: Taper dans le social, oui, je me doutais que vous lèveriez le doigt, Marine Tondelienne?
 [01:58:16.900] SPEAKER_13 [chevauchement]: Déjà parce que je ne suis pas toujours obligée de parler en
-[01:58:19.020] SPEAKER_14 [chevauchement]: dernière, mais parce que je suis extrêmement choquée par ce que j'entends qui est très stigmatisant et je pense que toutes les personnes qui vivent des minima sociaux et qui nous regardent doivent être choquées parce qu'elles, elles savent ce que c'est et on est dans un moment où le sujet n'est pas juste comment on fait pour vivre avec un RSA pour certaines, c'est comment on fait quand on perd le RSA.
+[01:58:19.020] SPEAKER_14 [chevauchement]: dernière, mais parce que
+[01:58:20.840] SPEAKER_13 [chevauchement]: je suis
+[01:58:20.940] SPEAKER_14 [chevauchement]: extrêmement choquée par ce que j'entends qui est très stigmatisant et je pense que toutes les personnes qui vivent des minima sociaux et qui nous regardent doivent être choquées parce qu'elles, elles savent ce que c'est et on est dans un moment où le sujet n'est pas juste comment on fait pour vivre avec un RSA pour certaines, c'est comment on fait quand on perd le RSA.
 [01:58:36.280] SPEAKER_14: Parce que certains de vos amis, à la tête de certains départements, ont engagé une chasse aux bénéficiaires du RSA dont certains doivent justifier pourquoi ils ont gagné 30 euros au Kéno et si ces 30 euros ont vraiment été gagnés au Kéno et que voyez -vous, quand on vous radie du RSA, vous n'avez plus de filet de sécurité.
 [01:58:52.320] SPEAKER_14: Et c'est ça qui se passe dans certains départements en France aujourd'hui.
 [01:58:55.060] SPEAKER_14: Tout comme M. Philippe qui a expliqué que maintenant l'assurance chômage, ce serait 12 mois, c'est encore pire que vous, ce que vous avez fait, ça veut dire quoi?
@@ -948,10 +1015,16 @@
 [01:59:12.860] SPEAKER_14: moi j'ai rencontré aujourd'hui beaucoup d'entrepreneurs qui travaillent dans le milieu de l'écologie et qui ont besoin de recruter des gens dans les métiers d'avenir et ces métiers d'avenir s'ils ne trouvent pas preneur c'est pas parce qu'ils ne sont pas attractifs, c'est parce qu'ils sont nouveaux et qu'ils nécessitent des formations et donc quand tu es dans un moment où tu as perdu ton emploi où tu es à l'assurance chômage, c'est le moment où tu peux dire je me forme pour aller vers une nouvelle filière si tu n'as que 12 mois de chômage, tu ne le fais pas parce que c'est trop court pour se projeter vers un métier d'avenir et c'est comme ça qu'on met en difficulté les métiers de la transition et donc la transition derrière.
 [01:59:44.700] SPEAKER_14: Pour ce qui est...
 [01:59:45.380] SPEAKER_02 [chevauchement]: Vous avez
-[01:59:46.960] SPEAKER_14 [chevauchement]: dit qu'on ne coupait pas, sinon je vous réponds sur les bassines et sur le nucléaire, ça va être très long.
-[01:59:51.440] SPEAKER_14 [chevauchement]: Donc, je continue.
-[01:59:53.180] SPEAKER_14 [chevauchement]: Sur le coût du travail.
-[01:59:54.820] SPEAKER_14 [chevauchement]: Vous répondrez à mon explication sur le coût du travail, qui était la question qui était posée.
+[01:59:46.960] SPEAKER_14 [chevauchement]: dit qu'on ne coupait pas,
+[01:59:48.740] SPEAKER_02 [chevauchement]: sinon je
+[01:59:49.060] SPEAKER_14 [chevauchement]: vous réponds sur les bassines et sur le nucléaire, ça va être très
+[01:59:50.860] SPEAKER_02 [chevauchement]: long.
+[01:59:51.440] SPEAKER_02 [chevauchement]: Donc, je
+[01:59:52.100] SPEAKER_14 [chevauchement]: continue.
+[01:59:53.180] SPEAKER_02 [chevauchement]: Sur le coût du travail.
+[01:59:54.820] SPEAKER_14 [chevauchement]: Vous
+[01:59:55.140] SPEAKER_13 [chevauchement]: répondrez à mon
+[01:59:55.660] SPEAKER_14 [chevauchement]: explication sur le coût du travail, qui était la question qui était posée.
 [02:00:01.780] SPEAKER_14: Le coût du travail, c'est un coût pour les entreprises, mais c'est aussi le revenu des Français.
 [02:00:05.760] SPEAKER_14: C'est leur pouvoir d'achat.
 [02:00:07.060] SPEAKER_14: Il ne faut pas qu'on oublie ce volet -là.
@@ -964,19 +1037,38 @@
 [02:01:04.280] SPEAKER_14: coupent des repas, qui suppriment des repas pour des raisons financières. 53% d'entre eux ont réduit la proportion dans leurs assiettes, souvent pour pouvoir donner correctement à manger leurs enfants.
 [02:01:14.820] SPEAKER_14: C'est ça qu'il y a derrière le coût du travail.
 [02:01:16.580] SPEAKER_14 [chevauchement]: Alors moi, je le dis, les écologistes promettront et porteront et mettront en place un SMIC à 2000 euros brut. Et je sais que beaucoup de chefs d'entreprise ici aimeraient bien le faire, mais ils n'en arrivent pas. Pourquoi?
-[02:01:29.100] SPEAKER_14 [chevauchement]: Parce qu'aussi, la valeur est mal répartie. Et qu'aujourd'hui, les donneurs d'ordre, et bien il faut mieux partager la richesse entre les donneurs d'ordre et les sous -traitants et qu'aujourd'hui les grandes entreprises sont capables de faire 107 milliards de dividendes en 2025 pour 40 entreprises et que d'un autre côté les entreprises galèrent et donc il faut mieux répartir la richesse pour pouvoir mieux payer tout le monde et dans la conclusion je vous donnerai des mesures spécifiques pour les TPE et les PE qu'il faut bien plus aider dans ce pays pour qu'elles soient capables de payer correctement les Français et de lutter contre les travailleurs pauvres, de lutter pour la justice sociale.
-[02:02:04.480] SPEAKER_14 [chevauchement]: Sinon, ça a été dit plusieurs fois, et pas par des gens de gauche seulement.
+[02:01:29.100] SPEAKER_14: Parce qu'aussi, la valeur est mal répartie.
+[02:01:32.140] SPEAKER_13 [chevauchement]: Et
+[02:01:32.500] SPEAKER_14: qu
+[02:01:32.500] SPEAKER_13 [chevauchement]: 'aujourd'hui, les
+[02:01:33.520] SPEAKER_14 [chevauchement]: donneurs d'ordre, et bien il faut mieux partager la richesse entre les donneurs d'ordre et les sous -traitants et qu'aujourd'hui les grandes entreprises sont capables de faire 107 milliards de dividendes en 2025 pour 40 entreprises et
+[02:01:47.620] SPEAKER_13 [chevauchement]: que d'un autre côté
+[02:01:48.440] SPEAKER_14 [chevauchement]: les entreprises galèrent et donc il faut mieux répartir la richesse pour pouvoir mieux payer tout le monde et dans la conclusion je vous donnerai des mesures spécifiques pour les TPE et les PE qu'il faut bien plus aider dans ce pays pour qu'elles soient capables de payer correctement les Français et de lutter contre les travailleurs pauvres, de lutter pour la justice sociale.
+[02:02:04.480] SPEAKER_14 [chevauchement]: Sinon, ça a été dit plusieurs fois, et pas par des
+[02:02:07.000] SPEAKER_13 [chevauchement]: gens
+[02:02:07.140] SPEAKER_14 [chevauchement]: de gauche seulement.
 [02:02:08.180] SPEAKER_14: Sinon, on ira dans le mur et ça va mal se terminer.
 [02:02:10.320] SPEAKER_13 [chevauchement]: Moi, je vous dis qu'on ira dans le mur en termes de temps.
-[02:02:12.640] SPEAKER_13 [chevauchement]: C'est un mur beaucoup moins dangereux.
-[02:02:14.880] SPEAKER_13 [chevauchement]: C'est un mur beaucoup moins dangereux.
+[02:02:12.640] SPEAKER_13 [chevauchement]: C'est un mur beaucoup moins
+[02:02:14.300] SPEAKER_14 [chevauchement]: dangereux.
+[02:02:14.880] SPEAKER_13: C
+[02:02:14.880] SPEAKER_14 [chevauchement]: 'est un mur beaucoup moins dangereux.
 [02:02:16.340] SPEAKER_13: Ça, je vous le confirme, mais tout de même.
 [02:02:17.740] SPEAKER_13: Marine Le Pen.
 [02:02:18.880] SPEAKER_12: Moi, d'abord, je reste un peu admirative des gens qui ont participé à la majorité depuis 10 ans, et qui aujourd'hui ont plein, plein, plein d'idées qu'ils n'ont jamais, jamais, jamais mis en œuvre.
-[02:02:28.700] SPEAKER_12 [chevauchement]: là j'avoue que moi j'arriverais pas à faire ça moi j'arriverais pas à faire ça j'arriverais pas à me regarder dans la glace et à faire ça comme ça tranquillement comme si de rien n'était c
-[02:02:38.580] SPEAKER_16 [chevauchement]: 'est sûr que c'est plus facile dans l'occasion et le faire du commentaire en permanence vous
+[02:02:28.700] SPEAKER_12 [chevauchement]: là j'avoue que moi
+[02:02:30.720] SPEAKER_14 [chevauchement]: j
+[02:02:30.860] SPEAKER_12 [chevauchement]: 'arriverais
+[02:02:31.200] SPEAKER_16 [chevauchement]: pas à faire
+[02:02:31.500] SPEAKER_12: ça
+[02:02:31.500] SPEAKER_16 [chevauchement]: moi
+[02:02:31.840] SPEAKER_12 [chevauchement]: j'arriverais pas à faire ça j'arriverais pas à me regarder dans la glace et à faire ça comme ça tranquillement comme si de rien n'était c
+[02:02:38.580] SPEAKER_16 [chevauchement]: 'est sûr que c'est plus facile
+[02:02:39.800] SPEAKER_12 [chevauchement]: dans l'occasion et le faire du
+[02:02:41.240] SPEAKER_16 [chevauchement]: commentaire en permanence vous
 [02:02:42.480] SPEAKER_12 [chevauchement]: faites bien de m'interpeller parce que vous n'avez pas reproduit ici le projet que vous avez pourtant expliqué dans les journaux consistant à augmenter 200 euros l'intégralité des salaires jusqu'à je crois 2 fois et demi le SMIC Donc montant, montant, un moment on peut parler sérieusement, montant 55 milliards d'euros. Alors où est -ce que vous les trouvez? Je suis sûre que vous avez énormément de solutions à nous expliquer. Restons encore une fois ça.
-[02:03:12.040] SPEAKER_12 [chevauchement]: Le sérieux, vous l'avez, et vous le savez, vous, entrepreneurs.
+[02:03:12.040] SPEAKER_16 [chevauchement]: Le sérieux, vous l'avez, et vous
+[02:03:14.580] SPEAKER_12 [chevauchement]: le savez, vous, entrepreneurs.
 [02:03:17.920] SPEAKER_12: Oui, les salaires sont trop bas, vous le savez, vous aimeriez tous, en effet, pouvoir les augmenter.
 [02:03:22.580] SPEAKER_12: Oui, le coût du travail est lourd.
 [02:03:25.040] SPEAKER_12: Oui, un certain nombre de mesures sur le long terme peuvent faire baisser le coût du travail.
@@ -998,19 +1090,25 @@
 [02:07:24.740] SPEAKER_00: puisque le bulletin de paye aujourd'hui je ne sais pas qui d'entre vous ou d'entre nous dirigeants
 [02:07:32.500] SPEAKER_00 [chevauchement]: puissions les expliquer détailler toutes les lignes c'est un énorme sujet chaque mois, ça revient chaque mois et donc sachant que je ne peux pas l'expliquer à mes collaborateurs ça crée une tension sociale dont je n'ai pas besoin parce que j'ai 5 collaborateurs et que j'ai envie de faire autre chose que d'avoir des tensions avec eux et il y a un autre aspect dans mon emploi du temps qui est très lourd, c'est que je passe environ un tiers de mes mois ou de mes journées à gérer les changements de normes l'évolution administrative qui est en mouvement constant donc aujourd'hui ce que j'aimerais savoir c'est ce que vous allez proposer dans vos mandats, si l'un ou l'autre d'entre vous est élu pour nous permettre de simplifier la lisibilité des bulletins de paye et aussi nous permettre de passer moins de temps à respecter les normes continuelles pour nous permettre de faire notre travail Merci beaucoup Colombe
 [02:08:37.120] SPEAKER_13: Lecouf alors je vous ai entendu, Marie -Tourdelier vous disiez je termine toujours, je suis toujours à la fin vous allez commencer, parce que quand même, on le sait, vous le savez très certainement, souvent quand on parle de normes il y a beaucoup d'entrepreneurs qui nous disent l'écologie c'est beaucoup de normes et puis si vous arrivez au pouvoir, il y en aura certainement encore plus alors qu'est -ce que vous...
-[02:08:54.440] SPEAKER_13 [chevauchement]: C'est assez
-[02:08:54.980] SPEAKER_14 [chevauchement]: impressionnant ce que vous venez de faire parce que madame nous dit moi je suis embêtée par les bulletins de paye et par toutes les règles qu'on me met en général elle n'a absolument pas parlé de normes environnementales et vous, vous me regardez moi en disant que c'est de ma faute alors qu'elle n'a parlé d'autres normes environnementales Non, je n'ai pas
-[02:09:10.920] SPEAKER_13 [chevauchement]: dit que c'était de sa faute que c'était votre faute pour les fiches de paye Mais la question
+[02:08:54.440] SPEAKER_13 [chevauchement]: C
+[02:08:54.740] SPEAKER_14 [chevauchement]: 'est assez impressionnant ce que vous venez de faire parce que madame nous dit moi je suis embêtée par les bulletins de paye et par toutes les règles qu'on me met en général elle n'a absolument pas parlé de normes environnementales et vous, vous me regardez moi en disant que c'est de ma faute alors qu'elle n'a parlé d'autres
+[02:09:10.020] SPEAKER_13 [chevauchement]: normes environnementales Non,
+[02:09:10.920] SPEAKER_14: je n'ai pas
+[02:09:10.920] SPEAKER_13 [chevauchement]: dit que c'était de sa faute que c
+[02:09:12.140] SPEAKER_14 [chevauchement]: 'était votre faute
+[02:09:12.620] SPEAKER_13 [chevauchement]: pour les fiches de paye Mais la question
 [02:09:14.340] SPEAKER_14 [chevauchement]: ne portait absolument pas sur les normes environnementales Vous savez très bien que je parlais
 [02:09:16.860] SPEAKER_13 [chevauchement]: des normes en général et que c'est vrai que beaucoup d'entrepreneurs nous ont dit Non, vous vous êtes
 [02:09:20.300] SPEAKER_14 [chevauchement]: retournée à moi en tant qu'écologiste en disant c'est vous. Et je précise par ailleurs que je n'ai jamais été au gouvernement et que mon parti n'y a pas été très longtemps.
 [02:09:28.100] SPEAKER_14: Donc si vous avez des récriminations à apporter...
-[02:09:31.040] SPEAKER_14 [chevauchement]: Non, aucune récrimination. L'occasion pour vous de répondre à ce que disent beaucoup d'entrepreneurs, c'est que les
-[02:09:35.760] SPEAKER_13 [chevauchement]: normes, souvent
+[02:09:31.040] SPEAKER_14 [chevauchement]: Non,
+[02:09:31.300] SPEAKER_13 [chevauchement]: aucune récrimination. L'occasion pour vous de répondre à ce que disent beaucoup d
+[02:09:34.940] SPEAKER_14 [chevauchement]: 'entrepreneurs,
+[02:09:35.500] SPEAKER_13 [chevauchement]: c'est que les normes, souvent
 [02:09:36.200] SPEAKER_14 [chevauchement]: écologiques,
-[02:09:36.780] SPEAKER_13 [chevauchement]: sont un
-[02:09:37.080] SPEAKER_14 [chevauchement]: peu...
-[02:09:37.180] SPEAKER_14 [chevauchement]: Vous voulez qu'on parle des normes environnementales?
+[02:09:36.780] SPEAKER_13 [chevauchement]: sont un peu...
+[02:09:37.180] SPEAKER_13 [chevauchement]: Vous voulez
+[02:09:37.420] SPEAKER_14 [chevauchement]: qu'on parle des normes environnementales?
 [02:09:38.720] SPEAKER_14: Mais vous répondez à la question que vous voulez.
 [02:09:40.660] SPEAKER_14: Déjà, je veux tracer clairement la ligne entre la nécessaire simplification administrative, qui est une chose et vous en avez parlé, et la dérégulation environnementale qui est un autre sujet.
 [02:09:52.200] SPEAKER_14: L'un concerne un objectif, on veut combattre l'objectif environnemental en dérégulant et l'autre en fait est un moyen à la simplification administrative et sur la simplification administrative, je le dis, on est tous, mais pas qu'en tant qu'entrepreneurs, en tant que citoyens aussi, on est tous concernés par des choses des fois où on ne comprend pas ce qu'on est en train de faire.
@@ -1018,11 +1116,14 @@
 [02:10:25.940] SPEAKER_14: Pourquoi on passe notre temps à recopier notre adresse postale, et à mettre tel numéro, tel truc...
 [02:10:30.840] SPEAKER_14: L'Etat a ces informations qu'il se débrouille pour arrêter de nous les demander en papier, en numérique, en trois exemplaires, en copie carbone.
 [02:10:37.780] SPEAKER_14: Il les a, il les prend, il les recopie, et il arrête de nous embêter.
-[02:10:41.480] SPEAKER_14 [chevauchement]: Vous avez beaucoup d'avance, Marine Tondelier,
+[02:10:41.480] SPEAKER_13 [chevauchement]: Vous avez beaucoup d'avance, Marine
+[02:10:42.480] SPEAKER_14 [chevauchement]: Tondelier,
 [02:10:43.000] SPEAKER_13 [chevauchement]: c'est pour vous...
 [02:10:45.000] SPEAKER_14 [chevauchement]: Ensuite, sur l'histoire des normes environnementales, enfin on va être clair, en fait notre état il est en situation de surendettement, notre nation en surendettement écologique, c'est -à -dire qu'on vit à crédit sur la planète, sur toutes les limites planétaires et que ça surendette aussi les ménages et l'état et les collectivités et les entreprises, parce que l'absence d'écologie, le fait d'avoir supprimé le leasing social, le fait d'avoir supprimé aussi le ma prime rénov'd'avoir déshabillé un peu ce processus, ça fait qu'à la fin, on est tous dépendants du prix de l'énergie, du prix de l'électricité, du gaz, du pétrole, et que ça nous surendette.
 [02:11:21.860] SPEAKER_14: Donc ce n'est pas un gouvernement qu'on a, c'est Cofidis. Cofidis, sauf que Cofidis au moins est obligé d'afficher le taux, et nous on paye les intérêts, et on ne sait pas pour combien de temps, et on sait qu'on les paye tous alors qu'on n'est pas responsable.
-[02:11:33.120] SPEAKER_14 [chevauchement]: J'entends que l'écologie est parfois vue comme une contrainte, moi je vous ai expliqué à l'introduction, c'était la condition de notre liberté, et qu'on peut décider de ne pas voir le fait que comme dans toute politique publique, comme dans le droit du travail, comme dans toute politique publique, il faut des limites.
+[02:11:33.120] SPEAKER_14 [chevauchement]: J'entends que l'écologie est parfois vue comme une contrainte, moi je vous ai expliqué à l'introduction, c'était la condition de notre liberté, et qu'on peut décider de ne pas voir le fait que comme dans toute politique publique, comme dans le droit du travail, comme dans toute politique
+[02:11:44.640] SPEAKER_13 [chevauchement]: publique,
+[02:11:44.920] SPEAKER_14 [chevauchement]: il faut des limites.
 [02:11:46.440] SPEAKER_14: Si on ne
 [02:11:46.960] SPEAKER_13 [chevauchement]: réagit pas, on ira
 [02:11:47.760] SPEAKER_14 [chevauchement]: dans le mur et on
@@ -1033,8 +1134,10 @@
 [02:12:05.280] SPEAKER_16: Qui a créé le fond vert?
 [02:12:06.700] SPEAKER_16 [chevauchement]: D
 [02:12:06.900] SPEAKER_14: 'un trait de plume.
-[02:12:07.520] SPEAKER_14 [chevauchement]: Qui a créé le fond vert?
-[02:12:08.000] SPEAKER_14 [chevauchement]: Madame Borne.
+[02:12:07.520] SPEAKER_14 [chevauchement]: Qui a créé
+[02:12:07.920] SPEAKER_16 [chevauchement]: le
+[02:12:08.000] SPEAKER_14: fond vert?
+[02:12:08.000] SPEAKER_16 [chevauchement]: Madame Borne.
 [02:12:08.860] SPEAKER_14: J
 [02:12:09.220] SPEAKER_16 [chevauchement]: 'étais à Bercy, c'est moi qui ai porté la création du fonds vert.
 [02:12:11.400] SPEAKER_16 [chevauchement]: Et
@@ -1044,25 +1147,36 @@
 [02:12:16.080] SPEAKER_16: Et là maintenant, quand il y a une baisse parce qu'il y a des économies,
 [02:12:18.500] SPEAKER_14 [chevauchement]: vous venez vous plaindre.
 [02:12:20.440] SPEAKER_14 [chevauchement]: Vous dites
-[02:12:20.960] SPEAKER_16 [chevauchement]: à l'instant le leasing social.
-[02:12:22.140] SPEAKER_16 [chevauchement]: Je ne peux pas
+[02:12:20.960] SPEAKER_16 [chevauchement]: à
+[02:12:21.100] SPEAKER_14 [chevauchement]: l'instant le
+[02:12:21.500] SPEAKER_16 [chevauchement]: leasing social.
+[02:12:22.140] SPEAKER_14 [chevauchement]: Je
+[02:12:22.240] SPEAKER_16: ne peux pas
 [02:12:22.240] SPEAKER_14 [chevauchement]: mentir.
-[02:12:22.860] SPEAKER_16 [chevauchement]: Qui a créé le leasing social? Il a été créé en 2022 par nous.
-[02:12:26.660] SPEAKER_16 [chevauchement]: Et vous avez voté contre aussi vos députés quand on l'a mis en place dans le budget.
-[02:12:30.140] SPEAKER_16 [chevauchement]: Donc arrêtez d'expliquer
-[02:12:32.080] SPEAKER_14 [chevauchement]: que
+[02:12:22.860] SPEAKER_16 [chevauchement]: Qui a créé le leasing social? Il a été créé en 2022
+[02:12:25.180] SPEAKER_14 [chevauchement]: par
+[02:12:25.860] SPEAKER_16 [chevauchement]: nous.
+[02:12:26.660] SPEAKER_16 [chevauchement]: Et vous avez voté
+[02:12:27.280] SPEAKER_14 [chevauchement]: contre aussi vos députés quand on l'a mis en place dans le budget.
+[02:12:30.140] SPEAKER_14 [chevauchement]: Donc
+[02:12:30.480] SPEAKER_16 [chevauchement]: arrêtez
+[02:12:31.400] SPEAKER_14 [chevauchement]: d'expliquer que
 [02:12:32.820] SPEAKER_16 [chevauchement]: vous défendez des outils et des
-[02:12:34.760] SPEAKER_14 [chevauchement]: dispositifs alors
-[02:12:35.500] SPEAKER_16 [chevauchement]: que vous avez voté contre.
-[02:12:36.700] SPEAKER_16 [chevauchement]: Vous êtes opposé. Je vais au bout de mon intervention si vous voulez bien.
+[02:12:34.760] SPEAKER_14 [chevauchement]: dispositifs alors que vous avez voté contre.
+[02:12:36.700] SPEAKER_16 [chevauchement]: Vous
+[02:12:37.380] SPEAKER_14 [chevauchement]: êtes
+[02:12:37.420] SPEAKER_16 [chevauchement]: opposé. Je vais au bout de mon intervention si vous voulez bien.
 [02:12:40.260] SPEAKER_16 [chevauchement]: Il y a des gens qui
-[02:12:40.740] SPEAKER_13 [chevauchement]: n'entendent plus l'un et l'autre.
-[02:12:42.520] SPEAKER_13 [chevauchement]: C'est perdant pour tout le monde.
+[02:12:40.740] SPEAKER_13 [chevauchement]: n'entendent
+[02:12:41.160] SPEAKER_16 [chevauchement]: plus l'un et l'autre.
+[02:12:42.520] SPEAKER_16 [chevauchement]: C'est perdant pour tout le
+[02:12:43.620] SPEAKER_13: monde.
 [02:12:44.040] SPEAKER_16 [chevauchement]: Vous avez mis zéro euro sur ce dispositif.
 [02:12:46.340] SPEAKER_13 [chevauchement]: Marine Tondelier, il ne faut pas mentir.
 [02:12:48.880] SPEAKER_13: On n'entend plus.
 [02:12:50.000] SPEAKER_14 [chevauchement]: J
-[02:12:50.400] SPEAKER_16 [chevauchement]: 'ai attendu que vous ayez terminé pour vous répondre.
+[02:12:50.400] SPEAKER_16 [chevauchement]: 'ai attendu que vous ayez
+[02:12:51.300] SPEAKER_14 [chevauchement]: terminé pour vous répondre.
 [02:12:52.660] SPEAKER_16 [chevauchement]: Monsieur Attal a divisé le fonds vert
 [02:12:54.500] SPEAKER_14 [chevauchement]: par quatre et mis zéro euro sur le leasing social.
 [02:12:56.940] SPEAKER_14: C'est son groupe parlementaire qui l'a fait.
@@ -1074,8 +1188,10 @@
 [02:13:28.580] SPEAKER_16: pour permettre à nos éleveurs d'étendre un bâtiment d'élevage parce qu'ils ont envie d'avoir plus de bêtes et de développer leur exploitation, pour permettre à un agriculteur de construire un bâtiment agricole pour ranger ses outils parce qu'il se les fait voler la nuit, des mesures de simplification.
 [02:13:42.580] SPEAKER_16: Les amis de M. Mélenchon, de Mme Tondelier, de M. Glucksmann ont voté contre ces mesures pragmatiques pour permettre à nos agriculteurs de pouvoir cultiver notre terre et nourrir les Français.
 [02:13:54.980] SPEAKER_16 [chevauchement]: On voit qu'il y a aujourd'hui une ligne très claire entre ceux pour qui l'écologie est vraiment une fin en soi et l'environnement et ceux comme vous pour qui l'écologie est tout simplement un moyen et un alibi d'aller vers la société décroissante qui est réellement votre projet.
-[02:14:11.720] SPEAKER_16 [chevauchement]: C'est ça la vraie différence.
-[02:14:13.380] SPEAKER_16 [chevauchement]: C'est ça la vraie différence entre nous.
+[02:14:11.720] SPEAKER_13 [chevauchement]: C'est ça la vraie différence.
+[02:14:13.380] SPEAKER_13 [chevauchement]: C
+[02:14:13.780] SPEAKER_16 [chevauchement]: 'est ça la vraie différence
+[02:14:15.600] SPEAKER_13 [chevauchement]: entre nous.
 [02:14:16.380] SPEAKER_16 [chevauchement]: Je ne vous ai pas interrompu.
 [02:14:17.340] SPEAKER_16: Je vais au bout des questions qui ont été posées sur la simplification.
 [02:14:20.800] SPEAKER_16: J'en ai largement parlé tout à l'heure quand on parlait industrie, je le redis ici, garantie dans la Constitution, Constitution, silence de l'État et de ses administrations, vos acceptations au bout de deux mois, principe de rapidité dans la Constitution.
@@ -1089,16 +1205,19 @@
 [02:15:28.080] SPEAKER_16: Je vois un couple en CDI tous les deux.
 [02:15:31.040] SPEAKER_16: Ils payent 1100 euros par mois de loyer.
 [02:15:35.160] SPEAKER_16: On leur refuse un crédit à 900 euros de mensualité pour devenir propriétaire.
-[02:15:39.360] SPEAKER_16 [chevauchement]: Le principal symptôme du déclassement aujourd'hui pour les jeunes générations, c'est l'impossibilité de devenir propriétaire, alors que les générations précédentes avaient la possibilité de devenir propriétaire.
+[02:15:39.360] SPEAKER_16 [chevauchement]: Le principal symptôme du déclassement aujourd'hui pour les jeunes générations, c'est l'impossibilité de devenir propriétaire, alors que les générations précédentes avaient
+[02:15:47.440] SPEAKER_00 [chevauchement]: la
+[02:15:47.800] SPEAKER_16 [chevauchement]: possibilité de devenir propriétaire.
 [02:15:49.000] SPEAKER_16: Alors, il faudra un vrai statut du bailleur privé, pas un faux statut du bailleur privé comme celui qui a été malheureusement mis dans le dernier budget.
 [02:15:57.780] SPEAKER_16: Simplifier drastiquement toutes les règles pour la construction.
 [02:16:01.740] SPEAKER_16: Encourager les maires à autoriser la construction en leur donnant la main sur l'attribution des logements sociaux pour les primo -accessions.
 [02:16:08.100] SPEAKER_16 [chevauchement]: Et permettre aux Français qui sont dans le logement social depuis des années d'acheter leur logement social pour devenir propriétaire.
-[02:16:14.720] SPEAKER_16 [chevauchement]: Merci
-[02:16:14.880] SPEAKER_13 [chevauchement]: Gabriel Attal. Je voudrais juste faire un petit point sur les UE.
-[02:16:17.960] SPEAKER_13 [chevauchement]: nous on se dit que c'est pas trop l'état d'esprit du moment donc voilà, si on pouvait éviter ce serait pas mal pour continuer un débat qui se passe quand même plutôt très bien depuis le début, merci beaucoup je trouve ça très
-[02:16:28.580] SPEAKER_14 [chevauchement]: révélateur, je suis pour que les gens fassent ce qu'ils ont envie de faire et je maintiens que monsieur Attal a menti, que le fond vert vous l'avez divisé par 4 et que le litre spécial vous l'avez mis à 0€ et vous pouvez siffler,
-[02:16:38.300] SPEAKER_13 [chevauchement]: c'est exactement le même résultat c'est ce qu'ils ont fait vous avez énormément d'avance en termes de temps de parole, je le dis pour vous mais on a du retard sur l'écologie en France donc ça compense Allez -y Jean -Luc Mélenchon.
+[02:16:14.720] SPEAKER_13 [chevauchement]: Merci Gabriel Attal. Je voudrais juste faire un petit point sur les UE.
+[02:16:17.960] SPEAKER_13 [chevauchement]: nous on se dit que c'est pas trop l'état d'esprit du moment donc voilà, si on pouvait éviter ce serait pas mal pour continuer un débat qui se passe quand même plutôt très bien depuis le début, merci beaucoup je
+[02:16:28.020] SPEAKER_14 [chevauchement]: trouve ça très révélateur, je suis pour que les gens fassent ce qu'ils ont envie de faire et je maintiens que monsieur Attal a menti, que le fond vert vous l'avez divisé par 4 et que le litre spécial vous l'avez mis à 0€ et vous pouvez siffler,
+[02:16:38.300] SPEAKER_13 [chevauchement]: c'est exactement le même résultat c'est ce qu'ils ont fait vous avez énormément d'avance en termes de temps de parole, je le dis pour vous mais on a du retard
+[02:16:44.260] SPEAKER_14 [chevauchement]: sur
+[02:16:44.440] SPEAKER_13 [chevauchement]: l'écologie en France donc ça compense Allez -y Jean -Luc Mélenchon.
 [02:16:47.760] SPEAKER_09: Moi j'essaye de suivre le cours rationnel d'une discussion et franchement, il faut ramer pour arriver à...
 [02:16:56.020] SPEAKER_09: Là je viens de vous entendre comme opposant sur le logement, on croit rêver, vous êtes dans le gouvernement depuis le début de la Macronie et vous pareil, et vous venez de nous dire ce qu'il faut dire, c'est quand même incroyable.
 [02:17:06.560] SPEAKER_09: Alors j'ai compris votre dénominateur commun, vous ne voulez rien payer mais vous voyez qu'il se passe plein de choses.
@@ -1139,7 +1258,9 @@
 [02:23:31.280] SPEAKER_12: c'est pas vous?
 [02:23:32.780] SPEAKER_07 [chevauchement]: non non je suis content de savoir ce que j'écris mais c'est pas comme ça vous
 [02:23:36.380] SPEAKER_12 [chevauchement]: avez bien dit ou écrit plutôt qu'une simplification massive posait un problème parce qu'il y avait beaucoup de gens dont le travail était de gérer la complexité et qu'ils allaient se faire entendre je suis c'est un petit peu ce que vous avez dit tout à l'heure d'ailleurs D'ailleurs, il me semble que vous l'avez écrit.
-[02:23:54.980] SPEAKER_12 [chevauchement]: On en reparlera. Donc ça, c'est inadmissible.
+[02:23:54.980] SPEAKER_12 [chevauchement]: On en reparlera. Donc
+[02:23:56.400] SPEAKER_13 [chevauchement]: ça, c'est
+[02:23:56.820] SPEAKER_12 [chevauchement]: inadmissible.
 [02:23:57.900] SPEAKER_12: Alors moi, je veux bien entendre tout ce que j'ai entendu, là.
 [02:24:02.740] SPEAKER_12: Mais CSRD, ZAN, DPE, RE 2020, ça c'est vous sûr, hein?
 [02:24:09.500] SPEAKER_12: Ça c'est vous sûr, RE 2020.
@@ -1193,8 +1314,7 @@
 [02:28:53.800] SPEAKER_07: Elles sont évidemment, par leur complexité, par la rapidité de leur évolution et souvent par l'absence de leur clarté, un énorme problème. Je considère donc que pour avancer, je suis assez d'accord avec l'ordonnance de suppression. Il faudra en faire.
 [02:29:07.400] SPEAKER_07: Je suis absolument convaincu qu'il faut s'interdire de surtransposer. C'est tout à fait exact, c'est vrai en matière agricole, c'est vrai dans les autres matières.
 [02:29:14.840] SPEAKER_07 [chevauchement]: Et j'ai chargé, je le dis, Madame Morancet, qui est la présidente du conseil régional des Pays de la Loire, de faire une tournée en ce moment pour rencontrer les chefs d'entreprise, rencontrer l'ensemble des acteurs économiques, pour déterminer les textes sur lesquels nous interviendrons dès le début du café.
-[02:29:31.520] SPEAKER_07 [chevauchement]: Raphaël
-[02:29:31.760] SPEAKER_13 [chevauchement]: Glucksmann.
+[02:29:31.520] SPEAKER_13 [chevauchement]: Raphaël Glucksmann.
 [02:29:35.880] SPEAKER_06: Alors, la norme, c'est comme le cholestérol, il y a de la bonne norme, il y a de la mauvaise norme.
 [02:29:40.240] SPEAKER_06: Donc le côté Javier Milei, il faut passer à la broyeuse l'ensemble des normes, ça ne fonctionne pas parce que les normes c'est ce qui protège la santé, c'est ce qui protège l'environnement.
 [02:29:50.080] SPEAKER_06: Oui, ce qu'il faut faire, c'est se demander à chaque fois à quoi elle sert.
@@ -1248,7 +1368,9 @@
 [02:36:31.520] SPEAKER_07: Autant on peut comprendre, lorsque l'on taxe l'entreprise sur ce qu'elle a gagné après avoir fonctionné, autant elle l'a taxée alors même qu'elle n'a pas encore gagné d'argent, soit sur sa masse salariale, soit sur son chiffre d'affaires, qui ne dit pas grand -chose de son résultat, en tout cas qui ne dit pas toujours quelque chose sur son résultat, ça me paraît une bonne idée.
 [02:36:47.960] SPEAKER_07: Donc moins 50 milliards d'impôts de production, mais moins 50 milliards d'aides aux entreprises, parce qu'il sait bien faire des promesses qu'on ne sait pas financer, ça au moins c'est simple.
 [02:36:55.740] SPEAKER_07: C'est le premier point. Le deuxième point, en matière de fiscalité, je propose de ne pas toucher un cheveu au pacte d'Utreil. Pas un. Pour une raison simple, les entreprises familiales ont un rôle particulier dans le capitalisme, monsieur Mélenchon, français, et ce rôle est trop restreint.
-[02:37:12.480] SPEAKER_07 [chevauchement]: il est plus fort en Allemagne, il est plus fort en Italie du Nord il faut donc préserver la transmission du capital familial et pour cela je dis, cessons de faire peser sur les détenteurs de ce capital familial attendez je termine, j'en ai très rapide ensuite je propose la fin de la surtaxe pour les grandes entreprises parce que cet impôt provisoire doit cesser et une fois qu'on a fait ça on reste dans la politique de l'offre que j'ai indiqué j'en termine monsieur pour vous dire que l'activité logistique est souvent dénigrée elle est essentielle et que si par extraordinaire vous travaillez sur des importations n'oubliez pas de passer par le port du Havre merci beaucoup
+[02:37:12.480] SPEAKER_07 [chevauchement]: il est plus fort en Allemagne, il est plus fort en Italie du Nord il faut donc préserver la transmission du capital familial et pour cela je dis, cessons de faire peser sur les détenteurs
+[02:37:23.240] SPEAKER_08 [chevauchement]: de ce capital
+[02:37:23.620] SPEAKER_07 [chevauchement]: familial attendez je termine, j'en ai très rapide ensuite je propose la fin de la surtaxe pour les grandes entreprises parce que cet impôt provisoire doit cesser et une fois qu'on a fait ça on reste dans la politique de l'offre que j'ai indiqué j'en termine monsieur pour vous dire que l'activité logistique est souvent dénigrée elle est essentielle et que si par extraordinaire vous travaillez sur des importations n'oubliez pas de passer par le port du Havre merci beaucoup
 [02:37:47.500] SPEAKER_13 [chevauchement]: Edouard Philippe
 [02:37:51.220] SPEAKER_13 [chevauchement]: Jean -Luc Mélenchon allez -y, je vous laisse la parole vous avez été cité
 [02:37:56.440] SPEAKER_09: allons -y j'ai connu une période, ça existait où on taxait différemment la part du profit qui était réinvesti dans l'entreprise et celle qui était distribuée en dividendes et bien je propose qu'on en revienne à ça parce que le vrai conflit de notre moment c'est entre l'investissement productif et l'investissement financier c'est à dire entre le capital spéculatif et le capital productif moi je remettrai en place cette différence deuxièmement tout le monde paye il n'y a pas de raison que les très grandes entreprises aujourd'hui le taux moyen je me marre quand j'entends des déclarations sur les taux confiscatoires C'est 25% la loi. La vérité, la période dont je vous ai parlé, c'était 50% sur la partie qui partait en dividendes et 42% sur celle qui partait dans le réinvestissement.
@@ -1256,7 +1378,10 @@
 [02:39:01.220] SPEAKER_09: Même s'il y a des dispositions à prendre sur la manière de faire. Je vais terminer, ne vous inquiétez pas.
 [02:39:05.920] SPEAKER_13 [chevauchement]: Pour une fois, je n'ai rien dit, je n'ai pas bougé.
 [02:39:09.080] SPEAKER_09 [chevauchement]: Qu'est -ce que vous me dites alors? J'arrête ou je continue?
-[02:39:11.260] SPEAKER_09 [chevauchement]: Ah non, continuez, vous
+[02:39:11.260] SPEAKER_13 [chevauchement]: Ah
+[02:39:11.340] SPEAKER_09: non,
+[02:39:11.420] SPEAKER_13 [chevauchement]: continuez,
+[02:39:11.920] SPEAKER_09: vous
 [02:39:11.920] SPEAKER_13 [chevauchement]: avez encore une minute, profitez -en, allez -y.
 [02:39:13.580] SPEAKER_13 [chevauchement]: Donc
 [02:39:13.700] SPEAKER_09 [chevauchement]: j'ai dit tout le monde paye.
@@ -1269,7 +1394,9 @@
 [02:39:49.960] SPEAKER_09: Combien paye d'impôts, Monsieur Mittal? Zéro!
 [02:39:52.800] SPEAKER_09: Pourtant, il a les aides des entreprises. Total, zéro!
 [02:39:56.800] SPEAKER_09: Donc nous avons besoin que ceux qui peuvent payent et je vous garantis que s'ils payent et qu'on fait déborder le vase, je vous le rendrai. De même pour la santé, si nous avons des politiques de prévention qui font baisser les dépenses de santé, je suis d'accord pour baisser les cotisations.
-[02:40:13.600] SPEAKER_09 [chevauchement]: Voilà comment nous pouvons être liés dans un pacte social honnête. C'est que quand tout le monde s'y met, à ce moment -là, le travailleur et le salariat y trouvent son compte. Sinon, c'est un marché de dupes.
+[02:40:13.600] SPEAKER_09: Voilà comment nous pouvons être liés dans un pacte social honnête. C'est que quand tout le monde s'y met, à ce moment -là, le travailleur et le salariat y trouvent son compte.
+[02:40:23.980] SPEAKER_13 [chevauchement]: Sinon, c
+[02:40:24.560] SPEAKER_09 [chevauchement]: 'est un marché de dupes.
 [02:40:28.440] SPEAKER_02 [chevauchement]: Vous avez
 [02:40:29.300] SPEAKER_13 [chevauchement]: beaucoup de temps, Bruno Retailleau.
 [02:40:30.740] SPEAKER_02 [chevauchement]: La France est ce beau pays où l'État se sert avant que l'entreprise n'ait gagné le moindre euro.
@@ -1337,7 +1464,9 @@
 [02:49:35.640] SPEAKER_02: Donc ce que je fais, je pars de 110 milliards de cet écart, je soustrais les vrais 40 milliards d'aides, ça nous donne 70 milliards.
 [02:49:45.400] SPEAKER_02: Et moi je pense que si je veux stabiliser la dette en 5 ans, je ne peux pas restituer 70 milliards.
 [02:49:52.720] SPEAKER_02: C'est la raison pour laquelle j'arrive à 40 milliards de baisse de charges et de baisse ou de suppression d'impôts de production.
-[02:50:00.240] SPEAKER_02 [chevauchement]: C'est chiffré très exactement et ce sera pour l'ensemble du mandat avec une stabilité fiscale et réglementaire absolument parfaite.
+[02:50:00.240] SPEAKER_02 [chevauchement]: C'est chiffré très exactement et ce sera pour l'ensemble
+[02:50:04.260] SPEAKER_13 [chevauchement]: du
+[02:50:04.500] SPEAKER_02 [chevauchement]: mandat avec une stabilité fiscale et réglementaire absolument parfaite.
 [02:50:09.200] SPEAKER_13: Merci. Marine Tondelier, vous avez deux minutes chacun. Marine Tondelier et Gabriel Attal, puisque vous ne vous êtes pas exprimé sur le sujet, deux minutes chacun.
 [02:50:15.700] SPEAKER_13 [chevauchement]: Pas de problème.
 [02:50:17.000] SPEAKER_14 [chevauchement]: Le déficit tous les ans, c'est 150 milliards. Ce gouvernement, ce mandat a baissé les impôts de 62 milliards par an. C'est -à -dire que les baisses d'impôts que vous avez faites, vous, contribuent à la moitié du déficit tous les ans. Je dis ça, je dis rien.
@@ -1357,8 +1486,11 @@
 [02:52:31.440] SPEAKER_16 [chevauchement]: Le total paie
 [02:52:31.780] SPEAKER_14 [chevauchement]: 0 euros d'impôt sur les sociétés.
 [02:52:33.780] SPEAKER_14 [chevauchement]: Ils font leurs
-[02:52:34.620] SPEAKER_16 [chevauchement]: bénéfices ailleurs, madame Tondelier, dans d'autres pays où ils le paient.
-[02:52:36.360] SPEAKER_16 [chevauchement]: Ils embauchent 38 personnes.
+[02:52:34.620] SPEAKER_16 [chevauchement]: bénéfices ailleurs, madame Tondelier,
+[02:52:36.120] SPEAKER_14 [chevauchement]: dans d'autres pays
+[02:52:36.360] SPEAKER_16: où ils le paient.
+[02:52:36.360] SPEAKER_16: Ils
+[02:52:36.360] SPEAKER_14 [chevauchement]: embauchent 38 personnes.
 [02:52:37.800] SPEAKER_14 [chevauchement]: Est -ce que je peux
 [02:52:38.480] SPEAKER_16 [chevauchement]: aller jusqu'au bout? Je ne vous ai pas interrompu.
 [02:52:40.640] SPEAKER_16: Deuxième chose, moi je le dis, je suis fier qu'on ait baissé le taux d'impôt sur les sociétés de 33 à 25.
@@ -1403,7 +1535,8 @@
 [02:56:15.860] SPEAKER_14 [chevauchement]: Tondelier.
 [02:56:17.360] SPEAKER_14 [chevauchement]: Merci. C'est très 5ème République comme question.
 [02:56:20.040] SPEAKER_14 [chevauchement]: On est à l'Elysée, on décide tout seul, il n'y a pas de gouvernement, pas de parlement, pas de corps intermédiaire.
-[02:56:24.740] SPEAKER_14 [chevauchement]: Déjà nous on discutera avec vous, première chose.
+[02:56:24.740] SPEAKER_13 [chevauchement]: Déjà nous on discutera
+[02:56:25.660] SPEAKER_14 [chevauchement]: avec vous, première chose.
 [02:56:27.300] SPEAKER_14 [chevauchement]: Et on augmentera le SMIC, comme je vous l'ai dit, à 2000 euros brut.
 [02:56:31.400] SPEAKER_14: Mais en échange, on fera un grand plan d'aide pour les TPE et les PME.
 [02:56:36.020] SPEAKER_14: parce que je trouve qu'aujourd'hui ce n'est pas juste pour ces entreprises qui sont les plus nombreuses en France et souvent les moins bien loties. Alors ça veut dire par exemple compenser le coût à l'électrification des poids lourds, ça veut dire une baisse, je l'ai dit tout à l'heure, du taux réduit sur l'impôt sur les sociétés ça veut dire vous donner les moyens de renforcer la lutte contre les risques psychosociaux pour les secteurs les plus exposés ça veut dire créer un prêt long terme à taux zéro pour financer vos investissements dans la diminution des émissions de gaz à effet de serre sans alourdir vos charges d'intérêt.
@@ -1460,7 +1593,11 @@
 [03:02:36.060] SPEAKER_02: Ce qu'il faut bien comprendre, c'est que ce ne sont pas quelques réformes, quelques rustides dont la France a besoin. C'est un changement de système. Une fois à l'Elysée, je prendrai trois décisions. La première, je mettrai fin au système qui surtaxe le travail et qui encourage malheureusement la Sistana.
 [03:02:53.380] SPEAKER_02: J'ai dit comment je le ferais avec le seuil zéro cotisation. La deuxième, un double choc fiscal et réglementaire.
 [03:03:01.280] SPEAKER_02: Et la troisième décision, ce sera une décision qui est importante, je vous rendrai la liberté, la liberté de choisir. Nous sortirons, vous sortirez, si vous le souhaitez, dès 35 heures. La durée du travail, vous choisirez la durée du travail dans votre entreprise, dans vos branches, avec les salariés.
-[03:03:19.740] SPEAKER_02 [chevauchement]: vous choisirez les règles du code du travail dans le dialogue social comme l'avait proposé d'ailleurs il y a quelques années Robert Badinter 50 fondamentaux du travail et pour le reste c'est vous dans le cadre d'un dialogue social qui choisirez les règles qui s'appliquera concrètement sur le terrain à votre entreprise et c'est de cette façon là qu'on pourra révolutionner notre pays et que définitivement on sortira du social -étatisme dans lequel nous sommes enfermés depuis plusieurs décennies.
+[03:03:19.740] SPEAKER_02 [chevauchement]: vous choisirez les règles du code du travail dans le dialogue social comme l'avait proposé d'ailleurs il y a quelques années Robert Badinter 50 fondamentaux du travail et pour le reste c'est vous dans le cadre d'un dialogue social qui choisirez les règles qui s'appliquera concrètement sur le terrain à votre entreprise et c'est de cette façon là qu'on
+[03:03:43.280] SPEAKER_13 [chevauchement]: pourra
+[03:03:43.520] SPEAKER_02 [chevauchement]: révolutionner notre pays et que définitivement on sortira du social -étatisme dans lequel nous sommes enfermés
+[03:03:50.660] SPEAKER_13 [chevauchement]: depuis plusieurs
+[03:03:51.240] SPEAKER_02 [chevauchement]: décennies.
 [03:03:51.860] SPEAKER_13 [chevauchement]: C'était donc le premier débat de cette élection présidentielle avec le MEDEF sur LCI.
 [03:03:56.880] SPEAKER_13: Merci à ceux qui nous ont regardés, merci aux entrepreneurs, merci à tous.
 [03:04:00.460] SPEAKER_13: Alors, je vous donne rendez -vous pour les rendez -vous d'information de TF1, notamment le 20h de TF1, Darius Rochebain sur LCI.

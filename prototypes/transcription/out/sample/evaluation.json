@@ -3,7 +3,7 @@
   7600.0,
   300.0
  ],
- "evaluated_at": "2026-09-07T09:27:02+00:00",
+ "evaluated_at": "2026-09-07T10:10:24+00:00",
  "wer": {
   "wer": 0.011,
   "substitutions": 11,
@@ -24,6 +24,60 @@
  "overlap": {
   "ref_overlap_s": 13.9,
   "ref_overlap_share": 0.0446
+ },
+ "attribution": {
+  "segments_judged": 33,
+  "segments_total": 33,
+  "segments_wrong": 6,
+  "segments_both": 4,
+  "segment_error_rate": 0.1818,
+  "words_judged": 1113,
+  "words_wrong": 41,
+  "word_error_rate": 0.0368,
+  "wrong": [
+   {
+    "id": "1000",
+    "at": "02:08:54.440",
+    "emitted": "SPEAKER_13",
+    "correct": "SPEAKER_14",
+    "text": "C'est assez"
+   },
+   {
+    "id": "1007",
+    "at": "02:09:31.040",
+    "emitted": "SPEAKER_14",
+    "correct": "SPEAKER_13",
+    "text": "Non, aucune récrimination. L'occasion pour vous de répondre à ce que disent beau"
+   },
+   {
+    "id": "1009",
+    "at": "02:09:36.200",
+    "emitted": "SPEAKER_14",
+    "correct": "SPEAKER_13",
+    "text": "écologiques,"
+   },
+   {
+    "id": "1011",
+    "at": "02:09:37.080",
+    "emitted": "SPEAKER_14",
+    "correct": "SPEAKER_13",
+    "text": "peu..."
+   },
+   {
+    "id": "1013",
+    "at": "02:09:38.720",
+    "emitted": "SPEAKER_14",
+    "correct": "SPEAKER_13",
+    "text": "Mais vous répondez à la question que vous voulez."
+   },
+   {
+    "id": "1020",
+    "at": "02:10:41.480",
+    "emitted": "SPEAKER_14",
+    "correct": "SPEAKER_13",
+    "text": "Vous avez beaucoup d'avance, Marine Tondelier,"
+   }
+  ]
  },
  "hallucination_flags": {
   "segments_total": 2960,
