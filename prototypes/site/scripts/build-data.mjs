@@ -51,8 +51,8 @@ const PARTICIPANTS = [
   { speaker: "eric-malenfer", role: "questioner" },
   { speaker: "colombe-lecoufle", role: "questioner" },
   { speaker: "vincent-furlan", role: "questioner" },
-  { speaker: "questioner-2", role: "questioner", label: "Chef d'entreprise, question de 01:03" },
-  { speaker: "questioner-3", role: "questioner", label: "Chef d'entreprise, question de 02:33" },
+  { speaker: "questioner-2", role: "questioner", label: "Chef d'entreprise (01:03)" },
+  { speaker: "questioner-3", role: "questioner", label: "Chef d'entreprise (02:33)" },
   { speaker: "lci-voix-off", role: "narration" },
 ];
 

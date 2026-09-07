@@ -83,7 +83,7 @@ const bands = turns.map((t) => {
         <span class="mark verified">{reviewed.text} relus</span>
       </p>
 
-      <h2>À l'antenne</h2>
+      <h2>À l'antenne ({cast.length})</h2>
       <ul class="cast">
         {
           cast.map((p) => (
@@ -97,8 +97,7 @@ const bands = turns.map((t) => {
       </ul>
 
       <p class="legal">
-        L'enregistrement n'est pas hébergé ici&nbsp;: le lecteur ci-dessus est la copie
-        officielle publiée par {embedded?.uploader}.
+        Rien n'est hébergé ici&nbsp;: le lecteur est la copie officielle de {embedded?.uploader}.
         <a href={meta.timeline.url} rel="noopener" target="_blank">Voir chez {meta.timeline.uploader}</a>
       </p>
     </aside>
@@ -109,6 +108,7 @@ const bands = turns.map((t) => {
         <label><input type="checkbox" id="only-draft" /> n'afficher que les prises de parole à relire</label>
       </div>
 
+      <div class="turns">
       {
         turns.map((turn) => {
           const p = participantsById[turn.speaker];
@@ -153,15 +153,34 @@ const bands = turns.map((t) => {
           );
         })
       }
+      </div>
     </main>
   </div>
 </div>
 
+<!-- Only the transcript scrolls: the page itself is a fixed shell, so the ribbon, the
+     player and the metadata stay put while the text moves under them. -->
+<style is:global>
+  html, body { height: 100%; overflow: hidden; }
+  body { display: flex; flex-direction: column; }
+  body > header.site { flex: none; }
+  body > .offset-warning { flex: none; }
+  /* The footer's notice moves into the aside in this variant; a fixed shell has no room
+     for a page-bottom footer. */
+  body > footer.site { display: none; }
+  body > .shell.wide { flex: 1; min-height: 0; }
+</style>
+
 <style>
-  .shell { padding-block: 1.2rem 6rem; }
+  .shell {
+    padding-block: 1.2rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
 
   /* --- C's ribbon, one row, with the name riding over it ------------------- */
-  .ribbon-wrap { margin-bottom: 1.5rem; }
+  .ribbon-wrap { flex: none; margin-bottom: 1.5rem; }
   .ribbon-title { font-size: 0.8rem; color: var(--ink-soft); margin: 0 0 1.5rem; }
   .ribbon {
     position: relative;
@@ -226,22 +245,50 @@ const bands = turns.map((t) => {
     display: grid;
     grid-template-columns: minmax(19rem, 24rem) 1fr;
     gap: 2rem;
-    align-items: start;
+    align-items: stretch;
+    flex: 1;
+    min-height: 0;
   }
   @media (max-width: 62rem) { .layout { grid-template-columns: 1fr; } }
 
-  aside { position: sticky; top: 1rem; }
-  aside h1 { font-size: 1.2rem; margin: 0.9rem 0 0.3rem; }
-  .meta { color: var(--ink-soft); font-size: 0.85rem; margin-top: 0; }
-  .review { display: flex; gap: 0.4rem; }
-  aside h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin-bottom: 0.4rem; }
-  .cast { list-style: none; padding: 0; margin: 0; font-size: 0.88rem; }
-  .cast li { display: flex; align-items: center; gap: 0.5rem; padding: 0.18rem 0; }
-  .cast em { margin-left: auto; color: var(--ink-soft); font-style: normal; font-size: 0.78rem; }
+  /* The aside holds still. It fits from roughly 950 px of window height down; below that
+     it scrolls itself rather than clipping the cast list. (The red offset banner above is
+     prototype-only and costs ~70 px of that.) */
+  aside { min-height: 0; overflow-y: auto; }
+  /* A medium player, not a full-width one: it has to leave room for the cast list. */
+  aside :global(.player) { max-width: 20rem; }
+  aside h1 { font-size: 1.1rem; margin: 0.8rem 0 0.25rem; }
+  .meta { color: var(--ink-soft); font-size: 0.82rem; margin: 0 0 0.6rem; }
+  .review { display: flex; gap: 0.4rem; margin: 0; }
+  aside h2 { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin: 0.9rem 0 0.35rem; }
+  /* Two columns so the fifteen participants fit without the aside needing to scroll. */
+  .cast {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.82rem;
+    columns: 2;
+    column-gap: 0.9rem;
+  }
+  .cast li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.12rem 0;
+    break-inside: avoid;
+  }
+  .cast li > a, .cast li > span:not(.chip) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .cast em { margin-left: auto; color: var(--ink-soft); font-style: normal; font-size: 0.72rem; flex: none; }
   .chip { width: 10px; height: 10px; border-radius: 2px; flex: none; }
-  .legal { font-size: 0.76rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 0.7rem; margin-top: 1rem; }
+  .legal { font-size: 0.74rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 0.5rem; margin: 0.6rem 0 0; }
 
+  main { display: flex; flex-direction: column; min-height: 0; }
   .toolbar {
+    flex: none;
     display: flex;
     gap: 1.2rem;
     flex-wrap: wrap;
@@ -251,10 +298,15 @@ const bands = turns.map((t) => {
     border: 1px solid var(--line);
     border-radius: 6px;
     padding: 0.5rem 0.8rem;
-    position: sticky;
-    top: 1rem;
-    z-index: 5;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.9rem;
+  }
+  /* The one scrolling area on the page. */
+  .turns {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 0.6rem;
+    padding-bottom: 4rem;
   }
 
   /* --- A's turns ---------------------------------------------------------- */
@@ -263,7 +315,7 @@ const bands = turns.map((t) => {
     border-left: 3px solid transparent;
     border-radius: 4px;
     margin-bottom: 1.1rem;
-    scroll-margin-top: 4.5rem;
+    scroll-margin-top: 1rem;
   }
   .turn.playing { background: #eff6ff; border-left-color: var(--accent); }
   .turn:target { background: #fffbe6; border-left-color: var(--draft); }
