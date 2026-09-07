@@ -1,0 +1,7 @@
+{
+ "schema": "fcp/1",
+ "id": "lci-voix-off",
+ "name": "Voix off LCI",
+ "kind": "narration",
+ "party": null
+}

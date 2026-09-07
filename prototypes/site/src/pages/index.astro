@@ -1,0 +1,67 @@
+---
+// PROTOTYPE — the front page, kept deliberately thin: it exists so the three real pages
+// can be reached and judged in context.
+import Site from "../layouts/Site.astro";
+import { appearanceIds, appearance, candidates } from "../lib/data.js";
+
+const all = appearanceIds().map(appearance);
+const people = candidates().sort((a, b) => a.name.localeCompare(b.name, "fr"));
+---
+
+<Site title="Ce qu'ils ont dit">
+  <div class="shell">
+    <h1>Ce qu'ils ont dit, quand, et dans quel contexte</h1>
+    <p class="chapo">
+      Les transcriptions horodatées, mot pour mot, des débats et entretiens publics des
+      candidat·es à l'élection présidentielle de 2027. Rien n'est résumé, rien n'est
+      interprété&nbsp;: chaque phrase renvoie à la seconde près au replay officiel de la
+      chaîne qui l'a diffusée.
+    </p>
+
+    <h2>Interventions</h2>
+    <ul class="apps">
+      {
+        all.map((a) => (
+          <li>
+            <a class="title" href={`/appearances/${a.meta.id}`}>{a.meta.title}</a>
+            <p class="sub">
+              {new Date(a.meta.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+              · {a.source?.name} · {Math.round(a.meta.timeline.duration_s / 60)} min
+              · {a.segments.length} extraits
+              · <span class="mark draft">{a.reviewed.total - a.reviewed.text} à relire</span>
+            </p>
+            <p class="who">
+              {a.participants.filter((p) => p.candidate).map((p) => p.name).join(" · ")}
+            </p>
+            <p class="try">
+              Voir en <a href={`/appearances/${a.meta.id}?variant=A`}>A · Lecture</a>,
+              <a href={`/appearances/${a.meta.id}?variant=B`}>B · Studio</a> ou
+              <a href={`/appearances/${a.meta.id}?variant=C`}>C · Repérage</a>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2>Candidat·es</h2>
+    <ul class="people">
+      {people.map((p) => <li><a href={`/candidats/${p.id}`}>{p.name}</a> <em>{p.party}</em></li>)}
+    </ul>
+  </div>
+</Site>
+
+<style>
+  .shell { padding-block: 2.5rem 5rem; max-width: 48rem; }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; }
+  .chapo { font-size: 1.05rem; color: #3a4149; }
+  h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin-top: 2.5rem; }
+  .apps { list-style: none; padding: 0; }
+  .apps li { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .title { font-size: 1.05rem; font-weight: 600; text-decoration: none; }
+  .sub { margin: 0.3rem 0; font-size: 0.82rem; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .who { margin: 0; font-size: 0.88rem; }
+  .try { margin: 0.6rem 0 0; font-size: 0.78rem; color: var(--ink-soft); display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .people { list-style: none; padding: 0; columns: 2; font-size: 0.95rem; }
+  .people li { padding: 0.15rem 0; break-inside: avoid; }
+  .people em { color: var(--ink-soft); font-style: normal; font-size: 0.8rem; }
+</style>

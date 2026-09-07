@@ -1,0 +1,19 @@
+{
+ "schema": "fcp/1",
+ "id": "medef",
+ "name": "MEDEF",
+ "group": null,
+ "kind": "organiser",
+ "default_acquisition_basis": "tolerated",
+ "tdm_opposition": {
+  "status": "none published",
+  "where": "no CGU clause and no tdmrep found",
+  "checked_on": "2026-09-05"
+ },
+ "embed_policy": {
+  "own_player": null,
+  "platform_copies": "YouTube, embeddable per video"
+ },
+ "replay_durability": "YouTube open-ended",
+ "notice": null
+}
