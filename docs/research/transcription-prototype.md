@@ -9,8 +9,8 @@ Status on 2026-09-07: speech recognition and diarization both ran on the whole d
 five-minute sample's **text was hand-corrected** (WER measured) and its **speaker attribution
 hand-judged per Segment** (attribution error measured). DER in the strict sense stays unmeasured:
 fixing an RTTM with sub-second fragments in cross-talk proved unreasonable to ask, and the
-per-Segment check measures what the site needs anyway. The speaker-to-person mapping is proposed
-from the text and awaits confirmation (see "What is left").
+per-Segment check measures what the site needs anyway. The speaker-to-person mapping was read
+from the text and confirmed for the candidates, presenter and organiser.
 
 ## Setup
 
@@ -196,7 +196,7 @@ Seven near-equal candidate shares is what a moderated debate should produce, and
 splits or merges a person as far as reading shows: 14 real speakers, 3 noise clusters. The
 mapping was read off the text in a few minutes (self-references, party lines, being addressed by
 name) and is recorded in `speakers-map.json`, which the merge folds into the output's `speakers`
-block; it is marked unconfirmed until a human checks each cue. The speaking order of the opening
+block; Patrick confirmed the seven candidates, the presenter and the organiser on 2026-09-07. The speaking order of the opening
 statements (02, 06, 07, 12, 09, 16, 14) is the drawn order, useful as a cross-check.
 
 ### Attribution in cross-talk: the real diarization defect
@@ -302,9 +302,7 @@ checked against the audio: the hand-corrected RTTM settles it.)
 
 ## What is left
 
-1. Confirm the speaker mapping in `speakers-map.json` (seven candidates, one cue each; two
-   business owners are unnamed) and flip `confirmed`.
-2. Hand the shape to #14 and the runtime to #15. The 5-minute corrected sample (text and
+1. Hand the shape to #14 and the runtime to #15. The 5-minute corrected sample (text and
    per-Segment speaker judgements) is the first verified span of the corpus and the baseline for
    the running WER the site is meant to publish; a second judged window, ideally a calmer one,
    would firm up the attribution figure.

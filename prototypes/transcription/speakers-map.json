@@ -1,20 +1,105 @@
 {
- "_comment": "D1 speaker clusters (pyannote 3.1, no hint) to people. Proposed by reading each cluster's text on 2026-09-07; 'confirmed' flips to true once Patrick has checked the cue.",
- "SPEAKER_02": {"participant": "Bruno Retailleau", "role": "candidate", "cue": "quand je suis né, quatre cotisants pour un retraité … j'assumerai un âge légal … François Fillon (01:00:00)", "confirmed": false},
- "SPEAKER_06": {"participant": "Raphaël Glucksmann", "role": "candidate", "cue": "au Parlement européen, je me suis battu … Gigafactory de Fos-sur-Mer … colonie numérique (00:08:07)", "confirmed": false},
- "SPEAKER_07": {"participant": "Édouard Philippe", "role": "candidate", "cue": "je suis content de savoir ce que j'écris, retort to Le Pen about his book (02:23:33)", "confirmed": false},
- "SPEAKER_12": {"participant": "Marine Le Pen", "role": "candidate", "cue": "feminine forms, baisser la TVA de 20 à 5,5 sur l'énergie (02:05:08), opposée à la TVA sociale", "confirmed": false},
- "SPEAKER_09": {"participant": "Jean-Luc Mélenchon", "role": "candidate", "cue": "l'économie monde va prendre de rudes chocs … la planification écologique (00:15:16)", "confirmed": false},
- "SPEAKER_16": {"participant": "Gabriel Attal", "role": "candidate", "cue": "quand j'étais Premier ministre, j'ai pris une mesure … (Philippe being SPEAKER_07)", "confirmed": false},
- "SPEAKER_14": {"participant": "Marine Tondelier", "role": "candidate", "cue": "je suis conseillère régionale des Hauts-de-France; addressed as Tondelier at 02:08:37", "confirmed": false},
- "SPEAKER_13": {"participant": "Amélie Carrouër", "role": "presenter", "cue": "moderates throughout, 14.6 min", "confirmed": false},
- "SPEAKER_01": {"participant": "Patrick Martin", "role": "organiser", "cue": "MEDEF president, opening address at 00:01:11", "confirmed": false},
- "SPEAKER_03": {"participant": "Éric Malenfer", "role": "questioner", "cue": "thanked by name at 00:25:41 after the pensions question", "confirmed": false},
- "SPEAKER_10": {"participant": null, "role": "questioner", "cue": "question at 01:03:18", "confirmed": false},
- "SPEAKER_05": {"participant": "Vincent Furlan", "role": "questioner", "cue": "introduces himself, membre du COMEX 40, at 01:38:59", "confirmed": false},
- "SPEAKER_00": {"participant": "Colombe Lecoufle", "role": "questioner", "cue": "orchid grower, payslips question at 02:07:07", "confirmed": false},
- "SPEAKER_11": {"participant": null, "role": "questioner", "cue": "question at 02:33:43", "confirmed": false},
- "SPEAKER_04": {"participant": null, "role": "voice-over", "cue": "LCI opening narration, 00:00:00", "confirmed": false},
- "SPEAKER_15": {"participant": null, "role": "noise", "cue": "jingle, hallucinated caption credit at 00:00:08", "confirmed": false},
- "SPEAKER_08": {"participant": null, "role": "noise", "cue": "jingle fragments at 00:00:03", "confirmed": false}
+ "_comment": "D1 speaker clusters (pyannote 3.1, no hint) to people. Read from each cluster's text on 2026-09-07; the seven candidates, the presenter and the organiser were confirmed by Patrick on 2026-09-07. Questioners and noise clusters are unconfirmed.",
+ "SPEAKER_02": {
+  "participant": "Bruno Retailleau",
+  "role": "candidate",
+  "cue": "quand je suis né, quatre cotisants pour un retraité … j'assumerai un âge légal … François Fillon (01:00:00)",
+  "confirmed": true
+ },
+ "SPEAKER_06": {
+  "participant": "Raphaël Glucksmann",
+  "role": "candidate",
+  "cue": "au Parlement européen, je me suis battu … Gigafactory de Fos-sur-Mer … colonie numérique (00:08:07)",
+  "confirmed": true
+ },
+ "SPEAKER_07": {
+  "participant": "Édouard Philippe",
+  "role": "candidate",
+  "cue": "je suis content de savoir ce que j'écris, retort to Le Pen about his book (02:23:33)",
+  "confirmed": true
+ },
+ "SPEAKER_12": {
+  "participant": "Marine Le Pen",
+  "role": "candidate",
+  "cue": "feminine forms, baisser la TVA de 20 à 5,5 sur l'énergie (02:05:08), opposée à la TVA sociale",
+  "confirmed": true
+ },
+ "SPEAKER_09": {
+  "participant": "Jean-Luc Mélenchon",
+  "role": "candidate",
+  "cue": "l'économie monde va prendre de rudes chocs … la planification écologique (00:15:16)",
+  "confirmed": true
+ },
+ "SPEAKER_16": {
+  "participant": "Gabriel Attal",
+  "role": "candidate",
+  "cue": "quand j'étais Premier ministre, j'ai pris une mesure … (Philippe being SPEAKER_07)",
+  "confirmed": true
+ },
+ "SPEAKER_14": {
+  "participant": "Marine Tondelier",
+  "role": "candidate",
+  "cue": "je suis conseillère régionale des Hauts-de-France; addressed as Tondelier at 02:08:37",
+  "confirmed": true
+ },
+ "SPEAKER_13": {
+  "participant": "Amélie Carrouër",
+  "role": "presenter",
+  "cue": "moderates throughout, 14.6 min",
+  "confirmed": true
+ },
+ "SPEAKER_01": {
+  "participant": "Patrick Martin",
+  "role": "organiser",
+  "cue": "MEDEF president, opening address at 00:01:11",
+  "confirmed": true
+ },
+ "SPEAKER_03": {
+  "participant": "Éric Malenfer",
+  "role": "questioner",
+  "cue": "thanked by name at 00:25:41 after the pensions question",
+  "confirmed": false
+ },
+ "SPEAKER_10": {
+  "participant": null,
+  "role": "questioner",
+  "cue": "question at 01:03:18",
+  "confirmed": false
+ },
+ "SPEAKER_05": {
+  "participant": "Vincent Furlan",
+  "role": "questioner",
+  "cue": "introduces himself, membre du COMEX 40, at 01:38:59",
+  "confirmed": false
+ },
+ "SPEAKER_00": {
+  "participant": "Colombe Lecoufle",
+  "role": "questioner",
+  "cue": "orchid grower, payslips question at 02:07:07",
+  "confirmed": false
+ },
+ "SPEAKER_11": {
+  "participant": null,
+  "role": "questioner",
+  "cue": "question at 02:33:43",
+  "confirmed": false
+ },
+ "SPEAKER_04": {
+  "participant": null,
+  "role": "voice-over",
+  "cue": "LCI opening narration, 00:00:00",
+  "confirmed": false
+ },
+ "SPEAKER_15": {
+  "participant": null,
+  "role": "noise",
+  "cue": "jingle, hallucinated caption credit at 00:00:08",
+  "confirmed": false
+ },
+ "SPEAKER_08": {
+  "participant": null,
+  "role": "noise",
+  "cue": "jingle fragments at 00:00:03",
+  "confirmed": false
+ }
 }
