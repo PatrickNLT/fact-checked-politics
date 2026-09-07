@@ -13,7 +13,7 @@ uv run pipeline.py all
 
 Or step by step: `prepare`, `asr`, `diarize` (needs `hf auth login` and the accepted terms of
 `pyannote/speaker-diarization-3.1` + `pyannote/segmentation-3.0`), `merge`, `sample`, then
-hand-correct `out/sample/reference-text.txt` and `out/sample/reference-speakers.rttm` and run
+hand-correct `out/sample/reference-text.txt` and fill `out/sample/attribution-check.txt` (the RTTM is optional) and run
 `uv run pipeline.py evaluate --ref-corrected`.
 
 Outputs in `out/`: `transcript.json` (first-cut structured output), `transcript.txt`

@@ -374,11 +374,34 @@ def cmd_sample(a):
                        f"{min(t['end'], end) - max(t['start'], start):.3f} <NA> <NA> {t['speaker']} <NA> <NA>\n"
                        for t in turns)
         (sd / "diarization-hypothesis.rttm").write_text(rttm)
+        # Readable companion to the RTTM: each turn with the words the ASR put in it, so a human
+        # can check attribution by reading and spot-listening, then fix the RTTM line.
+        words = [w for s in asr["segments"] for w in s["words"] if w["e"] > start and w["s"] < end]
+        lines = []
+        for i, t in enumerate(turns, 1):
+            inside = " ".join(w["w"] for w in words if min(w["e"], t["end"]) - max(w["s"], t["start"]) > 0)
+            lines.append(f"{i:3d}. clip {t['start'] - start:6.1f}s  (abs {fmt_ts(t['start'])})  {t['end'] - t['start']:5.1f}s  "
+                         f"{t['speaker']}: {inside}")
+        (sd / "speakers-readable.txt").write_text("\n".join(lines))
         rref = sd / "reference-speakers.rttm"
         if not rref.exists():
             rref.write_text("# Corrige à l'oreille : un tour par ligne, temps relatifs au début du clip.\n"
                             "# Remplace SPEAKER_xx par le nom du locuteur. Les tours qui se chevauchent\n"
                             "# sont attendus (deux lignes qui se recouvrent).\n" + rttm)
+    # Segment-level attribution check, the practical alternative to correcting an RTTM: one
+    # emitted Segment per line; the corrector replaces the leading "?" with "ok" or the right
+    # speaker label (or "both" for real overlap). Scored by `evaluate`.
+    if (a.out / "transcript.json").exists():
+        tr = load(a.out / "transcript.json")
+        rows = [s for s in tr["segments"] if s["end"] > start and s["start"] < end]
+        check = sd / "attribution-check.txt"
+        if not check.exists():
+            check.write_text(
+                "# Pour chaque Segment : remplace le « ? » en tête de ligne par « ok » si le locuteur est\n"
+                "# le bon, par le bon label (ex. SPEAKER_13) s'il est faux, par « both » si les deux parlent\n"
+                "# vraiment en même temps. Ne touche pas au reste de la ligne.\n"
+                + "\n".join(f"?\t{s['id']}\t{fmt_ts(s['start'])}\t{s['speaker']}\t{len(s['words'])}w\t{s['text']}"
+                            for s in rows))
     dump({"window": [start, length], "clip": str(clip), "asr_segments": len(segs)}, sd / "sample.json")
     print(f"sample: window {fmt_ts(start)} +{length}s, {len(segs)} ASR segments; correct {ref}")
 
@@ -442,6 +465,25 @@ def cmd_evaluate(a):
         ov = r.get_overlap()
         report["overlap"] = {"ref_overlap_s": round(ov.duration(), 1),
                              "ref_overlap_share": round(ov.duration() / total, 4)}
+
+    # --- segment-level attribution check, if the corrector filled it in
+    check = sd / "attribution-check.txt"
+    if check.exists():
+        rows = [l.split("\t") for l in _read_ref_lines(check)]
+        judged = [r for r in rows if r[0].strip() != "?"]
+        if judged:
+            wrong = [r for r in judged if r[0].strip() not in ("ok", "both") and r[0].strip() != r[3]]
+            both = [r for r in judged if r[0].strip() == "both"]
+            nw = lambda rs: sum(int(r[4].rstrip("w")) for r in rs)
+            report["attribution"] = {
+                "segments_judged": len(judged), "segments_total": len(rows),
+                "segments_wrong": len(wrong), "segments_both": len(both),
+                "segment_error_rate": round(len(wrong) / len(judged), 4),
+                "words_judged": nw(judged), "words_wrong": nw(wrong),
+                "word_error_rate": round(nw(wrong) / max(1, nw(judged)), 4),
+                "wrong": [{"id": r[1], "at": r[2], "emitted": r[3], "correct": r[0].strip(), "text": r[5][:80]}
+                          for r in wrong],
+            }
 
     # --- hallucination flags over the whole ASR output (heuristics, not ground truth)
     asr = load(a.out / "asr.json")

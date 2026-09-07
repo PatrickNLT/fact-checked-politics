@@ -5,9 +5,10 @@ produced on Patrick's Apple Silicon Mac, and is the quality good enough to seed 
 correction? Prototype code: `prototypes/transcription/` (throwaway; the validated decisions are
 below and feed tickets #14 and #15).
 
-Status on 2026-09-07: speech recognition and diarization both ran on the whole debate. The
-**hand-corrected reference is not written yet**, so the error rates below are proxies, marked as
-such; the measurement is one command away once the sample is corrected (see "What is left").
+Status on 2026-09-07: speech recognition and diarization both ran on the whole debate, and the
+five-minute sample's **text was hand-corrected** (WER measured). The speaker reference was not
+corrected: fixing an RTTM with sub-second fragments in cross-talk proved unreasonable to ask, so
+DER stays unmeasured and a segment-level attribution check is offered instead (see "What is left").
 
 ## Setup
 
@@ -106,23 +107,35 @@ What the real run taught about the shape:
 
 ## Quality
 
-### Word error rate: proxy only, hand correction pending
+### Word error rate: 1.1 percent measured, 0.5 percent net of spelling conventions
 
 The five-minute evaluation window is **02:06:40 to 02:11:40** (window `7600 300`): the presenter's
 question on simplification, a business owner's question on payslips, and the exchange between the
 presenter and Marine Tondelier on environmental norms, with overlapping speech. Four speakers,
-1 095 words. The ASR text of that window is in `out/sample/asr-hypothesis.txt`; the file to
-hand-correct is `out/sample/reference-text.txt` (a copy, to be edited to the ear against the clip
-at `~/fact-checked-politics-media/work/sample-7600-300.wav`); `uv run pipeline.py evaluate
---ref-corrected` then prints WER.
+1 094 reference words. Patrick corrected `out/sample/reference-text.txt` against the clip on
+2026-09-07; `uv run pipeline.py evaluate --ref-corrected` gives:
 
-Until then, the only number is a **cross-model disagreement**: Whisper large-v3 against
-large-v3-turbo on the same window gives 6.6 percent (11 substitutions, 43 deletions, 18 insertions
-over 1 095 words). Both models share Whisper's training and blind spots, so this is a lower bound on
-the true error, not a WER. Reading the text (see the excerpt below) suggests the true WER of the
-window is in the published 4 to 6 percent band on the calm passages and higher in the overlap,
-consistent with the 8 to 15 percent estimate in `evidence-base.md` section H, but that is a reading,
-not a measurement.
+| | Count |
+|---|---|
+| Reference words | 1 094 |
+| Substitutions | 11 |
+| Deletions | 0 |
+| Insertions | 1 |
+| **WER** | **1.1 percent** |
+
+Of the 12 errors, 7 are spelling conventions the scorer cannot tell from mistakes ("paye" for
+"paie" six times, "Châtrier" for "Chatrier"). The genuine recognition errors are five: "simplifier"
+for "simplifiez", "Lecouf" for "Lecoufle", "Marie-Tourdelier" for "Marine Tondelier", "CPN" for
+"CPAM", and an extra "le". Net of spelling conventions the window's WER is **0.5 percent**, and every
+real error is a proper noun, an acronym or a verb ending: the shape the correction interface should
+optimise for. This is far below the 4 to 6 percent published for French read speech and the 8 to 15
+percent estimated for debates in `evidence-base.md` section H; the window has one cross-talk
+passage and three articulate speakers, so it is a favourable but not exceptional sample, and a
+debate-wide figure needs more windows.
+
+For comparison, the **cross-model disagreement** on the same window (Whisper large-v3 against
+large-v3-turbo) was 6.6 percent, six times the measured WER: the turbo model drops words that
+large-v3 gets right, so disagreement is not a usable proxy for large-v3's error.
 
 Systematic errors seen while reading the whole transcript:
 
@@ -177,21 +190,34 @@ splits or merges a person as far as reading shows: 14 real speakers, 3 noise clu
 
 ### Attribution in cross-talk: the real diarization defect
 
-Diarization is right about who speaks when; the errors are at the **turn boundaries**, where
-Whisper's word timestamps drift by a word or two and the word lands in the neighbour's turn.
-In calm passages this is invisible. In the sample window's cross-talk it is not: the exchange
-below is emitted as alternating one-line Segments, most flagged `[chevauchement]`, and about one
-boundary in three carries the wrong first or last words ("dit que c'était de sa faute" is
-attributed to the presenter, who did say it, but the preceding "Non, je n'ai pas" went to
-Tondelier). This is the misattribution in heated exchanges that the evidence file predicted, and
-it is where the `speaker` Validation status earns its place: the overlap flags point a corrector
-at exactly these Segments (888 words in the whole debate). No hint (`--speakers 14`) was tried;
-it would not change boundary slop.
+Diarization is right about who speaks when, as far as reading the turns shows (the readable
+rendering `out/sample/speakers-readable.txt` lists every turn with the words in it). The errors
+arise in the **merge of words onto turns**, in two ways:
 
-The DER measurement waits on the hand-corrected `out/sample/reference-speakers.rttm` (the
-hypothesis is pre-filled, one turn per line, times relative to the clip). The hypothesis marks
-4.5 percent of the window's speech time as overlapped, in line with the 6 to 10 percent published
-for French TV debates.
+- **Boundary slop**: Whisper's word timestamps drift by a word or two, and the word lands in the
+  neighbour's turn ("Non, je n'ai pas" goes to Tondelier, "dit que c'était de sa faute" to the
+  presenter, who said all of it).
+- **Nested turns**: when a short interjection sits inside a longer turn, both turns cover the
+  words and the merge has to choose. pyannote had "Non, aucune récrimination. L'occasion pour
+  vous de répondre…" as a 4-second presenter turn inside a 17-second Tondelier turn; the merge
+  gave the words to Tondelier. A "prefer the shorter covering turn" rule would fix this case and
+  should be tested against the attribution check before being adopted.
+
+In calm passages neither matters. In the sample window's cross-talk the exchange comes out as
+alternating short Segments, most flagged `[chevauchement]`, with about one boundary in three
+carrying the wrong first or last words. This is the misattribution in heated exchanges that the
+evidence file predicted, and it is where the `speaker` Validation status earns its place: the
+overlap flags point a corrector at exactly these Segments (888 words in the whole debate). No
+speaker-count hint (`--speakers 14`) was tried; it would not change either mechanism.
+
+**DER is not measured.** Correcting the RTTM (39 turns in the window, many under a second in the
+cross-talk) was judged unreasonable by the corrector, rightly: it is a research-benchmark format,
+not a correction workflow. What the site needs is the per-Segment answer "is this speaker
+right?", so the `sample` step now writes `out/sample/attribution-check.txt`, one emitted Segment
+per line (33 in the window), where the corrector marks each as right, wrong (with the right
+label) or genuinely both; `evaluate` turns it into a Segment- and word-level attribution error
+rate. The diarization hypothesis marks 4.5 percent of the window's speech time as overlapped, in
+line with the 6 to 10 percent published for French TV debates.
 
 ### Excerpt of the sample window, as emitted
 
@@ -234,9 +260,10 @@ checked against the audio: the hand-corrected RTTM settles it.)
 
 ## Verdict
 
-- **Good enough to seed correction: yes.** Calm passages read as a clean draft with the right
-  speaker; a corrector's work is names, numbers, punctuation and the cross-talk, and the word
-  probabilities and overlap flags point at most of it.
+- **Good enough to seed correction: yes.** Measured WER of 1.1 percent on the sample (0.5 percent
+  net of spelling conventions), every real error a name, an acronym or a verb ending; calm
+  passages carry the right speaker. A corrector's work is names, numbers, punctuation and the
+  cross-talk, and the word probabilities and overlap flags point at most of it.
 - **Not good enough to publish uncorrected**, as expected from ADR 0002 and the evidence file, for
   two reasons: silent 30-second drops in ASR (repaired by the gap step, which is mandatory) and
   boundary misattribution in cross-talk (2.5 percent of words flagged, to be human-verified).
@@ -247,10 +274,12 @@ checked against the audio: the hand-corrected RTTM settles it.)
   30-second drops, both of which a gap step and diarization-driven segmentation address more
   cheaply. Worth revisiting once the hand-corrected WER exists.
 
-## What is left (human steps, then one command)
+## What is left
 
-1. Hand-correct `out/sample/reference-text.txt` and `out/sample/reference-speakers.rttm` against
-   the clip, then `uv run pipeline.py evaluate --ref-corrected` and replace the proxies above with
-   WER, DER and overlap share.
+1. Attribution check: in `out/sample/attribution-check.txt`, replace the leading `?` of each of
+   the 33 lines with `ok`, the right speaker label, or `both`; then `uv run pipeline.py evaluate
+   --ref-corrected` reports the Segment- and word-level attribution error rate, the number that
+   replaces DER above.
 2. Fill the `speakers` mapping for D1 (the table above) and hand the shape to #14, the runtime to
-   #15.
+   #15. The 5-minute corrected sample is the first verified span of the corpus and the baseline for
+   the running WER the site is meant to publish.

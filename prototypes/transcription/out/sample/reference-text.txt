@@ -1,7 +1,7 @@
 # Corrige ce texte à l'oreille (clip : /Users/pnollet/fact-checked-politics-media/work/sample-7600-300.wav). Garde une ligne par segment,
 # supprime les timestamps si tu veux, ils sont ignorés. Marque les mots
 # inaudibles [inaudible]. Les lignes commençant par # sont ignorées.
-[02:06:39.480] et qui ont écrit un livre pour dire simplifier
+[02:06:39.480] et qui ont écrit un livre pour dire simplifiez
 [02:06:41.460] et qui demandent à ce que ce soit une priorité.
 [02:06:44.080] 59%, je vais citer encore une fois la consultation
 [02:06:46.560] qui a été faite par
@@ -11,10 +11,10 @@
 [02:06:53.920] vous lever, vous pouvez effectivement
 [02:06:55.320] vous lever, merci d'être avec nous.
 [02:06:57.380] Vous êtes patronne d'une entreprise qui produit des orchidées
-[02:07:00.060] avec une problématique qui, je crois, est partagée par de nombreux entrepreneurs sur ce cours Philippe Châtrier. Allez-y.
+[02:07:00.060] avec une problématique qui, je crois, est partagée par de nombreux entrepreneurs sur ce cours Philippe Chatrier. Allez-y.
 [02:07:06.940] Merci beaucoup et bonjour à tous. Effectivement, moi j'ai repris une entreprise familiale dont je suis la cinquième génération
-[02:07:14.440] et j'ai des sujets de poids administratif et en l'occurrence, aujourd'hui, je viens vous parler d'un sujet très concret, c'est les bulletins de paye.
-[02:07:24.740] puisque le bulletin de paye aujourd'hui
+[02:07:14.440] et j'ai des sujets de poids administratif et en l'occurrence, aujourd'hui, je viens vous parler d'un sujet très concret, c'est les bulletins de paie.
+[02:07:24.740] puisque le bulletin de paie aujourd'hui
 [02:07:26.860] je ne sais pas qui d'entre vous
 [02:07:29.140] ou d'entre nous dirigeants
 [02:07:32.500] puissions les expliquer
@@ -38,13 +38,13 @@
 [02:08:16.400] dans vos mandats, si l'un ou l'autre d'entre vous est élu
 [02:08:20.760] pour nous permettre de simplifier
 [02:08:23.280] la lisibilité
-[02:08:25.300] des bulletins de paye
+[02:08:25.300] des bulletins de paie
 [02:08:26.600] et aussi nous permettre
 [02:08:28.880] de passer moins de temps à respecter
 [02:08:31.680] les normes continuelles
 [02:08:33.500] pour nous permettre de faire notre travail
-[02:08:35.600] Merci beaucoup Colombe Lecouf
-[02:08:37.400] alors je vous ai entendu, Marie-Tourdelier
+[02:08:35.600] Merci beaucoup Colombe Lecoufle
+[02:08:37.400] alors je vous ai entendu, Marine Tondelier
 [02:08:39.420] vous disiez je termine toujours, je suis toujours à la fin
 [02:08:41.160] vous allez commencer, parce que
 [02:08:43.020] quand même, on le sait, vous le savez
@@ -55,14 +55,14 @@
 [02:08:53.580] alors qu'est-ce que vous...
 [02:08:54.440] C'est assez impressionnant ce que vous venez de faire
 [02:08:58.280] parce que madame nous dit
-[02:08:59.220] moi je suis embêtée par les bulletins de paye
+[02:08:59.220] moi je suis embêtée par les bulletins de paie
 [02:09:00.880] et par toutes les règles qu'on me met en général
 [02:09:02.800] elle n'a absolument pas parlé
 [02:09:05.500] de normes environnementales
 [02:09:06.840] et vous, vous me regardez moi en disant que c'est de ma faute
 [02:09:09.060] alors qu'elle n'a parlé d'autres normes environnementales
 [02:09:10.860] Non, je n'ai pas dit que c'était de sa faute
-[02:09:11.860] que c'était votre faute pour les fiches de paye
+[02:09:11.860] que c'était votre faute pour les fiches de paie
 [02:09:13.840] Mais la question ne portait absolument pas sur les normes environnementales
 [02:09:16.100] Vous savez très bien que je parlais des normes en général
 [02:09:17.620] et que c'est vrai que beaucoup d'entrepreneurs nous ont dit
@@ -92,7 +92,7 @@
 [02:10:06.180] on est tous concernés par des choses
 [02:10:07.680] des fois où on ne comprend pas ce qu'on est en train de faire.
 [02:10:09.380] Donc moi je le dis, oui, l'Etat doit simplifier
-[02:10:11.360] que ce soit la CAF, la CPN,
+[02:10:11.360] que ce soit la CAF, la CPAM,
 [02:10:14.160] le site des impôts, on est tous confrontés
 [02:10:15.820] avec des trucs qui ne marchent pas. Et donc moi je vais
 [02:10:17.660] mettre une règle simple qui sera pour les entreprises
@@ -106,7 +106,7 @@
 [02:10:45.000] Ensuite, sur l'histoire des normes environnementales,
 [02:10:48.400] enfin on va être clair, en fait notre état il est en situation de surendettement, notre nation en surendettement écologique, c'est-à-dire qu'on vit à crédit sur la planète,
 [02:10:59.540] sur toutes les limites planétaires et que ça surendette aussi les ménages et l'état et les collectivités et les entreprises, parce que l'absence d'écologie,
-[02:11:07.480] le fait d'avoir supprimé le leasing social, le fait d'avoir supprimé aussi le ma prime rénov' d'avoir déshabillé un peu ce processus,
+[02:11:07.480] le fait d'avoir supprimé le leasing social, le fait d'avoir supprimé aussi ma prime rénov' d'avoir déshabillé un peu ce processus,
 [02:11:14.640] ça fait qu'à la fin, on est tous dépendants du prix de l'énergie, du prix de l'électricité, du gaz, du pétrole, et que ça nous surendette.
 [02:11:21.860] Donc ce n'est pas un gouvernement qu'on a, c'est Cofidis. Cofidis, sauf que Cofidis au moins est obligé d'afficher le taux, et nous on paye les intérêts,
 [02:11:28.920] et on ne sait pas pour combien de temps, et on sait qu'on les paye tous alors qu'on n'est pas responsable.

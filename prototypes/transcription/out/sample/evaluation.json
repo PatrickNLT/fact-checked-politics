@@ -3,15 +3,15 @@
   7600.0,
   300.0
  ],
- "evaluated_at": "2026-09-07T06:15:10+00:00",
+ "evaluated_at": "2026-09-07T09:27:02+00:00",
  "wer": {
-  "wer": 0.0,
-  "substitutions": 0,
+  "wer": 0.011,
+  "substitutions": 11,
   "deletions": 0,
-  "insertions": 0,
-  "ref_words": 1095,
+  "insertions": 1,
+  "ref_words": 1094,
   "hyp_words": 1095,
-  "reference_is_hand_corrected": false
+  "reference_is_hand_corrected": true
  },
  "der": {
   "der": 0.0,
@@ -19,7 +19,7 @@
   "missed": 0.0,
   "confusion": 0.0,
   "ref_speech_s": 310.8,
-  "reference_is_hand_corrected": false
+  "reference_is_hand_corrected": true
  },
  "overlap": {
   "ref_overlap_s": 13.9,
