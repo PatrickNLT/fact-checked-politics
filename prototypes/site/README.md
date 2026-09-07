@@ -4,9 +4,10 @@
 handling, no accessibility pass. It exists to answer one question: *what does v1 look and
 feel like on a real transcript?*
 
-Three structurally different variants of the Appearance page, plus one Candidate profile
-and one search page, all reading the real MEDEF debate of 27 August 2026 — 1 595 Segments,
-3 h 04, produced by the transcription prototype of ticket #13.
+**Variant D is the answer the ticket settled on**; A, B and C are the three originals it
+was assembled from, kept for comparison. All of them read the real MEDEF debate of
+27 August 2026 — 1 595 Segments, 3 h 04, produced by the transcription prototype of
+ticket #13.
 
 ## Run it
 
@@ -16,14 +17,29 @@ npm install
 npm run dev          # http://127.0.0.1:4321
 ```
 
-The variant switcher is the black bar at the bottom: `←` / `→`, or the arrow keys, or
-`?variant=A|B|C` in the URL. It only works on the dev server (the pages are rendered on
-demand for exactly that reason).
+It opens on variant D. The switcher is the black bar at the bottom: `←` / `→`, or the
+arrow keys, or `?variant=D|A|B|C` in the URL. It only works on the dev server (the pages
+are rendered on demand for exactly that reason).
 
 The embedded player needs YouTube to be reachable; without it the transcript still works
 and clicking a timestamp opens the replay in a new tab instead.
 
-## The three variants
+## The variants
+
+**D — Studio + repérage** is the one that won, built from Patrick's reaction to the other
+three: B's layout, A's turn grouping, C's ribbon. On top of those:
+
+- The page is a **fixed shell** — only the transcript column scrolls. The site footer is
+  hidden here and its notice moved into the aside, because a fixed shell has no room for
+  one.
+- The ribbon names the Speaker in a **popover on hover**. Names inside the bands were
+  tried first and do not fit (only 1 of 412 bands is wide enough at 1 440 px; the median
+  turn is 2.1 s), and so was one lane per Speaker with names in a gutter — it cost 210 px
+  of height and lost the single left-to-right read.
+- **No speaking time anywhere**, per ADR 0004 as amended. The cast list is split into
+  Candidat·es and autres, sorted by surname with particles kept on the surname.
+
+The three it came from:
 
 | | Name | Puts first | Shape |
 |---|---|---|---|
@@ -74,3 +90,7 @@ The converter is not the importer. Writing the real one is the bridge ticket (#1
   Speaker a colour; whether the site colours voices at all is a spec question.
 - Registry entries for the questioners and the candidacy fields were filled from
   `data/catalogue/seed.md`, read on 2026-09-05.
+- **Sorting by surname is a guess.** ADR 0005 stores only a display `name`, so
+  `surnameKey()` in `src/lib/data.js` derives the surname with a particle list and treats
+  a non-person (a voice-over, an unnamed questioner's label) as having none. A real site
+  should store the sort key instead of deriving it.
