@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --panel:#fff; --ink:#1c1b19; --dim:#6b6862; --line:#e3e0da;
+    --accent:#8a2f2f; --accent-soft:#f6ecec; --ok:#2f6b4f; --warn:#8a6b1f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#171614; --panel:#1f1e1b; --ink:#eae7e1; --dim:#9a958c; --line:#33312d;
+           --accent:#d98b8b; --accent-soft:#2a1f1f; --ok:#7fbf9f; --warn:#d4b16a; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.55 ui-serif,Georgia,"Iowan Old Style",serif;}
+  .wrap{max-width:56rem;margin:0 auto;padding:2rem 1.25rem 6rem}
+  h1{font-size:1.45rem;margin:0 0 .3rem;letter-spacing:-.01em}
+  h2{font-size:1rem;margin:2rem 0 .6rem;text-transform:uppercase;letter-spacing:.09em;
+     font-family:ui-sans-serif,system-ui,sans-serif;color:var(--dim)}
+  p.lede{color:var(--dim);margin:.2rem 0 1.4rem;max-width:46rem}
+  .sans{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.25rem}
+  .tabs{display:flex;gap:.4rem;border-bottom:1px solid var(--line);margin:1.4rem 0 1.2rem}
+  .tabs button{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem;
+    background:none;border:0;border-bottom:2px solid transparent;color:var(--dim);
+    padding:.55rem .8rem;cursor:pointer;letter-spacing:.02em}
+  .tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+  .ctx{color:var(--dim);font-size:.92rem;padding:.55rem .8rem;border-left:2px solid var(--line);margin:.35rem 0}
+  .ctx .who{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.72rem;text-transform:uppercase;
+            letter-spacing:.08em;display:block;margin-bottom:.15rem}
+  .target{border-left:3px solid var(--accent);background:var(--accent-soft);
+          padding:1rem 1.1rem;border-radius:0 8px 8px 0;margin:.5rem 0}
+  .target .who{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.74rem;text-transform:uppercase;
+               letter-spacing:.08em;color:var(--accent);display:block;margin-bottom:.4rem}
+  .target .txt{font-size:1.14rem;line-height:1.6}
+  .meta{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.75rem;color:var(--dim);margin-top:.5rem}
+  .row{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
+  button.choice{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;cursor:pointer;
+    background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;
+    padding:.6rem 1rem}
+  button.choice:hover{border-color:var(--accent)}
+  button.choice[data-on="1"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  button.choice kbd{font:600 .7rem ui-monospace,monospace;opacity:.55;margin-left:.45rem}
+  .bar{height:5px;background:var(--line);border-radius:3px;overflow:hidden;margin:.9rem 0 .3rem}
+  .bar i{display:block;height:100%;background:var(--accent)}
+  table{border-collapse:collapse;width:100%;font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+  th,td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid var(--line)}
+  th{color:var(--dim);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em}
+  td.n{text-align:right;font-variant-numeric:tabular-nums}
+  .guide{font-size:.93rem}
+  .guide h3{font-size:.9rem;margin:1.2rem 0 .3rem;font-family:ui-sans-serif,system-ui,sans-serif}
+  .guide code{background:var(--accent-soft);padding:.05rem .3rem;border-radius:3px;font-size:.85em}
+  .guide ul{padding-left:1.2rem}
+  .cal{border:1px solid var(--line);border-radius:8px;padding:.9rem 1rem;margin:.7rem 0;background:var(--panel)}
+  .cal .q{font-size:1.02rem}
+  .cal .a{margin-top:.7rem;padding-top:.7rem;border-top:1px dashed var(--line);font-size:.9rem;color:var(--dim)}
+  .cal .a b{color:var(--ink)}
+  .badge{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.7rem;letter-spacing:.06em;
+    text-transform:uppercase;padding:.15rem .45rem;border-radius:4px;background:var(--accent-soft);color:var(--accent)}
+  footer.dock{position:fixed;left:0;right:0;bottom:0;background:var(--panel);
+    border-top:1px solid var(--line);padding:.7rem 1.25rem}
+  footer.dock .inner{max-width:56rem;margin:0 auto;display:flex;gap:1rem;align-items:center;
+    justify-content:space-between;font-family:ui-sans-serif,system-ui,sans-serif;font-size:.82rem}
+  footer.dock button{font:inherit;cursor:pointer;background:var(--accent);color:#fff;border:0;
+    border-radius:7px;padding:.45rem .9rem}
+  footer.dock button.ghost{background:none;color:var(--dim);border:1px solid var(--line)}
+  .hide{display:none}
+  .warnbox{border-left:3px solid var(--warn);padding:.6rem .9rem;background:var(--panel);
+    font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem;border-radius:0 6px 6px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>__TITLE__</h1>
+  <p class="lede">__LEDE__</p>
+
+  <div class="warnbox">You are labelling <b>blind</b>: no machine output is shown anywhere on this
+  page, and the order is fixed by a seeded draw made before any model ran. That is what makes the
+  precision, recall and kappa numbers mean anything. Judgements save in this browser as you go —
+  <b>press Export when you stop</b> and commit the file.</div>
+
+  <div class="tabs" id="tabs">
+    <button data-tab="label" aria-selected="true">Label</button>
+    <button data-tab="calibrate" aria-selected="false">Calibrate first</button>
+    <button data-tab="guide" aria-selected="false">Guideline</button>
+    <button data-tab="state" aria-selected="false">Where I am</button>
+  </div>
+
+  <section id="tab-label">
+    <div class="bar"><i id="prog" style="width:0%"></i></div>
+    <div class="meta sans" id="pos"></div>
+    <div id="card"></div>
+  </section>
+
+  <section id="tab-calibrate" class="hide">
+    <h2>Worked examples</h2>
+    <p class="lede">Read these before labelling. They are hand-picked from this debate and answered
+    against the guideline, so your reading and the machines' reading start from the same place.
+    They are <b>not</b> part of the sample and are not scored.</p>
+    <div id="cals"></div>
+  </section>
+
+  <section id="tab-guide" class="hide">
+    <div class="panel guide" id="guide"></div>
+  </section>
+
+  <section id="tab-state" class="hide">
+    <h2>Counts so far</h2>
+    <div class="panel"><table id="counts"></table></div>
+    <h2>By claim kind</h2>
+    <div class="panel"><table id="kinds"></table></div>
+    <h2>Every judgement</h2>
+    <div class="panel" style="max-height:26rem;overflow:auto"><table id="all"></table></div>
+  </section>
+</div>
+
+<footer class="dock">
+  <div class="inner">
+    <span id="dock-msg">—</span>
+    <span style="display:flex;gap:.5rem">
+      <button class="ghost" id="back">← Back</button>
+      <button class="ghost" id="import">Import…</button>
+      <button id="export">Export JSON</button>
+    </span>
+  </div>
+</footer>
+
+<script id="payload" type="application/json">__DATA__</script>
+<script>
+const P = JSON.parse(document.getElementById('payload').textContent);
+const KEY = 'fcp37-' + P.sample_id;
+const KINDS = [['numerical','Chiffre','a'],['historical','Passé','z'],['attributive','Attribué','e'],
+               ['predictive','Prédiction','r'],['other','Autre','t']];
+
+let labels = {};
+try { labels = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { labels = {}; }
+let i = P.items.findIndex(it => !labels[it.segment]);
+if (i < 0) i = P.items.length - 1;
+
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(labels)); } catch(e){} }
+function esc(s){ return s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function done(){ return P.items.filter(it => labels[it.segment]).length; }
+
+function render(){
+  const it = P.items[i];
+  const cur = labels[it.segment] || {};
+  const needKind = cur.label === 'oui' || cur.label === 'limite';
+  document.getElementById('card').innerHTML = `
+    ${it.before ? `<div class="ctx"><span class="who">${esc(it.before.speaker)} · avant</span>${esc(it.before.text)}</div>` : ''}
+    <div class="target">
+      <span class="who">${esc(it.speaker)}${it.role ? ' · ' + esc(it.role) : ''} · ${it.clock}</span>
+      <div class="txt">${esc(it.text)}</div>
+      <div class="meta">${it.segment} · ${it.words} mot${it.words > 1 ? 's' : ''}${it.overlap ? ' · chevauchement' : ''}</div>
+    </div>
+    ${it.after ? `<div class="ctx"><span class="who">${esc(it.after.speaker)} · après</span>${esc(it.after.text)}</div>` : ''}
+    <div class="row">
+      <button class="choice" data-l="oui"    data-on="${cur.label==='oui'?1:0}">Vérifiable <kbd>1</kbd></button>
+      <button class="choice" data-l="limite" data-on="${cur.label==='limite'?1:0}">Limite <kbd>2</kbd></button>
+      <button class="choice" data-l="non"    data-on="${cur.label==='non'?1:0}">Non <kbd>3</kbd></button>
+    </div>
+    <div class="row ${needKind ? '' : 'hide'}" id="kindrow">
+      ${KINDS.map(([k,fr,key]) => `<button class="choice" data-k="${k}" data-on="${cur.kind===k?1:0}">${fr} <kbd>${key}</kbd></button>`).join('')}
+    </div>`;
+  document.querySelectorAll('[data-l]').forEach(b => b.onclick = () => setLabel(b.dataset.l));
+  document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => setKind(b.dataset.k));
+  const d = done();
+  document.getElementById('prog').style.width = (100*d/P.items.length) + '%';
+  document.getElementById('pos').textContent = `${i+1} / ${P.items.length}  ·  ${d} jugés`;
+  document.getElementById('dock-msg').textContent =
+    d === P.items.length ? 'All judged — press Export and commit the file.'
+                         : `${P.items.length - d} left · 1 vérifiable · 2 limite · 3 non`;
+  renderState();
+}
+
+function setLabel(l){
+  const it = P.items[i];
+  const prev = labels[it.segment] || {};
+  labels[it.segment] = {label:l, kind: (l==='non') ? null : (prev.kind || null), at: new Date().toISOString()};
+  save();
+  if (l === 'non') { next(); } else { render(); }
+}
+function setKind(k){
+  const it = P.items[i];
+  if (!labels[it.segment]) return;
+  labels[it.segment].kind = k; save(); next();
+}
+function next(){ if (i < P.items.length - 1) i++; render(); }
+function back(){ if (i > 0) i--; render(); }
+
+document.onkeydown = e => {
+  if (/input|textarea/i.test(e.target.tagName)) return;
+  if (document.getElementById('tab-label').classList.contains('hide')) return;
+  const m = {'1':'oui','2':'limite','3':'non'};
+  if (m[e.key]) { setLabel(m[e.key]); return; }
+  const kd = KINDS.find(([,,key]) => key === e.key);
+  if (kd) { setKind(kd[0]); return; }
+  if (e.key === 'ArrowRight') next();
+  if (e.key === 'ArrowLeft') back();
+};
+
+function renderState(){
+  const c = {oui:0, limite:0, non:0, unjudged:0};
+  const kc = {};
+  P.items.forEach(it => {
+    const v = labels[it.segment];
+    if (!v) { c.unjudged++; return; }
+    c[v.label]++;
+    if (v.kind) kc[v.kind] = (kc[v.kind]||0)+1;
+  });
+  const n = P.items.length;
+  document.getElementById('counts').innerHTML =
+    `<tr><th>Label</th><th>Segments</th><th>Share</th></tr>` +
+    ['oui','limite','non','unjudged'].map(k =>
+      `<tr><td>${k}</td><td class="n">${c[k]}</td><td class="n">${(100*c[k]/n).toFixed(1)} %</td></tr>`).join('') +
+    `<tr><td><b>total</b></td><td class="n"><b>${n}</b></td><td class="n"></td></tr>`;
+  document.getElementById('kinds').innerHTML =
+    `<tr><th>Kind</th><th>Segments</th></tr>` +
+    (Object.keys(kc).length ? KINDS.filter(([k])=>kc[k]).map(([k,fr]) =>
+      `<tr><td>${k} <span style="color:var(--dim)">${fr}</span></td><td class="n">${kc[k]}</td></tr>`).join('')
+     : `<tr><td colspan="2" style="color:var(--dim)">nothing yet</td></tr>`);
+  document.getElementById('all').innerHTML =
+    `<tr><th>#</th><th>Segment</th><th>Speaker</th><th>Label</th><th>Kind</th></tr>` +
+    P.items.map((it,ix) => { const v = labels[it.segment];
+      return `<tr><td class="n">${ix+1}</td><td>${it.segment}</td><td>${esc(it.speaker)}</td>` +
+             `<td>${v ? v.label : '<span style="color:var(--dim)">—</span>'}</td>` +
+             `<td>${v && v.kind ? v.kind : ''}</td></tr>`; }).join('');
+}
+
+document.getElementById('back').onclick = back;
+document.getElementById('export').onclick = () => {
+  const out = {schema:'fcp-claim-gold/0', sample_id:P.sample_id, appearance:P.appearance,
+               guideline_sha: P.guideline_sha, annotator:'patrick',
+               exported_at:new Date().toISOString(),
+               labels: P.items.map(it => ({segment: it.segment,
+                                           label:(labels[it.segment]||{}).label || null,
+                                           kind:(labels[it.segment]||{}).kind || null}))};
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out,null,1)], {type:'application/json'}));
+  a.download = 'labels-' + P.sample_id + '.json';
+  document.body.appendChild(a); a.click(); a.remove();
+};
+document.getElementById('import').onclick = () => {
+  const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.json';
+  inp.onchange = () => { const f = inp.files[0]; if (!f) return;
+    const r = new FileReader();
+    r.onload = () => { const d = JSON.parse(r.result);
+      d.labels.forEach(l => { if (l.label) labels[l.segment] = {label:l.label, kind:l.kind}; });
+      save(); i = P.items.findIndex(it => !labels[it.segment]); if (i<0) i = P.items.length-1; render(); };
+    r.readAsText(f); };
+  inp.click();
+};
+
+document.getElementById('guide').innerHTML = P.guideline_html;
+document.getElementById('cals').innerHTML = P.calibration.map((c,ix) => `
+  <div class="cal">
+    <div class="q"><span class="badge">${ix+1}</span> &nbsp;<i>${esc(c.speaker)}</i> — ${esc(c.text)}</div>
+    <div class="a"><b>${c.label}${c.kind ? ' · ' + c.kind : ''}</b> — ${esc(c.why)}</div>
+  </div>`).join('');
+
+document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('#tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
+  ['label','calibrate','guide','state'].forEach(t =>
+    document.getElementById('tab-'+t).classList.toggle('hide', t !== b.dataset.tab));
+  if (b.dataset.tab === 'state') renderState();
+});
+
+render();
+</script>
+</body>
+</html>

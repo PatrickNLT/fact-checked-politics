@@ -1,0 +1,7928 @@
+{
+ "schema": "fcp-claim-probe/0",
+ "appearance": "2026-08-27-lci-debat-medef",
+ "arm": "rules",
+ "model": null,
+ "run_at": "2026-09-07T19:15:55+00:00",
+ "guideline_sha": "902d7b68",
+ "config": {
+  "batch_targets": 12,
+  "batch_lead": 3,
+  "workers": 4,
+  "segments": 1607
+ },
+ "cost": {
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 0,
+  "usd": 0.0,
+  "usd_batch_api": 0.0,
+  "wall_s": 0.1,
+  "wall_s_per_audio_hour": 0.0,
+  "usd_per_audio_hour": 0.0
+ },
+ "statements": [
+  {
+   "segment": "s5",
+   "speaker": "SPEAKER_15",
+   "clock": "00:00:17",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 9,
+     "end": 17,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 31,
+     "end": 32,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s6",
+   "speaker": "SPEAKER_04",
+   "clock": "00:00:37",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 73,
+     "end": 80,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s14",
+   "speaker": "Patrick Martin",
+   "clock": "00:01:31",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 13,
+     "end": 20,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s18",
+   "speaker": "Patrick Martin",
+   "clock": "00:02:16",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 153,
+     "end": 163,
+     "text": "croissance",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 169,
+     "end": 179,
+     "text": "croissance",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 295,
+     "end": 305,
+     "text": "croissance",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s29",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:04:04",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 9,
+     "end": 16,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s36",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:04:37",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 106,
+     "end": 107,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 107,
+     "end": 108,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 109,
+     "end": 110,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s37",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:04:55",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 37,
+     "end": 38,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 302,
+     "end": 303,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 312,
+     "end": 313,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s41",
+   "speaker": "Bruno Retailleau",
+   "clock": "00:05:52",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 10,
+     "end": 17,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 70,
+     "end": 77,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 322,
+     "end": 329,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s47",
+   "speaker": "Bruno Retailleau",
+   "clock": "00:07:08",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 104,
+     "end": 109,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 166,
+     "end": 170,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s60",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:08:53",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 88,
+     "end": 89,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 89,
+     "end": 90,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 91,
+     "end": 99,
+     "text": "millions",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s62",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:09:15",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 88,
+     "end": 89,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s63",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:09:22",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 27,
+     "end": 28,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s64",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:09:27",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 0,
+     "end": 7,
+     "text": "Premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s67",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:09:47",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 85,
+     "end": 86,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 86,
+     "end": 87,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 87,
+     "end": 88,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s85",
+   "speaker": "Édouard Philippe",
+   "clock": "00:11:40",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 3,
+     "end": 11,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s88",
+   "speaker": "Édouard Philippe",
+   "clock": "00:11:55",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 6,
+     "end": 7,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 7,
+     "end": 8,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 8,
+     "end": 9,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s91",
+   "speaker": "Édouard Philippe",
+   "clock": "00:12:10",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 16,
+     "end": 22,
+     "text": "double",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 45,
+     "end": 46,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 46,
+     "end": 47,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s114",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:15:06",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 54,
+     "end": 61,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s116",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:15:15",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 97,
+     "end": 98,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s117",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:15:29",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 3,
+     "end": 10,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s118",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:15:44",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 126,
+     "end": 131,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s121",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:16:10",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 252,
+     "end": 253,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 253,
+     "end": 254,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s122",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:16:25",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 50,
+     "end": 57,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s125",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:17:07",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 143,
+     "end": 149,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s126",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:17:15",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 18,
+     "end": 23,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s127",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:17:17",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 55,
+     "end": 64,
+     "text": "inflation",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s133",
+   "speaker": "Gabriel Attal",
+   "clock": "00:17:45",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 13,
+     "end": 20,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 27,
+     "end": 34,
+     "text": "en 2024",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s136",
+   "speaker": "Gabriel Attal",
+   "clock": "00:18:02",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 10,
+     "end": 18,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s146",
+   "speaker": "Gabriel Attal",
+   "clock": "00:19:18",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 427,
+     "end": 428,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 428,
+     "end": 429,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 429,
+     "end": 430,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s151",
+   "speaker": "Marine Tondelier",
+   "clock": "00:19:56",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 49,
+     "end": 54,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s156",
+   "speaker": "Marine Tondelier",
+   "clock": "00:20:16",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 335,
+     "end": 336,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 395,
+     "end": 396,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s160",
+   "speaker": "Marine Tondelier",
+   "clock": "00:22:00",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 18,
+     "end": 23,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s164",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:22:15",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 16,
+     "end": 23,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s166",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:22:22",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 26,
+     "end": 33,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 44,
+     "end": 49,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s168",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:22:32",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 6,
+     "end": 7,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 7,
+     "end": 8,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 8,
+     "end": 9,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s176",
+   "speaker": "Éric Malenfer",
+   "clock": "00:23:26",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 89,
+     "end": 94,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s177",
+   "speaker": "Éric Malenfer",
+   "clock": "00:23:32",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 3,
+     "end": 10,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 24,
+     "end": 25,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 26,
+     "end": 27,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s178",
+   "speaker": "Éric Malenfer",
+   "clock": "00:23:36",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 19,
+     "end": 24,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 63,
+     "end": 68,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 75,
+     "end": 76,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s179",
+   "speaker": "Éric Malenfer",
+   "clock": "00:23:42",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 27,
+     "end": 32,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 100,
+     "end": 107,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s180",
+   "speaker": "Éric Malenfer",
+   "clock": "00:23:52",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 30,
+     "end": 31,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s181",
+   "speaker": "Éric Malenfer",
+   "clock": "00:23:56",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 3,
+     "end": 4,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s182",
+   "speaker": "Éric Malenfer",
+   "clock": "00:24:06",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 3,
+     "end": 4,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s184",
+   "speaker": "Éric Malenfer",
+   "clock": "00:24:16",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 434,
+     "end": 441,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s185",
+   "speaker": "Éric Malenfer",
+   "clock": "00:24:49",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 11,
+     "text": "Depuis 2000",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 40,
+     "end": 41,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 42,
+     "end": 43,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s187",
+   "speaker": "Éric Malenfer",
+   "clock": "00:25:04",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 14,
+     "end": 25,
+     "text": "depuis 1993",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s188",
+   "speaker": "Éric Malenfer",
+   "clock": "00:25:11",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 22,
+     "end": 23,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 23,
+     "end": 24,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 24,
+     "end": 25,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s191",
+   "speaker": "Éric Malenfer",
+   "clock": "00:25:28",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 0,
+     "end": 8,
+     "text": "Première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s193",
+   "speaker": "Éric Malenfer",
+   "clock": "00:25:32",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 14,
+     "end": 15,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 15,
+     "end": 16,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 16,
+     "end": 17,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s197",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:25:49",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 111,
+     "end": 116,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s198",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:25:54",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 101,
+     "end": 106,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s199",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:26:01",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 62,
+     "end": 63,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 63,
+     "end": 64,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 64,
+     "end": 65,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s202",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:26:27",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 3,
+     "end": 10,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 11,
+     "end": 16,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s204",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:26:40",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 42,
+     "end": 43,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 44,
+     "end": 50,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 59,
+     "end": 62,
+     "text": "PIB",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s205",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:26:47",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 24,
+     "end": 25,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 26,
+     "end": 32,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 36,
+     "end": 37,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s213",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:27:16",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 56,
+     "end": 63,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s214",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:27:21",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 42,
+     "end": 43,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 43,
+     "end": 44,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 44,
+     "end": 45,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s215",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:27:25",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 105,
+     "end": 106,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 106,
+     "end": 107,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 107,
+     "end": 108,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s216",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:27:35",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 92,
+     "end": 99,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s220",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:28:27",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 32,
+     "end": 37,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 87,
+     "end": 88,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s221",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:28:31",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 36,
+     "end": 41,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 59,
+     "end": 60,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 60,
+     "end": 61,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s223",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:28:41",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 15,
+     "end": 20,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s225",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:28:47",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 9,
+     "end": 14,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 26,
+     "end": 31,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 76,
+     "end": 80,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s226",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:28:51",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 111,
+     "end": 116,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s227",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:28:58",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 84,
+     "end": 88,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 129,
+     "end": 130,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 131,
+     "end": 137,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s228",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:29:16",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 100,
+     "end": 105,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s231",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "00:29:32",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 198,
+     "end": 199,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 199,
+     "end": 200,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 204,
+     "end": 211,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s239",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:29:59",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 22,
+     "end": 27,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s243",
+   "speaker": "Édouard Philippe",
+   "clock": "00:30:22",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 35,
+     "end": 40,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s246",
+   "speaker": "Édouard Philippe",
+   "clock": "00:30:55",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 251,
+     "end": 256,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s248",
+   "speaker": "Édouard Philippe",
+   "clock": "00:31:27",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 21,
+     "end": 26,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s250",
+   "speaker": "Édouard Philippe",
+   "clock": "00:31:54",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 14,
+     "end": 19,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s252",
+   "speaker": "Édouard Philippe",
+   "clock": "00:32:17",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 75,
+     "end": 82,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 92,
+     "end": 97,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s271",
+   "speaker": "Édouard Philippe",
+   "clock": "00:33:19",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 39,
+     "end": 40,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 41,
+     "end": 47,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 51,
+     "end": 54,
+     "text": "PIB",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s303",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:35:02",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 182,
+     "end": 187,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s304",
+   "speaker": "Amélie Carrouër",
+   "clock": "00:35:13",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 8,
+     "end": 13,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s306",
+   "speaker": "Marine Le Pen",
+   "clock": "00:35:19",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 131,
+     "end": 136,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s307",
+   "speaker": "Marine Le Pen",
+   "clock": "00:35:30",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 26,
+     "end": 33,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s310",
+   "speaker": "Marine Le Pen",
+   "clock": "00:35:40",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 60,
+     "end": 65,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s313",
+   "speaker": "Marine Le Pen",
+   "clock": "00:35:51",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 49,
+     "end": 55,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s314",
+   "speaker": "Marine Le Pen",
+   "clock": "00:35:54",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 134,
+     "end": 135,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 135,
+     "end": 136,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 136,
+     "end": 137,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s315",
+   "speaker": "Marine Le Pen",
+   "clock": "00:36:08",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 133,
+     "end": 138,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 183,
+     "end": 187,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 227,
+     "end": 232,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s317",
+   "speaker": "Marine Le Pen",
+   "clock": "00:36:47",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 13,
+     "end": 14,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 14,
+     "end": 15,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 15,
+     "end": 16,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s318",
+   "speaker": "Marine Le Pen",
+   "clock": "00:37:30",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 18,
+     "end": 23,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s323",
+   "speaker": "Marine Le Pen",
+   "clock": "00:37:45",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 39,
+     "end": 43,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s324",
+   "speaker": "Marine Le Pen",
+   "clock": "00:37:51",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 39,
+     "end": 40,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 40,
+     "end": 41,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 42,
+     "end": 48,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s325",
+   "speaker": "Marine Le Pen",
+   "clock": "00:37:55",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 33,
+     "end": 34,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 35,
+     "end": 41,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 58,
+     "end": 62,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s327",
+   "speaker": "Marine Le Pen",
+   "clock": "00:38:13",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 205,
+     "end": 206,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 206,
+     "end": 207,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 214,
+     "end": 215,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s328",
+   "speaker": "Marine Le Pen",
+   "clock": "00:38:29",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 63,
+     "end": 70,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 93,
+     "end": 94,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 94,
+     "end": 95,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s329",
+   "speaker": "Marine Le Pen",
+   "clock": "00:38:34",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 27,
+     "end": 28,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 28,
+     "end": 29,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s330",
+   "speaker": "Marine Le Pen",
+   "clock": "00:38:39",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 13,
+     "end": 21,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 58,
+     "end": 62,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s331",
+   "speaker": "Marine Le Pen",
+   "clock": "00:38:44",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 3,
+     "end": 10,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 50,
+     "end": 51,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 51,
+     "end": 52,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s336",
+   "speaker": "Marine Le Pen",
+   "clock": "00:39:07",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 79,
+     "end": 80,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 80,
+     "end": 81,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 97,
+     "end": 98,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s337",
+   "speaker": "Marine Le Pen",
+   "clock": "00:39:16",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 30,
+     "end": 31,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 31,
+     "end": 32,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 60,
+     "end": 61,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s339",
+   "speaker": "Marine Le Pen",
+   "clock": "00:39:53",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 28,
+     "end": 35,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s348",
+   "speaker": "Marine Le Pen",
+   "clock": "00:40:28",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 41,
+     "end": 42,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 43,
+     "end": 52,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 55,
+     "end": 60,
+     "text": "euros",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s349",
+   "speaker": "Marine Le Pen",
+   "clock": "00:40:33",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 37,
+     "end": 44,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s351",
+   "speaker": "Marine Le Pen",
+   "clock": "00:40:39",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 104,
+     "end": 105,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 114,
+     "end": 118,
+     "text": "SMIC",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s355",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:41:04",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 136,
+     "end": 141,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s357",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:41:19",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 272,
+     "end": 277,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s358",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:41:34",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 30,
+     "end": 35,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s371",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:43:11",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 44,
+     "end": 49,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s389",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:44:55",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 37,
+     "end": 42,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s398",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:45:10",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 26,
+     "end": 31,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 57,
+     "end": 62,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s402",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:45:23",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 68,
+     "end": 73,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s403",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:45:27",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 49,
+     "end": 54,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s405",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:45:34",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 30,
+     "end": 35,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 86,
+     "end": 87,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 87,
+     "end": 88,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s406",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:45:39",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 173,
+     "end": 178,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s411",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:46:00",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 79,
+     "end": 84,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s413",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "00:46:12",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 16,
+     "end": 17,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 17,
+     "end": 18,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 18,
+     "end": 19,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s417",
+   "speaker": "Gabriel Attal",
+   "clock": "00:46:46",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 7,
+     "end": 15,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 82,
+     "end": 83,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 83,
+     "end": 84,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s419",
+   "speaker": "Gabriel Attal",
+   "clock": "00:46:58",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 124,
+     "end": 125,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 125,
+     "end": 126,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 126,
+     "end": 127,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s423",
+   "speaker": "Gabriel Attal",
+   "clock": "00:48:12",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 162,
+     "end": 169,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s425",
+   "speaker": "Gabriel Attal",
+   "clock": "00:48:36",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 46,
+     "end": 47,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 47,
+     "end": 48,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 48,
+     "end": 49,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s434",
+   "speaker": "Gabriel Attal",
+   "clock": "00:49:28",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 124,
+     "end": 131,
+     "text": "en 2017",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s445",
+   "speaker": "Gabriel Attal",
+   "clock": "00:50:39",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 163,
+     "end": 168,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s446",
+   "speaker": "Gabriel Attal",
+   "clock": "00:50:46",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 48,
+     "end": 53,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s447",
+   "speaker": "Gabriel Attal",
+   "clock": "00:50:50",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 67,
+     "end": 72,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s448",
+   "speaker": "Gabriel Attal",
+   "clock": "00:50:55",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 51,
+     "end": 56,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s453",
+   "speaker": "Gabriel Attal",
+   "clock": "00:51:17",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 49,
+     "end": 56,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s457",
+   "speaker": "Marine Le Pen",
+   "clock": "00:51:35",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 50,
+     "end": 57,
+     "text": "Premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 129,
+     "end": 130,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 131,
+     "end": 132,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s467",
+   "speaker": "Marine Tondelier",
+   "clock": "00:52:37",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 288,
+     "end": 295,
+     "text": "en 2050",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 301,
+     "end": 302,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 303,
+     "end": 304,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s469",
+   "speaker": "Marine Tondelier",
+   "clock": "00:53:03",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 137,
+     "end": 144,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s479",
+   "speaker": "Marine Tondelier",
+   "clock": "00:54:27",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 31,
+     "end": 32,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 32,
+     "end": 33,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 33,
+     "end": 34,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s486",
+   "speaker": "Marine Tondelier",
+   "clock": "00:56:28",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 302,
+     "end": 312,
+     "text": "fois moins",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s492",
+   "speaker": "Marine Tondelier",
+   "clock": "00:57:03",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 138,
+     "end": 144,
+     "text": "mandat",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s494",
+   "speaker": "Marine Tondelier",
+   "clock": "00:57:42",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 195,
+     "end": 204,
+     "text": "fois plus",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s503",
+   "speaker": "Bruno Retailleau",
+   "clock": "00:58:38",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 33,
+     "end": 34,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 34,
+     "end": 35,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s507",
+   "speaker": "Bruno Retailleau",
+   "clock": "00:59:13",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 35,
+     "end": 40,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 161,
+     "end": 166,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s509",
+   "speaker": "Bruno Retailleau",
+   "clock": "00:59:44",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 186,
+     "end": 190,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 265,
+     "end": 269,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s510",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:00:01",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 168,
+     "end": 173,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s511",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:00:12",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 32,
+     "end": 37,
+     "text": "quart",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s513",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:00:19",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 31,
+     "end": 32,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 33,
+     "end": 34,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 51,
+     "end": 52,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s515",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:00:27",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 79,
+     "end": 80,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 80,
+     "end": 81,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 102,
+     "end": 103,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s517",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:01:37",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 46,
+     "end": 47,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 47,
+     "end": 48,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s518",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:01:48",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 29,
+     "end": 34,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 41,
+     "end": 48,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 70,
+     "end": 78,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s519",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:02:07",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 89,
+     "end": 90,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 90,
+     "end": 91,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 91,
+     "end": 92,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s522",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:02:42",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 85,
+     "end": 90,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s527",
+   "speaker": "Amélie Carrouër",
+   "clock": "01:03:04",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 50,
+     "end": 55,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s528",
+   "speaker": "Amélie Carrouër",
+   "clock": "01:03:10",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 32,
+     "end": 33,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 33,
+     "end": 34,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s529",
+   "speaker": "SPEAKER_10",
+   "clock": "01:03:17",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 264,
+     "end": 265,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 265,
+     "end": 266,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 266,
+     "end": 267,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s531",
+   "speaker": "SPEAKER_10",
+   "clock": "01:04:09",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 66,
+     "end": 67,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 67,
+     "end": 68,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 162,
+     "end": 169,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s535",
+   "speaker": "Amélie Carrouër",
+   "clock": "01:05:07",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 81,
+     "end": 88,
+     "text": "en 2025",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s538",
+   "speaker": "Marine Le Pen",
+   "clock": "01:05:43",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 38,
+     "end": 39,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 39,
+     "end": 40,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 40,
+     "end": 41,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s541",
+   "speaker": "Marine Le Pen",
+   "clock": "01:06:20",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 157,
+     "end": 158,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 158,
+     "end": 159,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 159,
+     "end": 160,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s543",
+   "speaker": "Marine Le Pen",
+   "clock": "01:06:53",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 86,
+     "end": 87,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s544",
+   "speaker": "Marine Le Pen",
+   "clock": "01:07:15",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 77,
+     "end": 78,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 78,
+     "end": 79,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 79,
+     "end": 80,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s546",
+   "speaker": "Marine Le Pen",
+   "clock": "01:07:46",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 225,
+     "end": 233,
+     "text": "dizaines",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s555",
+   "speaker": "Amélie Carrouër",
+   "clock": "01:08:36",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 47,
+     "end": 52,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s557",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:08:43",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 108,
+     "end": 113,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s558",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:08:47",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 148,
+     "end": 149,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 149,
+     "end": 150,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 150,
+     "end": 151,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s563",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:09:40",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 80,
+     "end": 89,
+     "text": "centaines",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s564",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:09:48",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 25,
+     "end": 30,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s567",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:10:07",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 19,
+     "end": 24,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s575",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:10:58",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 30,
+     "end": 39,
+     "text": "centaines",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s584",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:11:36",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 3,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s605",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:12:30",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 89,
+     "end": 96,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 105,
+     "end": 106,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 106,
+     "end": 107,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s606",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:12:37",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 60,
+     "end": 61,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 61,
+     "end": 62,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s609",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:13:01",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 386,
+     "end": 393,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s610",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:13:25",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 250,
+     "end": 251,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 251,
+     "end": 252,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 252,
+     "end": 253,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s611",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:13:47",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 3,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s612",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:14:03",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 3,
+     "end": 10,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 231,
+     "end": 237,
+     "text": "points",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 252,
+     "end": 256,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s648",
+   "speaker": "Édouard Philippe",
+   "clock": "01:16:06",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 278,
+     "end": 279,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 279,
+     "end": 280,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 280,
+     "end": 281,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s656",
+   "speaker": "Édouard Philippe",
+   "clock": "01:17:17",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 61,
+     "end": 66,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 100,
+     "end": 105,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s657",
+   "speaker": "Édouard Philippe",
+   "clock": "01:17:43",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 105,
+     "end": 112,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s667",
+   "speaker": "Édouard Philippe",
+   "clock": "01:19:22",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 36,
+     "end": 43,
+     "text": "Premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 195,
+     "end": 202,
+     "text": "Premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s672",
+   "speaker": "Édouard Philippe",
+   "clock": "01:19:56",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 9,
+     "end": 17,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s674",
+   "speaker": "Édouard Philippe",
+   "clock": "01:20:04",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 106,
+     "end": 110,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 149,
+     "end": 153,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s676",
+   "speaker": "Édouard Philippe",
+   "clock": "01:20:16",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 7,
+     "end": 8,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 8,
+     "end": 9,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 15,
+     "end": 16,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s709",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "01:23:19",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 15,
+     "end": 16,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 17,
+     "end": 18,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 18,
+     "end": 19,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s732",
+   "speaker": "Gabriel Attal",
+   "clock": "01:25:38",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 69,
+     "end": 77,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s734",
+   "speaker": "Gabriel Attal",
+   "clock": "01:25:58",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 379,
+     "end": 384,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s735",
+   "speaker": "Gabriel Attal",
+   "clock": "01:26:26",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 223,
+     "end": 224,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 224,
+     "end": 225,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 225,
+     "end": 226,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s736",
+   "speaker": "Gabriel Attal",
+   "clock": "01:26:41",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 82,
+     "end": 83,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 83,
+     "end": 84,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 84,
+     "end": 85,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s738",
+   "speaker": "Gabriel Attal",
+   "clock": "01:27:02",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 35,
+     "end": 36,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s747",
+   "speaker": "Gabriel Attal",
+   "clock": "01:28:04",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s749",
+   "speaker": "Gabriel Attal",
+   "clock": "01:28:24",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 14,
+     "end": 21,
+     "text": "Premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s750",
+   "speaker": "Gabriel Attal",
+   "clock": "01:28:33",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 59,
+     "end": 60,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 701,
+     "end": 707,
+     "text": "mandat",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 884,
+     "end": 891,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s754",
+   "speaker": "Gabriel Attal",
+   "clock": "01:29:42",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 140,
+     "end": 148,
+     "text": "milliers",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 195,
+     "end": 196,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 196,
+     "end": 197,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s756",
+   "speaker": "Marine Tondelier",
+   "clock": "01:30:16",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 781,
+     "end": 782,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 782,
+     "end": 783,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s757",
+   "speaker": "Marine Tondelier",
+   "clock": "01:30:58",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 67,
+     "end": 68,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 68,
+     "end": 69,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s776",
+   "speaker": "Marine Tondelier",
+   "clock": "01:33:14",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 42,
+     "end": 43,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 44,
+     "end": 45,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 45,
+     "end": 46,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s781",
+   "speaker": "Marine Tondelier",
+   "clock": "01:33:53",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 390,
+     "end": 391,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 391,
+     "end": 392,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 392,
+     "end": 393,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s782",
+   "speaker": "Marine Tondelier",
+   "clock": "01:34:25",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 3,
+     "end": 10,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 11,
+     "end": 16,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s783",
+   "speaker": "Marine Tondelier",
+   "clock": "01:34:32",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 72,
+     "end": 73,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 74,
+     "end": 75,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 75,
+     "end": 76,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s801",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:35:34",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 182,
+     "end": 183,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 183,
+     "end": 184,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 184,
+     "end": 185,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s805",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:36:00",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 41,
+     "end": 42,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 68,
+     "end": 69,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 69,
+     "end": 70,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s806",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:36:22",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 184,
+     "end": 190,
+     "text": "double",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 191,
+     "end": 202,
+     "text": "quinquennat",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s807",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:36:45",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 193,
+     "end": 194,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s819",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:37:36",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 176,
+     "end": 184,
+     "text": "centaine",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s827",
+   "speaker": "Vincent Furlan",
+   "clock": "01:38:58",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 64,
+     "end": 65,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 65,
+     "end": 66,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 145,
+     "end": 146,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s830",
+   "speaker": "Vincent Furlan",
+   "clock": "01:39:21",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 43,
+     "end": 44,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 45,
+     "end": 46,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 46,
+     "end": 47,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s842",
+   "speaker": "Gabriel Attal",
+   "clock": "01:40:31",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 80,
+     "end": 91,
+     "text": "depuis 2024",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s847",
+   "speaker": "Gabriel Attal",
+   "clock": "01:40:49",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 118,
+     "end": 119,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 120,
+     "end": 121,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 122,
+     "end": 131,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s848",
+   "speaker": "Gabriel Attal",
+   "clock": "01:40:56",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 54,
+     "end": 55,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 56,
+     "end": 57,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 58,
+     "end": 66,
+     "text": "milliard",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s849",
+   "speaker": "Gabriel Attal",
+   "clock": "01:41:01",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 8,
+     "end": 15,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 146,
+     "end": 157,
+     "text": "depuis 2024",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s857",
+   "speaker": "Gabriel Attal",
+   "clock": "01:42:21",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 71,
+     "end": 72,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 72,
+     "end": 73,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 73,
+     "end": 74,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s858",
+   "speaker": "Gabriel Attal",
+   "clock": "01:42:25",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 6,
+     "end": 16,
+     "text": "croissance",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 116,
+     "end": 117,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 117,
+     "end": 118,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s859",
+   "speaker": "Gabriel Attal",
+   "clock": "01:42:39",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 3,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s877",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:43:14",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 21,
+     "end": 29,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s880",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:43:29",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 56,
+     "end": 61,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s895",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:45:01",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 211,
+     "end": 220,
+     "text": "fois plus",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s896",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:45:15",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 90,
+     "end": 98,
+     "text": "millions",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s897",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:45:38",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 41,
+     "end": 49,
+     "text": "dizaines",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s899",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:46:02",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 225,
+     "end": 226,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 226,
+     "end": 227,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 227,
+     "end": 228,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s904",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "01:46:44",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 27,
+     "end": 34,
+     "text": "en 2040",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s922",
+   "speaker": "Édouard Philippe",
+   "clock": "01:47:52",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 18,
+     "end": 19,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 20,
+     "end": 21,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 30,
+     "end": 34,
+     "text": "SMIC",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s923",
+   "speaker": "Édouard Philippe",
+   "clock": "01:49:09",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 220,
+     "end": 224,
+     "text": "SMIC",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s927",
+   "speaker": "Édouard Philippe",
+   "clock": "01:50:11",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 163,
+     "end": 168,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s937",
+   "speaker": "Édouard Philippe",
+   "clock": "01:51:40",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 139,
+     "end": 143,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s951",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "01:52:40",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 62,
+     "end": 69,
+     "text": "Premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s959",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "01:53:17",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 60,
+     "end": 65,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s963",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "01:53:38",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 7,
+     "end": 8,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 8,
+     "end": 9,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 22,
+     "end": 23,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s964",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "01:53:48",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 90,
+     "end": 95,
+     "text": "tiers",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 113,
+     "end": 118,
+     "text": "tiers",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s980",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:55:27",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 205,
+     "end": 209,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s984",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:56:12",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 21,
+     "end": 29,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s988",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:56:32",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 13,
+     "end": 21,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s989",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:56:36",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 127,
+     "end": 128,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 128,
+     "end": 129,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 138,
+     "end": 139,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s991",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:56:53",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 9,
+     "end": 10,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 10,
+     "end": 11,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s992",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:57:16",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 346,
+     "end": 347,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 347,
+     "end": 348,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 348,
+     "end": 349,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1000",
+   "speaker": "Amélie Carrouër",
+   "clock": "01:58:04",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 10,
+     "end": 17,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1001",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:58:07",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 17,
+     "end": 24,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1002",
+   "speaker": "Bruno Retailleau",
+   "clock": "01:58:08",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 12,
+     "end": 19,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1008",
+   "speaker": "Marine Tondelier",
+   "clock": "01:58:36",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 170,
+     "end": 171,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 171,
+     "end": 172,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 173,
+     "end": 178,
+     "text": "euros",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1010",
+   "speaker": "Marine Tondelier",
+   "clock": "01:58:55",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 65,
+     "end": 72,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 84,
+     "end": 85,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 85,
+     "end": 86,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1012",
+   "speaker": "Marine Tondelier",
+   "clock": "01:59:06",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 15,
+     "end": 22,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 40,
+     "end": 41,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 41,
+     "end": 42,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1014",
+   "speaker": "Marine Tondelier",
+   "clock": "01:59:12",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 421,
+     "end": 428,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 526,
+     "end": 527,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 527,
+     "end": 528,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1031",
+   "speaker": "Marine Tondelier",
+   "clock": "02:00:24",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 102,
+     "end": 103,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 103,
+     "end": 104,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 105,
+     "end": 113,
+     "text": "millions",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1033",
+   "speaker": "Marine Tondelier",
+   "clock": "02:00:34",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 46,
+     "end": 47,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 48,
+     "end": 49,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 50,
+     "end": 58,
+     "text": "millions",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1035",
+   "speaker": "Marine Tondelier",
+   "clock": "02:00:50",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 4,
+     "end": 5,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 5,
+     "end": 6,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1036",
+   "speaker": "Marine Tondelier",
+   "clock": "02:01:04",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 74,
+     "end": 75,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 75,
+     "end": 76,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 76,
+     "end": 77,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1038",
+   "speaker": "Marine Tondelier",
+   "clock": "02:01:16",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 87,
+     "end": 91,
+     "text": "SMIC",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 94,
+     "end": 95,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 95,
+     "end": 96,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1043",
+   "speaker": "Marine Tondelier",
+   "clock": "02:01:33",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 176,
+     "end": 177,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 177,
+     "end": 178,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 178,
+     "end": 179,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1057",
+   "speaker": "Marine Le Pen",
+   "clock": "02:02:18",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 89,
+     "end": 90,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 90,
+     "end": 91,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1068",
+   "speaker": "Marine Le Pen",
+   "clock": "02:02:42",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 152,
+     "end": 153,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 153,
+     "end": 154,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 154,
+     "end": 155,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1074",
+   "speaker": "Marine Le Pen",
+   "clock": "02:03:30",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 45,
+     "end": 52,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 424,
+     "end": 425,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 426,
+     "end": 427,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1075",
+   "speaker": "Marine Le Pen",
+   "clock": "02:04:03",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 61,
+     "end": 62,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 63,
+     "end": 64,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 99,
+     "end": 100,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1076",
+   "speaker": "Marine Le Pen",
+   "clock": "02:04:12",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 145,
+     "end": 146,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 146,
+     "end": 147,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 148,
+     "end": 157,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1077",
+   "speaker": "Marine Le Pen",
+   "clock": "02:04:22",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 7,
+     "text": "En 2014",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 37,
+     "end": 38,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 38,
+     "end": 39,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1078",
+   "speaker": "Marine Le Pen",
+   "clock": "02:04:25",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 710,
+     "end": 711,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 711,
+     "end": 712,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 715,
+     "end": 716,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1079",
+   "speaker": "Marine Le Pen",
+   "clock": "02:05:42",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 125,
+     "end": 133,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1084",
+   "speaker": "Amélie Carrouër",
+   "clock": "02:06:31",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1085",
+   "speaker": "Amélie Carrouër",
+   "clock": "02:06:44",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 3,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1090",
+   "speaker": "Colombe Lecoufle",
+   "clock": "02:07:32",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 245,
+     "end": 246,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 436,
+     "end": 441,
+     "text": "tiers",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1122",
+   "speaker": "Marine Tondelier",
+   "clock": "02:11:21",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 118,
+     "end": 122,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1155",
+   "speaker": "Gabriel Attal",
+   "clock": "02:12:22",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 44,
+     "end": 51,
+     "text": "en 2022",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1173",
+   "speaker": "Gabriel Attal",
+   "clock": "02:12:44",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 19,
+     "end": 23,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1180",
+   "speaker": "Marine Tondelier",
+   "clock": "02:12:54",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 23,
+     "end": 27,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1183",
+   "speaker": "Marine Tondelier",
+   "clock": "02:13:01",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 5,
+     "end": 9,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1185",
+   "speaker": "Gabriel Attal",
+   "clock": "02:13:05",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 88,
+     "end": 95,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1197",
+   "speaker": "Gabriel Attal",
+   "clock": "02:14:33",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 21,
+     "end": 22,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 22,
+     "end": 23,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 135,
+     "end": 136,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1198",
+   "speaker": "Gabriel Attal",
+   "clock": "02:14:40",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 53,
+     "end": 54,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 56,
+     "end": 57,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 59,
+     "end": 60,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1199",
+   "speaker": "Gabriel Attal",
+   "clock": "02:14:44",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 10,
+     "end": 17,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 18,
+     "end": 23,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1202",
+   "speaker": "Gabriel Attal",
+   "clock": "02:14:51",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 552,
+     "end": 561,
+     "text": "centaines",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 565,
+     "end": 573,
+     "text": "milliers",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1205",
+   "speaker": "Gabriel Attal",
+   "clock": "02:15:31",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 11,
+     "end": 12,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 12,
+     "end": 13,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 13,
+     "end": 14,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1206",
+   "speaker": "Gabriel Attal",
+   "clock": "02:15:35",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 27,
+     "end": 28,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 28,
+     "end": 29,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 29,
+     "end": 30,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1210",
+   "speaker": "Gabriel Attal",
+   "clock": "02:15:49",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 138,
+     "end": 145,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1214",
+   "speaker": "Amélie Carrouër",
+   "clock": "02:16:14",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 54,
+     "end": 59,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1216",
+   "speaker": "Marine Tondelier",
+   "clock": "02:16:28",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 174,
+     "end": 175,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 218,
+     "end": 219,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1223",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "02:17:13",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 490,
+     "end": 497,
+     "text": "chômage",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1224",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "02:18:28",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 9,
+     "end": 10,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 11,
+     "end": 20,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 42,
+     "end": 43,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1226",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "02:18:39",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 40,
+     "end": 46,
+     "text": "record",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1238",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:20:27",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 73,
+     "end": 81,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 149,
+     "end": 157,
+     "text": "centaine",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1245",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:21:21",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 280,
+     "end": 284,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1246",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:21:46",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 12,
+     "end": 19,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 36,
+     "end": 37,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 37,
+     "end": 38,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1247",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:22:00",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 329,
+     "end": 336,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 337,
+     "end": 341,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1248",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:22:28",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 201,
+     "end": 202,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 202,
+     "end": 203,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 203,
+     "end": 204,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1256",
+   "speaker": "Marine Le Pen",
+   "clock": "02:23:24",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 61,
+     "end": 68,
+     "text": "en 2026",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1264",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:02",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 24,
+     "end": 25,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 25,
+     "end": 26,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 26,
+     "end": 27,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1265",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:09",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 22,
+     "end": 23,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 23,
+     "end": 24,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 24,
+     "end": 25,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1267",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:15",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 1,
+     "end": 2,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1268",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:17",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 14,
+     "end": 22,
+     "text": "centaine",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1269",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:20",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 12,
+     "end": 20,
+     "text": "milliers",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1271",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:28",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 16,
+     "end": 23,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1273",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:34",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 87,
+     "end": 88,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 88,
+     "end": 89,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 89,
+     "end": 90,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1275",
+   "speaker": "Marine Le Pen",
+   "clock": "02:24:42",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 36,
+     "end": 37,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 37,
+     "end": 38,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1281",
+   "speaker": "Marine Le Pen",
+   "clock": "02:25:26",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 47,
+     "end": 48,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 48,
+     "end": 49,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 50,
+     "end": 59,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1289",
+   "speaker": "Marine Le Pen",
+   "clock": "02:26:07",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 26,
+     "end": 33,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1304",
+   "speaker": "Édouard Philippe",
+   "clock": "02:26:41",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 47,
+     "end": 54,
+     "text": "Premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1321",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:29:59",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 62,
+     "end": 63,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 63,
+     "end": 64,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 245,
+     "end": 246,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1322",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:30:14",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 99,
+     "end": 100,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 100,
+     "end": 101,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 101,
+     "end": 102,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1324",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:30:47",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 115,
+     "end": 116,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 116,
+     "end": 117,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 118,
+     "end": 123,
+     "text": "euros",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1326",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:31:07",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 117,
+     "end": 124,
+     "text": "en 2021",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 126,
+     "end": 127,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 127,
+     "end": 128,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1327",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:31:17",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 7,
+     "text": "En 2021",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 9,
+     "end": 10,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 10,
+     "end": 11,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1328",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:31:22",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 3,
+     "end": 12,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1330",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:31:40",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 16,
+     "end": 17,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 17,
+     "end": 18,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 19,
+     "end": 28,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1331",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:31:56",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 31,
+     "end": 32,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 32,
+     "end": 33,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1333",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:32:06",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 24,
+     "end": 31,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1343",
+   "speaker": "Amélie Carrouër",
+   "clock": "02:33:06",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 39,
+     "end": 40,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 40,
+     "end": 41,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 41,
+     "end": 42,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1344",
+   "speaker": "Amélie Carrouër",
+   "clock": "02:33:13",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 63,
+     "end": 64,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 64,
+     "end": 65,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 66,
+     "end": 67,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1346",
+   "speaker": "Amélie Carrouër",
+   "clock": "02:33:31",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 70,
+     "end": 80,
+     "text": "croissance",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1350",
+   "speaker": "SPEAKER_11",
+   "clock": "02:33:56",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 30,
+     "end": 31,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 31,
+     "end": 32,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 64,
+     "end": 65,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1351",
+   "speaker": "SPEAKER_11",
+   "clock": "02:34:04",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 288,
+     "end": 289,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1352",
+   "speaker": "SPEAKER_11",
+   "clock": "02:34:40",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 35,
+     "end": 40,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 296,
+     "end": 297,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 297,
+     "end": 298,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1354",
+   "speaker": "SPEAKER_11",
+   "clock": "02:35:10",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 19,
+     "end": 26,
+     "text": "dizaine",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 71,
+     "end": 72,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 72,
+     "end": 73,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1364",
+   "speaker": "Édouard Philippe",
+   "clock": "02:36:05",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 59,
+     "end": 60,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 60,
+     "end": 61,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 62,
+     "end": 71,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1365",
+   "speaker": "Édouard Philippe",
+   "clock": "02:36:16",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 54,
+     "end": 55,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 55,
+     "end": 56,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 57,
+     "end": 66,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1368",
+   "speaker": "Édouard Philippe",
+   "clock": "02:36:47",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 11,
+     "end": 12,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 12,
+     "end": 13,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 14,
+     "end": 23,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1369",
+   "speaker": "Édouard Philippe",
+   "clock": "02:36:55",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 9,
+     "end": 16,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 17,
+     "end": 22,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 36,
+     "end": 41,
+     "text": "point",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1375",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "02:37:56",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 536,
+     "end": 540,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 600,
+     "end": 604,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 626,
+     "end": 627,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1391",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "02:39:41",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 30,
+     "end": 38,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1401",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:40:30",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 91,
+     "end": 95,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1402",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:40:37",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 3,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1407",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:40:54",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 19,
+     "end": 20,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 20,
+     "end": 21,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 22,
+     "end": 31,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1408",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:41:07",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 5,
+     "end": 6,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 6,
+     "end": 7,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 8,
+     "end": 17,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1409",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:41:22",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 109,
+     "end": 110,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 110,
+     "end": 111,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 111,
+     "end": 112,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1410",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:41:44",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 118,
+     "end": 119,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 119,
+     "end": 120,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 120,
+     "end": 121,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1416",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:42:09",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 16,
+     "end": 17,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 17,
+     "end": 18,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 19,
+     "end": 28,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1417",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:42:13",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 67,
+     "end": 75,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1422",
+   "speaker": "Marine Le Pen",
+   "clock": "02:43:15",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 79,
+     "end": 80,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1426",
+   "speaker": "Marine Le Pen",
+   "clock": "02:43:47",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 32,
+     "end": 38,
+     "text": "moitié",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 64,
+     "end": 65,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 65,
+     "end": 66,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1427",
+   "speaker": "Marine Le Pen",
+   "clock": "02:43:54",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 109,
+     "end": 110,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 110,
+     "end": 111,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1431",
+   "speaker": "Marine Le Pen",
+   "clock": "02:44:34",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 3,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1432",
+   "speaker": "Marine Le Pen",
+   "clock": "02:44:44",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 48,
+     "end": 49,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 49,
+     "end": 50,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 50,
+     "end": 51,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1433",
+   "speaker": "Marine Le Pen",
+   "clock": "02:44:50",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 48,
+     "end": 49,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 49,
+     "end": 50,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 100,
+     "end": 101,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1434",
+   "speaker": "Marine Le Pen",
+   "clock": "02:45:01",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 267,
+     "end": 274,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1439",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:45:56",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 61,
+     "end": 62,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 62,
+     "end": 63,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 64,
+     "end": 72,
+     "text": "millions",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1444",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:46:53",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 88,
+     "end": 89,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 89,
+     "end": 90,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 90,
+     "end": 91,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1450",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:47:45",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 43,
+     "end": 48,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1452",
+   "speaker": "Raphaël Glucksmann",
+   "clock": "02:47:58",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 68,
+     "end": 75,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1460",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:48:59",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 127,
+     "end": 128,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 128,
+     "end": 129,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 129,
+     "end": 130,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1461",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:49:09",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 1,
+     "end": 2,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 3,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1462",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:49:14",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 125,
+     "end": 126,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 126,
+     "end": 127,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 127,
+     "end": 128,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1463",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:49:35",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 32,
+     "end": 33,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 33,
+     "end": 34,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 34,
+     "end": 35,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1464",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:49:45",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 45,
+     "end": 50,
+     "text": "dette",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 54,
+     "end": 55,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 86,
+     "end": 87,
+     "text": "7",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1465",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:49:52",
+   "confidence": 0.85,
+   "claims": [
+    {
+     "start": 41,
+     "end": 42,
+     "text": "4",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 42,
+     "end": 43,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 44,
+     "end": 53,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1468",
+   "speaker": "Bruno Retailleau",
+   "clock": "02:50:04",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 0,
+     "end": 6,
+     "text": "mandat",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1471",
+   "speaker": "Marine Tondelier",
+   "clock": "02:50:17",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 3,
+     "end": 10,
+     "text": "déficit",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 31,
+     "end": 32,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 32,
+     "end": 33,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1472",
+   "speaker": "Marine Tondelier",
+   "clock": "02:50:32",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 264,
+     "end": 265,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 265,
+     "end": 266,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 266,
+     "end": 267,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1480",
+   "speaker": "Marine Tondelier",
+   "clock": "02:51:27",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 212,
+     "end": 217,
+     "text": "tiers",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 245,
+     "end": 246,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 246,
+     "end": 247,
+     "text": "%",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1486",
+   "speaker": "Marine Tondelier",
+   "clock": "02:52:31",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 0,
+     "end": 1,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 2,
+     "end": 7,
+     "text": "euros",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1492",
+   "speaker": "Marine Tondelier",
+   "clock": "02:52:36",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 11,
+     "end": 12,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 12,
+     "end": 13,
+     "text": "8",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1495",
+   "speaker": "Gabriel Attal",
+   "clock": "02:52:40",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 64,
+     "end": 68,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 97,
+     "end": 98,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 98,
+     "end": 99,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1500",
+   "speaker": "Gabriel Attal",
+   "clock": "02:52:55",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 20,
+     "end": 24,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 53,
+     "end": 54,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 54,
+     "end": 55,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1502",
+   "speaker": "Gabriel Attal",
+   "clock": "02:53:00",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 53,
+     "end": 57,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 60,
+     "end": 61,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 61,
+     "end": 62,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1511",
+   "speaker": "Gabriel Attal",
+   "clock": "02:53:44",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 11,
+     "end": 18,
+     "text": "dernier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1514",
+   "speaker": "Gabriel Attal",
+   "clock": "02:54:03",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 16,
+     "end": 23,
+     "text": "en 2027",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1516",
+   "speaker": "Gabriel Attal",
+   "clock": "02:54:14",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 291,
+     "end": 295,
+     "text": "euro",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1525",
+   "speaker": "Amélie Carrouër",
+   "clock": "02:54:47",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 4,
+     "end": 5,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 5,
+     "end": 6,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 6,
+     "end": 7,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1535",
+   "speaker": "Marine Tondelier",
+   "clock": "02:56:17",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 18,
+     "end": 19,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1538",
+   "speaker": "Marine Tondelier",
+   "clock": "02:56:25",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 11,
+     "end": 19,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1539",
+   "speaker": "Marine Tondelier",
+   "clock": "02:56:27",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 20,
+     "end": 24,
+     "text": "SMIC",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 52,
+     "end": 53,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 53,
+     "end": 54,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1541",
+   "speaker": "Marine Tondelier",
+   "clock": "02:56:36",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 291,
+     "end": 295,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 498,
+     "end": 502,
+     "text": "taux",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1550",
+   "speaker": "Gabriel Attal",
+   "clock": "02:57:35",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 215,
+     "end": 216,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 216,
+     "end": 217,
+     "text": "6",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 218,
+     "end": 227,
+     "text": "milliards",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1551",
+   "speaker": "Gabriel Attal",
+   "clock": "02:57:51",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 177,
+     "end": 187,
+     "text": "croissance",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1552",
+   "speaker": "Gabriel Attal",
+   "clock": "02:58:00",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 420,
+     "end": 430,
+     "text": "croissance",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1563",
+   "speaker": "Jean-Luc Mélenchon",
+   "clock": "02:59:30",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 56,
+     "end": 57,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 57,
+     "end": 58,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1584",
+   "speaker": "Édouard Philippe",
+   "clock": "03:01:20",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 3,
+     "end": 11,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1587",
+   "speaker": "Édouard Philippe",
+   "clock": "03:01:49",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 3,
+     "end": 11,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1588",
+   "speaker": "Édouard Philippe",
+   "clock": "03:01:58",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 139,
+     "end": 140,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 140,
+     "end": 141,
+     "text": "9",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 156,
+     "end": 157,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1592",
+   "speaker": "Bruno Retailleau",
+   "clock": "03:02:36",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 203,
+     "end": 211,
+     "text": "première",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1593",
+   "speaker": "Bruno Retailleau",
+   "clock": "03:02:53",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 77,
+     "end": 83,
+     "text": "double",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1594",
+   "speaker": "Bruno Retailleau",
+   "clock": "03:03:01",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 175,
+     "end": 176,
+     "text": "3",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 176,
+     "end": 177,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1595",
+   "speaker": "Bruno Retailleau",
+   "clock": "03:03:19",
+   "confidence": 0.7,
+   "claims": [
+    {
+     "start": 141,
+     "end": 142,
+     "text": "5",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 142,
+     "end": 143,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1600",
+   "speaker": "Amélie Carrouër",
+   "clock": "03:03:51",
+   "confidence": 0.55,
+   "claims": [
+    {
+     "start": 16,
+     "end": 23,
+     "text": "premier",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  },
+  {
+   "segment": "s1602",
+   "speaker": "Amélie Carrouër",
+   "clock": "03:04:00",
+   "confidence": 1.0,
+   "claims": [
+    {
+     "start": 75,
+     "end": 76,
+     "text": "1",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 91,
+     "end": 92,
+     "text": "2",
+     "kind": "numerical",
+     "located": "exact"
+    },
+    {
+     "start": 92,
+     "end": 93,
+     "text": "0",
+     "kind": "numerical",
+     "located": "exact"
+    }
+   ]
+  }
+ ]
+}

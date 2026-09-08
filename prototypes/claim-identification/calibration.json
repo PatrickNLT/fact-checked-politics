@@ -1,0 +1,61 @@
+{
+ "note": "Hand-picked from this debate and answered against guideline.md. Not part of any sample, never scored. Shown to the annotator before labelling; the detector's system prompt gets the guideline but not these, so they cannot leak into a model's favour.",
+ "examples": [
+  {
+   "segment": "s185",
+   "speaker": "Éric Malenfer",
+   "text": "Depuis 2000, l'état central a reculé de 0,5 point, c'est plutôt pas mal. Par contre, tout ce qui touche le social, maladie, famille, chômage, retraite, a explosé de 3,4 points.",
+   "label": "oui",
+   "kind": "numerical",
+   "why": "Two figures about the past, both settleable against INSEE or the Cour des comptes. The trailing \"c'est plutôt pas mal\" is opinion, but a Segment is check-worthy as soon as one span in it is."
+  },
+  {
+   "segment": "s451",
+   "speaker": "Gabriel Attal",
+   "text": "ces dernières années, toutes les réformes qui ont été proposées pour faire des économies, notamment dans la sphère sociale, vous avez voté contre.",
+   "label": "oui",
+   "kind": "attributive",
+   "why": "A voting record: the Assemblée's scrutins settle it outright. \"toutes les réformes\" is sweeping, but it is sweeping about something enumerable, which is what separates it from the vague case below. Attributive claims are the cheapest class to check and the most damaging to get wrong."
+  },
+  {
+   "segment": "s88",
+   "speaker": "Édouard Philippe",
+   "text": "Entre 2017 et 2020, nous avons mis en place une politique dite la politique de l'offre.",
+   "label": "oui",
+   "kind": "historical",
+   "why": "A dated claim about what a government did. No figure is the point, so it is historical rather than numerical."
+  },
+  {
+   "segment": "s348",
+   "speaker": "Marine Le Pen",
+   "text": "Elle coûtera, la réforme que je propose, 9 milliards d'euros en année pleine.",
+   "label": "oui",
+   "kind": "predictive",
+   "why": "A costing, so predictive — even though it carries a figure. The kind follows what a checker would verify, and here that is the costing of a measure that does not exist yet, against Bercy or an independent chiffrage."
+  },
+  {
+   "segment": "s1091",
+   "speaker": "Amélie Carrouër",
+   "text": "…souvent quand on parle de normes il y a beaucoup d'entrepreneurs qui nous disent l'écologie c'est beaucoup de normes…",
+   "label": "limite",
+   "kind": "other",
+   "why": "Factual in form — somebody said something — but \"beaucoup d'entrepreneurs\" names nobody and quantifies nothing, so there is no source that could settle it. This is the shape the borderline band exists for; do not force it either way."
+  },
+  {
+   "segment": "s50",
+   "speaker": "Bruno Retailleau",
+   "text": "Eh bien, nous ne réussirons pas dans une France qui va mal sans les entreprises.",
+   "label": "non",
+   "kind": null,
+   "why": "Sounds like a claim about the future but asserts nothing checkable: it is a value position dressed as a forecast. Compare with the Le Pen costing above, which names a figure and a measure."
+  },
+  {
+   "segment": "s500",
+   "speaker": "Amélie Carrouër",
+   "text": "Bruno Retailleau, allez-y.",
+   "label": "non",
+   "kind": null,
+   "why": "Turn-taking. About a fifth of this debate's Segments are under five words, mostly of this kind — one keystroke each. They stay in the sample because leaving them out would inflate the prevalence that sizes the v3 queue."
+  }
+ ]
+}
