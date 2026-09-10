@@ -58,7 +58,7 @@ independent and could overlap.
 
 ## Output shape (input to ticket #14)
 
-`out/transcript.json` (3.4 MB for three hours, 35 468 words, 1 470 Segments) and
+`out/transcript.json` (3.4 MB for three hours, 35 468 words, 1 607 Segments) and
 `out/transcript.txt`, a readable rendering of the same. Top level:
 
 ```json

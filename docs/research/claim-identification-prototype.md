@@ -34,12 +34,18 @@ the ranked shortlist, and therefore every precision, recall, kappa and volume fi
 
 ### The transcript holds 1 607 Segments, not 1 470
 
-Issue #37 and `docs/research/transcription-prototype.md` both say 1 470 Segments. The file
+Issue #37 and `docs/research/transcription-prototype.md` both said 1 470 Segments. The file
 itself holds **1 607** (ids `s0` to `s1606`, none retired), which is also what
 `docs/data-model.md` records as `segments.next_id`. The word count in the same sentence, 35 468,
-is right. The 1 470 looks like a figure taken before the gap-repair step added its Segments and
-never updated; the two documents should be corrected. Everything below uses 1 607, so the
-volume estimate is a share of the real population.
+is right.
+
+Where the 1 470 came from is **not recoverable** from the artefacts, and an earlier draft of this
+note guessed wrongly that it was a count taken before the gap-repair step. It is not: the ASR
+pass emitted 2 960 caption segments and diarization 1 023 turns, and no combination of the two
+with the merge or the gap repair lands on 1 470. The figure is simply wrong, with no story
+behind it. `transcription-prototype.md` is corrected in the same change as this note, and issue
+#37 carries a correction comment. Everything below uses 1 607, so the volume estimate is a share
+of the real population.
 
 The shape of that population matters for what the queue costs: 32 percent of Segments are
 under eight words and 12 percent are under three, because diarization cuts on speaker change
@@ -160,4 +166,4 @@ likely outcome and the interesting question is which side of it the numbers land
 2. Run the four arms; run `local` on the Mac to settle the hosted-or-local question.
 3. `shortlist` the best arm, label round 2 (100 Segments), score both rounds.
 4. Fill in the numbers above, state the verdict against the rule, and hand it to #29.
-5. Correct the 1 470 Segment count in issue #37 and in `docs/research/transcription-prototype.md`.
+5. ~~Correct the 1 470 Segment count in issue #37 and in `docs/research/transcription-prototype.md`.~~ Done.
